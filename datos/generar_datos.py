@@ -15,6 +15,7 @@ Uso:
 """
 import json
 import os
+import time
 import unicodedata
 from datetime import date, datetime, timedelta
 
@@ -45,13 +46,27 @@ os.makedirs(CARPETA_SALIDA, exist_ok=True)
 
 peticiones_usadas = 0
 
+# la llave gratuita ("123") tiene un límite de peticiones por minuto; corriendo
+# desde GitHub Actions las peticiones salen casi instantáneas y lo disparan
+# (429 Too Many Requests), así que dejamos un respiro entre cada una y
+# reintentamos con espera más larga si aun así nos limita
+PAUSA_ENTRE_PETICIONES = 1.2
+REINTENTOS_429 = 4
+
 
 def pedir(endpoint, params=None):
     global peticiones_usadas
-    r = requests.get(f"{BASE_URL}/{endpoint}", params=params or {})
-    r.raise_for_status()
-    peticiones_usadas += 1
-    return r.json() or {}
+    for intento in range(REINTENTOS_429 + 1):
+        r = requests.get(f"{BASE_URL}/{endpoint}", params=params or {})
+        if r.status_code == 429 and intento < REINTENTOS_429:
+            espera = 5 * (intento + 1)
+            print(f"   ! 429 Too Many Requests, esperando {espera}s antes de reintentar...")
+            time.sleep(espera)
+            continue
+        r.raise_for_status()
+        peticiones_usadas += 1
+        time.sleep(PAUSA_ENTRE_PETICIONES)
+        return r.json() or {}
 
 
 def normalizar(nombre):
