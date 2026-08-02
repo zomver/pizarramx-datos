@@ -39,10 +39,14 @@ jobs:
           local-dir: ./logos/banderas/
           server-dir: ./logos/banderas/
 
-      - name: Guardar banderas nuevas en el repo (para no re-descargarlas cada corrida)
+      - name: Guardar medallero.json y banderas nuevas en el repo
+        # medallero.json tiene que quedar en el repo porque generar_datos.py
+        # (que corre cada 5 min) arma datos.js juntando lo que haya en
+        # datos/salida/ del checkout — si no está aquí, cada corrida de
+        # partidos borra el medallero de datos.js sin querer.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add logos/banderas
-          git diff --cached --quiet || git commit -m "Banderas nuevas del medallero"
+          git add logos/banderas datos/salida/medallero.json
+          git diff --cached --quiet || git commit -m "Actualizar medallero y banderas nuevas"
           git push
