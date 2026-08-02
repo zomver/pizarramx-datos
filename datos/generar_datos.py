@@ -44,14 +44,25 @@ DIAS_DESPUES = 8
 CARPETA_SALIDA = os.path.join(os.path.dirname(__file__), "salida")
 os.makedirs(CARPETA_SALIDA, exist_ok=True)
 
+# jornadas que ya terminaron (todos sus partidos en FT) no van a cambiar,
+# así que se guardan aquí para no volver a pedirlas — con la llave gratuita
+# compartida, bajar las 32 jornadas de las dos ligas EN CADA CORRIDA (cada
+# 5 min desde GitHub Actions) agota la cuota y tira 429. Con caché, en
+# temporada regular solo se piden de verdad la jornada en curso y la
+# siguiente; el resto sale de aquí.
+RUTA_CACHE = os.path.join(CARPETA_SALIDA, "cache_rondas.json")
+
 peticiones_usadas = 0
 
-# la llave gratuita ("123") tiene un límite de peticiones por minuto; corriendo
-# desde GitHub Actions las peticiones salen casi instantáneas y lo disparan
-# (429 Too Many Requests), así que dejamos un respiro entre cada una y
-# reintentamos con espera más larga si aun así nos limita
-PAUSA_ENTRE_PETICIONES = 1.2
-REINTENTOS_429 = 4
+# la llave gratuita ("123") es compartida por muchísimos proyectos, y desde
+# las IPs de GitHub Actions el límite se siente mucho más agresivo que en
+# una conexión normal (probablemente porque otros workflows de GitHub
+# Actions ajenos a este proyecto están pegándole a la misma llave desde
+# IPs parecidas al mismo tiempo). 1.2s de pausa no fue suficiente y tiró
+# 429 dos corridas seguidas, así que se baja el ritmo y se le da más
+# paciencia al reintento antes de rendirse.
+PAUSA_ENTRE_PETICIONES = 2.5
+REINTENTOS_429 = 6
 
 
 def pedir(endpoint, params=None):
@@ -59,7 +70,7 @@ def pedir(endpoint, params=None):
     for intento in range(REINTENTOS_429 + 1):
         r = requests.get(f"{BASE_URL}/{endpoint}", params=params or {})
         if r.status_code == 429 and intento < REINTENTOS_429:
-            espera = 5 * (intento + 1)
+            espera = 8 * (intento + 1)
             print(f"   ! 429 Too Many Requests, esperando {espera}s antes de reintentar...")
             time.sleep(espera)
             continue
@@ -98,11 +109,37 @@ def mapear_estado(status, fecha, hora, elapsed=None):
     return "ft", status
 
 
-def descargar_temporada(clave_liga, info_liga):
-    """Baja todas las jornadas de la liga y devuelve la lista cruda de eventos."""
+def cargar_cache():
+    if os.path.exists(RUTA_CACHE):
+        with open(RUTA_CACHE, encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+
+def guardar_cache(cache):
+    with open(RUTA_CACHE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
+def jornada_terminada(eventos):
+    return bool(eventos) and all(ev.get("strStatus") == "FT" for ev in eventos)
+
+
+def descargar_temporada(clave_liga, info_liga, cache):
+    """Baja las jornadas de la liga (usando caché para las ya terminadas) y
+    devuelve la lista cruda de eventos."""
     print(f"\n[{info_liga['nombre']}] descargando jornadas...")
+    cache_liga = cache.setdefault(clave_liga, {})
     eventos = []
     for jornada in range(1, MAX_JORNADAS + 1):
+        clave_jornada = str(jornada)
+
+        if clave_jornada in cache_liga:
+            partidos_jornada = cache_liga[clave_jornada]
+            print(f"   jornada {jornada}: {len(partidos_jornada)} partidos (caché)")
+            eventos.extend(partidos_jornada)
+            continue
+
         data = pedir("eventsround.php", {
             "id": info_liga["id"], "r": jornada, "s": TEMPORADA,
         })
@@ -111,6 +148,10 @@ def descargar_temporada(clave_liga, info_liga):
             break
         eventos.extend(partidos_jornada)
         print(f"   jornada {jornada}: {len(partidos_jornada)} partidos")
+
+        if jornada_terminada(partidos_jornada):
+            cache_liga[clave_jornada] = partidos_jornada
+
     print(f"   total: {len(eventos)} partidos en {info_liga['nombre']}")
     return eventos
 
@@ -205,11 +246,14 @@ def construir_partidos(eventos, info_liga):
 def main():
     standings = {}
     partidos = []
+    cache = cargar_cache()
 
     for clave, info in LIGAS.items():
-        eventos = descargar_temporada(clave, info)
+        eventos = descargar_temporada(clave, info, cache)
         standings[clave] = calcular_standings(eventos)
         partidos += construir_partidos(eventos, info)
+
+    guardar_cache(cache)
 
     partidos.sort(key=lambda tupla: (tupla[0], tupla[1]))
     partidos = [partido for _, _, partido in partidos]
