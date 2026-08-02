@@ -1,0 +1,48 @@
+name: Actualizar medallero
+
+on:
+  schedule:
+    - cron: '0 */8 * * *'
+  workflow_dispatch:
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: pip install -r datos/requirements.txt
+
+      - name: Actualizar medallero (y bajar banderas nuevas si aplica)
+        run: python datos/actualizar_medallero.py
+
+      - name: Subir datos/salida a Hostinger por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./datos/salida/
+          server-dir: ./datos/salida/
+
+      - name: Subir banderas nuevas a Hostinger por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./logos/banderas/
+          server-dir: ./logos/banderas/
+
+      - name: Guardar banderas nuevas en el repo (para no re-descargarlas cada corrida)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add logos/banderas
+          git diff --cached --quiet || git commit -m "Banderas nuevas del medallero"
+          git push
