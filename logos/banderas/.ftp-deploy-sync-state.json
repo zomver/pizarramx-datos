@@ -1,8 +1,14 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1785665040244,
+    "generatedTime": 1785690482795,
     "data": [
+        {
+            "type": "file",
+            "name": ".ftp-deploy-sync-state.json",
+            "size": 4604,
+            "hash": "b39177aa6c6d8e06de39147bbcb0ed8b9effa7570da71a0d85d881799c837a4a"
+        },
         {
             "type": "file",
             "name": "ARU.png",
@@ -23,15 +29,15 @@
         },
         {
             "type": "file",
-            "name": "BER.png",
-            "size": 3068,
-            "hash": "735142a76de8fa7d7a03fc725c94361431e24b3d97c9ddb05c0b5e52d125c190"
-        },
-        {
-            "type": "file",
             "name": "COL.png",
             "size": 308,
             "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
+        },
+        {
+            "type": "file",
+            "name": "BER.png",
+            "size": 3068,
+            "hash": "735142a76de8fa7d7a03fc725c94361431e24b3d97c9ddb05c0b5e52d125c190"
         },
         {
             "type": "file",
@@ -59,6 +65,12 @@
         },
         {
             "type": "file",
+            "name": "GLP.png",
+            "size": 3285,
+            "hash": "0768c82a038e331868a758f60db45006468dfc131caeadf84f9a2cfae4925003"
+        },
+        {
+            "type": "file",
             "name": "GUA.png",
             "size": 2018,
             "hash": "7457a5d5fb1e343ffc0943ea1dd068a974b269e8119a4b30f723ef5bca5589b6"
@@ -77,9 +89,9 @@
         },
         {
             "type": "file",
-            "name": "GLP.png",
-            "size": 3285,
-            "hash": "0768c82a038e331868a758f60db45006468dfc131caeadf84f9a2cfae4925003"
+            "name": "HON.png",
+            "size": 577,
+            "hash": "5e2401aab9beb76542d57e3da02ad3b947db278b05bda2088d53a564f9d59158"
         },
         {
             "type": "file",
@@ -128,12 +140,6 @@
             "name": "VEN.png",
             "size": 1187,
             "hash": "c63679dd6a34837d7543fe51f4e9ac9b785a63e2433e1393b2bc893093d0228a"
-        },
-        {
-            "type": "file",
-            "name": "HON.png",
-            "size": 577,
-            "hash": "5e2401aab9beb76542d57e3da02ad3b947db278b05bda2088d53a564f9d59158"
         }
     ]
 }
