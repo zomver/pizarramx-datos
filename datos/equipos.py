@@ -74,6 +74,27 @@ NAME_MAP = {
     'cruz azul hidalgo': 'CAH',
     'piratas': 'PIR',
     'piratas de campeche': 'PIR',
+
+    # --- Leagues Cup 2026 (equipos de MLS; los de Liga MX ya están
+    # mapeados arriba) ---
+    'austin fc': 'AUS', 'austin': 'AUS',
+    'charlotte fc': 'CLT', 'charlotte': 'CLT',
+    'chicago fire': 'CHI', 'chicago fire fc': 'CHI',
+    'columbus crew': 'CLB',
+    'fc cincinnati': 'CIN', 'cincinnati': 'CIN',
+    'fc dallas': 'DAL', 'dallas': 'DAL',
+    'inter miami': 'MIA', 'inter miami cf': 'MIA',
+    'los angeles fc': 'LAF', 'lafc': 'LAF',
+    'minnesota united': 'MNU', 'minnesota united fc': 'MNU',
+    'nashville sc': 'NSH', 'nashville': 'NSH',
+    'new york city fc': 'NYC', 'nycfc': 'NYC',
+    'orlando city': 'ORL', 'orlando city sc': 'ORL',
+    'philadelphia union': 'PHI',
+    'portland timbers': 'POR',
+    'real salt lake': 'RSL',
+    'san diego fc': 'SDG', 'san diego': 'SDG',
+    'seattle sounders': 'SEA', 'seattle sounders fc': 'SEA',
+    'vancouver whitecaps': 'VAN', 'vancouver whitecaps fc': 'VAN',
 }
 
 # nombres bonitos para mostrar (abreviación -> nombre).
@@ -90,4 +111,10 @@ DISPLAY_NAMES = {
     'CEL': 'Celaya', 'TAM': 'Tampico Madero (Jaiba Brava)', 'MOR': 'Atlético Morelia',
     'TAP': 'Tapatío', 'TLA': 'Tlaxcala FC', 'IRA': 'Irapuato',
     'DGO': 'Alacranes de Durango', 'CAH': 'Cruz Azul Hidalgo', 'PIR': 'Piratas de Campeche',
+    'AUS': 'Austin FC', 'CLT': 'Charlotte FC', 'CHI': 'Chicago Fire', 'CLB': 'Columbus Crew',
+    'CIN': 'FC Cincinnati', 'DAL': 'FC Dallas', 'MIA': 'Inter Miami', 'LAF': 'LAFC',
+    'MNU': 'Minnesota United', 'NSH': 'Nashville SC', 'NYC': 'New York City FC',
+    'ORL': 'Orlando City', 'PHI': 'Philadelphia Union', 'POR': 'Portland Timbers',
+    'RSL': 'Real Salt Lake', 'SDG': 'San Diego FC', 'SEA': 'Seattle Sounders',
+    'VAN': 'Vancouver Whitecaps',
 }

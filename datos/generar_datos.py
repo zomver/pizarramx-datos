@@ -37,6 +37,18 @@ LIGAS = {
 
 MAX_JORNADAS = 25  # tope de seguridad; se detiene antes si una jornada viene vacía
 
+# Leagues Cup 2026: no es una liga normal (25 jornadas, tabla única) — es un
+# torneo aparte, formato suizo, solo 3 rondas, y Liga MX contra MLS siempre.
+# Por eso se maneja con sus propias funciones más abajo, no dentro de LIGAS.
+LEAGUES_CUP_ID = 5281
+LEAGUES_CUP_TEMPORADA = "2026"
+LEAGUES_CUP_RONDAS = 3
+
+LIGA_MX_ABBRS = {"AME", "ATE", "ATL", "SLP", "GDL", "CRZ", "JUA", "LEO", "MTY",
+                  "TIJ", "NEC", "PAC", "PUE", "PUM", "QRO", "SAN", "TIG", "TOL"}
+MLS_ABBRS = {"AUS", "CLT", "CHI", "CIN", "CLB", "DAL", "MIA", "LAF", "MNU",
+             "NSH", "NYC", "ORL", "PHI", "POR", "RSL", "SDG", "SEA", "VAN"}
+
 # ventana de fechas que se guarda en partidos.json (la sección "Partidos"
 # muestra un vistazo actual, no la temporada completa — eso ya vive en
 # calendario.html)
@@ -196,6 +208,93 @@ def calcular_standings(eventos):
     return filas
 
 
+def descargar_leagues_cup(cache):
+    """Baja las 3 rondas de la Leagues Cup (con la misma caché de rondas
+    terminadas que usa descargar_temporada, bajo la clave "leaguescup")."""
+    print(f"\n[Leagues Cup] descargando rondas...")
+    cache_liga = cache.setdefault("leaguescup", {})
+    eventos = []
+    for ronda in range(1, LEAGUES_CUP_RONDAS + 1):
+        clave_ronda = str(ronda)
+
+        if clave_ronda in cache_liga:
+            partidos_ronda = cache_liga[clave_ronda]
+            print(f"   ronda {ronda}: {len(partidos_ronda)} partidos (caché)")
+            eventos.extend(partidos_ronda)
+            continue
+
+        data = pedir("eventsround.php", {
+            "id": LEAGUES_CUP_ID, "r": ronda, "s": LEAGUES_CUP_TEMPORADA,
+        })
+        partidos_ronda = data.get("events") or []
+        eventos.extend(partidos_ronda)
+        print(f"   ronda {ronda}: {len(partidos_ronda)} partidos")
+
+        if jornada_terminada(partidos_ronda):
+            cache_liga[clave_ronda] = partidos_ronda
+
+    print(f"   total: {len(eventos)} partidos en Leagues Cup")
+    return eventos
+
+
+def calcular_standings_leagues_cup(eventos):
+    """A diferencia de una liga normal, la Leagues Cup no tiene UNA tabla:
+    cada partido es Liga MX contra MLS, y arma DOS tablas independientes
+    (una por liga de origen de cada equipo). Los 4 mejores de cada tabla
+    avanzan a cuartos de final — no hay grupos."""
+    tablas = {"ligamx": {}, "mls": {}}
+
+    def equipo(tabla_key, abbr, nombre):
+        tabla = tablas[tabla_key]
+        if abbr not in tabla:
+            tabla[abbr] = {"abbr": abbr, "name": nombre, "pj": 0, "g": 0, "e": 0,
+                           "p": 0, "pts": 0, "_gf": 0, "_gc": 0}
+        return tabla[abbr]
+
+    def ubicar(abbr):
+        if abbr in LIGA_MX_ABBRS:
+            return "ligamx"
+        if abbr in MLS_ABBRS:
+            return "mls"
+        return None
+
+    for ev in eventos:
+        if ev.get("strStatus") != "FT":
+            continue
+        if ev.get("intHomeScore") is None or ev.get("intAwayScore") is None:
+            continue
+
+        home_abbr, home_nombre = mapear_equipo(ev["strHomeTeam"])
+        away_abbr, away_nombre = mapear_equipo(ev["strAwayTeam"])
+        tabla_home, tabla_away = ubicar(home_abbr), ubicar(away_abbr)
+        if not tabla_home or not tabla_away:
+            print(f"   ! Leagues Cup: no reconozco la liga de origen de "
+                  f"'{home_abbr}' o '{away_abbr}' — revisa LIGA_MX_ABBRS/MLS_ABBRS")
+            continue
+
+        gh, ga = int(ev["intHomeScore"]), int(ev["intAwayScore"])
+        h, a = equipo(tabla_home, home_abbr, home_nombre), equipo(tabla_away, away_abbr, away_nombre)
+        h["pj"] += 1; a["pj"] += 1
+        h["_gf"] += gh; h["_gc"] += ga
+        a["_gf"] += ga; a["_gc"] += gh
+
+        if gh > ga:
+            h["g"] += 1; h["pts"] += 3; a["p"] += 1
+        elif ga > gh:
+            a["g"] += 1; a["pts"] += 3; h["p"] += 1
+        else:
+            h["e"] += 1; a["e"] += 1; h["pts"] += 1; a["pts"] += 1
+
+    resultado = {}
+    for clave, tabla in tablas.items():
+        filas = list(tabla.values())
+        filas.sort(key=lambda t: (-t["pts"], -(t["_gf"] - t["_gc"]), -t["_gf"]))
+        for f in filas:
+            del f["_gf"], f["_gc"]
+        resultado[clave] = filas
+    return resultado
+
+
 def construir_partidos(eventos, info_liga):
     hoy = date.today()
     desde = hoy - timedelta(days=DIAS_ANTES)
@@ -255,6 +354,10 @@ def main():
         standings[clave] = calcular_standings(eventos)
         partidos += construir_partidos(eventos, info)
 
+    eventos_lc = descargar_leagues_cup(cache)
+    standings["leaguescup"] = calcular_standings_leagues_cup(eventos_lc)
+    partidos += construir_partidos(eventos_lc, {"nombre": "Leagues Cup"})
+
     guardar_cache(cache)
 
     partidos.sort(key=lambda tupla: (tupla[0], tupla[1]))
@@ -274,7 +377,12 @@ def main():
     ruta_datos_js, _ = escribir_datos_js()
 
     print(f"\nListo. Peticiones usadas: {peticiones_usadas}")
-    print(f"Escrito: {ruta_pos} ({sum(len(v) for v in standings.values())} equipos)")
+    def contar_equipos(tabla):
+        # "leaguescup" no es una lista plana como las demás: es
+        # {"ligamx": [...], "mls": [...]}, así que hay que bajar un nivel
+        return sum(contar_equipos(v) for v in tabla.values()) if isinstance(tabla, dict) else len(tabla)
+
+    print(f"Escrito: {ruta_pos} ({sum(contar_equipos(v) for v in standings.values())} equipos)")
     print(f"Escrito: {ruta_partidos} ({len(partidos)} partidos en ventana de "
           f"{DIAS_ANTES} días atrás / {DIAS_DESPUES} días adelante)")
     print(f"Escrito: {ruta_datos_js}")
