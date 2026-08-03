@@ -28,9 +28,11 @@ API_KEY = "123"
 BASE_URL = f"https://www.thesportsdb.com/api/v1/json/{API_KEY}"
 
 TEMPORADA = "2026-2027"
+# Liga de Expansión MX se quitó a petición del usuario (2026-08-03): el
+# sitio se enfoca solo en Liga BBVA MX por ahora. Para traerla de vuelta,
+# basta con agregar de nuevo la entrada "expansion".
 LIGAS = {
     "bbva": {"id": 4350, "nombre": "Liga BBVA MX"},
-    "expansion": {"id": 4654, "nombre": "Liga de Expansión MX"},
 }
 
 MAX_JORNADAS = 25  # tope de seguridad; se detiene antes si una jornada viene vacía
