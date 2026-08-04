@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1785779879747,
+    "generatedTime": 1785813740356,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 4817,
-            "hash": "8ca91bf94e77b08dc4dd2eade0c41f8de1b27d48f64dc08bbb29af0ef6d8afba"
+            "hash": "1a9426a53762414236c2993a9ba28595651ef52d83c254afa2fda9e9b00d8b54"
         },
         {
             "type": "file",
@@ -29,15 +29,21 @@
         },
         {
             "type": "file",
-            "name": "COL.png",
-            "size": 308,
-            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
-        },
-        {
-            "type": "file",
             "name": "BER.png",
             "size": 3068,
             "hash": "735142a76de8fa7d7a03fc725c94361431e24b3d97c9ddb05c0b5e52d125c190"
+        },
+        {
+            "type": "file",
+            "name": "BIZ.png",
+            "size": 4675,
+            "hash": "68da13a161e9f71d4641a37aa80926813bdfc7994f12bba2a5ed8dfb9c0f27a7"
+        },
+        {
+            "type": "file",
+            "name": "COL.png",
+            "size": 308,
+            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
         },
         {
             "type": "file",
