@@ -9,57 +9,57 @@
     {
       "code": "MEX",
       "name": "México",
-      "oro": 120,
-      "plata": 81,
-      "bronce": 68
+      "oro": 123,
+      "plata": 84,
+      "bronce": 71
     },
     {
       "code": "COL",
       "name": "Colombia",
-      "oro": 58,
-      "plata": 66,
-      "bronce": 48
+      "oro": 61,
+      "plata": 68,
+      "bronce": 50
     },
     {
       "code": "CUB",
       "name": "Cuba",
-      "oro": 31,
+      "oro": 33,
       "plata": 26,
-      "bronce": 36
+      "bronce": 35
     },
     {
       "code": "VEN",
       "name": "Venezuela",
       "oro": 22,
-      "plata": 37,
-      "bronce": 64
+      "plata": 39,
+      "bronce": 68
     },
     {
       "code": "PUR",
       "name": "Puerto Rico",
-      "oro": 18,
-      "plata": 23,
+      "oro": 19,
+      "plata": 26,
       "bronce": 31
     },
     {
       "code": "DOM",
       "name": "República Dominicana",
-      "oro": 17,
+      "oro": 18,
       "plata": 18,
-      "bronce": 48
+      "bronce": 49
     },
     {
       "code": "GUA",
       "name": "Guatemala",
       "oro": 11,
-      "plata": 22,
-      "bronce": 24
+      "plata": 21,
+      "bronce": 26
     },
     {
       "code": "ESA",
       "name": "El Salvador",
       "oro": 6,
-      "plata": 3,
+      "plata": 4,
       "bronce": 9
     },
     {
@@ -67,14 +67,21 @@
       "name": "Costa Rica",
       "oro": 5,
       "plata": 4,
-      "bronce": 11
+      "bronce": 12
     },
     {
       "code": "TTO",
       "name": "Trinidad y Tobago",
       "oro": 5,
-      "plata": 2,
+      "plata": 3,
       "bronce": 8
+    },
+    {
+      "code": "PAN",
+      "name": "Panamá",
+      "oro": 3,
+      "plata": 6,
+      "bronce": 5
     },
     {
       "code": "GUY",
@@ -82,13 +89,6 @@
       "oro": 3,
       "plata": 0,
       "bronce": 1
-    },
-    {
-      "code": "PAN",
-      "name": "Panamá",
-      "oro": 2,
-      "plata": 6,
-      "bronce": 5
     },
     {
       "code": "BAR",
@@ -119,15 +119,15 @@
       "bronce": 3
     },
     {
-      "code": "BER",
-      "name": "Bermudas",
-      "oro": 0,
-      "plata": 1,
-      "bronce": 2
-    },
-    {
       "code": "JAM",
       "name": "Jamaica",
+      "oro": 0,
+      "plata": 1,
+      "bronce": 3
+    },
+    {
+      "code": "BER",
+      "name": "Bermudas",
       "oro": 0,
       "plata": 1,
       "bronce": 2
