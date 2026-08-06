@@ -123,6 +123,19 @@ def mapear_estado(status, fecha, hora, elapsed=None):
     return "ft", status
 
 
+def mapear_estado_en_vivo(status, progreso):
+    """livescore.php manda un status más detallado que eventsround.php
+    (separa 1er/2do tiempo, medio tiempo). Devuelve (None, None) si no
+    reconoce el status, para no pisar con basura lo que ya había."""
+    if status == "HT":
+        return "live", "MEDIO TIEMPO"
+    if status in ("1H", "2H", "ET", "BT", "P", "LIVE"):
+        return "live", f"{progreso}'" if progreso else "EN VIVO"
+    if status in ("FT", "AET", "PEN"):
+        return "ft", "FINALIZADO"
+    return None, None
+
+
 def cargar_cache():
     if os.path.exists(RUTA_CACHE):
         with open(RUTA_CACHE, encoding="utf-8") as f:
@@ -168,6 +181,35 @@ def descargar_temporada(clave_liga, info_liga, cache):
 
     print(f"   total: {len(eventos)} partidos en {info_liga['nombre']}")
     return eventos
+
+
+def pedir_livescores(id_liga):
+    """eventsround.php (arriba) es el calendario: no se mueve mientras el
+    partido está en curso. livescore.php sí trae marcador y minuto en
+    tiempo real — este es el que faltaba, y por eso los partidos en vivo
+    se quedaban pegados hasta que alguien los editaba a mano.
+
+    OJO: livescore.php usa un idEvent DISTINTO al de eventsround.php para
+    el mismo partido real (comprobado con un caso real: Inter Miami vs
+    Atlético San Luis tenía 2559160 en uno y 2483224 en el otro). Cruzar
+    solo por idEvent pierde partidos en silencio, así que se devuelven dos
+    diccionarios: uno por idEvent (cuando sí coincide) y otro por el par
+    de equipos (abreviación local-visitante) como respaldo."""
+    try:
+        data = pedir("livescore.php", {"id": id_liga})
+    except Exception as err:
+        print(f"   ! no se pudo pedir livescore.php (liga {id_liga}): {err}")
+        return {}, {}
+    eventos_vivos = data.get("livescore") or []
+
+    por_id, por_equipos = {}, {}
+    for ev in eventos_vivos:
+        if ev.get("idEvent"):
+            por_id[ev["idEvent"]] = ev
+        home_abbr, _ = mapear_equipo(ev.get("strHomeTeam") or "")
+        away_abbr, _ = mapear_equipo(ev.get("strAwayTeam") or "")
+        por_equipos[(home_abbr, away_abbr)] = ev
+    return por_id, por_equipos
 
 
 def calcular_standings(eventos):
@@ -295,7 +337,9 @@ def calcular_standings_leagues_cup(eventos):
     return resultado
 
 
-def construir_partidos(eventos, info_liga):
+def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=None):
+    vivos_por_id = vivos_por_id or {}
+    vivos_por_equipos = vivos_por_equipos or {}
     hoy = date.today()
     desde = hoy - timedelta(days=DIAS_ANTES)
     hasta = hoy + timedelta(days=DIAS_DESPUES)
@@ -315,6 +359,22 @@ def construir_partidos(eventos, info_liga):
         hora = (ev.get("strTimeLocal") or ev.get("strTime") or "00:00:00")[:5]
         fecha_iso = f"{fecha_str}T{hora}:00"
         estado, tiempo = mapear_estado(ev.get("strStatus"), fecha, hora)
+        gh = int(ev["intHomeScore"]) if ev.get("intHomeScore") is not None else None
+        ga = int(ev["intAwayScore"]) if ev.get("intAwayScore") is not None else None
+
+        # si livescore.php tiene este partido, pisa marcador/estado con el
+        # dato fresco (eventsround.php se queda atrás mientras está en curso).
+        # primero por idEvent; si no coincide (pasa, ver nota en
+        # pedir_livescores), por el par de equipos como respaldo
+        en_vivo = vivos_por_id.get(ev.get("idEvent")) or vivos_por_equipos.get((home_abbr, away_abbr))
+        if en_vivo:
+            if en_vivo.get("intHomeScore") is not None:
+                gh = int(en_vivo["intHomeScore"])
+            if en_vivo.get("intAwayScore") is not None:
+                ga = int(en_vivo["intAwayScore"])
+            estado_vivo, tiempo_vivo = mapear_estado_en_vivo(en_vivo.get("strStatus"), en_vivo.get("strProgress"))
+            if estado_vivo:
+                estado, tiempo = estado_vivo, tiempo_vivo
 
         if fecha == hoy:
             dia = "hoy"
@@ -329,8 +389,8 @@ def construir_partidos(eventos, info_liga):
             "round": f"Jornada {ev.get('intRound', '?')}",
             "home": home_nombre, "homeAbbr": home_abbr,
             "away": away_nombre, "awayAbbr": away_abbr,
-            "homeScore": int(ev["intHomeScore"]) if ev.get("intHomeScore") is not None else None,
-            "awayScore": int(ev["intAwayScore"]) if ev.get("intAwayScore") is not None else None,
+            "homeScore": gh,
+            "awayScore": ga,
             "status": estado,
             "time": tiempo,
             "venue": ev.get("strVenue") or "Por confirmar",
@@ -352,11 +412,15 @@ def main():
     for clave, info in LIGAS.items():
         eventos = descargar_temporada(clave, info, cache)
         standings[clave] = calcular_standings(eventos)
-        partidos += construir_partidos(eventos, info)
+        vivos_id, vivos_eq = pedir_livescores(info["id"])
+        print(f"   en vivo ahora mismo: {len(vivos_eq)} partido(s)")
+        partidos += construir_partidos(eventos, info, vivos_id, vivos_eq)
 
     eventos_lc = descargar_leagues_cup(cache)
     standings["leaguescup"] = calcular_standings_leagues_cup(eventos_lc)
-    partidos += construir_partidos(eventos_lc, {"nombre": "Leagues Cup"})
+    vivos_lc_id, vivos_lc_eq = pedir_livescores(LEAGUES_CUP_ID)
+    print(f"   en vivo ahora mismo en Leagues Cup: {len(vivos_lc_eq)} partido(s)")
+    partidos += construir_partidos(eventos_lc, {"nombre": "Leagues Cup"}, vivos_lc_id, vivos_lc_eq)
 
     guardar_cache(cache)
 
