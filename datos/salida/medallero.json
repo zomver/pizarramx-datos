@@ -3,77 +3,77 @@
   "edicion": "Santo Domingo 2026",
   "inicio": "2026-07-24",
   "fin": "2026-08-08",
-  "actualizado": "2026-08-05",
+  "actualizado": "2026-08-06",
   "fuente": "Wikipedia — XXV Juegos Centroamericanos y del Caribe",
   "paises": [
     {
       "code": "MEX",
       "name": "México",
-      "oro": 123,
-      "plata": 84,
-      "bronce": 71
+      "oro": 139,
+      "plata": 91,
+      "bronce": 84
     },
     {
       "code": "COL",
       "name": "Colombia",
-      "oro": 61,
-      "plata": 68,
-      "bronce": 50
+      "oro": 69,
+      "plata": 76,
+      "bronce": 62
     },
     {
       "code": "CUB",
       "name": "Cuba",
-      "oro": 33,
-      "plata": 26,
-      "bronce": 35
+      "oro": 38,
+      "plata": 33,
+      "bronce": 43
     },
     {
       "code": "VEN",
       "name": "Venezuela",
-      "oro": 22,
-      "plata": 39,
-      "bronce": 68
-    },
-    {
-      "code": "PUR",
-      "name": "Puerto Rico",
-      "oro": 19,
-      "plata": 26,
-      "bronce": 31
+      "oro": 25,
+      "plata": 48,
+      "bronce": 77
     },
     {
       "code": "DOM",
       "name": "República Dominicana",
-      "oro": 18,
-      "plata": 18,
-      "bronce": 49
+      "oro": 24,
+      "plata": 21,
+      "bronce": 53
+    },
+    {
+      "code": "PUR",
+      "name": "Puerto Rico",
+      "oro": 23,
+      "plata": 28,
+      "bronce": 37
     },
     {
       "code": "GUA",
       "name": "Guatemala",
-      "oro": 11,
-      "plata": 21,
-      "bronce": 26
+      "oro": 14,
+      "plata": 26,
+      "bronce": 32
     },
     {
       "code": "ESA",
       "name": "El Salvador",
       "oro": 6,
       "plata": 4,
-      "bronce": 9
+      "bronce": 11
     },
     {
       "code": "CRC",
       "name": "Costa Rica",
       "oro": 5,
-      "plata": 4,
-      "bronce": 12
+      "plata": 5,
+      "bronce": 13
     },
     {
       "code": "TTO",
       "name": "Trinidad y Tobago",
       "oro": 5,
-      "plata": 3,
+      "plata": 4,
       "bronce": 8
     },
     {
@@ -81,21 +81,28 @@
       "name": "Panamá",
       "oro": 3,
       "plata": 6,
-      "bronce": 5
+      "bronce": 6
     },
     {
       "code": "GUY",
       "name": "Guyana",
       "oro": 3,
+      "plata": 1,
+      "bronce": 2
+    },
+    {
+      "code": "GLP",
+      "name": "Guadalupe",
+      "oro": 2,
       "plata": 0,
-      "bronce": 1
+      "bronce": 3
     },
     {
       "code": "BAR",
       "name": "Barbados",
       "oro": 1,
       "plata": 5,
-      "bronce": 0
+      "bronce": 1
     },
     {
       "code": "HON",
@@ -105,24 +112,24 @@
       "bronce": 4
     },
     {
+      "code": "JAM",
+      "name": "Jamaica",
+      "oro": 1,
+      "plata": 2,
+      "bronce": 6
+    },
+    {
       "code": "HAI",
       "name": "Haití",
       "oro": 1,
       "plata": 1,
-      "bronce": 1
+      "bronce": 2
     },
     {
-      "code": "GLP",
-      "name": "Guadalupe",
-      "oro": 1,
-      "plata": 0,
-      "bronce": 3
-    },
-    {
-      "code": "JAM",
-      "name": "Jamaica",
+      "code": "NCA",
+      "name": "Nicaragua",
       "oro": 0,
-      "plata": 1,
+      "plata": 2,
       "bronce": 3
     },
     {
@@ -151,18 +158,25 @@
       "name": "Aruba",
       "oro": 0,
       "plata": 0,
-      "bronce": 2
-    },
-    {
-      "code": "NCA",
-      "name": "Nicaragua",
-      "oro": 0,
-      "plata": 0,
-      "bronce": 2
+      "bronce": 4
     },
     {
       "code": "BIZ",
       "name": "Belice",
+      "oro": 0,
+      "plata": 0,
+      "bronce": 1
+    },
+    {
+      "code": "CAY",
+      "name": "Islas Caimán",
+      "oro": 0,
+      "plata": 0,
+      "bronce": 1
+    },
+    {
+      "code": "SAN",
+      "name": "San Vicente",
       "oro": 0,
       "plata": 0,
       "bronce": 1
