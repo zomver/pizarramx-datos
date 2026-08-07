@@ -9,79 +9,79 @@
     {
       "code": "MEX",
       "name": "México",
-      "oro": 139,
-      "plata": 91,
-      "bronce": 84
+      "oro": 152,
+      "plata": 101,
+      "bronce": 98
     },
     {
       "code": "COL",
       "name": "Colombia",
-      "oro": 69,
-      "plata": 76,
-      "bronce": 62
+      "oro": 78,
+      "plata": 87,
+      "bronce": 73
     },
     {
       "code": "CUB",
       "name": "Cuba",
-      "oro": 38,
-      "plata": 33,
-      "bronce": 43
+      "oro": 42,
+      "plata": 40,
+      "bronce": 51
     },
     {
       "code": "VEN",
       "name": "Venezuela",
-      "oro": 25,
-      "plata": 48,
-      "bronce": 77
+      "oro": 35,
+      "plata": 53,
+      "bronce": 89
     },
     {
       "code": "DOM",
       "name": "República Dominicana",
-      "oro": 24,
-      "plata": 21,
-      "bronce": 53
+      "oro": 30,
+      "plata": 29,
+      "bronce": 59
     },
     {
       "code": "PUR",
       "name": "Puerto Rico",
-      "oro": 23,
-      "plata": 28,
-      "bronce": 37
+      "oro": 28,
+      "plata": 30,
+      "bronce": 44
     },
     {
       "code": "GUA",
       "name": "Guatemala",
-      "oro": 14,
-      "plata": 26,
-      "bronce": 32
+      "oro": 15,
+      "plata": 29,
+      "bronce": 38
     },
     {
       "code": "ESA",
       "name": "El Salvador",
       "oro": 6,
       "plata": 4,
-      "bronce": 11
+      "bronce": 12
+    },
+    {
+      "code": "PAN",
+      "name": "Panamá",
+      "oro": 5,
+      "plata": 7,
+      "bronce": 6
     },
     {
       "code": "CRC",
       "name": "Costa Rica",
       "oro": 5,
-      "plata": 5,
-      "bronce": 13
+      "plata": 6,
+      "bronce": 14
     },
     {
       "code": "TTO",
       "name": "Trinidad y Tobago",
       "oro": 5,
-      "plata": 4,
-      "bronce": 8
-    },
-    {
-      "code": "PAN",
-      "name": "Panamá",
-      "oro": 3,
-      "plata": 6,
-      "bronce": 6
+      "plata": 5,
+      "bronce": 10
     },
     {
       "code": "GUY",
@@ -89,6 +89,13 @@
       "oro": 3,
       "plata": 1,
       "bronce": 2
+    },
+    {
+      "code": "ARU",
+      "name": "Aruba",
+      "oro": 2,
+      "plata": 2,
+      "bronce": 4
     },
     {
       "code": "GLP",
@@ -115,7 +122,7 @@
       "code": "JAM",
       "name": "Jamaica",
       "oro": 1,
-      "plata": 2,
+      "plata": 3,
       "bronce": 6
     },
     {
@@ -123,7 +130,14 @@
       "name": "Haití",
       "oro": 1,
       "plata": 1,
-      "bronce": 2
+      "bronce": 3
+    },
+    {
+      "code": "GRN",
+      "name": "Granada",
+      "oro": 1,
+      "plata": 0,
+      "bronce": 1
     },
     {
       "code": "NCA",
@@ -133,6 +147,20 @@
       "bronce": 3
     },
     {
+      "code": "ISV",
+      "name": "Islas Vírgenes",
+      "oro": 0,
+      "plata": 1,
+      "bronce": 3
+    },
+    {
+      "code": "BAH",
+      "name": "Bahamas",
+      "oro": 0,
+      "plata": 1,
+      "bronce": 2
+    },
+    {
       "code": "BER",
       "name": "Bermudas",
       "oro": 0,
@@ -140,29 +168,22 @@
       "bronce": 2
     },
     {
-      "code": "ISV",
-      "name": "Islas Vírgenes",
-      "oro": 0,
-      "plata": 1,
-      "bronce": 1
-    },
-    {
-      "code": "BAH",
-      "name": "Bahamas",
+      "code": "IVB",
+      "name": "Islas Vírgenes Británicas",
       "oro": 0,
       "plata": 1,
       "bronce": 0
     },
     {
-      "code": "ARU",
-      "name": "Aruba",
-      "oro": 0,
-      "plata": 0,
-      "bronce": 4
-    },
-    {
       "code": "BIZ",
       "name": "Belice",
+      "oro": 0,
+      "plata": 0,
+      "bronce": 1
+    },
+    {
+      "code": "CUW",
+      "name": "Curazao",
       "oro": 0,
       "plata": 0,
       "bronce": 1
@@ -177,6 +198,13 @@
     {
       "code": "SAN",
       "name": "San Vicente",
+      "oro": 0,
+      "plata": 0,
+      "bronce": 1
+    },
+    {
+      "code": "SUR",
+      "name": "Surinam",
       "oro": 0,
       "plata": 0,
       "bronce": 1
