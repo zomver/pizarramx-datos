@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786179064802,
+    "generatedTime": 1786207321289,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
-            "size": 6166,
-            "hash": "280511d8c9d0c6875e9993c37e2716ba4f21a04bb0a13ee22bfed8b156f37e30"
+            "size": 6552,
+            "hash": "183a061b071f817581974089a2ca43137402cb1a30b39f8022da8b7bc3db6287"
         },
         {
             "type": "file",
@@ -23,15 +23,15 @@
         },
         {
             "type": "file",
-            "name": "BAR.png",
-            "size": 1074,
-            "hash": "863832d989b26f44df70096cf5783c5df0a3e77f73b26e899c7f20d2dac52af3"
-        },
-        {
-            "type": "file",
             "name": "BAH.png",
             "size": 780,
             "hash": "b81acb78343f155f9803e3fd9e16959344fe49d6be5747547a21b11e596c3247"
+        },
+        {
+            "type": "file",
+            "name": "BAR.png",
+            "size": 1074,
+            "hash": "863832d989b26f44df70096cf5783c5df0a3e77f73b26e899c7f20d2dac52af3"
         },
         {
             "type": "file",
@@ -59,6 +59,12 @@
         },
         {
             "type": "file",
+            "name": "CRC.png",
+            "size": 307,
+            "hash": "620a16271240f5a4e1b3c81b537bd5599cd8b5abc337b54b87dd6dddddc7fde7"
+        },
+        {
+            "type": "file",
             "name": "CUB.png",
             "size": 1073,
             "hash": "82764b9b2a8e42e3243f89b03e47df89625f2f531a7a255af0799d3e0e7fd9cf"
@@ -68,12 +74,6 @@
             "name": "CUW.png",
             "size": 735,
             "hash": "511aa796595dde9025524257b16b4f10d878929787e740aa59b3fce9b293f26b"
-        },
-        {
-            "type": "file",
-            "name": "CRC.png",
-            "size": 307,
-            "hash": "620a16271240f5a4e1b3c81b537bd5599cd8b5abc337b54b87dd6dddddc7fde7"
         },
         {
             "type": "file",
@@ -155,15 +155,15 @@
         },
         {
             "type": "file",
-            "name": "PAN.png",
-            "size": 1014,
-            "hash": "046313bbb2ce08b9dbd67a8e2749818c411bc44c7a288d7a6c54fba397a16891"
-        },
-        {
-            "type": "file",
             "name": "NCA.png",
             "size": 1248,
             "hash": "91d4aee6d811647bde3ec563f67ca02014af2979aea0625664d228e192d19a44"
+        },
+        {
+            "type": "file",
+            "name": "PAN.png",
+            "size": 1014,
+            "hash": "046313bbb2ce08b9dbd67a8e2749818c411bc44c7a288d7a6c54fba397a16891"
         },
         {
             "type": "file",
