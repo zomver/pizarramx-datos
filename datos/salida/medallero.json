@@ -9,79 +9,79 @@
     {
       "code": "MEX",
       "name": "México",
-      "oro": 152,
-      "plata": 101,
-      "bronce": 98
+      "oro": 164,
+      "plata": 120,
+      "bronce": 111
     },
     {
       "code": "COL",
       "name": "Colombia",
-      "oro": 78,
-      "plata": 87,
-      "bronce": 73
+      "oro": 89,
+      "plata": 96,
+      "bronce": 75
     },
     {
       "code": "CUB",
       "name": "Cuba",
-      "oro": 42,
-      "plata": 40,
-      "bronce": 51
-    },
-    {
-      "code": "VEN",
-      "name": "Venezuela",
-      "oro": 35,
-      "plata": 53,
-      "bronce": 89
+      "oro": 50,
+      "plata": 48,
+      "bronce": 56
     },
     {
       "code": "DOM",
       "name": "República Dominicana",
-      "oro": 30,
-      "plata": 29,
-      "bronce": 59
+      "oro": 45,
+      "plata": 36,
+      "bronce": 64
+    },
+    {
+      "code": "VEN",
+      "name": "Venezuela",
+      "oro": 44,
+      "plata": 66,
+      "bronce": 97
     },
     {
       "code": "PUR",
       "name": "Puerto Rico",
-      "oro": 28,
-      "plata": 30,
-      "bronce": 44
+      "oro": 34,
+      "plata": 35,
+      "bronce": 53
     },
     {
       "code": "GUA",
       "name": "Guatemala",
-      "oro": 15,
-      "plata": 29,
-      "bronce": 38
+      "oro": 17,
+      "plata": 31,
+      "bronce": 43
+    },
+    {
+      "code": "PAN",
+      "name": "Panamá",
+      "oro": 8,
+      "plata": 8,
+      "bronce": 8
+    },
+    {
+      "code": "TTO",
+      "name": "Trinidad y Tobago",
+      "oro": 6,
+      "plata": 5,
+      "bronce": 10
     },
     {
       "code": "ESA",
       "name": "El Salvador",
       "oro": 6,
       "plata": 4,
-      "bronce": 12
-    },
-    {
-      "code": "PAN",
-      "name": "Panamá",
-      "oro": 5,
-      "plata": 7,
-      "bronce": 6
+      "bronce": 14
     },
     {
       "code": "CRC",
       "name": "Costa Rica",
       "oro": 5,
       "plata": 6,
-      "bronce": 14
-    },
-    {
-      "code": "TTO",
-      "name": "Trinidad y Tobago",
-      "oro": 5,
-      "plata": 5,
-      "bronce": 10
+      "bronce": 15
     },
     {
       "code": "GUY",
@@ -91,11 +91,18 @@
       "bronce": 2
     },
     {
+      "code": "BAR",
+      "name": "Barbados",
+      "oro": 2,
+      "plata": 5,
+      "bronce": 2
+    },
+    {
       "code": "ARU",
       "name": "Aruba",
       "oro": 2,
       "plata": 2,
-      "bronce": 4
+      "bronce": 6
     },
     {
       "code": "GLP",
@@ -105,11 +112,11 @@
       "bronce": 3
     },
     {
-      "code": "BAR",
-      "name": "Barbados",
+      "code": "JAM",
+      "name": "Jamaica",
       "oro": 1,
-      "plata": 5,
-      "bronce": 1
+      "plata": 4,
+      "bronce": 6
     },
     {
       "code": "HON",
@@ -119,11 +126,11 @@
       "bronce": 4
     },
     {
-      "code": "JAM",
-      "name": "Jamaica",
+      "code": "BER",
+      "name": "Bermudas",
       "oro": 1,
-      "plata": 3,
-      "bronce": 6
+      "plata": 1,
+      "bronce": 4
     },
     {
       "code": "HAI",
@@ -143,8 +150,15 @@
       "code": "NCA",
       "name": "Nicaragua",
       "oro": 0,
+      "plata": 3,
+      "bronce": 4
+    },
+    {
+      "code": "BAH",
+      "name": "Bahamas",
+      "oro": 0,
       "plata": 2,
-      "bronce": 3
+      "bronce": 2
     },
     {
       "code": "ISV",
@@ -154,18 +168,18 @@
       "bronce": 3
     },
     {
-      "code": "BAH",
-      "name": "Bahamas",
+      "code": "LCA",
+      "name": "Santa Lucía",
       "oro": 0,
       "plata": 1,
-      "bronce": 2
+      "bronce": 1
     },
     {
-      "code": "BER",
-      "name": "Bermudas",
+      "code": "ANT",
+      "name": "Antigua y Barbuda",
       "oro": 0,
       "plata": 1,
-      "bronce": 2
+      "bronce": 0
     },
     {
       "code": "IVB",
@@ -175,15 +189,15 @@
       "bronce": 0
     },
     {
-      "code": "BIZ",
-      "name": "Belice",
-      "oro": 0,
-      "plata": 0,
-      "bronce": 1
-    },
-    {
       "code": "CUW",
       "name": "Curazao",
+      "oro": 0,
+      "plata": 0,
+      "bronce": 2
+    },
+    {
+      "code": "BIZ",
+      "name": "Belice",
       "oro": 0,
       "plata": 0,
       "bronce": 1
