@@ -2,8 +2,24 @@ name: Actualizar partidos y posiciones
 
 on:
   schedule:
-    - cron: '*/10 * * * *'
+    # minutos "raros" (no redondos) a propósito: GitHub retrasa más los
+    # workflows programados durante los momentos de más carga, y ellos
+    # mismos avisan que el inicio de cada hora (:00) es de los peores —
+    # como casi todo mundo programa sus cron en minutos redondos (:00,
+    # :10, :20...), correr en :03/:13/:23... evita competir justo ahí.
+    # No hay garantía de horario exacto en Actions (documentado por
+    # GitHub), esto solo reduce el chance de choque, no lo elimina.
+    - cron: '3,13,23,33,43,53 * * * *'
   workflow_dispatch:
+
+# evita que dos corridas se encimen si una tarda más de 10 minutos (pasa
+# más seguido ahora con 3 ligas en vez de 1) — sin esto, las dos intentan
+# hacer "git push" del caché al final y la segunda falla, dejando el
+# caché desactualizado para la siguiente corrida, que entonces tiene que
+# volver a bajar más jornadas de lo necesario y tarda más todavía.
+concurrency:
+  group: actualizar-datos
+  cancel-in-progress: false
 
 jobs:
   actualizar:
@@ -32,10 +48,15 @@ jobs:
 
       - name: Guardar caché de jornadas terminadas en el repo
         # sin esto, cache_rondas.json se pierde al final de cada corrida
-        # (el próximo checkout empieza limpio) y el caché nunca ahorra nada
+        # (el próximo checkout empieza limpio) y el caché nunca ahorra nada.
+        # El "pull --rebase" antes del push es por si acaso el concurrency
+        # de arriba no bastó (ej. una corrida disparada a mano mientras la
+        # programada seguía activa) — así el push no falla en seco por
+        # estar un commit atrás, se pone al día primero.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add datos/salida/cache_rondas.json
           git diff --cached --quiet || git commit -m "Actualizar caché de jornadas terminadas"
+          git pull --rebase origin main
           git push

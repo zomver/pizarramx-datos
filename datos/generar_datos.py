@@ -91,7 +91,14 @@ peticiones_usadas = 0
 # 429 dos corridas seguidas, así que se baja el ritmo y se le da más
 # paciencia al reintento antes de rendirse.
 PAUSA_ENTRE_PETICIONES = 2.5
-REINTENTOS_429 = 6
+# Bajado de 6 reintentos (hasta 168s de espera en el peor caso, una sola
+# petición) a 4 (máx. 60s) el 2026-08-07, al agregar Argentina y Brasil:
+# con 3 ligas en vez de 1, una corrida que se traba en reintentos largos
+# tiene más probabilidad de encimarse con la siguiente programada (ver
+# el "concurrency" en partidos.yml). Si una petición de verdad falla tras
+# 4 intentos, no se pierde nada: el caché hace que se vuelva a intentar
+# sola en la siguiente corrida, 10 minutos después.
+REINTENTOS_429 = 4
 
 
 def pedir(endpoint, params=None):
@@ -99,7 +106,7 @@ def pedir(endpoint, params=None):
     for intento in range(REINTENTOS_429 + 1):
         r = requests.get(f"{BASE_URL}/{endpoint}", params=params or {})
         if r.status_code == 429 and intento < REINTENTOS_429:
-            espera = 8 * (intento + 1)
+            espera = 6 * (intento + 1)
             print(f"   ! 429 Too Many Requests, esperando {espera}s antes de reintentar...")
             time.sleep(espera)
             continue
