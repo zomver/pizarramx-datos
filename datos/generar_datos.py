@@ -21,7 +21,7 @@ from datetime import date, datetime, timedelta
 
 import requests
 
-from equipos import DISPLAY_NAMES, NAME_MAP
+from equipos import DISPLAY_NAMES, NAME_MAP, NAME_MAP_POR_LIGA
 from escribir_datos_js import escribir_datos_js
 
 API_KEY = "123"
@@ -31,11 +31,26 @@ TEMPORADA = "2026-2027"
 # Liga de Expansión MX se quitó a petición del usuario (2026-08-03): el
 # sitio se enfoca solo en Liga BBVA MX por ahora. Para traerla de vuelta,
 # basta con agregar de nuevo la entrada "expansion".
+#
+# Argentina y Brasil se agregaron 2026-08-07 (a petición del usuario, con
+# la llave gratuita "123" — todavía no hay llave de pago para TheSportsDB).
+# OJO: cada una trae su propia "temporada" porque la API no usa el mismo
+# formato para todas las ligas — Liga BBVA MX es "2026-2027", pero
+# Argentina y Brasil solo responden con el año suelto "2026" (probado a
+# mano contra la API antes de escribirlo aquí). Si el año que viene deja
+# de traer partidos, es lo primero a revisar.
 LIGAS = {
-    "bbva": {"id": 4350, "nombre": "Liga BBVA MX"},
+    "bbva": {"id": 4350, "nombre": "Liga BBVA MX", "temporada": TEMPORADA},
+    "argentina": {"id": 4406, "nombre": "Liga Profesional Argentina", "temporada": "2026"},
+    "brasil": {"id": 4351, "nombre": "Brasileirão Serie A", "temporada": "2026"},
 }
 
-MAX_JORNADAS = 25  # tope de seguridad; se detiene antes si una jornada viene vacía
+# 25 alcanzaba de sobra para Liga BBVA MX (17 jornadas), pero el
+# Brasileirao juega 38 jornadas (20 equipos, todos contra todos ida y
+# vuelta) — hay que subir el tope o su tabla se quedaría incompleta a
+# mitad de temporada. No afecta a las ligas más cortas: el bucle ya se
+# detiene solo en cuanto una jornada viene vacía.
+MAX_JORNADAS = 40  # tope de seguridad; se detiene antes si una jornada viene vacía
 
 # Leagues Cup 2026: no es una liga normal (25 jornadas, tabla única) — es un
 # torneo aparte, formato suizo, solo 3 rondas, y Liga MX contra MLS siempre.
@@ -100,11 +115,16 @@ def normalizar(nombre):
     return sin_acentos.lower().strip()
 
 
-def mapear_equipo(nombre_api):
-    abbr = NAME_MAP.get(normalizar(nombre_api))
+def mapear_equipo(nombre_api, liga_clave=None):
+    """liga_clave desambigua nombres que la API manda igual de corto para
+    dos clubes distintos (ej. "Santos" es Santos Laguna en Liga BBVA MX
+    pero Santos FC en Brasil) — se revisa NAME_MAP_POR_LIGA primero, y
+    solo si no hay una excepción ahí se usa el NAME_MAP general."""
+    nombre_norm = normalizar(nombre_api)
+    abbr = NAME_MAP_POR_LIGA.get(liga_clave, {}).get(nombre_norm) or NAME_MAP.get(nombre_norm)
     if not abbr:
         print(f"   ! equipo sin mapear: '{nombre_api}' — agrégalo en equipos.py")
-        abbr = normalizar(nombre_api)[:3].upper()
+        abbr = nombre_norm[:3].upper()
     nombre = DISPLAY_NAMES.get(abbr, nombre_api)
     return abbr, nombre
 
@@ -168,7 +188,7 @@ def descargar_temporada(clave_liga, info_liga, cache):
             continue
 
         data = pedir("eventsround.php", {
-            "id": info_liga["id"], "r": jornada, "s": TEMPORADA,
+            "id": info_liga["id"], "r": jornada, "s": info_liga.get("temporada", TEMPORADA),
         })
         partidos_jornada = data.get("events") or []
         if not partidos_jornada:
@@ -183,7 +203,7 @@ def descargar_temporada(clave_liga, info_liga, cache):
     return eventos
 
 
-def pedir_livescores(id_liga):
+def pedir_livescores(id_liga, liga_clave=None):
     """eventsround.php (arriba) es el calendario: no se mueve mientras el
     partido está en curso. livescore.php sí trae marcador y minuto en
     tiempo real — este es el que faltaba, y por eso los partidos en vivo
@@ -206,13 +226,13 @@ def pedir_livescores(id_liga):
     for ev in eventos_vivos:
         if ev.get("idEvent"):
             por_id[ev["idEvent"]] = ev
-        home_abbr, _ = mapear_equipo(ev.get("strHomeTeam") or "")
-        away_abbr, _ = mapear_equipo(ev.get("strAwayTeam") or "")
+        home_abbr, _ = mapear_equipo(ev.get("strHomeTeam") or "", liga_clave)
+        away_abbr, _ = mapear_equipo(ev.get("strAwayTeam") or "", liga_clave)
         por_equipos[(home_abbr, away_abbr)] = ev
     return por_id, por_equipos
 
 
-def calcular_standings(eventos):
+def calcular_standings(eventos, liga_clave=None):
     tabla = {}
 
     def equipo(abbr, nombre):
@@ -227,8 +247,8 @@ def calcular_standings(eventos):
         if ev.get("intHomeScore") is None or ev.get("intAwayScore") is None:
             continue
 
-        home_abbr, home_nombre = mapear_equipo(ev["strHomeTeam"])
-        away_abbr, away_nombre = mapear_equipo(ev["strAwayTeam"])
+        home_abbr, home_nombre = mapear_equipo(ev["strHomeTeam"], liga_clave)
+        away_abbr, away_nombre = mapear_equipo(ev["strAwayTeam"], liga_clave)
         gh, ga = int(ev["intHomeScore"]), int(ev["intAwayScore"])
 
         h, a = equipo(home_abbr, home_nombre), equipo(away_abbr, away_nombre)
@@ -337,7 +357,7 @@ def calcular_standings_leagues_cup(eventos):
     return resultado
 
 
-def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=None):
+def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=None, liga_clave=None):
     vivos_por_id = vivos_por_id or {}
     vivos_por_equipos = vivos_por_equipos or {}
     hoy = date.today()
@@ -353,8 +373,8 @@ def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=
         if not (desde <= fecha <= hasta):
             continue
 
-        home_abbr, home_nombre = mapear_equipo(ev["strHomeTeam"])
-        away_abbr, away_nombre = mapear_equipo(ev["strAwayTeam"])
+        home_abbr, home_nombre = mapear_equipo(ev["strHomeTeam"], liga_clave)
+        away_abbr, away_nombre = mapear_equipo(ev["strAwayTeam"], liga_clave)
 
         hora = (ev.get("strTimeLocal") or ev.get("strTime") or "00:00:00")[:5]
         fecha_iso = f"{fecha_str}T{hora}:00"
@@ -411,10 +431,10 @@ def main():
 
     for clave, info in LIGAS.items():
         eventos = descargar_temporada(clave, info, cache)
-        standings[clave] = calcular_standings(eventos)
-        vivos_id, vivos_eq = pedir_livescores(info["id"])
+        standings[clave] = calcular_standings(eventos, clave)
+        vivos_id, vivos_eq = pedir_livescores(info["id"], clave)
         print(f"   en vivo ahora mismo: {len(vivos_eq)} partido(s)")
-        partidos += construir_partidos(eventos, info, vivos_id, vivos_eq)
+        partidos += construir_partidos(eventos, info, vivos_id, vivos_eq, liga_clave=clave)
 
     eventos_lc = descargar_leagues_cup(cache)
     standings["leaguescup"] = calcular_standings_leagues_cup(eventos_lc)

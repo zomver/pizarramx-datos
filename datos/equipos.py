@@ -95,6 +95,74 @@ NAME_MAP = {
     'san diego fc': 'SDG', 'san diego': 'SDG',
     'seattle sounders': 'SEA', 'seattle sounders fc': 'SEA',
     'vancouver whitecaps': 'VAN', 'vancouver whitecaps fc': 'VAN',
+
+    # --- Liga Profesional Argentina (2026) ---
+    'aldosivi': 'ALD',
+    'defensa y justicia': 'DEJ',
+    'banfield': 'BAN',
+    'huracan': 'HUR',
+    'union': 'UNI',
+    'platense': 'PLA',
+    'central cordoba de santiago del estero': 'CCO', 'central cordoba': 'CCO',
+    'gimnasia y esgrima de mendoza': 'GEM',
+    'independiente': 'IND',
+    'estudiantes de la plata': 'ELP',
+    'instituto': 'INS',
+    'velez sarsfield': 'VEL', 'velez': 'VEL',
+    'san lorenzo': 'SLO',
+    'lanus': 'LAN',
+    'barracas central': 'BAR',
+    'river plate': 'RIV',
+    'gimnasia y esgrima de la plata': 'GLP',
+    'racing club': 'RAC',
+    'independiente rivadavia': 'IRV',
+    'atletico tucuman': 'ATU',
+    'talleres de cordoba': 'TAL', 'talleres': 'TAL',
+    "newell's old boys": 'NOB', 'newells old boys': 'NOB',
+    'boca juniors': 'BOC',
+    'deportivo riestra': 'RIE',
+    'rosario central': 'ROS',
+    'belgrano': 'BEL',
+    'argentinos juniors': 'ARG',
+    'sarmiento': 'SAR',
+    'tigre': 'TIA',
+    'estudiantes de rio cuarto': 'ERC',
+
+    # --- Brasileirão Série A (2026) ---
+    # "Santos" es ambiguo (existe Santos Laguna en Liga BBVA MX): se
+    # resuelve en NAME_MAP_POR_LIGA, no aquí, para no pisar el 'santos'
+    # de arriba.
+    'santos fc': 'STS',
+    'athletico paranaense': 'ATP',
+    'atletico mineiro': 'CAM',
+    'bahia': 'BAH',
+    'botafogo': 'BOT',
+    'bragantino': 'BRA', 'red bull bragantino': 'BRA',
+    'chapecoense': 'CHA',
+    'corinthians': 'CRI',
+    'coritiba': 'COT',
+    'cruzeiro': 'CRU',
+    'flamengo': 'FLA',
+    'fluminense': 'FLU',
+    'gremio': 'GRE',
+    'internacional': 'INT',
+    'mirassol': 'MIR',
+    'palmeiras': 'PAL',
+    'remo': 'REM',
+    'sao paulo': 'SAO',
+    'vasco da gama': 'VAS', 'vasco': 'VAS',
+    'vitoria': 'VIT',
+}
+
+# "Santos" solo (sin "FC" ni "Laguna") es ambiguo entre Santos Laguna
+# (Liga BBVA MX) y Santos FC (Brasileirão) — la API a veces manda el
+# nombre corto para ambos. Esto se revisa ANTES que NAME_MAP en
+# mapear_equipo(), usando la clave de la liga que se está procesando
+# (ver generar_datos.py), así que solo hace falta la excepción del lado
+# de Brasil: del lado de "bbva" ya funciona bien con el 'santos': 'SAN'
+# normal de arriba.
+NAME_MAP_POR_LIGA = {
+    'brasil': {'santos': 'STS'},
 }
 
 # nombres bonitos para mostrar (abreviación -> nombre).
@@ -117,4 +185,26 @@ DISPLAY_NAMES = {
     'ORL': 'Orlando City', 'PHI': 'Philadelphia Union', 'POR': 'Portland Timbers',
     'RSL': 'Real Salt Lake', 'SDG': 'San Diego FC', 'SEA': 'Seattle Sounders',
     'VAN': 'Vancouver Whitecaps',
+
+    # --- Liga Profesional Argentina ---
+    'ALD': 'Aldosivi', 'DEJ': 'Defensa y Justicia', 'BAN': 'Banfield',
+    'HUR': 'Huracán', 'UNI': 'Unión', 'PLA': 'Platense',
+    'CCO': 'Central Córdoba (SdE)', 'GEM': 'Gimnasia y Esgrima (Mendoza)',
+    'IND': 'Independiente', 'ELP': 'Estudiantes de La Plata', 'INS': 'Instituto',
+    'VEL': 'Vélez Sarsfield', 'SLO': 'San Lorenzo', 'LAN': 'Lanús',
+    'BAR': 'Barracas Central', 'RIV': 'River Plate',
+    'GLP': 'Gimnasia y Esgrima (La Plata)', 'RAC': 'Racing Club',
+    'IRV': 'Independiente Rivadavia', 'ATU': 'Atlético Tucumán',
+    'TAL': 'Talleres de Córdoba', 'NOB': "Newell's Old Boys", 'BOC': 'Boca Juniors',
+    'RIE': 'Deportivo Riestra', 'ROS': 'Rosario Central', 'BEL': 'Belgrano',
+    'ARG': 'Argentinos Juniors', 'SAR': 'Sarmiento', 'TIA': 'Tigre',
+    'ERC': 'Estudiantes de Río Cuarto',
+
+    # --- Brasileirão Série A ---
+    'STS': 'Santos', 'ATP': 'Athletico Paranaense', 'CAM': 'Atlético Mineiro',
+    'BAH': 'Bahia', 'BOT': 'Botafogo', 'BRA': 'Bragantino', 'CHA': 'Chapecoense',
+    'CRI': 'Corinthians', 'COT': 'Coritiba', 'CRU': 'Cruzeiro', 'FLA': 'Flamengo',
+    'FLU': 'Fluminense', 'GRE': 'Grêmio', 'INT': 'Internacional', 'MIR': 'Mirassol',
+    'PAL': 'Palmeiras', 'REM': 'Remo', 'SAO': 'São Paulo', 'VAS': 'Vasco da Gama',
+    'VIT': 'Vitória',
 }
