@@ -1,19 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786265583161,
+    "generatedTime": 1786293816815,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "01c6a353e3d725c145933632422ce187357a14047fd97fc313f045ce16d8eca0"
-        },
-        {
-            "type": "file",
-            "name": "ANT.png",
-            "size": 1671,
-            "hash": "69a80e5500fc1f7d8f2ef8a69a2e30c928a68955642cee571eae51c0fc8dcdfb"
+            "hash": "43fb632aebafa8907a2db0950208608986256d65fd873e6a0c5654080d52bd03"
         },
         {
             "type": "file",
@@ -23,21 +17,27 @@
         },
         {
             "type": "file",
+            "name": "ANT.png",
+            "size": 1671,
+            "hash": "69a80e5500fc1f7d8f2ef8a69a2e30c928a68955642cee571eae51c0fc8dcdfb"
+        },
+        {
+            "type": "file",
             "name": "BAH.png",
             "size": 780,
             "hash": "b81acb78343f155f9803e3fd9e16959344fe49d6be5747547a21b11e596c3247"
         },
         {
             "type": "file",
-            "name": "BAR.png",
-            "size": 1074,
-            "hash": "863832d989b26f44df70096cf5783c5df0a3e77f73b26e899c7f20d2dac52af3"
-        },
-        {
-            "type": "file",
             "name": "BER.png",
             "size": 3068,
             "hash": "735142a76de8fa7d7a03fc725c94361431e24b3d97c9ddb05c0b5e52d125c190"
+        },
+        {
+            "type": "file",
+            "name": "BAR.png",
+            "size": 1074,
+            "hash": "863832d989b26f44df70096cf5783c5df0a3e77f73b26e899c7f20d2dac52af3"
         },
         {
             "type": "file",
@@ -95,15 +95,15 @@
         },
         {
             "type": "file",
-            "name": "GRN.png",
-            "size": 1841,
-            "hash": "387e1a67ee06159878e163618f5e38df6f2cf26f7326d0f9116fcb72e0eadb75"
-        },
-        {
-            "type": "file",
             "name": "GUA.png",
             "size": 2018,
             "hash": "7457a5d5fb1e343ffc0943ea1dd068a974b269e8119a4b30f723ef5bca5589b6"
+        },
+        {
+            "type": "file",
+            "name": "GRN.png",
+            "size": 1841,
+            "hash": "387e1a67ee06159878e163618f5e38df6f2cf26f7326d0f9116fcb72e0eadb75"
         },
         {
             "type": "file",
