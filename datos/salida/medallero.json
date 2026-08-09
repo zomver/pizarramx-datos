@@ -3,57 +3,57 @@
   "edicion": "Santo Domingo 2026",
   "inicio": "2026-07-24",
   "fin": "2026-08-08",
-  "actualizado": "2026-08-08",
+  "actualizado": "2026-08-09",
   "fuente": "Wikipedia — XXV Juegos Centroamericanos y del Caribe",
   "paises": [
     {
       "code": "MEX",
       "name": "México",
-      "oro": 164,
-      "plata": 120,
-      "bronce": 111
+      "oro": 167,
+      "plata": 125,
+      "bronce": 115
     },
     {
       "code": "COL",
       "name": "Colombia",
-      "oro": 89,
-      "plata": 96,
-      "bronce": 75
+      "oro": 91,
+      "plata": 98,
+      "bronce": 77
     },
     {
       "code": "CUB",
       "name": "Cuba",
-      "oro": 50,
+      "oro": 51,
       "plata": 48,
       "bronce": 56
     },
     {
-      "code": "DOM",
-      "name": "República Dominicana",
-      "oro": 45,
-      "plata": 36,
-      "bronce": 64
-    },
-    {
       "code": "VEN",
       "name": "Venezuela",
-      "oro": 44,
-      "plata": 66,
+      "oro": 49,
+      "plata": 70,
       "bronce": 97
+    },
+    {
+      "code": "DOM",
+      "name": "República Dominicana",
+      "oro": 46,
+      "plata": 37,
+      "bronce": 67
     },
     {
       "code": "PUR",
       "name": "Puerto Rico",
       "oro": 34,
       "plata": 35,
-      "bronce": 53
+      "bronce": 55
     },
     {
       "code": "GUA",
       "name": "Guatemala",
-      "oro": 17,
-      "plata": 31,
-      "bronce": 43
+      "oro": 18,
+      "plata": 32,
+      "bronce": 44
     },
     {
       "code": "PAN",
@@ -102,7 +102,7 @@
       "name": "Aruba",
       "oro": 2,
       "plata": 2,
-      "bronce": 6
+      "bronce": 7
     },
     {
       "code": "GLP",

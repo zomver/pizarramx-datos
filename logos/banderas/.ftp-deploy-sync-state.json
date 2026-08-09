@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786207321289,
+    "generatedTime": 1786241610754,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "183a061b071f817581974089a2ca43137402cb1a30b39f8022da8b7bc3db6287"
+            "hash": "f9ff12c9706242dfa30ed53c231d4ed6dbc72d079cfafdd92f83cd2ff01c4950"
         },
         {
             "type": "file",
@@ -179,12 +179,6 @@
         },
         {
             "type": "file",
-            "name": "SUR.png",
-            "size": 851,
-            "hash": "66ffa877f5e7950c0f6be0e8580a455e498f533c83291f4834107672be2612c1"
-        },
-        {
-            "type": "file",
             "name": "TTO.png",
             "size": 3262,
             "hash": "50e769a23cadfdaa3df79175373e15622fb99db0b15e50e803514c6e8d06c58a"
@@ -194,6 +188,12 @@
             "name": "VEN.png",
             "size": 1187,
             "hash": "c63679dd6a34837d7543fe51f4e9ac9b785a63e2433e1393b2bc893093d0228a"
+        },
+        {
+            "type": "file",
+            "name": "SUR.png",
+            "size": 851,
+            "hash": "66ffa877f5e7950c0f6be0e8580a455e498f533c83291f4834107672be2612c1"
         }
     ]
 }
