@@ -45,6 +45,15 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./datos/salida/
           server-dir: ./datos/salida/
+          # "Error: Timeout (control socket)" (2026-08-08/09): es un error
+          # conocido de esta acción, casi siempre porque el FTP de
+          # Hostinger tarda en responder al canal de control y se le
+          # gana al límite por defecto de 30s. No hay estado guardado
+          # entre corridas (cada run parte de un checkout limpio), así
+          # que la acción compara TODO contra el servidor cada vez —
+          # dándole más margen reduce el riesgo de que ese vaivén tarde
+          # más de lo esperado.
+          timeout: 60000
 
       - name: Guardar caché de jornadas terminadas en el repo
         # sin esto, cache_rondas.json se pierde al final de cada corrida
