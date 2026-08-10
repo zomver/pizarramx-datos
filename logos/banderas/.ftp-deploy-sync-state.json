@@ -1,13 +1,19 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786328482969,
+    "generatedTime": 1786354828679,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "98417e2ead26ad30740813ed187b6100bfb2e7a0fb835f5e165f74b1d140aac9"
+            "hash": "c9d3ff7d10b44c12bec190c64215894af5020632eef86874830be0cb7afe9a34"
+        },
+        {
+            "type": "file",
+            "name": "ANT.png",
+            "size": 1671,
+            "hash": "69a80e5500fc1f7d8f2ef8a69a2e30c928a68955642cee571eae51c0fc8dcdfb"
         },
         {
             "type": "file",
@@ -20,12 +26,6 @@
             "name": "BAH.png",
             "size": 780,
             "hash": "b81acb78343f155f9803e3fd9e16959344fe49d6be5747547a21b11e596c3247"
-        },
-        {
-            "type": "file",
-            "name": "ANT.png",
-            "size": 1671,
-            "hash": "69a80e5500fc1f7d8f2ef8a69a2e30c928a68955642cee571eae51c0fc8dcdfb"
         },
         {
             "type": "file",
@@ -50,6 +50,12 @@
             "name": "CAY.png",
             "size": 3617,
             "hash": "d18bd33b32b70cb4bdfb22893be395bb2c1be3ec64d298cbdb649afa3b7f5515"
+        },
+        {
+            "type": "file",
+            "name": "COL.png",
+            "size": 308,
+            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
         },
         {
             "type": "file",
@@ -95,15 +101,15 @@
         },
         {
             "type": "file",
-            "name": "COL.png",
-            "size": 308,
-            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
-        },
-        {
-            "type": "file",
             "name": "GUA.png",
             "size": 2018,
             "hash": "7457a5d5fb1e343ffc0943ea1dd068a974b269e8119a4b30f723ef5bca5589b6"
+        },
+        {
+            "type": "file",
+            "name": "GUY.png",
+            "size": 871,
+            "hash": "7284426b278c6950e247267ed540ff4b82f637c3e43cba26c69bd4a085622896"
         },
         {
             "type": "file",
@@ -152,12 +158,6 @@
             "name": "NCA.png",
             "size": 1248,
             "hash": "91d4aee6d811647bde3ec563f67ca02014af2979aea0625664d228e192d19a44"
-        },
-        {
-            "type": "file",
-            "name": "GUY.png",
-            "size": 871,
-            "hash": "7284426b278c6950e247267ed540ff4b82f637c3e43cba26c69bd4a085622896"
         },
         {
             "type": "file",
