@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786554201779,
+    "generatedTime": 1786588297802,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "c03c4f9d0b84dbaec71302f419e878db04d7107f68495a484d6b5eaaef46bb96"
+            "hash": "312ddc9ab9cc09b0a5942c9ddfb6908b644fe2c938d4138ba9a690e22897cc16"
         },
         {
             "type": "file",
@@ -80,12 +80,6 @@
             "name": "DOM.png",
             "size": 1319,
             "hash": "227bc4571977799af788b16edfd6e6beabdd10c695f7acda3260f6f9b6ff8d59"
-        },
-        {
-            "type": "file",
-            "name": "GLP.png",
-            "size": 3285,
-            "hash": "0768c82a038e331868a758f60db45006468dfc131caeadf84f9a2cfae4925003"
         },
         {
             "type": "file",
@@ -194,6 +188,12 @@
             "name": "VEN.png",
             "size": 1187,
             "hash": "c63679dd6a34837d7543fe51f4e9ac9b785a63e2433e1393b2bc893093d0228a"
+        },
+        {
+            "type": "file",
+            "name": "GLP.png",
+            "size": 3285,
+            "hash": "0768c82a038e331868a758f60db45006468dfc131caeadf84f9a2cfae4925003"
         }
     ]
 }
