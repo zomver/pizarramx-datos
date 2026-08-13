@@ -40,6 +40,12 @@ def escribir_datos_js():
     if medallero is not None:
         datos["medallero"] = medallero
 
+    # {match_id: {"video": "ID_DE_YOUTUBE"}} — lo arma videos_youtube.py.
+    # El front-end (pizarramx.js) lo mezcla sobre MATCH_DETAILS.
+    detalles = _leer("detalles.json")
+    if detalles is not None:
+        datos["detalles"] = detalles
+
     ruta = os.path.join(CARPETA_SALIDA, "datos.js")
     with open(ruta, "w", encoding="utf-8") as f:
         f.write("// generado por los scripts de /datos — no editar a mano\n")

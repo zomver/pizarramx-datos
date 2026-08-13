@@ -34,7 +34,9 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r datos/requirements.txt
 
-      - name: Generar datos (posiciones, partidos, datos.js)
+      - name: Generar datos (posiciones, partidos, videos, datos.js)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: python datos/generar_datos.py
 
       - name: Subir datos/salida a Hostinger por FTP
@@ -65,7 +67,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add datos/salida/cache_rondas.json
-          git diff --cached --quiet || git commit -m "Actualizar caché de jornadas terminadas"
+          git add datos/salida/cache_rondas.json datos/salida/cache_videos.json
+          git diff --cached --quiet || git commit -m "Actualizar caché de jornadas y videos"
           git pull --rebase origin main
           git push

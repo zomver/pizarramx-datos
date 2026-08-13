@@ -23,6 +23,7 @@ import requests
 
 from equipos import DISPLAY_NAMES, NAME_MAP, NAME_MAP_POR_LIGA
 from escribir_datos_js import escribir_datos_js
+from videos_youtube import actualizar_videos
 
 API_KEY = "123"
 BASE_URL = f"https://www.thesportsdb.com/api/v1/json/{API_KEY}"
@@ -423,6 +424,10 @@ def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=
             "venue": ev.get("strVenue") or "Por confirmar",
             "date": f"{fecha.day} {MESES[fecha.month - 1]} {fecha.year}",
             "day": dia,
+            # fecha cruda (YYYY-MM-DD): la usa videos_youtube.py para acotar
+            # la búsqueda de resúmenes a partir de este día, no la consume
+            # el front-end pero no estorba que viaje en partidos.json
+            "fechaISO": fecha_str,
         }
         if estado == "ns":
             partido["kickoff"] = fecha_iso
@@ -454,13 +459,18 @@ def main():
     partidos.sort(key=lambda tupla: (tupla[0], tupla[1]))
     partidos = [partido for _, _, partido in partidos]
 
+    detalles = actualizar_videos(partidos)
+
     ruta_pos = os.path.join(CARPETA_SALIDA, "posiciones.json")
     ruta_partidos = os.path.join(CARPETA_SALIDA, "partidos.json")
+    ruta_detalles = os.path.join(CARPETA_SALIDA, "detalles.json")
 
     with open(ruta_pos, "w", encoding="utf-8") as f:
         json.dump(standings, f, ensure_ascii=False, indent=2)
     with open(ruta_partidos, "w", encoding="utf-8") as f:
         json.dump(partidos, f, ensure_ascii=False, indent=2)
+    with open(ruta_detalles, "w", encoding="utf-8") as f:
+        json.dump(detalles, f, ensure_ascii=False, indent=2)
 
     # datos.js junta todos los .json de salida/ (incluido el medallero, si
     # existe) en un solo <script>, para que la página muestre datos reales
@@ -476,6 +486,7 @@ def main():
     print(f"Escrito: {ruta_pos} ({sum(contar_equipos(v) for v in standings.values())} equipos)")
     print(f"Escrito: {ruta_partidos} ({len(partidos)} partidos en ventana de "
           f"{DIAS_ANTES} días atrás / {DIAS_DESPUES} días adelante)")
+    print(f"Escrito: {ruta_detalles} ({len(detalles)} partidos con video)")
     print(f"Escrito: {ruta_datos_js}")
 
 
