@@ -24,6 +24,7 @@ import requests
 from equipos import DISPLAY_NAMES, NAME_MAP, NAME_MAP_POR_LIGA
 from escribir_datos_js import escribir_datos_js
 from videos_youtube import actualizar_videos
+import detalles_manuales
 
 API_KEY = "123"
 BASE_URL = f"https://www.thesportsdb.com/api/v1/json/{API_KEY}"
@@ -460,6 +461,7 @@ def main():
     partidos = [partido for _, _, partido in partidos]
 
     detalles = actualizar_videos(partidos)
+    detalles = detalles_manuales.aplicar(partidos, detalles)
 
     ruta_pos = os.path.join(CARPETA_SALIDA, "posiciones.json")
     ruta_partidos = os.path.join(CARPETA_SALIDA, "partidos.json")
