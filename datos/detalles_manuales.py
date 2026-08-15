@@ -20,8 +20,19 @@ home/away/date se mezcla tal cual sobre el "detalle" de ese partido
 """
 import json
 import os
+from datetime import date as _date
 
 RUTA = os.path.join(os.path.dirname(__file__), "detalles_manuales.json")
+
+# tolerancia al comparar la fecha que se escribió a mano contra la que
+# guarda TheSportsDB (fechaISO). Un partido nocturno en México (ej. 21:00h
+# CDMX = UTC-6) cae DESPUÉS de medianoche en UTC, así que TheSportsDB lo
+# registra como si fuera el día siguiente — comprobado en vivo el 2026-08-16
+# con Atlas-Tigres y Monterrey-Juárez, ambos escritos como "hoy sábado" en
+# hora de México pero guardados un día después. Con ±1 día de tolerancia,
+# quien escriba la fecha "como la vive" (hora de México) no tiene que
+# convertir nada a mano.
+TOLERANCIA_DIAS = 1
 
 
 def _cargar():
@@ -29,6 +40,15 @@ def _cargar():
         return []
     with open(RUTA, encoding="utf-8") as f:
         return json.load(f)
+
+
+def _distancia_dias(fecha_iso_a, fecha_iso_b):
+    """Diferencia en días entre dos fechas YYYY-MM-DD, o None si alguna
+    falta o viene mal formada (así nunca truena por un dato manual sucio)."""
+    try:
+        return abs((_date.fromisoformat(fecha_iso_a) - _date.fromisoformat(fecha_iso_b)).days)
+    except (TypeError, ValueError):
+        return None
 
 
 def aplicar(partidos, detalles):
@@ -41,22 +61,35 @@ def aplicar(partidos, detalles):
     if not manuales:
         return detalles
 
-    # index rápido: (home, away, fecha) -> id real del partido en esta corrida
-    por_equipos_fecha = {
-        (p["homeAbbr"], p["awayAbbr"], p.get("fechaISO")): p["id"]
-        for p in partidos
-    }
+    # candidatos por (home, away) — casi siempre hay solo uno en la
+    # ventana de ~11 días de partidos.json, pero se agrupan por si acaso
+    # (torneos con partidos dobles, etc.)
+    por_equipos = {}
+    for p in partidos:
+        por_equipos.setdefault((p["homeAbbr"], p["awayAbbr"]), []).append(p)
 
     aplicadas = 0
     for entrada in manuales:
-        clave = (entrada.get("home"), entrada.get("away"), entrada.get("date"))
-        match_id = por_equipos_fecha.get(clave)
-        if not match_id:
-            # normal: el partido ya salió de la ventana de partidos.json
-            # (unos días antes/después) o todavía no aparece — no es error
+        candidatos = por_equipos.get((entrada.get("home"), entrada.get("away"))) or []
+        fecha_dada = entrada.get("date")
+
+        # de los candidatos, el más cercano en fecha — y solo si cae
+        # dentro de la tolerancia (si no, mejor no aplicar que aplicar
+        # sobre el partido equivocado)
+        mejor, mejor_dist = None, None
+        for p in candidatos:
+            d = _distancia_dias(p.get("fechaISO"), fecha_dada)
+            if d is not None and (mejor_dist is None or d < mejor_dist):
+                mejor, mejor_dist = p, d
+
+        if mejor is None or mejor_dist > TOLERANCIA_DIAS:
+            # normal: el partido ya salió de la ventana de partidos.json,
+            # todavía no aparece, o la fecha está demasiado lejos como
+            # para ser el mismo partido — no es error
             continue
+
         extra = {k: v for k, v in entrada.items() if k not in ("home", "away", "date")}
-        detalles[match_id] = {**detalles.get(match_id, {}), **extra}
+        detalles[mejor["id"]] = {**detalles.get(mejor["id"], {}), **extra}
         aplicadas += 1
 
     if aplicadas:
