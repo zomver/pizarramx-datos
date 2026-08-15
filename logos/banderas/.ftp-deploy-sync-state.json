@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786783004555,
+    "generatedTime": 1786811544991,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "94b18fe3bb57a5bf14960c95ce9ffb5281f2e1d45d50feb4426d2674c7de3b2a"
+            "hash": "570c3e7020790e7160f6aa1224fdd42a081d263722024a58b6c217dabbb2e1a8"
         },
         {
             "type": "file",
@@ -155,12 +155,6 @@
         },
         {
             "type": "file",
-            "name": "NCA.png",
-            "size": 1248,
-            "hash": "91d4aee6d811647bde3ec563f67ca02014af2979aea0625664d228e192d19a44"
-        },
-        {
-            "type": "file",
             "name": "PAN.png",
             "size": 1014,
             "hash": "046313bbb2ce08b9dbd67a8e2749818c411bc44c7a288d7a6c54fba397a16891"
@@ -170,6 +164,12 @@
             "name": "PUR.png",
             "size": 1385,
             "hash": "702436d45491b84eca6a78d890be3ad8fa0d4200fd3c18e28e7fdc4a4ad181ac"
+        },
+        {
+            "type": "file",
+            "name": "NCA.png",
+            "size": 1248,
+            "hash": "91d4aee6d811647bde3ec563f67ca02014af2979aea0625664d228e192d19a44"
         },
         {
             "type": "file",
