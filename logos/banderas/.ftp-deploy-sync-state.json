@@ -1,19 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786844819185,
+    "generatedTime": 1786869433281,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "923940f038ec85cb8a5e4311bcb22cc2eaa5df6f947384ee378a307f590478e6"
-        },
-        {
-            "type": "file",
-            "name": "ANT.png",
-            "size": 1671,
-            "hash": "69a80e5500fc1f7d8f2ef8a69a2e30c928a68955642cee571eae51c0fc8dcdfb"
+            "hash": "fc42835c5ad8388de5005eee45f6261059ad11ac496ead0fa1441ffc00d24d68"
         },
         {
             "type": "file",
@@ -26,6 +20,12 @@
             "name": "BAH.png",
             "size": 780,
             "hash": "b81acb78343f155f9803e3fd9e16959344fe49d6be5747547a21b11e596c3247"
+        },
+        {
+            "type": "file",
+            "name": "ANT.png",
+            "size": 1671,
+            "hash": "69a80e5500fc1f7d8f2ef8a69a2e30c928a68955642cee571eae51c0fc8dcdfb"
         },
         {
             "type": "file",
