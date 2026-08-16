@@ -1,13 +1,19 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786869433281,
+    "generatedTime": 1786898011505,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "fc42835c5ad8388de5005eee45f6261059ad11ac496ead0fa1441ffc00d24d68"
+            "hash": "8145113f446d4af805354e3bfaee7515e9a2f96a5c10feb3fcd2c12ef37b59b5"
+        },
+        {
+            "type": "file",
+            "name": "ANT.png",
+            "size": 1671,
+            "hash": "69a80e5500fc1f7d8f2ef8a69a2e30c928a68955642cee571eae51c0fc8dcdfb"
         },
         {
             "type": "file",
@@ -20,12 +26,6 @@
             "name": "BAH.png",
             "size": 780,
             "hash": "b81acb78343f155f9803e3fd9e16959344fe49d6be5747547a21b11e596c3247"
-        },
-        {
-            "type": "file",
-            "name": "ANT.png",
-            "size": 1671,
-            "hash": "69a80e5500fc1f7d8f2ef8a69a2e30c928a68955642cee571eae51c0fc8dcdfb"
         },
         {
             "type": "file",
@@ -167,15 +167,15 @@
         },
         {
             "type": "file",
-            "name": "PUR.png",
-            "size": 1385,
-            "hash": "702436d45491b84eca6a78d890be3ad8fa0d4200fd3c18e28e7fdc4a4ad181ac"
-        },
-        {
-            "type": "file",
             "name": "SAN.png",
             "size": 1062,
             "hash": "535603ab1f632166eb28f82f20717dcc6b9e63bd6f7b15ae2cde4793f338625d"
+        },
+        {
+            "type": "file",
+            "name": "PUR.png",
+            "size": 1385,
+            "hash": "702436d45491b84eca6a78d890be3ad8fa0d4200fd3c18e28e7fdc4a4ad181ac"
         },
         {
             "type": "file",
