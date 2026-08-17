@@ -145,8 +145,8 @@
     "video": null
   },
   "atp-bra-2398411": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-16T11:53:34.618248",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-17T00:39:00.841053",
     "video": null
   },
   "bel-irv-2398013": {
@@ -227,6 +227,11 @@
   "vit-bot-2398420": {
     "intentos": 1,
     "ultimo_intento": "2026-08-16T23:52:08.136341",
+    "video": null
+  },
+  "cri-cru-2398414": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-17T00:39:00.841053",
     "video": null
   }
 }
