@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786898011505,
+    "generatedTime": 1786956733932,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "8145113f446d4af805354e3bfaee7515e9a2f96a5c10feb3fcd2c12ef37b59b5"
+            "hash": "a0ae7a92c0648cf067585d0082b96af48c28dda1685dac3d13379a5087138c31"
         },
         {
             "type": "file",
@@ -113,15 +113,15 @@
         },
         {
             "type": "file",
-            "name": "HAI.png",
-            "size": 3112,
-            "hash": "baa12378f6311d7fad2fd1740523bbbb3ae145b18e0835a92c90336b61a51bd1"
-        },
-        {
-            "type": "file",
             "name": "HON.png",
             "size": 577,
             "hash": "5e2401aab9beb76542d57e3da02ad3b947db278b05bda2088d53a564f9d59158"
+        },
+        {
+            "type": "file",
+            "name": "HAI.png",
+            "size": 3112,
+            "hash": "baa12378f6311d7fad2fd1740523bbbb3ae145b18e0835a92c90336b61a51bd1"
         },
         {
             "type": "file",
@@ -167,15 +167,15 @@
         },
         {
             "type": "file",
-            "name": "SAN.png",
-            "size": 1062,
-            "hash": "535603ab1f632166eb28f82f20717dcc6b9e63bd6f7b15ae2cde4793f338625d"
-        },
-        {
-            "type": "file",
             "name": "PUR.png",
             "size": 1385,
             "hash": "702436d45491b84eca6a78d890be3ad8fa0d4200fd3c18e28e7fdc4a4ad181ac"
+        },
+        {
+            "type": "file",
+            "name": "SAN.png",
+            "size": 1062,
+            "hash": "535603ab1f632166eb28f82f20717dcc6b9e63bd6f7b15ae2cde4793f338625d"
         },
         {
             "type": "file",
