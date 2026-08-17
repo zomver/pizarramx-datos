@@ -150,18 +150,18 @@
     "video": null
   },
   "bel-irv-2398013": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-16T13:13:35.108574",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-17T02:11:30.862564",
     "video": null
   },
   "nob-rie-2398019": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-16T13:13:35.108574",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-17T02:11:30.862564",
     "video": null
   },
   "ate-tol-2487479": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-16T13:49:01.174008",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-17T02:11:30.862564",
     "video": null
   },
   "sao-cot-2398418": {
@@ -232,6 +232,16 @@
   "cri-cru-2398414": {
     "intentos": 1,
     "ultimo_intento": "2026-08-17T00:39:00.841053",
+    "video": null
+  },
+  "cco-ins-2398014": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-17T02:11:30.862564",
+    "video": null
+  },
+  "bar-ros-2398012": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-17T02:11:30.862564",
     "video": null
   }
 }
