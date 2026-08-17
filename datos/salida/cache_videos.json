@@ -165,8 +165,8 @@
     "video": null
   },
   "sao-cot-2398418": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-16T14:42:59.541678",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-17T03:15:48.879647",
     "video": null
   },
   "mty-jua-2487480": {
@@ -242,6 +242,11 @@
   "bar-ros-2398012": {
     "intentos": 1,
     "ultimo_intento": "2026-08-17T02:11:30.862564",
+    "video": null
+  },
+  "san-gdl-2487484": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-17T03:15:48.879647",
     "video": null
   }
 }
