@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1786956733932,
+    "generatedTime": 1786984508322,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "a0ae7a92c0648cf067585d0082b96af48c28dda1685dac3d13379a5087138c31"
+            "hash": "a294ffb4ff12fb56944bd3558e8663751bbdfc318c00825017c9b743285ad015"
         },
         {
             "type": "file",
@@ -53,12 +53,6 @@
         },
         {
             "type": "file",
-            "name": "COL.png",
-            "size": 308,
-            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
-        },
-        {
-            "type": "file",
             "name": "CRC.png",
             "size": 307,
             "hash": "620a16271240f5a4e1b3c81b537bd5599cd8b5abc337b54b87dd6dddddc7fde7"
@@ -74,6 +68,12 @@
             "name": "CUW.png",
             "size": 735,
             "hash": "511aa796595dde9025524257b16b4f10d878929787e740aa59b3fce9b293f26b"
+        },
+        {
+            "type": "file",
+            "name": "COL.png",
+            "size": 308,
+            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
         },
         {
             "type": "file",
@@ -113,15 +113,15 @@
         },
         {
             "type": "file",
-            "name": "HON.png",
-            "size": 577,
-            "hash": "5e2401aab9beb76542d57e3da02ad3b947db278b05bda2088d53a564f9d59158"
-        },
-        {
-            "type": "file",
             "name": "HAI.png",
             "size": 3112,
             "hash": "baa12378f6311d7fad2fd1740523bbbb3ae145b18e0835a92c90336b61a51bd1"
+        },
+        {
+            "type": "file",
+            "name": "HON.png",
+            "size": 577,
+            "hash": "5e2401aab9beb76542d57e3da02ad3b947db278b05bda2088d53a564f9d59158"
         },
         {
             "type": "file",
