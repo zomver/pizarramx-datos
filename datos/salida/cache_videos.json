@@ -165,8 +165,8 @@
     "video": null
   },
   "sao-cot-2398418": {
-    "intentos": 4,
-    "ultimo_intento": "2026-08-17T15:17:29.770725",
+    "intentos": 5,
+    "ultimo_intento": "2026-08-18T03:34:41.142863",
     "video": null
   },
   "mty-jua-2487480": {
@@ -245,8 +245,8 @@
     "video": null
   },
   "san-gdl-2487484": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-17T15:17:29.770725",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-18T03:34:41.142863",
     "video": null
   },
   "ame-slp-2487483": {
@@ -287,6 +287,11 @@
   "gem-tal-2398017": {
     "intentos": 1,
     "ultimo_intento": "2026-08-18T02:46:46.888998",
+    "video": null
+  },
+  "nec-leo-2487486": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-18T03:34:41.142863",
     "video": null
   }
 }
