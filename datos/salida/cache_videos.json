@@ -298,5 +298,20 @@
     "intentos": 3,
     "ultimo_intento": "2026-08-19T06:06:42.344293",
     "video": null
+  },
+  "rsa-vil-2506178": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-19T07:03:22.498721",
+    "video": null
+  },
+  "esp-lev-2506174": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-19T07:03:22.498721",
+    "video": null
+  },
+  "dep-elc-2506177": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-19T07:03:22.498721",
+    "video": null
   }
 }
