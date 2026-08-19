@@ -152,6 +152,54 @@ NAME_MAP = {
     'sao paulo': 'SAO',
     'vasco da gama': 'VAS', 'vasco': 'VAS',
     'vitoria': 'VIT',
+
+    # --- Premier League (2026-27) ---
+    'arsenal': 'ARS',
+    'aston villa': 'AVL',
+    'bournemouth': 'BOU',
+    'brentford': 'BRE',
+    'brighton and hove albion': 'BHA', 'brighton & hove albion': 'BHA', 'brighton': 'BHA',
+    'chelsea': 'CHE',
+    'coventry city': 'COV', 'coventry': 'COV',
+    'crystal palace': 'CRY',
+    'everton': 'EVE',
+    'fulham': 'FUL',
+    'hull city': 'HUL', 'hull': 'HUL',
+    'ipswich town': 'IPS', 'ipswich': 'IPS',
+    'leeds united': 'LEE', 'leeds': 'LEE',
+    'liverpool': 'LIV',
+    'manchester city': 'MCI',
+    'manchester united': 'MUN',
+    'newcastle united': 'NEW', 'newcastle': 'NEW',
+    'nottingham forest': 'NFO',
+    'sunderland': 'SUN',
+    'tottenham hotspur': 'TOT', 'tottenham': 'TOT',
+
+    # --- LaLiga (2026-27) ---
+    # nombres normalizados: TheSportsDB manda el nombre "pelón" (sin
+    # "FC"/"CF"/"CD" ni acentos una vez pasado por normalizar()), pero se
+    # dejan alias con el nombre comercial completo por si algún día lo
+    # cambian.
+    'athletic bilbao': 'ATH', 'athletic club': 'ATH',
+    'atletico madrid': 'ATM', 'atletico de madrid': 'ATM',
+    'barcelona': 'BCN', 'fc barcelona': 'BCN',
+    'celta vigo': 'CEL', 'celta de vigo': 'CEL',
+    'deportivo alaves': 'ALA',
+    'deportivo de a coruna': 'DEP', 'deportivo la coruna': 'DEP',
+    'elche': 'ELC',
+    'espanyol': 'ESP', 'rcd espanyol': 'ESP',
+    'getafe': 'GET',
+    'levante': 'LEV',
+    'malaga': 'MAL',
+    'osasuna': 'OSA',
+    'racing de santander': 'RSA', 'racing santander': 'RSA',
+    'rayo vallecano': 'RAY',
+    'real betis': 'BET',
+    'real madrid': 'RMA',
+    'real sociedad': 'RSO',
+    'sevilla': 'SEV',
+    'valencia': 'VAL',
+    'villarreal': 'VIL',
 }
 
 # "Santos" solo (sin "FC" ni "Laguna") es ambiguo entre Santos Laguna
@@ -207,4 +255,21 @@ DISPLAY_NAMES = {
     'FLU': 'Fluminense', 'GRE': 'Grêmio', 'INT': 'Internacional', 'MIR': 'Mirassol',
     'PAL': 'Palmeiras', 'REM': 'Remo', 'SAO': 'São Paulo', 'VAS': 'Vasco da Gama',
     'VIT': 'Vitória',
+
+    # --- Premier League ---
+    'ARS': 'Arsenal', 'AVL': 'Aston Villa', 'BOU': 'Bournemouth', 'BRE': 'Brentford',
+    'BHA': 'Brighton & Hove Albion', 'CHE': 'Chelsea', 'COV': 'Coventry City',
+    'CRY': 'Crystal Palace', 'EVE': 'Everton', 'FUL': 'Fulham', 'HUL': 'Hull City',
+    'IPS': 'Ipswich Town', 'LEE': 'Leeds United', 'LIV': 'Liverpool',
+    'MCI': 'Manchester City', 'MUN': 'Manchester United', 'NEW': 'Newcastle United',
+    'NFO': 'Nottingham Forest', 'SUN': 'Sunderland', 'TOT': 'Tottenham Hotspur',
+
+    # --- LaLiga ---
+    'RMA': 'Real Madrid', 'BCN': 'FC Barcelona', 'ATM': 'Atlético de Madrid',
+    'ATH': 'Athletic Club', 'RSO': 'Real Sociedad', 'SEV': 'Sevilla FC',
+    'BET': 'Real Betis', 'VIL': 'Villarreal CF', 'VAL': 'Valencia CF',
+    'ESP': 'RCD Espanyol', 'RAY': 'Rayo Vallecano', 'GET': 'Getafe CF',
+    'OSA': 'Osasuna', 'CEL': 'Celta de Vigo', 'ALA': 'Deportivo Alavés',
+    'ELC': 'Elche CF', 'LEV': 'Levante UD', 'MAL': 'Málaga CF',
+    'DEP': 'Deportivo La Coruña', 'RSA': 'Racing de Santander',
 }

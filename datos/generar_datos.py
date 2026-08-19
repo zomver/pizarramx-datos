@@ -41,10 +41,17 @@ TEMPORADA = "2026-2027"
 # Argentina y Brasil solo responden con el año suelto "2026" (probado a
 # mano contra la API antes de escribirlo aquí). Si el año que viene deja
 # de traer partidos, es lo primero a revisar.
+#
+# Premier League y LaLiga se agregaron 2026-08-19 — a diferencia de
+# Argentina/Brasil, estas dos sí usan el mismo formato de temporada que
+# Liga BBVA MX ("2026-2027"), comprobado a mano contra la API antes de
+# escribirlo aquí.
 LIGAS = {
     "bbva": {"id": 4350, "nombre": "Liga BBVA MX", "temporada": TEMPORADA},
     "argentina": {"id": 4406, "nombre": "Liga Profesional Argentina", "temporada": "2026"},
     "brasil": {"id": 4351, "nombre": "Brasileirão Serie A", "temporada": "2026"},
+    "premier": {"id": 4328, "nombre": "Premier League", "temporada": "2026-2027"},
+    "laliga": {"id": 4335, "nombre": "LaLiga", "temporada": "2026-2027"},
 }
 
 # 25 alcanzaba de sobra para Liga BBVA MX (17 jornadas), pero el
