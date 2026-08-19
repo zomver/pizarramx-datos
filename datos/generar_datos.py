@@ -73,6 +73,22 @@ LIGA_MX_ABBRS = {"AME", "ATE", "ATL", "SLP", "GDL", "CRZ", "JUA", "LEO", "MTY",
 MLS_ABBRS = {"AUS", "CLT", "CHI", "CIN", "CLB", "DAL", "MIA", "LAF", "MNU",
              "NSH", "NYC", "ORL", "PHI", "POR", "RSL", "SDG", "SEA", "VAN"}
 
+# Liga Profesional Argentina 2026: NO es una tabla única — son 2 zonas de
+# 15 equipos cada una (Zona A / Zona B), formato real de la AFA para el
+# Apertura/Clausura 2026 (confirmado 2026-08-19: La Nación, "Las zonas A y
+# B del Apertura y Clausura 2026"). Cada equipo juega 14 partidos dentro
+# de su zona + 1 interzonal; el interzonal NO cuenta para la tabla de
+# ninguna zona (no hay una zona "dueña" de ese resultado), así que
+# calcular_standings_argentina() solo suma partidos entre dos equipos de
+# la MISMA zona, igual criterio que ya usa Leagues Cup con sus dos tablas.
+# La API (TheSportsDB) no manda esta división (strGroup viene vacío), por
+# eso se mantiene a mano aquí — si la AFA cambia las zonas de un año a
+# otro, hay que actualizar esta lista.
+ARGENTINA_ZONA_A = {"BOC", "IND", "SLO", "RIE", "TAL", "INS", "PLA", "VEL",
+                     "ELP", "GEM", "LAN", "NOB", "DEJ", "CCO", "UNI"}
+ARGENTINA_ZONA_B = {"RIV", "RAC", "HUR", "BAR", "BEL", "ERC", "ARG", "TIA",
+                     "GLP", "IRV", "BAN", "ROS", "ALD", "ATU", "SAR"}
+
 # ventana de fechas que se guarda en partidos.json (la sección "Partidos"
 # muestra un vistazo actual, no la temporada completa — eso ya vive en
 # calendario.html)
@@ -373,6 +389,64 @@ def calcular_standings_leagues_cup(eventos):
     return resultado
 
 
+def calcular_standings_argentina(eventos):
+    """Igual que calcular_standings_leagues_cup pero para las 2 zonas de
+    la Liga Profesional Argentina (ver ARGENTINA_ZONA_A/B arriba): cada
+    zona es una tabla independiente, y un partido solo cuenta para la
+    tabla de una zona si LOS DOS equipos son de esa misma zona (el
+    interzonal, un partido por equipo contra la otra zona, no cuenta para
+    ninguna tabla)."""
+    tablas = {"zonaA": {}, "zonaB": {}}
+
+    def equipo(zona, abbr, nombre):
+        tabla = tablas[zona]
+        if abbr not in tabla:
+            tabla[abbr] = {"abbr": abbr, "name": nombre, "pj": 0, "g": 0, "e": 0,
+                           "p": 0, "pts": 0, "_gf": 0, "_gc": 0}
+        return tabla[abbr]
+
+    def zona_de(abbr):
+        if abbr in ARGENTINA_ZONA_A:
+            return "zonaA"
+        if abbr in ARGENTINA_ZONA_B:
+            return "zonaB"
+        return None
+
+    for ev in eventos:
+        if ev.get("strStatus") != "FT":
+            continue
+        if ev.get("intHomeScore") is None or ev.get("intAwayScore") is None:
+            continue
+
+        home_abbr, home_nombre = mapear_equipo(ev["strHomeTeam"], "argentina")
+        away_abbr, away_nombre = mapear_equipo(ev["strAwayTeam"], "argentina")
+        zona_home, zona_away = zona_de(home_abbr), zona_de(away_abbr)
+        if not zona_home or not zona_away or zona_home != zona_away:
+            continue  # interzonal, o algún equipo sin zona reconocida — no cuenta
+
+        gh, ga = int(ev["intHomeScore"]), int(ev["intAwayScore"])
+        h, a = equipo(zona_home, home_abbr, home_nombre), equipo(zona_away, away_abbr, away_nombre)
+        h["pj"] += 1; a["pj"] += 1
+        h["_gf"] += gh; h["_gc"] += ga
+        a["_gf"] += ga; a["_gc"] += gh
+
+        if gh > ga:
+            h["g"] += 1; h["pts"] += 3; a["p"] += 1
+        elif ga > gh:
+            a["g"] += 1; a["pts"] += 3; h["p"] += 1
+        else:
+            h["e"] += 1; a["e"] += 1; h["pts"] += 1; a["pts"] += 1
+
+    resultado = {}
+    for clave, tabla in tablas.items():
+        filas = list(tabla.values())
+        filas.sort(key=lambda t: (-t["pts"], -(t["_gf"] - t["_gc"]), -t["_gf"]))
+        for f in filas:
+            del f["_gf"], f["_gc"]
+        resultado[clave] = filas
+    return resultado
+
+
 def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=None, liga_clave=None):
     vivos_por_id = vivos_por_id or {}
     vivos_por_equipos = vivos_por_equipos or {}
@@ -451,7 +525,12 @@ def main():
 
     for clave, info in LIGAS.items():
         eventos = descargar_temporada(clave, info, cache)
-        standings[clave] = calcular_standings(eventos, clave)
+        # Argentina no tiene una tabla única (ver ARGENTINA_ZONA_A/B) —
+        # el resto de las ligas sí.
+        standings[clave] = (
+            calcular_standings_argentina(eventos) if clave == "argentina"
+            else calcular_standings(eventos, clave)
+        )
         vivos_id, vivos_eq = pedir_livescores(info["id"], clave)
         print(f"   en vivo ahora mismo: {len(vivos_eq)} partido(s)")
         partidos += construir_partidos(eventos, info, vivos_id, vivos_eq, liga_clave=clave)
