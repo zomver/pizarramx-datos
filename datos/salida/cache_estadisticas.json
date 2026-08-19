@@ -575,7 +575,12 @@
     "2487484",
     "2487485",
     "2487486",
-    "2487487"
+    "2487487",
+    "2506172",
+    "2506174",
+    "2506176",
+    "2506177",
+    "2506178"
   ],
   "jugadores": {
     "bbva": {
@@ -8234,6 +8239,137 @@
       "34194800": {
         "player": "Matheus Bahia",
         "abbr": "INT",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      }
+    },
+    "premier": {},
+    "laliga": {
+      "34149499": {
+        "player": "Alvaro Garcia",
+        "abbr": "RAY",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34228118": {
+        "player": "Isaac Romero",
+        "abbr": "SEV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34161393": {
+        "player": "Jon Guridi",
+        "abbr": "SEV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34434407": {
+        "player": "Davinchi",
+        "abbr": "GET",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34215744": {
+        "player": "Mario Martín",
+        "abbr": "GET",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34161398": {
+        "player": "Kiko Femenía",
+        "abbr": "GET",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34160968": {
+        "player": "Denis Suárez",
+        "abbr": "ALA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34236853": {
+        "player": "Roberto Fernández",
+        "abbr": "ESP",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34179085": {
+        "player": "Urko González de Zárate",
+        "abbr": "ESP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34258328": {
+        "player": "Javi Hernández",
+        "abbr": "ESP",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34175167": {
+        "player": "Andrés Martín",
+        "abbr": "RSA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34222028": {
+        "player": "Gustavo Puerta",
+        "abbr": "RSA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34173903": {
+        "player": "Pape Gueye",
+        "abbr": "VIL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34216897": {
+        "player": "Alberto Moleiro",
+        "abbr": "VIL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34167754": {
+        "player": "Nicolas Pépé",
+        "abbr": "VIL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34220039": {
+        "player": "Georges Mikautadze",
+        "abbr": "VIL",
         "goles": 0,
         "asistencias": 1,
         "amarillas": 0,

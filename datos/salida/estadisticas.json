@@ -323,5 +323,91 @@
         "value": 1
       }
     ]
+  },
+  "premier": {
+    "goleadores": [],
+    "asistencias": [],
+    "amarillas": [],
+    "rojas": []
+  },
+  "laliga": {
+    "goleadores": [
+      {
+        "player": "Roberto Fernández",
+        "abbr": "ESP",
+        "value": 2
+      },
+      {
+        "player": "Alvaro Garcia",
+        "abbr": "RAY",
+        "value": 1
+      },
+      {
+        "player": "Jon Guridi",
+        "abbr": "SEV",
+        "value": 1
+      },
+      {
+        "player": "Andrés Martín",
+        "abbr": "RSA",
+        "value": 1
+      },
+      {
+        "player": "Pape Gueye",
+        "abbr": "VIL",
+        "value": 1
+      }
+    ],
+    "asistencias": [
+      {
+        "player": "Javi Hernández",
+        "abbr": "ESP",
+        "value": 1
+      },
+      {
+        "player": "Alberto Moleiro",
+        "abbr": "VIL",
+        "value": 1
+      },
+      {
+        "player": "Georges Mikautadze",
+        "abbr": "VIL",
+        "value": 1
+      }
+    ],
+    "amarillas": [
+      {
+        "player": "Isaac Romero",
+        "abbr": "SEV",
+        "value": 1
+      },
+      {
+        "player": "Davinchi",
+        "abbr": "GET",
+        "value": 1
+      },
+      {
+        "player": "Mario Martín",
+        "abbr": "GET",
+        "value": 1
+      },
+      {
+        "player": "Denis Suárez",
+        "abbr": "ALA",
+        "value": 1
+      },
+      {
+        "player": "Urko González de Zárate",
+        "abbr": "ESP",
+        "value": 1
+      }
+    ],
+    "rojas": [
+      {
+        "player": "Kiko Femenía",
+        "abbr": "GET",
+        "value": 1
+      }
+    ]
   }
 }
