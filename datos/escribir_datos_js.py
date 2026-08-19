@@ -46,6 +46,17 @@ def escribir_datos_js():
     if detalles is not None:
         datos["detalles"] = detalles
 
+    # goleadores/asistencias/tarjetas por liga — lo arma estadisticas_liga.py
+    # (corre una vez al día, workflow aparte). A diferencia de
+    # posiciones.json/partidos.json, este SÍ se commitea al repo (ver
+    # estadisticas.yml), así que sobrevive al checkout limpio de cada
+    # corrida de generar_datos.py y se sigue mezclando aquí aunque
+    # generar_datos.py corra 10 minutos después sin que estadisticas.yml
+    # haya vuelto a correr.
+    estadisticas = _leer("estadisticas.json")
+    if estadisticas is not None:
+        datos["estadisticas"] = estadisticas
+
     ruta = os.path.join(CARPETA_SALIDA, "datos.js")
     with open(ruta, "w", encoding="utf-8") as f:
         f.write("// generado por los scripts de /datos — no editar a mano\n")

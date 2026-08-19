@@ -1,0 +1,327 @@
+{
+  "bbva": {
+    "goleadores": [
+      {
+        "player": "Salomón Rondón",
+        "abbr": "PAC",
+        "value": 3
+      },
+      {
+        "player": "Eugenio Pizzuto",
+        "abbr": "ATE",
+        "value": 2
+      },
+      {
+        "player": "Rafa Llorente",
+        "abbr": "SLP",
+        "value": 2
+      },
+      {
+        "player": "Lucas Ocampos",
+        "abbr": "MTY",
+        "value": 2
+      },
+      {
+        "player": "Diego Rossi",
+        "abbr": "MTY",
+        "value": 2
+      }
+    ],
+    "asistencias": [
+      {
+        "player": "Joaquim Pereira Silva",
+        "abbr": "TIG",
+        "value": 2
+      },
+      {
+        "player": "Alberto Herrera Rodríguez López",
+        "abbr": "PUE",
+        "value": 2
+      },
+      {
+        "player": "Oussama Idrissi",
+        "abbr": "PAC",
+        "value": 2
+      },
+      {
+        "player": "Diego Rossi",
+        "abbr": "MTY",
+        "value": 2
+      },
+      {
+        "player": "Robert Morales Benítez",
+        "abbr": "PUM",
+        "value": 2
+      }
+    ],
+    "amarillas": [
+      {
+        "player": "Robson Bambu",
+        "abbr": "SLP",
+        "value": 3
+      },
+      {
+        "player": "Víctor Hugo Ríos de Alba",
+        "abbr": "TIG",
+        "value": 3
+      },
+      {
+        "player": "Raúl Martínez",
+        "abbr": "NEC",
+        "value": 2
+      },
+      {
+        "player": "Kevin Álvarez",
+        "abbr": "AME",
+        "value": 2
+      },
+      {
+        "player": "Bayron Duarte Duarte",
+        "abbr": "QRO",
+        "value": 2
+      }
+    ],
+    "rojas": [
+      {
+        "player": "Rodrigo Aguirre",
+        "abbr": "TIG",
+        "value": 1
+      },
+      {
+        "player": "Diber Cambindo Abonia",
+        "abbr": "LEO",
+        "value": 1
+      },
+      {
+        "player": "Stefan Medina",
+        "abbr": "MTY",
+        "value": 1
+      },
+      {
+        "player": "Rodrigo Echeverría",
+        "abbr": "LEO",
+        "value": 1
+      }
+    ]
+  },
+  "argentina": {
+    "goleadores": [
+      {
+        "player": "Agustín Módica",
+        "abbr": "GEM",
+        "value": 7
+      },
+      {
+        "player": "Marcelo Torres",
+        "abbr": "GLP",
+        "value": 7
+      },
+      {
+        "player": "Junior Marabel",
+        "abbr": "SAR",
+        "value": 6
+      },
+      {
+        "player": "David Romero",
+        "abbr": "TIA",
+        "value": 6
+      },
+      {
+        "player": "Leandro Díaz",
+        "abbr": "ATU",
+        "value": 5
+      }
+    ],
+    "asistencias": [
+      {
+        "player": "Gabriel Ávalos",
+        "abbr": "IND",
+        "value": 5
+      },
+      {
+        "player": "Matías Fernández",
+        "abbr": "IRV",
+        "value": 4
+      },
+      {
+        "player": "Rafael Profini",
+        "abbr": "UNI",
+        "value": 4
+      },
+      {
+        "player": "Facundo Lencioni",
+        "abbr": "GEM",
+        "value": 4
+      },
+      {
+        "player": "Sebastián Villa",
+        "abbr": "IRV",
+        "value": 4
+      }
+    ],
+    "amarillas": [
+      {
+        "player": "Eric Meza",
+        "abbr": "ELP",
+        "value": 5
+      },
+      {
+        "player": "Francisco Álvarez",
+        "abbr": "ARG",
+        "value": 5
+      },
+      {
+        "player": "Augusto Schott",
+        "abbr": "TAL",
+        "value": 5
+      },
+      {
+        "player": "Federico Fattori",
+        "abbr": "ARG",
+        "value": 5
+      },
+      {
+        "player": "Luca Regiardo",
+        "abbr": "NOB",
+        "value": 5
+      }
+    ],
+    "rojas": [
+      {
+        "player": "Thaiel Peralta Ortiz",
+        "abbr": "HUR",
+        "value": 1
+      },
+      {
+        "player": "Manuel Panaro",
+        "abbr": "GLP",
+        "value": 1
+      },
+      {
+        "player": "Bruno Cabrera",
+        "abbr": "NOB",
+        "value": 1
+      },
+      {
+        "player": "Jonatan Goitía",
+        "abbr": "RIE",
+        "value": 1
+      },
+      {
+        "player": "Franco Vazquez",
+        "abbr": "BEL",
+        "value": 1
+      }
+    ]
+  },
+  "brasil": {
+    "goleadores": [
+      {
+        "player": "Kevin Viveros",
+        "abbr": "ATP",
+        "value": 8
+      },
+      {
+        "player": "Pedro",
+        "abbr": "FLA",
+        "value": 7
+      },
+      {
+        "player": "José Manuel López",
+        "abbr": "PAL",
+        "value": 6
+      },
+      {
+        "player": "John Kennedy",
+        "abbr": "FLU",
+        "value": 6
+      },
+      {
+        "player": "Luciano",
+        "abbr": "SAO",
+        "value": 5
+      }
+    ],
+    "asistencias": [
+      {
+        "player": "Andreas Pereira",
+        "abbr": "PAL",
+        "value": 7
+      },
+      {
+        "player": "Josué",
+        "abbr": "COT",
+        "value": 6
+      },
+      {
+        "player": "Alesson",
+        "abbr": "MIR",
+        "value": 4
+      },
+      {
+        "player": "Pedro",
+        "abbr": "FLA",
+        "value": 4
+      },
+      {
+        "player": "Samuel Lino",
+        "abbr": "FLA",
+        "value": 4
+      }
+    ],
+    "amarillas": [
+      {
+        "player": "Matheus Pereira",
+        "abbr": "CRU",
+        "value": 6
+      },
+      {
+        "player": "Gabriel",
+        "abbr": "BRA",
+        "value": 5
+      },
+      {
+        "player": "Zé Ricardo",
+        "abbr": "REM",
+        "value": 5
+      },
+      {
+        "player": "Lucas Barbosa",
+        "abbr": "BRA",
+        "value": 5
+      },
+      {
+        "player": "Cristian Pavón",
+        "abbr": "GRE",
+        "value": 5
+      }
+    ],
+    "rojas": [
+      {
+        "player": "Josué",
+        "abbr": "COT",
+        "value": 1
+      },
+      {
+        "player": "Bruno Melo",
+        "abbr": "COT",
+        "value": 1
+      },
+      {
+        "player": "Carlos Eduardo",
+        "abbr": "MIR",
+        "value": 1
+      },
+      {
+        "player": "Alexander Barboza",
+        "abbr": "PAL",
+        "value": 1
+      },
+      {
+        "player": "Allan",
+        "abbr": "PAL",
+        "value": 1
+      }
+    ]
+  }
+}
