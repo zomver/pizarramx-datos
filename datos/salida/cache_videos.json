@@ -315,13 +315,28 @@
     "video": null
   },
   "atm-mal-2506170": {
-    "intentos": 3,
-    "ultimo_intento": "2026-08-20T21:51:39.632906",
+    "intentos": 4,
+    "ultimo_intento": "2026-08-22T01:07:16.417203",
     "video": null
   },
   "ray-ala-2506187": {
+    "intentos": 2,
+    "ultimo_intento": "2026-08-22T01:07:16.417203",
+    "video": null
+  },
+  "ald-uni-2398026": {
     "intentos": 1,
-    "ultimo_intento": "2026-08-20T21:51:39.632906",
+    "ultimo_intento": "2026-08-22T01:07:16.417203",
+    "video": null
+  },
+  "ars-cov-2494000": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-22T01:07:16.417203",
+    "video": null
+  },
+  "bet-rso-2506184": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-22T01:07:16.417203",
     "video": null
   }
 }
