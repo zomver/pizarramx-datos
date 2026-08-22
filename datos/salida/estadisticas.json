@@ -325,9 +325,47 @@
     ]
   },
   "premier": {
-    "goleadores": [],
-    "asistencias": [],
-    "amarillas": [],
+    "goleadores": [
+      {
+        "player": "Kai Havertz",
+        "abbr": "ARS",
+        "value": 1
+      },
+      {
+        "player": "Bukayo Saka",
+        "abbr": "ARS",
+        "value": 1
+      },
+      {
+        "player": "Martin Ødegaard",
+        "abbr": "ARS",
+        "value": 1
+      }
+    ],
+    "asistencias": [
+      {
+        "player": "Riccardo Calafiori",
+        "abbr": "ARS",
+        "value": 1
+      },
+      {
+        "player": "Ben White",
+        "abbr": "ARS",
+        "value": 1
+      }
+    ],
+    "amarillas": [
+      {
+        "player": "Caleb Yirenkyi",
+        "abbr": "COV",
+        "value": 1
+      },
+      {
+        "player": "Gabriel",
+        "abbr": "ARS",
+        "value": 1
+      }
+    ],
     "rojas": []
   },
   "laliga": {
@@ -372,6 +410,11 @@
       {
         "player": "Georges Mikautadze",
         "abbr": "VIL",
+        "value": 1
+      },
+      {
+        "player": "Jorge de Frutos",
+        "abbr": "RAY",
         "value": 1
       }
     ],
