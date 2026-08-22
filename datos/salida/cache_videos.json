@@ -348,5 +348,10 @@
     "intentos": 1,
     "ultimo_intento": "2026-08-22T05:23:13.221267",
     "video": null
+  },
+  "erc-slo-2398030": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-22T07:11:31.241777",
+    "video": null
   }
 }
