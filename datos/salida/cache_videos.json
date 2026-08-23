@@ -350,8 +350,8 @@
     "video": null
   },
   "erc-slo-2398030": {
-    "intentos": 3,
-    "ultimo_intento": "2026-08-23T07:46:15.051791",
+    "intentos": 4,
+    "ultimo_intento": "2026-08-23T20:15:06.680469",
     "video": null
   },
   "hul-mun-2494001": {
@@ -395,8 +395,8 @@
     "video": null
   },
   "val-cel-2506181": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-23T07:46:15.051791",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-23T20:15:06.680469",
     "video": null
   },
   "atu-ins-2398027": {
@@ -477,6 +477,21 @@
   "atm-vil-2506179": {
     "intentos": 1,
     "ultimo_intento": "2026-08-23T17:36:26.385731",
+    "video": null
+  },
+  "bar-pla-2398028": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-23T20:15:06.680469",
+    "video": null
+  },
+  "sar-elp-2398038": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-23T20:15:06.680469",
+    "video": null
+  },
+  "get-rsa-2506185": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-23T20:15:06.680469",
     "video": null
   }
 }
