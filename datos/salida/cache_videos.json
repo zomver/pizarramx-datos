@@ -420,13 +420,13 @@
     "video": null
   },
   "ind-irv-2398033": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-23T11:58:49.521218",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-23T23:59:09.496101",
     "video": null
   },
   "int-cam-2398427": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-23T11:58:49.521218",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-23T23:59:09.496101",
     "video": null
   },
   "cru-fla-2398425": {
@@ -522,6 +522,11 @@
   "cha-sao-2398423": {
     "intentos": 1,
     "ultimo_intento": "2026-08-23T23:37:46.077817",
+    "video": null
+  },
+  "sts-mir-2398429": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-23T23:59:09.496101",
     "video": null
   }
 }
