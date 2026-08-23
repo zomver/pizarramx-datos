@@ -458,5 +458,15 @@
     "intentos": 1,
     "ultimo_intento": "2026-08-23T05:44:30.551877",
     "video": null
+  },
+  "mci-bou-2494006": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-23T15:14:30.096932",
+    "video": null
+  },
+  "bha-avl-2494007": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-23T15:14:30.096932",
+    "video": null
   }
 }
