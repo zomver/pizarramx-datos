@@ -345,8 +345,8 @@
     "video": null
   },
   "jua-ame-2487489": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-22T17:41:23.280105",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-23T05:44:30.551877",
     "video": null
   },
   "erc-slo-2398030": {
@@ -385,8 +385,8 @@
     "video": null
   },
   "ath-sev-2506180": {
-    "intentos": 1,
-    "ultimo_intento": "2026-08-22T17:14:38.264291",
+    "intentos": 2,
+    "ultimo_intento": "2026-08-23T05:44:30.551877",
     "video": null
   },
   "bre-tot-2494005": {
@@ -452,6 +452,11 @@
   "pue-san-2487488": {
     "intentos": 1,
     "ultimo_intento": "2026-08-23T03:41:37.151237",
+    "video": null
+  },
+  "crz-atl-2487494": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-23T05:44:30.551877",
     "video": null
   }
 }
