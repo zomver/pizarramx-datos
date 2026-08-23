@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1787416316101,
+    "generatedTime": 1787449743019,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "bb01960633ece1f47ea68298c7454c912f6f6fecaf21b05849ae56f004aea152"
+            "hash": "7e37843ebd70bb4b82eafcb824bc0d8cb7b2dfa2c2a1bc82d6e20e552b84b5bc"
         },
         {
             "type": "file",
@@ -143,9 +143,9 @@
         },
         {
             "type": "file",
-            "name": "LCA.png",
-            "size": 1663,
-            "hash": "4ec14f107d210888b344dee7c1d3a6535a525799a4e98ae1bb18f814d35416a7"
+            "name": "NCA.png",
+            "size": 1248,
+            "hash": "91d4aee6d811647bde3ec563f67ca02014af2979aea0625664d228e192d19a44"
         },
         {
             "type": "file",
@@ -155,9 +155,9 @@
         },
         {
             "type": "file",
-            "name": "NCA.png",
-            "size": 1248,
-            "hash": "91d4aee6d811647bde3ec563f67ca02014af2979aea0625664d228e192d19a44"
+            "name": "LCA.png",
+            "size": 1663,
+            "hash": "4ec14f107d210888b344dee7c1d3a6535a525799a4e98ae1bb18f814d35416a7"
         },
         {
             "type": "file",
