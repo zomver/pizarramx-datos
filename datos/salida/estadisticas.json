@@ -7,6 +7,16 @@
         "value": 3
       },
       {
+        "player": "Alí Ávila",
+        "abbr": "QRO",
+        "value": 3
+      },
+      {
+        "player": "Eduardo Mustre Torres",
+        "abbr": "PUE",
+        "value": 3
+      },
+      {
         "player": "Eugenio Pizzuto",
         "abbr": "ATE",
         "value": 2
@@ -14,16 +24,6 @@
       {
         "player": "Rafa Llorente",
         "abbr": "SLP",
-        "value": 2
-      },
-      {
-        "player": "Lucas Ocampos",
-        "abbr": "MTY",
-        "value": 2
-      },
-      {
-        "player": "Diego Rossi",
-        "abbr": "MTY",
         "value": 2
       }
     ],
@@ -101,6 +101,11 @@
         "player": "Rodrigo Echeverría",
         "abbr": "LEO",
         "value": 1
+      },
+      {
+        "player": "Diego Barbosa",
+        "abbr": "TOL",
+        "value": 1
       }
     ]
   },
@@ -109,7 +114,7 @@
       {
         "player": "Agustín Módica",
         "abbr": "GEM",
-        "value": 7
+        "value": 9
       },
       {
         "player": "Marcelo Torres",
@@ -224,7 +229,7 @@
       {
         "player": "Pedro",
         "abbr": "FLA",
-        "value": 7
+        "value": 8
       },
       {
         "player": "José Manuel López",
@@ -340,6 +345,16 @@
         "player": "Martin Ødegaard",
         "abbr": "ARS",
         "value": 1
+      },
+      {
+        "player": "Semi Ajayi",
+        "abbr": "HUL",
+        "value": 1
+      },
+      {
+        "player": "Nobel Mendy",
+        "abbr": "HUL",
+        "value": 1
       }
     ],
     "asistencias": [
@@ -352,6 +367,21 @@
         "player": "Ben White",
         "abbr": "ARS",
         "value": 1
+      },
+      {
+        "player": "Regan Slater",
+        "abbr": "HUL",
+        "value": 1
+      },
+      {
+        "player": "Harrison Armstrong",
+        "abbr": "EVE",
+        "value": 1
+      },
+      {
+        "player": "Iliman Ndiaye",
+        "abbr": "EVE",
+        "value": 1
       }
     ],
     "amarillas": [
@@ -363,6 +393,21 @@
       {
         "player": "Gabriel",
         "abbr": "ARS",
+        "value": 1
+      },
+      {
+        "player": "Patrick Dorgu",
+        "abbr": "MUN",
+        "value": 1
+      },
+      {
+        "player": "Matt Crooks",
+        "abbr": "HUL",
+        "value": 1
+      },
+      {
+        "player": "Daichi Kamada",
+        "abbr": "CRY",
         "value": 1
       }
     ],
@@ -400,7 +445,7 @@
       {
         "player": "Javi Hernández",
         "abbr": "ESP",
-        "value": 1
+        "value": 2
       },
       {
         "player": "Alberto Moleiro",
@@ -416,11 +461,21 @@
         "player": "Jorge de Frutos",
         "abbr": "RAY",
         "value": 1
+      },
+      {
+        "player": "Arda Güler",
+        "abbr": "RMA",
+        "value": 1
       }
     ],
     "amarillas": [
       {
         "player": "Isaac Romero",
+        "abbr": "SEV",
+        "value": 1
+      },
+      {
+        "player": "Jon Guridi",
         "abbr": "SEV",
         "value": 1
       },
@@ -438,17 +493,17 @@
         "player": "Denis Suárez",
         "abbr": "ALA",
         "value": 1
-      },
-      {
-        "player": "Urko González de Zárate",
-        "abbr": "ESP",
-        "value": 1
       }
     ],
     "rojas": [
       {
         "player": "Kiko Femenía",
         "abbr": "GET",
+        "value": 1
+      },
+      {
+        "player": "Yuri Berchiche",
+        "abbr": "ATH",
         "value": 1
       }
     ]

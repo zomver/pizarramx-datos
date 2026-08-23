@@ -316,7 +316,12 @@
     "2398024",
     "2398025",
     "2398026",
+    "2398027",
     "2398030",
+    "2398031",
+    "2398032",
+    "2398033",
+    "2398035",
     "2398191",
     "2398192",
     "2398193",
@@ -542,6 +547,9 @@
     "2398418",
     "2398419",
     "2398420",
+    "2398425",
+    "2398426",
+    "2398427",
     "2487452",
     "2487453",
     "2487454",
@@ -578,15 +586,28 @@
     "2487485",
     "2487486",
     "2487487",
+    "2487488",
     "2487489",
+    "2487490",
+    "2487491",
+    "2487492",
     "2487493",
+    "2487494",
     "2494000",
+    "2494001",
+    "2494002",
+    "2494003",
+    "2494004",
+    "2494005",
     "2506170",
     "2506172",
     "2506174",
     "2506176",
     "2506177",
     "2506178",
+    "2506180",
+    "2506181",
+    "2506183",
     "2506184",
     "2506187"
   ],
@@ -621,7 +642,7 @@
         "abbr": "TIJ",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34221073": {
@@ -660,7 +681,7 @@
         "player": "Duk",
         "abbr": "ATL",
         "goles": 1,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
       },
@@ -668,7 +689,7 @@
         "player": "Diber Cambindo Abonia",
         "abbr": "LEO",
         "goles": 1,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 0,
         "rojas": 1
       },
@@ -789,7 +810,7 @@
         "abbr": "TOL",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34152723": {
@@ -1051,7 +1072,7 @@
       "34221182": {
         "player": "Édgar Zaldívar Valverde",
         "abbr": "ATL",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
@@ -1085,7 +1106,7 @@
         "abbr": "MTY",
         "goles": 0,
         "asistencias": 1,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34160907": {
@@ -1099,7 +1120,7 @@
       "34221231": {
         "player": "Alí Ávila",
         "abbr": "QRO",
-        "goles": 2,
+        "goles": 3,
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
@@ -1107,7 +1128,7 @@
       "34437466": {
         "player": "Eduardo Mustre Torres",
         "abbr": "PUE",
-        "goles": 1,
+        "goles": 3,
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
@@ -1125,7 +1146,7 @@
         "abbr": "GDL",
         "goles": 0,
         "asistencias": 1,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34217392": {
@@ -1469,6 +1490,86 @@
         "abbr": "PAC",
         "goles": 0,
         "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34221074": {
+        "player": "Ricardo Marín Sánchez",
+        "abbr": "GDL",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34234001": {
+        "player": "Diego Campillo del Campo",
+        "abbr": "GDL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34221093": {
+        "player": "Diego Barbosa",
+        "abbr": "TOL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34221067": {
+        "player": "Jordi Cortizo",
+        "abbr": "LEO",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34221128": {
+        "player": "Facundo Almada",
+        "abbr": "SAN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34221215": {
+        "player": "Carlos Baltazar Agraz",
+        "abbr": "PUE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34200395": {
+        "player": "Ezequiel Bullaude",
+        "abbr": "SAN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34246405": {
+        "player": "Fran Villalba",
+        "abbr": "SAN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34196654": {
+        "player": "Juan Pablo Vargas",
+        "abbr": "PUE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34238315": {
+        "player": "Florián Monzón",
+        "abbr": "ATL",
+        "goles": 1,
+        "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
       }
@@ -2013,7 +2114,7 @@
       "34235709": {
         "player": "Agustín Módica",
         "abbr": "GEM",
-        "goles": 7,
+        "goles": 9,
         "asistencias": 0,
         "amarillas": 2,
         "rojas": 0
@@ -2133,7 +2234,7 @@
       "34218801": {
         "player": "Matías Cóccaro",
         "abbr": "NOB",
-        "goles": 2,
+        "goles": 3,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -2487,7 +2588,7 @@
         "abbr": "RIE",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 3,
+        "amarillas": 4,
         "rojas": 0
       },
       "34236938": {
@@ -2583,7 +2684,7 @@
         "abbr": "BAN",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34434451": {
@@ -2879,7 +2980,7 @@
         "abbr": "NOB",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34218638": {
@@ -3439,7 +3540,7 @@
         "abbr": "ATU",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34336983": {
@@ -3463,7 +3564,7 @@
         "abbr": "RIE",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34236934": {
@@ -4046,7 +4147,7 @@
         "player": "Tomás O'Connor",
         "abbr": "GEM",
         "goles": 0,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 1,
         "rojas": 0
       },
@@ -4087,7 +4188,7 @@
         "abbr": "ATU",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34293156": {
@@ -4119,7 +4220,7 @@
         "abbr": "IND",
         "goles": 0,
         "asistencias": 1,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34346830": {
@@ -5390,7 +5491,7 @@
         "player": "Walter Mazzantti",
         "abbr": "NOB",
         "goles": 0,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 1,
         "rojas": 0
       },
@@ -5413,6 +5514,22 @@
       "34303404": {
         "player": "Máximo Palazzo",
         "abbr": "HUR",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34283023": {
+        "player": "Ezequiel Bonifacio",
+        "abbr": "IRV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34239632": {
+        "player": "Favio Álvarez",
+        "abbr": "BAN",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
@@ -5727,7 +5844,7 @@
       "34194887": {
         "player": "Pedro",
         "abbr": "FLA",
-        "goles": 7,
+        "goles": 8,
         "asistencias": 4,
         "amarillas": 0,
         "rojas": 0
@@ -6569,7 +6686,7 @@
         "abbr": "FLU",
         "goles": 2,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34233225": {
@@ -6816,14 +6933,14 @@
         "player": "Matheus Henrique",
         "abbr": "CRU",
         "goles": 0,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 1,
         "rojas": 0
       },
       "34248261": {
         "player": "Keny Arroyo Alvarado",
         "abbr": "CRU",
-        "goles": 2,
+        "goles": 3,
         "asistencias": 1,
         "amarillas": 3,
         "rojas": 0
@@ -6864,7 +6981,7 @@
         "player": "Giorgian De Arrascaeta",
         "abbr": "FLA",
         "goles": 2,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 1,
         "rojas": 0
       },
@@ -7393,7 +7510,7 @@
         "abbr": "CRU",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34218753": {
@@ -7432,14 +7549,14 @@
         "player": "Marcelinho",
         "abbr": "REM",
         "goles": 1,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 1,
         "rojas": 0
       },
       "34229614": {
         "player": "Jandir Souza Silva",
         "abbr": "REM",
-        "goles": 4,
+        "goles": 5,
         "asistencias": 1,
         "amarillas": 1,
         "rojas": 1
@@ -7641,7 +7758,7 @@
         "abbr": "INT",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34348817": {
@@ -8153,7 +8270,7 @@
         "abbr": "CRU",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34435646": {
@@ -8251,6 +8368,14 @@
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
+      },
+      "34163407": {
+        "player": "Fred",
+        "abbr": "CAM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
       }
     },
     "premier": {
@@ -8309,6 +8434,174 @@
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
+      },
+      "34145437": {
+        "player": "Semi Ajayi",
+        "abbr": "HUL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34220127": {
+        "player": "Patrick Dorgu",
+        "abbr": "MUN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34244841": {
+        "player": "Nobel Mendy",
+        "abbr": "HUL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34163562": {
+        "player": "Regan Slater",
+        "abbr": "HUL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34161825": {
+        "player": "Matt Crooks",
+        "abbr": "HUL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34169137": {
+        "player": "Daichi Kamada",
+        "abbr": "CRY",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34175839": {
+        "player": "Kiernan Dewsbury-Hall",
+        "abbr": "EVE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34247302": {
+        "player": "Harrison Armstrong",
+        "abbr": "EVE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34224712": {
+        "player": "Thierno Barry",
+        "abbr": "EVE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34178338": {
+        "player": "Iliman Ndiaye",
+        "abbr": "EVE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34245186": {
+        "player": "Emersonn",
+        "abbr": "IPS",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34183089": {
+        "player": "Julio Enciso",
+        "abbr": "IPS",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34178275": {
+        "player": "Daniel Ballard",
+        "abbr": "SUN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34218316": {
+        "player": "Nilson Angulo",
+        "abbr": "SUN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34160909": {
+        "player": "Ola Aina",
+        "abbr": "NFO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34159023": {
+        "player": "Dominic Calvert-Lewin",
+        "abbr": "LEE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34346281": {
+        "player": "Jair Cunha",
+        "abbr": "NFO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34179407": {
+        "player": "Keane Lewis-Potter",
+        "abbr": "BRE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34218037": {
+        "player": "Mamadou Sangaré",
+        "abbr": "BRE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34173592": {
+        "player": "Vitaly Janelt",
+        "abbr": "BRE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34172789": {
+        "player": "Conor Gallagher",
+        "abbr": "TOT",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
       }
     },
     "laliga": {
@@ -8333,7 +8626,7 @@
         "abbr": "SEV",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34434407": {
@@ -8388,7 +8681,7 @@
         "player": "Javi Hernández",
         "abbr": "ESP",
         "goles": 0,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 0,
         "rojas": 0
       },
@@ -8499,6 +8792,94 @@
       "34228334": {
         "player": "Jon Aramburu",
         "abbr": "RSO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34149699": {
+        "player": "Yuri Berchiche",
+        "abbr": "ATH",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34433205": {
+        "player": "Oso",
+        "abbr": "SEV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34247643": {
+        "player": "Peque",
+        "abbr": "SEV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34169621": {
+        "player": "Gorka Guruzeta",
+        "abbr": "ATH",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34222495": {
+        "player": "Justin de Haas",
+        "abbr": "VAL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34149484": {
+        "player": "Stole Dimitrievski",
+        "abbr": "VAL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172833": {
+        "player": "Sergio Carreira",
+        "abbr": "CEL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34171882": {
+        "player": "Jude Bellingham",
+        "abbr": "RMA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34194505": {
+        "player": "Arda Güler",
+        "abbr": "RMA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34258170": {
+        "player": "Álex Calatrava",
+        "abbr": "ESP",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34161324": {
+        "player": "Vinícius Júnior",
+        "abbr": "RMA",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
