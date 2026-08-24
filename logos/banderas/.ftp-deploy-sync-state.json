@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1787535981569,
+    "generatedTime": 1787561772079,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "707906a45f3c7c46ee5d4221815874c0c040ea0199576c05a3b88838fd83a994"
+            "hash": "934f62a0b757b0bbf3bcfecc043d2a9fff8e01b1e65c8e7b6069c4d750a1f53a"
         },
         {
             "type": "file",
@@ -179,15 +179,15 @@
         },
         {
             "type": "file",
-            "name": "SUR.png",
-            "size": 851,
-            "hash": "66ffa877f5e7950c0f6be0e8580a455e498f533c83291f4834107672be2612c1"
-        },
-        {
-            "type": "file",
             "name": "TTO.png",
             "size": 3262,
             "hash": "50e769a23cadfdaa3df79175373e15622fb99db0b15e50e803514c6e8d06c58a"
+        },
+        {
+            "type": "file",
+            "name": "SUR.png",
+            "size": 851,
+            "hash": "66ffa877f5e7950c0f6be0e8580a455e498f533c83291f4834107672be2612c1"
         },
         {
             "type": "file",
