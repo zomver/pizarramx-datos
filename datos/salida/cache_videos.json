@@ -390,8 +390,8 @@
     "video": null
   },
   "bre-tot-2494005": {
-    "intentos": 4,
-    "ultimo_intento": "2026-08-24T07:46:26.683208",
+    "intentos": 5,
+    "ultimo_intento": "2026-08-24T19:50:46.656322",
     "video": null
   },
   "val-cel-2506181": {
@@ -552,6 +552,11 @@
   "slp-pac-2487495": {
     "intentos": 2,
     "ultimo_intento": "2026-08-24T18:24:18.679941",
+    "video": null
+  },
+  "osa-lev-2506186": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-24T19:50:46.656322",
     "video": null
   }
 }
