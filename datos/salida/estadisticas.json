@@ -71,13 +71,13 @@
         "value": 2
       },
       {
-        "player": "Kevin Álvarez",
-        "abbr": "AME",
+        "player": "Pedro Vite",
+        "abbr": "PUM",
         "value": 2
       },
       {
-        "player": "Bayron Duarte Duarte",
-        "abbr": "QRO",
+        "player": "Kevin Álvarez",
+        "abbr": "AME",
         "value": 2
       }
     ],
@@ -149,6 +149,11 @@
         "value": 4
       },
       {
+        "player": "Matias Pellegrini",
+        "abbr": "VEL",
+        "value": 4
+      },
+      {
         "player": "Rafael Profini",
         "abbr": "UNI",
         "value": 4
@@ -156,11 +161,6 @@
       {
         "player": "Facundo Lencioni",
         "abbr": "GEM",
-        "value": 4
-      },
-      {
-        "player": "Sebastián Villa",
-        "abbr": "IRV",
         "value": 4
       }
     ],
@@ -234,7 +234,7 @@
       {
         "player": "José Manuel López",
         "abbr": "PAL",
-        "value": 6
+        "value": 7
       },
       {
         "player": "John Kennedy",
