@@ -323,10 +323,13 @@
     "2398031",
     "2398032",
     "2398033",
+    "2398034",
     "2398035",
     "2398036",
     "2398037",
     "2398038",
+    "2398039",
+    "2398040",
     "2398191",
     "2398192",
     "2398193",
@@ -552,6 +555,7 @@
     "2398418",
     "2398419",
     "2398420",
+    "2398421",
     "2398422",
     "2398423",
     "2398424",
@@ -615,6 +619,7 @@
     "2494006",
     "2494007",
     "2494008",
+    "2494009",
     "2506170",
     "2506172",
     "2506174",
@@ -624,9 +629,11 @@
     "2506179",
     "2506180",
     "2506181",
+    "2506182",
     "2506183",
     "2506184",
     "2506185",
+    "2506186",
     "2506187",
     "2506188"
   ],
@@ -8797,6 +8804,70 @@
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
+      },
+      "34169326": {
+        "player": "João Pedro",
+        "abbr": "CHE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34192430": {
+        "player": "Cole Palmer",
+        "abbr": "CHE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34192440": {
+        "player": "Levi Colwill",
+        "abbr": "CHE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34195836": {
+        "player": "Roméo Lavia",
+        "abbr": "CHE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34258670": {
+        "player": "Josh King",
+        "abbr": "FUL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34153355": {
+        "player": "Timothy Castagne",
+        "abbr": "FUL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34177247": {
+        "player": "Morgan Rogers",
+        "abbr": "CHE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34173076": {
+        "player": "Maxence Lacroix",
+        "abbr": "CHE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
       }
     },
     "laliga": {
@@ -9158,6 +9229,14 @@
         "goles": 1,
         "asistencias": 0,
         "amarillas": 0,
+        "rojas": 0
+      },
+      "34195771": {
+        "player": "Iván Romero",
+        "abbr": "LEV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
         "rojas": 0
       }
     }
