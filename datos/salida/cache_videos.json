@@ -420,13 +420,13 @@
     "video": null
   },
   "ind-irv-2398033": {
-    "intentos": 4,
-    "ultimo_intento": "2026-08-24T12:07:31.327479",
+    "intentos": 5,
+    "ultimo_intento": "2026-08-25T01:51:28.559222",
     "video": null
   },
   "int-cam-2398427": {
-    "intentos": 4,
-    "ultimo_intento": "2026-08-24T12:07:31.327479",
+    "intentos": 5,
+    "ultimo_intento": "2026-08-25T01:51:28.559222",
     "video": null
   },
   "cru-fla-2398425": {
@@ -525,8 +525,8 @@
     "video": null
   },
   "sts-mir-2398429": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-24T12:07:31.327479",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-25T01:51:28.559222",
     "video": null
   },
   "riv-vel-2398037": {
@@ -567,6 +567,16 @@
   "mal-dep-2506182": {
     "intentos": 1,
     "ultimo_intento": "2026-08-24T21:43:27.199992",
+    "video": null
+  },
+  "tia-cco-2398040": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-25T01:51:28.559222",
+    "video": null
+  },
+  "bot-atp-2398421": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-25T01:51:28.559222",
     "video": null
   }
 }
