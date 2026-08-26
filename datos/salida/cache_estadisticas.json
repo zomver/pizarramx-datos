@@ -621,6 +621,7 @@
     "2494008",
     "2494009",
     "2506170",
+    "2506171",
     "2506172",
     "2506174",
     "2506176",
@@ -9234,6 +9235,22 @@
       "34195771": {
         "player": "Iván Romero",
         "abbr": "LEV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34295373": {
+        "player": "Ryunosuke Sato",
+        "abbr": "VAL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34167794": {
+        "player": "Junior Firpo",
+        "abbr": "BET",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
