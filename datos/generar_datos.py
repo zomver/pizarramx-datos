@@ -66,7 +66,10 @@ MAX_JORNADAS = 40  # tope de seguridad; se detiene antes si una jornada viene va
 # Por eso se maneja con sus propias funciones más abajo, no dentro de LIGAS.
 LEAGUES_CUP_ID = 5281
 LEAGUES_CUP_TEMPORADA = "2026"
-LEAGUES_CUP_RONDAS = 3
+LEAGUES_CUP_RONDAS = 3  # fase de grupos
+# fase eliminatoria (cuartos, semis, final): ver descargar_leagues_cup()
+# para la explicación completa de por qué no es 4, 5, 6...
+LEAGUES_CUP_RONDAS_ELIMINACION = range(125, 131)
 
 LIGA_MX_ABBRS = {"AME", "ATE", "ATL", "SLP", "GDL", "CRZ", "JUA", "LEO", "MTY",
                   "TIJ", "NEC", "PAC", "PUE", "PUM", "QRO", "SAN", "TIG", "TOL"}
@@ -303,8 +306,18 @@ def calcular_standings(eventos, liga_clave=None):
 
 
 def descargar_leagues_cup(cache):
-    """Baja las 3 rondas de la Leagues Cup (con la misma caché de rondas
-    terminadas que usa descargar_temporada, bajo la clave "leaguescup")."""
+    """Baja la fase de grupos (rondas 1-3, numeración normal) y la fase
+    eliminatoria de la Leagues Cup.
+
+    OJO (descubierto 2026-08-26, cuartos de final desaparecidos del
+    sitio): la fase eliminatoria NO sigue la numeración consecutiva de la
+    de grupos — TheSportsDB salta directo a la ronda 125 para cuartos de
+    final (comprobado a mano contra la API). No hay forma de saber de
+    antemano en qué ronda van a caer semifinal y final, así que se
+    revisa un rango fijo (125-130) completo en cada corrida en vez de
+    parar en la primera vacía como hace la fase de grupos — una ronda de
+    eliminación vacía HOY puede tener partidos mañana en cuanto se
+    definan los cruces, así que tampoco se cachea vacía."""
     print(f"\n[Leagues Cup] descargando rondas...")
     cache_liga = cache.setdefault("leaguescup", {})
     eventos = []
@@ -323,6 +336,28 @@ def descargar_leagues_cup(cache):
         partidos_ronda = data.get("events") or []
         eventos.extend(partidos_ronda)
         print(f"   ronda {ronda}: {len(partidos_ronda)} partidos")
+
+        if jornada_terminada(partidos_ronda):
+            cache_liga[clave_ronda] = partidos_ronda
+
+    for ronda in LEAGUES_CUP_RONDAS_ELIMINACION:
+        clave_ronda = str(ronda)
+
+        if clave_ronda in cache_liga:
+            partidos_ronda = cache_liga[clave_ronda]
+            if partidos_ronda:
+                print(f"   ronda {ronda} (eliminación): {len(partidos_ronda)} partidos (caché)")
+                eventos.extend(partidos_ronda)
+            continue
+
+        data = pedir("eventsround.php", {
+            "id": LEAGUES_CUP_ID, "r": ronda, "s": LEAGUES_CUP_TEMPORADA,
+        })
+        partidos_ronda = data.get("events") or []
+        if not partidos_ronda:
+            continue  # no se cachea: mañana puede que ya haya cruces
+        eventos.extend(partidos_ronda)
+        print(f"   ronda {ronda} (eliminación): {len(partidos_ronda)} partidos")
 
         if jornada_terminada(partidos_ronda):
             cache_liga[clave_ronda] = partidos_ronda
@@ -352,7 +387,15 @@ def calcular_standings_leagues_cup(eventos):
             return "mls"
         return None
 
+    rondas_de_grupo = {str(r) for r in range(1, LEAGUES_CUP_RONDAS + 1)}
+
     for ev in eventos:
+        # la tabla es SOLO de la fase de grupos — los partidos de
+        # eliminación (ronda 125+, ver descargar_leagues_cup) no cuentan
+        # aquí, si no los "pj" de un equipo que sigue vivo en el torneo
+        # se seguirían sumando después de que los grupos ya terminaron
+        if ev.get("intRound") not in rondas_de_grupo:
+            continue
         if ev.get("strStatus") != "FT":
             continue
         if ev.get("intHomeScore") is None or ev.get("intAwayScore") is None:
@@ -493,10 +536,20 @@ def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=
         else:
             dia = "pasado"
 
+        # Leagues Cup: la fase eliminatoria no cae en una "jornada" con
+        # número que le diga algo a nadie (ronda 125+, ver
+        # descargar_leagues_cup) — se muestra como "Fase eliminatoria"
+        # en vez de "Jornada 125".
+        es_ronda_grupo = str(ev.get("intRound")) in {"1", "2", "3"}
+        if info_liga["nombre"] == "Leagues Cup" and not es_ronda_grupo:
+            etiqueta_ronda = "Fase eliminatoria"
+        else:
+            etiqueta_ronda = f"Jornada {ev.get('intRound', '?')}"
+
         partido = {
             "id": f"{home_abbr}-{away_abbr}-{ev['idEvent']}".lower(),
             "competition": info_liga["nombre"],
-            "round": f"Jornada {ev.get('intRound', '?')}",
+            "round": etiqueta_ronda,
             "home": home_nombre, "homeAbbr": home_abbr,
             "away": away_nombre, "awayAbbr": away_abbr,
             "homeScore": gh,
