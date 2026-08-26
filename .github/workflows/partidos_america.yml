@@ -1,0 +1,57 @@
+name: Actualizar partidos y posiciones — América
+
+# Liga BBVA MX, Argentina, Brasil y Leagues Cup. Separado del de Europa
+# desde 2026-08-26: con las 7 ligas juntas en un solo cron cada corrida
+# tardaba ~6 min y solo iba a seguir creciendo. Cada continente ahora
+# escribe sus propios archivos (posiciones_america.json,
+# partidos_america.json, cache_rondas_america.json) para que uno nunca
+# le pise al otro el archivo — ver sincronizar_otro_continente() en
+# generar_datos.py para cómo se vuelven a juntar en un solo datos.js.
+
+on:
+  schedule:
+    # mismos minutos "raros" que ya usaba el cron único (ver el porqué
+    # en la versión vieja de este archivo / partidos_europa.yml)
+    - cron: '3,13,23,33,43,53 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: actualizar-datos-america
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: pip install -r datos/requirements.txt
+
+      - name: Generar datos de América (posiciones, partidos, videos, datos.js)
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python datos/generar_america.py
+
+      - name: Subir datos/salida a Hostinger por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./datos/salida/
+          server-dir: ./datos/salida/
+          timeout: 60000
+
+      - name: Guardar caché de jornadas terminadas en el repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add datos/salida/cache_rondas_america.json datos/salida/cache_videos.json
+          git diff --cached --quiet || git commit -m "Actualizar caché de jornadas y videos (América)"
+          git pull --rebase origin main
+          git push

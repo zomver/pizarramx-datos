@@ -1,12 +1,12 @@
 name: Actualizar estadísticas de liga (goleadores, asistencias, tarjetas)
 
-# Aparte de partidos.yml (que corre cada 10 min) a propósito: estos datos
+# Aparte de partidos_america.yml/partidos_europa.yml (que corre cada 10 min) a propósito: estos datos
 # no cambian en vivo y pedirlos requiere una llamada a lookuptimeline.php
 # POR PARTIDO — no cabe en el presupuesto de una corrida cada 10 minutos.
 # Una vez al día alcanza de sobra.
 on:
   schedule:
-    # 09:17 UTC — lejos de las corridas de partidos.yml (minutos "raros",
+    # 09:17 UTC — lejos de las corridas de partidos_america.yml/partidos_europa.yml (minutos "raros",
     # mismo criterio que ahí: evitar el tope de cada hora) y a una hora en
     # la que ya casi no hay partidos en vivo de ninguna de las 3 ligas.
     - cron: '17 9 * * *'
@@ -38,7 +38,7 @@ jobs:
       # nunca se commitean al repo, solo viajan por FTP) y pisaría el
       # datos.js real de Hostinger con uno sin partidos/tabla. En vez de
       # eso, se commitea estadisticas.json al repo (igual que
-      # cache_rondas.json) y la siguiente corrida normal de partidos.yml
+      # cache_rondas.json) y la siguiente corrida normal de partidos_america.yml/partidos_europa.yml
       # (máximo 10 min después) lo recoge sola al generar su propio
       # datos.js completo.
       - name: Guardar estadísticas y caché en el repo

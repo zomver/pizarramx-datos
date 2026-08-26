@@ -1,0 +1,55 @@
+name: Actualizar partidos y posiciones — Europa
+
+# Premier League, LaLiga, Serie A y Bundesliga. Separado del de América
+# desde 2026-08-26 (ver partidos_america.yml para el motivo completo).
+# Sin Leagues Cup ni videos/detalles_manuales — esas dos cosas son todas
+# de Liga MX, las sigue manejando el cron de América.
+
+on:
+  schedule:
+    # offset de 3 min contra el de América (:6,16,26... en vez de
+    # :3,13,23...) — puro cuidado extra para que las dos corridas no
+    # arranquen en el mismo segundo exacto y se peleen por el mismo
+    # runner de GitHub; ya no comparten ningún archivo, así que ni
+    # siquiera hace falta, pero no cuesta nada.
+    - cron: '6,16,26,36,46,56 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: actualizar-datos-europa
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: pip install -r datos/requirements.txt
+
+      - name: Generar datos de Europa (posiciones, partidos, datos.js)
+        run: python datos/generar_europa.py
+
+      - name: Subir datos/salida a Hostinger por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./datos/salida/
+          server-dir: ./datos/salida/
+          timeout: 60000
+
+      - name: Guardar caché de jornadas terminadas en el repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add datos/salida/cache_rondas_europa.json
+          git diff --cached --quiet || git commit -m "Actualizar caché de jornadas (Europa)"
+          git pull --rebase origin main
+          git push

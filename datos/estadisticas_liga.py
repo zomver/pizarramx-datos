@@ -50,7 +50,6 @@ from equipos import DISPLAY_NAMES
 from generar_datos import (
     LIGAS,
     CARPETA_SALIDA,
-    RUTA_CACHE,
     pedir,
     mapear_equipo,
     descargar_temporada,
@@ -63,10 +62,18 @@ TOP_N = 5
 
 
 def cargar_cache_rondas():
-    if os.path.exists(RUTA_CACHE):
-        with open(RUTA_CACHE, encoding="utf-8") as f:
-            return json.load(f)
-    return {}
+    """Desde el 2026-08-26 el caché de jornadas ya no vive en un solo
+    cache_rondas.json — generar_america.py/generar_europa.py (cron
+    separado por continente, ver ese cambio) escriben cada uno el suyo.
+    Se juntan los dos (claves de liga distintas, no hay pisado posible)
+    para no perder el ahorro de caché en ninguna de las 7 ligas."""
+    combinado = {}
+    for nombre in ("cache_rondas_america.json", "cache_rondas_europa.json"):
+        ruta = os.path.join(CARPETA_SALIDA, nombre)
+        if os.path.exists(ruta):
+            with open(ruta, encoding="utf-8") as f:
+                combinado.update(json.load(f))
+    return combinado
 
 
 def cargar_cache_estadisticas():

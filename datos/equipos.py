@@ -200,6 +200,55 @@ NAME_MAP = {
     'sevilla': 'SEV',
     'valencia': 'VAL',
     'villarreal': 'VIL',
+
+    # --- Serie A (Italia, 2026-27) ---
+    # nombres tal como los manda la API (probados a mano contra
+    # eventsround.php el 2026-08-26) + algunos alias por si acaso.
+    'ac milan': 'MIL', 'milan': 'MIL',
+    'roma': 'ROM', 'as roma': 'ROM',
+    'atalanta': 'ATA',
+    'bologna': 'BOL',
+    'cagliari': 'CAG',
+    'como': 'COM', 'como 1907': 'COM',
+    'fiorentina': 'FIO',
+    'frosinone': 'FRO', 'frosinone calcio': 'FRO',
+    'genoa': 'GEN',
+    'inter milan': 'INM', 'inter': 'INM', 'internazionale': 'INM',
+    'juventus': 'JUV',
+    'lazio': 'LAZ',
+    'lecce': 'LEC',
+    'napoli': 'NAP',
+    'parma': 'PAR',
+    'sassuolo': 'SAS',
+    'torino': 'TOR',
+    'udinese': 'UDI',
+    'venezia': 'VNZ', 'venezia fc': 'VNZ',
+    'monza': 'MON', 'ac monza': 'MON',
+
+    # --- Bundesliga (Alemania, 2026-27) ---
+    # ojo: la API manda los nombres CORTOS (probado a mano el 2026-08-26:
+    # "Koln", "Hamburg", "Mainz", no "1. FC Köln"/"Hamburger SV"/"Mainz
+    # 05") — normalizar() no quita puntos, así que si algún día la API
+    # cambia a mandar el nombre largo con punto ("1. FC Köln"), hay que
+    # agregar esa variante aparte, "1 fc koln" (sin punto) NO le pega.
+    'koln': 'KOL', 'fc koln': 'KOL', 'cologne': 'KOL',
+    'bayer leverkusen': 'B04', 'leverkusen': 'B04',
+    'bayern munich': 'FCB', 'bayern munchen': 'FCB', 'bayern': 'FCB',
+    'borussia dortmund': 'BVB', 'dortmund': 'BVB',
+    'borussia monchengladbach': 'BMG', 'monchengladbach': 'BMG', 'mgladbach': 'BMG',
+    'eintracht frankfurt': 'SGE', 'frankfurt': 'SGE',
+    'augsburg': 'AUG', 'fc augsburg': 'AUG',
+    'hamburg': 'HSV', 'hamburger sv': 'HSV', 'hamburger': 'HSV',
+    'mainz': 'MAI', 'mainz 05': 'MAI',
+    'rb leipzig': 'RBL', 'leipzig': 'RBL',
+    'freiburg': 'FRI', 'sc freiburg': 'FRI',
+    'paderborn': 'PAD', 'sc paderborn 07': 'PAD',
+    'schalke 04': 'SCH', 'schalke': 'SCH',
+    'elversberg': 'ELV', 'sv elversberg': 'ELV',
+    'hoffenheim': 'TSG', 'tsg hoffenheim': 'TSG',
+    'union berlin': 'UNB',
+    'stuttgart': 'VFB', 'vfb stuttgart': 'VFB',
+    'werder bremen': 'WER', 'bremen': 'WER',
 }
 
 # "Santos" solo (sin "FC" ni "Laguna") es ambiguo entre Santos Laguna
@@ -272,4 +321,20 @@ DISPLAY_NAMES = {
     'OSA': 'Osasuna', 'CEL': 'Celta de Vigo', 'ALA': 'Deportivo Alavés',
     'ELC': 'Elche CF', 'LEV': 'Levante UD', 'MAL': 'Málaga CF',
     'DEP': 'Deportivo La Coruña', 'RSA': 'Racing de Santander',
+
+    # --- Serie A ---
+    'MIL': 'AC Milan', 'ROM': 'AS Roma', 'ATA': 'Atalanta', 'BOL': 'Bologna',
+    'CAG': 'Cagliari', 'COM': 'Como', 'FIO': 'Fiorentina', 'FRO': 'Frosinone',
+    'GEN': 'Genoa', 'INM': 'Inter de Milán', 'JUV': 'Juventus', 'LAZ': 'Lazio',
+    'LEC': 'Lecce', 'NAP': 'Napoli', 'PAR': 'Parma', 'SAS': 'Sassuolo',
+    'TOR': 'Torino', 'UDI': 'Udinese', 'VNZ': 'Venezia', 'MON': 'Monza',
+
+    # --- Bundesliga ---
+    'KOL': '1. FC Köln', 'B04': 'Bayer Leverkusen', 'FCB': 'Bayern Múnich',
+    'BVB': 'Borussia Dortmund', 'BMG': 'Borussia Mönchengladbach',
+    'SGE': 'Eintracht Frankfurt', 'AUG': 'FC Augsburgo', 'HSV': 'Hamburgo SV',
+    'MAI': 'Mainz 05', 'RBL': 'RB Leipzig', 'FRI': 'SC Friburgo',
+    'PAD': 'SC Paderborn 07', 'SCH': 'Schalke 04', 'ELV': 'SV Elversberg',
+    'TSG': 'TSG Hoffenheim', 'UNB': 'Union Berlin', 'VFB': 'VfB Stuttgart',
+    'WER': 'Werder Bremen',
 }

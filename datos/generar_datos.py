@@ -46,12 +46,22 @@ TEMPORADA = "2026-2027"
 # Argentina/Brasil, estas dos sí usan el mismo formato de temporada que
 # Liga BBVA MX ("2026-2027"), comprobado a mano contra la API antes de
 # escribirlo aquí.
+#
+# Serie A y Bundesliga se agregaron 2026-08-26, mismo formato de
+# temporada que Premier/LaLiga ("2026-2027"), comprobado a mano.
+#
+# "continente" es lo que usan generar_america.py/generar_europa.py (ver
+# esos archivos) para saber qué mitad de LIGAS le toca a cada cron —
+# América y Europa corren en workflows separados desde el 2026-08-26
+# para que cada uno tarde menos y uno no bloquee al otro.
 LIGAS = {
-    "bbva": {"id": 4350, "nombre": "Liga BBVA MX", "temporada": TEMPORADA},
-    "argentina": {"id": 4406, "nombre": "Liga Profesional Argentina", "temporada": "2026"},
-    "brasil": {"id": 4351, "nombre": "Brasileirão Serie A", "temporada": "2026"},
-    "premier": {"id": 4328, "nombre": "Premier League", "temporada": "2026-2027"},
-    "laliga": {"id": 4335, "nombre": "LaLiga", "temporada": "2026-2027"},
+    "bbva": {"id": 4350, "nombre": "Liga BBVA MX", "temporada": TEMPORADA, "continente": "america"},
+    "argentina": {"id": 4406, "nombre": "Liga Profesional Argentina", "temporada": "2026", "continente": "america"},
+    "brasil": {"id": 4351, "nombre": "Brasileirão Serie A", "temporada": "2026", "continente": "america"},
+    "premier": {"id": 4328, "nombre": "Premier League", "temporada": "2026-2027", "continente": "europa"},
+    "laliga": {"id": 4335, "nombre": "LaLiga", "temporada": "2026-2027", "continente": "europa"},
+    "seriea": {"id": 4332, "nombre": "Serie A", "temporada": "2026-2027", "continente": "europa"},
+    "bundesliga": {"id": 4331, "nombre": "Bundesliga", "temporada": "2026-2027", "continente": "europa"},
 }
 
 # 25 alcanzaba de sobra para Liga BBVA MX (17 jornadas), pero el
@@ -108,6 +118,31 @@ os.makedirs(CARPETA_SALIDA, exist_ok=True)
 # temporada regular solo se piden de verdad la jornada en curso y la
 # siguiente; el resto sale de aquí.
 RUTA_CACHE = os.path.join(CARPETA_SALIDA, "cache_rondas.json")
+
+# generar_america.py y generar_europa.py corren como workflows
+# SEPARADOS, cada uno con su propio checkout limpio de git — así que
+# cuando corre el de América, el archivo que generó el de Europa (o
+# viceversa) NO existe en ese checkout (posiciones_europa.json/
+# partidos_europa.json nunca se commitean al repo, solo se suben por
+# FTP). Sin este paso, escribir_datos_js() armaría un datos.js con solo
+# la mitad del sitio y lo subiría por encima del bueno. Se baja del
+# sitio en vivo lo último que de verdad se publicó, y solo si esta
+# corrida no generó ya su propia versión más fresca.
+SITIO_EN_VIVO = "https://pizarramx.com.mx/datos/salida/"
+
+
+def sincronizar_otro_continente(nombre_archivo):
+    ruta_local = os.path.join(CARPETA_SALIDA, nombre_archivo)
+    if os.path.exists(ruta_local):
+        return
+    try:
+        r = requests.get(f"{SITIO_EN_VIVO}{nombre_archivo}", timeout=15)
+        r.raise_for_status()
+        with open(ruta_local, "w", encoding="utf-8") as f:
+            f.write(r.text)
+        print(f"   (sincronizado {nombre_archivo} del sitio en vivo)")
+    except Exception as err:
+        print(f"   ! no se pudo traer {nombre_archivo} del sitio en vivo: {err}")
 
 peticiones_usadas = 0
 
@@ -191,15 +226,19 @@ def mapear_estado_en_vivo(status, progreso):
     return None, None
 
 
-def cargar_cache():
-    if os.path.exists(RUTA_CACHE):
-        with open(RUTA_CACHE, encoding="utf-8") as f:
+def cargar_cache(ruta=RUTA_CACHE):
+    # ruta es parámetro (no siempre RUTA_CACHE global) desde que
+    # generar_america.py/generar_europa.py corren aparte: cada cron
+    # necesita su PROPIO caché de rondas, si no uno le pisa al otro las
+    # rondas que cacheó (ver main() más abajo).
+    if os.path.exists(ruta):
+        with open(ruta, encoding="utf-8") as f:
             return json.load(f)
     return {}
 
 
-def guardar_cache(cache):
-    with open(RUTA_CACHE, "w", encoding="utf-8") as f:
+def guardar_cache(cache, ruta=RUTA_CACHE):
+    with open(ruta, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
 
@@ -571,12 +610,31 @@ def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=
     return partidos
 
 
-def main():
+def main(claves_ligas=None, sufijo="", con_leagues_cup=True, con_extras=True):
+    """
+    claves_ligas: lista de keys de LIGAS a procesar (None = todas — modo
+        de siempre, para correr el script directo a mano).
+    sufijo: se pega a los archivos de salida propios de esta corrida
+        (posiciones{sufijo}.json, partidos{sufijo}.json,
+        cache_rondas{sufijo}.json) para que generar_america.py y
+        generar_europa.py (dos crons separados desde 2026-08-26, ver
+        LIGAS más arriba) no se pisen el archivo entre sí. "" = nombres
+        de siempre.
+    con_leagues_cup: si esta corrida también baja la Leagues Cup (Liga
+        MX vs MLS — solo tiene sentido en la de América).
+    con_extras: si corre videos_youtube.py/detalles_manuales.py sobre
+        los partidos de esta corrida (solo tiene sentido en la de
+        América: los resúmenes y overrides manuales que ya existen son
+        todos de Liga MX/Leagues Cup).
+    """
+    ligas = {k: v for k, v in LIGAS.items() if claves_ligas is None or k in claves_ligas}
+    ruta_cache = os.path.join(CARPETA_SALIDA, f"cache_rondas{sufijo}.json")
+
     standings = {}
     partidos = []
-    cache = cargar_cache()
+    cache = cargar_cache(ruta_cache)
 
-    for clave, info in LIGAS.items():
+    for clave, info in ligas.items():
         eventos = descargar_temporada(clave, info, cache)
         # Argentina no tiene una tabla única (ver ARGENTINA_ZONA_A/B) —
         # el resto de las ligas sí.
@@ -588,34 +646,50 @@ def main():
         print(f"   en vivo ahora mismo: {len(vivos_eq)} partido(s)")
         partidos += construir_partidos(eventos, info, vivos_id, vivos_eq, liga_clave=clave)
 
-    eventos_lc = descargar_leagues_cup(cache)
-    standings["leaguescup"] = calcular_standings_leagues_cup(eventos_lc)
-    vivos_lc_id, vivos_lc_eq = pedir_livescores(LEAGUES_CUP_ID)
-    print(f"   en vivo ahora mismo en Leagues Cup: {len(vivos_lc_eq)} partido(s)")
-    partidos += construir_partidos(eventos_lc, {"nombre": "Leagues Cup"}, vivos_lc_id, vivos_lc_eq)
+    if con_leagues_cup:
+        eventos_lc = descargar_leagues_cup(cache)
+        standings["leaguescup"] = calcular_standings_leagues_cup(eventos_lc)
+        vivos_lc_id, vivos_lc_eq = pedir_livescores(LEAGUES_CUP_ID)
+        print(f"   en vivo ahora mismo en Leagues Cup: {len(vivos_lc_eq)} partido(s)")
+        partidos += construir_partidos(eventos_lc, {"nombre": "Leagues Cup"}, vivos_lc_id, vivos_lc_eq)
 
-    guardar_cache(cache)
+    guardar_cache(cache, ruta_cache)
 
     partidos.sort(key=lambda tupla: (tupla[0], tupla[1]))
     partidos = [partido for _, _, partido in partidos]
 
-    detalles = actualizar_videos(partidos)
-    detalles = detalles_manuales.aplicar(partidos, detalles)
+    detalles = None
+    if con_extras:
+        detalles = actualizar_videos(partidos)
+        detalles = detalles_manuales.aplicar(partidos, detalles)
 
-    ruta_pos = os.path.join(CARPETA_SALIDA, "posiciones.json")
-    ruta_partidos = os.path.join(CARPETA_SALIDA, "partidos.json")
-    ruta_detalles = os.path.join(CARPETA_SALIDA, "detalles.json")
+    ruta_pos = os.path.join(CARPETA_SALIDA, f"posiciones{sufijo}.json")
+    ruta_partidos = os.path.join(CARPETA_SALIDA, f"partidos{sufijo}.json")
 
     with open(ruta_pos, "w", encoding="utf-8") as f:
         json.dump(standings, f, ensure_ascii=False, indent=2)
     with open(ruta_partidos, "w", encoding="utf-8") as f:
         json.dump(partidos, f, ensure_ascii=False, indent=2)
-    with open(ruta_detalles, "w", encoding="utf-8") as f:
-        json.dump(detalles, f, ensure_ascii=False, indent=2)
 
-    # datos.js junta todos los .json de salida/ (incluido el medallero, si
-    # existe) en un solo <script>, para que la página muestre datos reales
-    # se abra como se abra (con servidor o con doble clic).
+    if detalles is not None:
+        ruta_detalles = os.path.join(CARPETA_SALIDA, "detalles.json")
+        with open(ruta_detalles, "w", encoding="utf-8") as f:
+            json.dump(detalles, f, ensure_ascii=False, indent=2)
+
+    # si esta corrida es de un solo continente, hay que traer la mitad
+    # que le toca al OTRO antes de armar el datos.js combinado (ver
+    # sincronizar_otro_continente arriba)
+    if sufijo == "_america":
+        sincronizar_otro_continente("posiciones_europa.json")
+        sincronizar_otro_continente("partidos_europa.json")
+    elif sufijo == "_europa":
+        sincronizar_otro_continente("posiciones_america.json")
+        sincronizar_otro_continente("partidos_america.json")
+
+    # datos.js junta todos los .json de salida/ (incluido el de la OTRA
+    # mitad del continente, recién sincronizada arriba) en un solo
+    # <script>, para que la página muestre datos reales se abra como se
+    # abra (con servidor o con doble clic).
     ruta_datos_js, _ = escribir_datos_js()
 
     print(f"\nListo. Peticiones usadas: {peticiones_usadas}")
@@ -627,9 +701,14 @@ def main():
     print(f"Escrito: {ruta_pos} ({sum(contar_equipos(v) for v in standings.values())} equipos)")
     print(f"Escrito: {ruta_partidos} ({len(partidos)} partidos en ventana de "
           f"{DIAS_ANTES} días atrás / {DIAS_DESPUES} días adelante)")
-    print(f"Escrito: {ruta_detalles} ({len(detalles)} partidos con video)")
+    if detalles is not None:
+        print(f"Escrito: {ruta_detalles} ({len(detalles)} partidos con video)")
     print(f"Escrito: {ruta_datos_js}")
 
 
 if __name__ == "__main__":
-    main()
+    # corrida manual directa: todas las ligas, Leagues Cup y
+    # videos/detalles, con los nombres de archivo de siempre — igual que
+    # antes de que existiera el split por continente (útil para probar
+    # todo junto a mano, como en esta misma sesión).
+    main(claves_ligas=None, sufijo="", con_leagues_cup=True, con_extras=True)

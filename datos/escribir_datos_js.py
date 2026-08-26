@@ -20,6 +20,34 @@ def _leer(nombre):
         return json.load(f)
 
 
+def _combinar_standings():
+    """posiciones_america.json + posiciones_europa.json (cron por
+    continente, ver generar_america.py/generar_europa.py) si existen;
+    si no, cae a posiciones.json de siempre (corrida manual de
+    generar_datos.py sin split, como se usó antes del 2026-08-26)."""
+    america = _leer("posiciones_america.json")
+    europa = _leer("posiciones_europa.json")
+    if america is None and europa is None:
+        return _leer("posiciones.json")
+    combinado = {}
+    combinado.update(america or {})
+    combinado.update(europa or {})
+    return combinado
+
+
+def _combinar_partidos():
+    """Mismo criterio que _combinar_standings pero concatenando las dos
+    listas (y reordenando por fecha, ya que vienen de dos corridas
+    independientes que no se vieron entre sí)."""
+    america = _leer("partidos_america.json")
+    europa = _leer("partidos_europa.json")
+    if america is None and europa is None:
+        return _leer("partidos.json")
+    combinados = (america or []) + (europa or [])
+    combinados.sort(key=lambda p: p.get("fechaISO") or "")
+    return combinados
+
+
 def escribir_datos_js():
     """
     Genera datos.js con todo lo que exista. Se usa <script src> en vez de
@@ -28,11 +56,11 @@ def escribir_datos_js():
     """
     datos = {}
 
-    standings = _leer("posiciones.json")
+    standings = _combinar_standings()
     if standings is not None:
         datos["standings"] = standings
 
-    partidos = _leer("partidos.json")
+    partidos = _combinar_partidos()
     if partidos is not None:
         datos["partidos"] = partidos
 
