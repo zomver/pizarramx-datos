@@ -548,8 +548,16 @@ def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=
         home_abbr, home_nombre = mapear_equipo(ev["strHomeTeam"], liga_clave)
         away_abbr, away_nombre = mapear_equipo(ev["strAwayTeam"], liga_clave)
 
-        hora = (ev.get("strTimeLocal") or ev.get("strTime") or "00:00:00")[:5]
-        fecha_iso = f"{fecha_str}T{hora}:00"
+        # strTime es la hora UTC real del partido; strTimeLocal es la hora
+        # del ESTADIO (útil solo si el visitante estuviera en esa misma
+        # ciudad). Antes se usaba strTimeLocal sin decir que era UTC/local
+        # de nadie en particular, y el front-end la mostraba tal cual — un
+        # visitante en otro país veía la hora del estadio como si fuera la
+        # suya. Ahora se manda la hora UTC real con sufijo "Z", y cada
+        # navegador la convierte a la hora local de quien esté viendo el
+        # sitio (ver horaLocal() en pizarramx.js).
+        hora = (ev.get("strTime") or ev.get("strTimeLocal") or "00:00:00")[:5]
+        fecha_iso = f"{fecha_str}T{hora}:00Z"
         estado, tiempo = mapear_estado(ev.get("strStatus"), fecha, hora)
         gh = int(ev["intHomeScore"]) if ev.get("intHomeScore") is not None else None
         ga = int(ev["intAwayScore"]) if ev.get("intAwayScore") is not None else None
