@@ -507,5 +507,95 @@
         "value": 1
       }
     ]
+  },
+  "seriea": {
+    "goleadores": [
+      {
+        "player": "Donyell Malen",
+        "abbr": "ROM",
+        "value": 2
+      },
+      {
+        "player": "Hassane Kamara",
+        "abbr": "UDI",
+        "value": 1
+      },
+      {
+        "player": "Hakan Çalhanoğlu",
+        "abbr": "INM",
+        "value": 1
+      },
+      {
+        "player": "Gustavo Pereira de Sousa Varela",
+        "abbr": "MON",
+        "value": 1
+      },
+      {
+        "player": "Piotr Zieliński",
+        "abbr": "INM",
+        "value": 1
+      }
+    ],
+    "asistencias": [
+      {
+        "player": "Paulo Dybala",
+        "abbr": "ROM",
+        "value": 2
+      },
+      {
+        "player": "Jurgen Ekkelenkamp",
+        "abbr": "UDI",
+        "value": 1
+      },
+      {
+        "player": "Andy Diouf",
+        "abbr": "INM",
+        "value": 1
+      },
+      {
+        "player": "Gianluca Gaetano",
+        "abbr": "ATA",
+        "value": 1
+      },
+      {
+        "player": "Adrien Rabiot",
+        "abbr": "MIL",
+        "value": 1
+      }
+    ],
+    "amarillas": [
+      {
+        "player": "Jakub Piotrowski",
+        "abbr": "UDI",
+        "value": 1
+      },
+      {
+        "player": "James Adusei Abankwah",
+        "abbr": "UDI",
+        "value": 1
+      },
+      {
+        "player": "Matteo Politano",
+        "abbr": "NAP",
+        "value": 1
+      },
+      {
+        "player": "Hakan Çalhanoğlu",
+        "abbr": "INM",
+        "value": 1
+      },
+      {
+        "player": "Lautaro Martínez",
+        "abbr": "INM",
+        "value": 1
+      }
+    ],
+    "rojas": []
+  },
+  "bundesliga": {
+    "goleadores": [],
+    "asistencias": [],
+    "amarillas": [],
+    "rojas": []
   }
 }

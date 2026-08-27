@@ -565,6 +565,16 @@
     "2398428",
     "2398429",
     "2398430",
+    "2482138",
+    "2482139",
+    "2482140",
+    "2482141",
+    "2482142",
+    "2482143",
+    "2482144",
+    "2482145",
+    "2482146",
+    "2482147",
     "2487452",
     "2487453",
     "2487454",
@@ -9256,6 +9266,289 @@
         "amarillas": 1,
         "rojas": 0
       }
-    }
+    },
+    "seriea": {
+      "34178479": {
+        "player": "Jakub Piotrowski",
+        "abbr": "UDI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34166121": {
+        "player": "Hassane Kamara",
+        "abbr": "UDI",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34170356": {
+        "player": "Jurgen Ekkelenkamp",
+        "abbr": "UDI",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34219352": {
+        "player": "James Adusei Abankwah",
+        "abbr": "UDI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34147231": {
+        "player": "Matteo Politano",
+        "abbr": "NAP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34155404": {
+        "player": "Hakan Çalhanoğlu",
+        "abbr": "INM",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34196442": {
+        "player": "Andy Diouf",
+        "abbr": "INM",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34419690": {
+        "player": "Gustavo Pereira de Sousa Varela",
+        "abbr": "MON",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34164252": {
+        "player": "Lautaro Martínez",
+        "abbr": "INM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34163619": {
+        "player": "Piotr Zieliński",
+        "abbr": "INM",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34222443": {
+        "player": "Zé Pedro",
+        "abbr": "CAG",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34280323": {
+        "player": "Alessandro Romano",
+        "abbr": "CAG",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34169528": {
+        "player": "Giacomo Raspadori",
+        "abbr": "ATA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34169496": {
+        "player": "Gianluca Gaetano",
+        "abbr": "ATA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34193518": {
+        "player": "Cas Odenthal",
+        "abbr": "SAS",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34145543": {
+        "player": "Ruben Loftus-Cheek",
+        "abbr": "MIL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34279752": {
+        "player": "Alphadjo Cissè",
+        "abbr": "MIL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34152573": {
+        "player": "Adrien Rabiot",
+        "abbr": "MIL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34164383": {
+        "player": "Bremer",
+        "abbr": "JUV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34178806": {
+        "player": "Francisco Conceição",
+        "abbr": "JUV",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34173889": {
+        "player": "Romano Schmid",
+        "abbr": "FRO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34165652": {
+        "player": "Zeki Çelik",
+        "abbr": "JUV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34242757": {
+        "player": "Kialonda Gaspar",
+        "abbr": "LEC",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34349060": {
+        "player": "Olaf Gorter",
+        "abbr": "LEC",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34165456": {
+        "player": "Lassana Coulibaly",
+        "abbr": "LEC",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34292352": {
+        "player": "Oumar Ngom",
+        "abbr": "LEC",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34164178": {
+        "player": "Donyell Malen",
+        "abbr": "ROM",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34148200": {
+        "player": "Paulo Dybala",
+        "abbr": "ROM",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34180749": {
+        "player": "Nicolò Fagioli",
+        "abbr": "FIO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34167059": {
+        "player": "Mario Hermoso",
+        "abbr": "ROM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34174783": {
+        "player": "Manu Koné",
+        "abbr": "ROM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34245761": {
+        "player": "Romano Floriani Mussolini",
+        "abbr": "LAZ",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34173339": {
+        "player": "Boulaye Dia",
+        "abbr": "LAZ",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34216589": {
+        "player": "Oussama El Azzouzi",
+        "abbr": "BOL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34200295": {
+        "player": "Nicolò Cambiaghi",
+        "abbr": "BOL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      }
+    },
+    "bundesliga": {}
   }
 }
