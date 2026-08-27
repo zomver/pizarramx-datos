@@ -65,5 +65,14 @@
       "fuente": "Imagen Deportes",
       "proveedor": "dailymotion"
     }
+  },
+  {
+    "home": "ATL",
+    "away": "QRO",
+    "date": "2026-08-29",
+    "directo": {
+      "videoId": "PnDgxUOaoJk",
+      "fuente": "Layvtime"
+    }
   }
 ]
