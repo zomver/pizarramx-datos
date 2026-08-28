@@ -575,6 +575,7 @@
     "2482145",
     "2482146",
     "2482147",
+    "2482150",
     "2487452",
     "2487453",
     "2487454",
@@ -630,9 +631,11 @@
     "2494007",
     "2494008",
     "2494009",
+    "2506169",
     "2506170",
     "2506171",
     "2506172",
+    "2506173",
     "2506174",
     "2506176",
     "2506177",
@@ -646,7 +649,9 @@
     "2506185",
     "2506186",
     "2506187",
-    "2506188"
+    "2506188",
+    "2506198",
+    "2508333"
   ],
   "jugadores": {
     "bbva": {
@@ -9103,7 +9108,7 @@
         "abbr": "ATH",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34222495": {
@@ -9215,13 +9220,13 @@
         "abbr": "RSA",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34163304": {
         "player": "Raphinha",
         "abbr": "BCN",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
@@ -9261,6 +9266,78 @@
       "34167794": {
         "player": "Junior Firpo",
         "abbr": "BET",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34259449": {
+        "player": "Xavi Espart",
+        "abbr": "BCN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172243": {
+        "player": "Pedri",
+        "abbr": "BCN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34145920": {
+        "player": "Iago Aspas",
+        "abbr": "CEL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34251225": {
+        "player": "Miguel Román",
+        "abbr": "CEL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34170295": {
+        "player": "Jon Moncayola",
+        "abbr": "OSA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34148475": {
+        "player": "Marcos Alonso",
+        "abbr": "CEL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34348910": {
+        "player": "Yassir Zabiri",
+        "abbr": "RSA",
+        "goles": 3,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34180804": {
+        "player": "Iñigo Vicente",
+        "abbr": "RSA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34229841": {
+        "player": "Facundo González",
+        "abbr": "RSA",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
@@ -9547,8 +9624,65 @@
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
+      },
+      "34220652": {
+        "player": "Joël Schingtienne",
+        "abbr": "VNZ",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172845": {
+        "player": "Kike Pérez",
+        "abbr": "VNZ",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34155687": {
+        "player": "Ridgeciano Haps",
+        "abbr": "VNZ",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
       }
     },
-    "bundesliga": {}
+    "bundesliga": {
+      "34164100": {
+        "player": "Dayot Upamecano",
+        "abbr": "FCB",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34160666": {
+        "player": "Joshua Kimmich",
+        "abbr": "FCB",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34169106": {
+        "player": "Josha Vagnoman",
+        "abbr": "FCB",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34172857": {
+        "player": "Michael Olise",
+        "abbr": "FCB",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      }
+    }
   }
 }

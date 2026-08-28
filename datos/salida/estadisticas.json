@@ -416,8 +416,18 @@
   "laliga": {
     "goleadores": [
       {
+        "player": "Yassir Zabiri",
+        "abbr": "RSA",
+        "value": 3
+      },
+      {
         "player": "Roberto Fernández",
         "abbr": "ESP",
+        "value": 2
+      },
+      {
+        "player": "Raphinha",
+        "abbr": "BCN",
         "value": 2
       },
       {
@@ -428,16 +438,6 @@
       {
         "player": "Jon Guridi",
         "abbr": "SEV",
-        "value": 1
-      },
-      {
-        "player": "Andrés Martín",
-        "abbr": "RSA",
-        "value": 1
-      },
-      {
-        "player": "Pape Gueye",
-        "abbr": "VIL",
         "value": 1
       }
     ],
@@ -470,6 +470,16 @@
     ],
     "amarillas": [
       {
+        "player": "Gorka Guruzeta",
+        "abbr": "ATH",
+        "value": 2
+      },
+      {
+        "player": "Álvaro Mantilla",
+        "abbr": "RSA",
+        "value": 2
+      },
+      {
         "player": "Isaac Romero",
         "abbr": "SEV",
         "value": 1
@@ -483,16 +493,6 @@
         "player": "Davinchi",
         "abbr": "GET",
         "value": 1
-      },
-      {
-        "player": "Mario Martín",
-        "abbr": "GET",
-        "value": 1
-      },
-      {
-        "player": "Denis Suárez",
-        "abbr": "ALA",
-        "value": 1
       }
     ],
     "rojas": [
@@ -504,6 +504,11 @@
       {
         "player": "Yuri Berchiche",
         "abbr": "ATH",
+        "value": 1
+      },
+      {
+        "player": "Marcos Alonso",
+        "abbr": "CEL",
         "value": 1
       }
     ]
@@ -593,8 +598,30 @@
     "rojas": []
   },
   "bundesliga": {
-    "goleadores": [],
-    "asistencias": [],
+    "goleadores": [
+      {
+        "player": "Josha Vagnoman",
+        "abbr": "FCB",
+        "value": 2
+      },
+      {
+        "player": "Dayot Upamecano",
+        "abbr": "FCB",
+        "value": 1
+      },
+      {
+        "player": "Michael Olise",
+        "abbr": "FCB",
+        "value": 1
+      }
+    ],
+    "asistencias": [
+      {
+        "player": "Joshua Kimmich",
+        "abbr": "FCB",
+        "value": 2
+      }
+    ],
     "amarillas": [],
     "rojas": []
   }
