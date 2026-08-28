@@ -693,6 +693,15 @@ def main(claves_ligas=None, sufijo="", con_leagues_cup=True, con_extras=True):
     elif sufijo == "_europa":
         sincronizar_otro_continente("posiciones_america.json")
         sincronizar_otro_continente("partidos_america.json")
+        # detalles.json (videos/directo) solo lo genera la corrida de
+        # América (con_extras=False acá) — si Europa no lo trae también,
+        # su checkout de git (siempre nuevo) nunca lo tiene localmente, y
+        # FTP-Deploy-Action, al subir a la MISMA carpeta datos/salida/
+        # que usa América, lo borra del servidor creyendo que ya no
+        # debería existir (sync tipo espejo contra su propio estado).
+        # Bug real detectado el 2026-08-27: detalles.json daba 404 en
+        # vivo aunque América lo generaba bien.
+        sincronizar_otro_continente("detalles.json")
 
     # datos.js junta todos los .json de salida/ (incluido el de la OTRA
     # mitad del continente, recién sincronizada arriba) en un solo
