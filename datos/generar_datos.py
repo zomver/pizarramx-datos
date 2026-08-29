@@ -17,7 +17,8 @@ import json
 import os
 import time
 import unicodedata
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -200,6 +201,26 @@ def mapear_equipo(nombre_api, liga_clave=None):
 
 
 MESES = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic']
+
+# TheSportsDB guarda dateEvent en UTC. Un partido nocturno en México
+# (ej. 19:00 CDMX = UTC-6) cruza la medianoche UTC y queda registrado
+# como si fuera el DÍA SIGUIENTE — bug real detectado el 2026-08-28: el
+# sitio mostraba Necaxa-Cruz Azul, Atlante-León y Tijuana-Pumas (los
+# tres jugándose esa misma noche en México) como "próximo" en vez de
+# "hoy", porque "día"/"hoy" se comparaban con la fecha UTC cruda en vez
+# de la fecha en la zona horaria de México (la misma clase de bug que
+# ya se había arreglado para la HORA mostrada, ver horaLocal() en
+# pizarramx.js — esto es el mismo problema pero para el DÍA del calendario).
+ZONA_MX = ZoneInfo("America/Mexico_City")
+
+
+def fecha_local_mx(fecha_str, hora_utc):
+    """Convierte dateEvent (UTC) + hora UTC a la fecha de calendario en
+    México — la que de verdad le importa a quien decide "hoy"/"mañana"
+    desde acá, sin importar en qué huso corra el runner de GitHub
+    Actions (UTC) ni en qué huso esté el estadio."""
+    dt_utc = datetime.strptime(f"{fecha_str} {hora_utc}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+    return dt_utc.astimezone(ZONA_MX).date()
 
 
 def mapear_estado(status, fecha, hora, elapsed=None):
@@ -532,7 +553,9 @@ def calcular_standings_argentina(eventos):
 def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=None, liga_clave=None):
     vivos_por_id = vivos_por_id or {}
     vivos_por_equipos = vivos_por_equipos or {}
-    hoy = date.today()
+    # "hoy" en hora de México, no la del runner (GitHub Actions corre en
+    # UTC) — ver fecha_local_mx()/ZONA_MX arriba para el porqué.
+    hoy = datetime.now(ZONA_MX).date()
     desde = hoy - timedelta(days=DIAS_ANTES)
     hasta = hoy + timedelta(days=DIAS_DESPUES)
 
@@ -558,7 +581,11 @@ def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=
         # sitio (ver horaLocal() en pizarramx.js).
         hora = (ev.get("strTime") or ev.get("strTimeLocal") or "00:00:00")[:5]
         fecha_iso = f"{fecha_str}T{hora}:00Z"
-        estado, tiempo = mapear_estado(ev.get("strStatus"), fecha, hora)
+        # fecha_mx: el día de calendario en México del kickoff real, NO el
+        # dateEvent crudo de TheSportsDB (que es UTC y puede caer un día
+        # después para partidos nocturnos mexicanos) — ver ZONA_MX arriba.
+        fecha_mx = fecha_local_mx(fecha_str, hora)
+        estado, tiempo = mapear_estado(ev.get("strStatus"), fecha_mx, hora)
         gh = int(ev["intHomeScore"]) if ev.get("intHomeScore") is not None else None
         ga = int(ev["intAwayScore"]) if ev.get("intAwayScore") is not None else None
 
@@ -576,7 +603,7 @@ def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=
             if estado_vivo:
                 estado, tiempo = estado_vivo, tiempo_vivo
 
-        if fecha == hoy:
+        if fecha_mx == hoy:
             dia = "hoy"
         elif estado == "ns":
             dia = "proximo"
@@ -604,7 +631,7 @@ def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=
             "status": estado,
             "time": tiempo,
             "venue": ev.get("strVenue") or "Por confirmar",
-            "date": f"{fecha.day} {MESES[fecha.month - 1]} {fecha.year}",
+            "date": f"{fecha_mx.day} {MESES[fecha_mx.month - 1]} {fecha_mx.year}",
             "day": dia,
             # fecha cruda (YYYY-MM-DD): la usa videos_youtube.py para acotar
             # la búsqueda de resúmenes a partir de este día, no la consume
