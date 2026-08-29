@@ -218,9 +218,22 @@ def fecha_local_mx(fecha_str, hora_utc):
     """Convierte dateEvent (UTC) + hora UTC a la fecha de calendario en
     México — la que de verdad le importa a quien decide "hoy"/"mañana"
     desde acá, sin importar en qué huso corra el runner de GitHub
-    Actions (UTC) ni en qué huso esté el estadio."""
-    dt_utc = datetime.strptime(f"{fecha_str} {hora_utc}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
-    return dt_utc.astimezone(ZONA_MX).date()
+    Actions (UTC) ni en qué huso esté el estadio.
+
+    Antes de esto, "hora" (ev.strTime/strTimeLocal) solo viajaba como
+    texto de exhibición, así que un valor raro (partido sin horario
+    confirmado, formato inesperado de la API, etc.) no rompía nada. Esta
+    función es la primera que de verdad la parsea como hora real — bug
+    real detectado el 2026-08-29: un evento con "hora" fuera de formato
+    tronó TODA la corrida de América (exit code 1, ni siquiera llegó a
+    subir por FTP). Con esta red de seguridad, un solo partido raro
+    cae de vuelta a la fecha UTC cruda (un día de diferencia como mucho)
+    en vez de tumbar el pipeline entero."""
+    try:
+        dt_utc = datetime.strptime(f"{fecha_str} {hora_utc}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+        return dt_utc.astimezone(ZONA_MX).date()
+    except (ValueError, TypeError):
+        return datetime.strptime(fecha_str, "%Y-%m-%d").date()
 
 
 def mapear_estado(status, fecha, hora, elapsed=None):
