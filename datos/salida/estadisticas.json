@@ -119,7 +119,7 @@
       {
         "player": "Marcelo Torres",
         "abbr": "GLP",
-        "value": 7
+        "value": 8
       },
       {
         "player": "Junior Marabel",
@@ -132,8 +132,8 @@
         "value": 6
       },
       {
-        "player": "Leandro Díaz",
-        "abbr": "ATU",
+        "player": "Gabriel Ávalos",
+        "abbr": "IND",
         "value": 5
       }
     ],
@@ -141,6 +141,11 @@
       {
         "player": "Gabriel Ávalos",
         "abbr": "IND",
+        "value": 5
+      },
+      {
+        "player": "Julián Palacios",
+        "abbr": "UNI",
         "value": 5
       },
       {
@@ -157,14 +162,14 @@
         "player": "Rafael Profini",
         "abbr": "UNI",
         "value": 4
-      },
-      {
-        "player": "Facundo Lencioni",
-        "abbr": "GEM",
-        "value": 4
       }
     ],
     "amarillas": [
+      {
+        "player": "Federico Fattori",
+        "abbr": "ARG",
+        "value": 6
+      },
       {
         "player": "Eric Meza",
         "abbr": "ELP",
@@ -178,11 +183,6 @@
       {
         "player": "Augusto Schott",
         "abbr": "TAL",
-        "value": 5
-      },
-      {
-        "player": "Federico Fattori",
-        "abbr": "ARG",
         "value": 5
       },
       {
@@ -386,6 +386,11 @@
     ],
     "amarillas": [
       {
+        "player": "Ola Aina",
+        "abbr": "NFO",
+        "value": 2
+      },
+      {
         "player": "Caleb Yirenkyi",
         "abbr": "COV",
         "value": 1
@@ -403,11 +408,6 @@
       {
         "player": "Matt Crooks",
         "abbr": "HUL",
-        "value": 1
-      },
-      {
-        "player": "Daichi Kamada",
-        "abbr": "CRY",
         "value": 1
       }
     ],
