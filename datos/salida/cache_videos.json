@@ -620,28 +620,28 @@
     "video": "5wl6Ww0C2Yo"
   },
   "uni-sar-2398055": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-29T18:30:39.056772",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
     "video": null
   },
   "ate-leo-2487498": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-29T18:30:39.056772",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
     "video": null
   },
   "boc-lan-2398044": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-29T18:30:39.056772",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
     "video": null
   },
   "nec-crz-2487497": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-29T18:30:39.056772",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
     "video": null
   },
   "tij-pum-2487499": {
-    "intentos": 2,
-    "ultimo_intento": "2026-08-29T18:30:39.056772",
+    "intentos": 3,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
     "video": null
   },
   "rie-vel-2398046": {
@@ -677,6 +677,31 @@
   "sao-bra-2398439": {
     "intentos": 1,
     "ultimo_intento": "2026-08-30T01:22:33.045264",
+    "video": null
+  },
+  "vas-cru-2398440": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
+    "video": null
+  },
+  "atu-bel-2398042": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
+    "video": null
+  },
+  "tal-cco-2398053": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
+    "video": null
+  },
+  "ame-pue-2487502": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
+    "video": null
+  },
+  "san-tig-2487503": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T06:57:18.201545",
     "video": null
   }
 }
