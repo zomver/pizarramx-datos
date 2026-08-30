@@ -71,13 +71,13 @@
         "value": 2
       },
       {
-        "player": "Pedro Vite",
-        "abbr": "PUM",
+        "player": "Oussama Idrissi",
+        "abbr": "PAC",
         "value": 2
       },
       {
-        "player": "Kevin Álvarez",
-        "abbr": "AME",
+        "player": "Pedro Vite",
+        "abbr": "PUM",
         "value": 2
       }
     ],
@@ -98,13 +98,13 @@
         "value": 1
       },
       {
-        "player": "Rodrigo Echeverría",
-        "abbr": "LEO",
+        "player": "Manuel Capasso",
+        "abbr": "ATL",
         "value": 1
       },
       {
-        "player": "Diego Barbosa",
-        "abbr": "TOL",
+        "player": "Rodrigo Echeverría",
+        "abbr": "LEO",
         "value": 1
       }
     ]
@@ -171,6 +171,11 @@
         "value": 6
       },
       {
+        "player": "Lucas Robertone",
+        "abbr": "VEL",
+        "value": 6
+      },
+      {
         "player": "Eric Meza",
         "abbr": "ELP",
         "value": 5
@@ -181,13 +186,8 @@
         "value": 5
       },
       {
-        "player": "Augusto Schott",
-        "abbr": "TAL",
-        "value": 5
-      },
-      {
-        "player": "Luca Regiardo",
-        "abbr": "NOB",
+        "player": "César Ibáñez",
+        "abbr": "HUR",
         "value": 5
       }
     ],
@@ -237,14 +237,14 @@
         "value": 7
       },
       {
-        "player": "John Kennedy",
-        "abbr": "FLU",
+        "player": "Luciano",
+        "abbr": "SAO",
         "value": 6
       },
       {
-        "player": "Luciano",
-        "abbr": "SAO",
-        "value": 5
+        "player": "John Kennedy",
+        "abbr": "FLU",
+        "value": 6
       }
     ],
     "asistencias": [
@@ -332,6 +332,11 @@
   "premier": {
     "goleadores": [
       {
+        "player": "Anthony Elanga",
+        "abbr": "NEW",
+        "value": 2
+      },
+      {
         "player": "Kai Havertz",
         "abbr": "ARS",
         "value": 1
@@ -350,14 +355,14 @@
         "player": "Semi Ajayi",
         "abbr": "HUL",
         "value": 1
-      },
-      {
-        "player": "Nobel Mendy",
-        "abbr": "HUL",
-        "value": 1
       }
     ],
     "asistencias": [
+      {
+        "player": "Evanilson",
+        "abbr": "BOU",
+        "value": 2
+      },
       {
         "player": "Riccardo Calafiori",
         "abbr": "ARS",
@@ -375,11 +380,6 @@
       },
       {
         "player": "Harrison Armstrong",
-        "abbr": "EVE",
-        "value": 1
-      },
-      {
-        "player": "Iliman Ndiaye",
         "abbr": "EVE",
         "value": 1
       }
@@ -406,7 +406,7 @@
         "value": 1
       },
       {
-        "player": "Matt Crooks",
+        "player": "Regan Slater",
         "abbr": "HUL",
         "value": 1
       }
@@ -416,13 +416,18 @@
   "laliga": {
     "goleadores": [
       {
+        "player": "Roberto Fernández",
+        "abbr": "ESP",
+        "value": 3
+      },
+      {
         "player": "Yassir Zabiri",
         "abbr": "RSA",
         "value": 3
       },
       {
-        "player": "Roberto Fernández",
-        "abbr": "ESP",
+        "player": "Álex Baena",
+        "abbr": "ATM",
         "value": 2
       },
       {
@@ -434,18 +439,13 @@
         "player": "Alvaro Garcia",
         "abbr": "RAY",
         "value": 1
-      },
-      {
-        "player": "Jon Guridi",
-        "abbr": "SEV",
-        "value": 1
       }
     ],
     "asistencias": [
       {
         "player": "Javi Hernández",
         "abbr": "ESP",
-        "value": 2
+        "value": 3
       },
       {
         "player": "Alberto Moleiro",
@@ -470,6 +470,11 @@
     ],
     "amarillas": [
       {
+        "player": "Urko González de Zárate",
+        "abbr": "ESP",
+        "value": 2
+      },
+      {
         "player": "Gorka Guruzeta",
         "abbr": "ATH",
         "value": 2
@@ -487,11 +492,6 @@
       {
         "player": "Jon Guridi",
         "abbr": "SEV",
-        "value": 1
-      },
-      {
-        "player": "Davinchi",
-        "abbr": "GET",
         "value": 1
       }
     ],
@@ -516,27 +516,27 @@
   "seriea": {
     "goleadores": [
       {
+        "player": "Hassane Kamara",
+        "abbr": "UDI",
+        "value": 2
+      },
+      {
         "player": "Donyell Malen",
         "abbr": "ROM",
         "value": 2
       },
       {
-        "player": "Hassane Kamara",
+        "player": "Jakub Piotrowski",
+        "abbr": "UDI",
+        "value": 1
+      },
+      {
+        "player": "Jurgen Ekkelenkamp",
         "abbr": "UDI",
         "value": 1
       },
       {
         "player": "Hakan Çalhanoğlu",
-        "abbr": "INM",
-        "value": 1
-      },
-      {
-        "player": "Gustavo Pereira de Sousa Varela",
-        "abbr": "MON",
-        "value": 1
-      },
-      {
-        "player": "Piotr Zieliński",
         "abbr": "INM",
         "value": 1
       }
@@ -546,6 +546,11 @@
         "player": "Paulo Dybala",
         "abbr": "ROM",
         "value": 2
+      },
+      {
+        "player": "Hassane Kamara",
+        "abbr": "UDI",
+        "value": 1
       },
       {
         "player": "Jurgen Ekkelenkamp",
@@ -560,11 +565,6 @@
       {
         "player": "Gianluca Gaetano",
         "abbr": "ATA",
-        "value": 1
-      },
-      {
-        "player": "Adrien Rabiot",
-        "abbr": "MIL",
         "value": 1
       }
     ],
@@ -605,6 +605,11 @@
         "value": 2
       },
       {
+        "player": "Younes Ebnoutalib",
+        "abbr": "SGE",
+        "value": 2
+      },
+      {
         "player": "Dayot Upamecano",
         "abbr": "FCB",
         "value": 1
@@ -613,6 +618,11 @@
         "player": "Michael Olise",
         "abbr": "FCB",
         "value": 1
+      },
+      {
+        "player": "Sehrou Guirassy",
+        "abbr": "BVB",
+        "value": 1
       }
     ],
     "asistencias": [
@@ -620,9 +630,55 @@
         "player": "Joshua Kimmich",
         "abbr": "FCB",
         "value": 2
+      },
+      {
+        "player": "Tidiam Gomis",
+        "abbr": "RBL",
+        "value": 2
+      },
+      {
+        "player": "Konstantinos Karetsas",
+        "abbr": "BVB",
+        "value": 1
+      },
+      {
+        "player": "Josip Juranović",
+        "abbr": "UNB",
+        "value": 1
+      },
+      {
+        "player": "Bambasé Conté",
+        "abbr": "TSG",
+        "value": 1
       }
     ],
-    "amarillas": [],
+    "amarillas": [
+      {
+        "player": "Santiago Castañeda",
+        "abbr": "PAD",
+        "value": 1
+      },
+      {
+        "player": "Mattes Hansen",
+        "abbr": "PAD",
+        "value": 1
+      },
+      {
+        "player": "Albert Sambi Lokonga",
+        "abbr": "HSV",
+        "value": 1
+      },
+      {
+        "player": "Julian Ryerson",
+        "abbr": "BVB",
+        "value": 1
+      },
+      {
+        "player": "Younes Ebnoutalib",
+        "abbr": "SGE",
+        "value": 1
+      }
+    ],
     "rojas": []
   }
 }
