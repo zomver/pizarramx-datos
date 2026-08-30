@@ -653,5 +653,30 @@
     "intentos": 1,
     "ultimo_intento": "2026-08-29T23:08:41.630808",
     "video": null
+  },
+  "cam-vit-2398432": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T01:22:33.045264",
+    "video": null
+  },
+  "hur-erc-2398048": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T01:22:33.045264",
+    "video": null
+  },
+  "atl-qro-2487500": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T01:22:33.045264",
+    "video": null
+  },
+  "pac-gdl-2487501": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T01:22:33.045264",
+    "video": null
+  },
+  "sao-bra-2398439": {
+    "intentos": 1,
+    "ultimo_intento": "2026-08-30T01:22:33.045264",
+    "video": null
   }
 }
