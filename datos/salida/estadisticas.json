@@ -2,6 +2,11 @@
   "bbva": {
     "goleadores": [
       {
+        "player": "Rafa Llorente",
+        "abbr": "SLP",
+        "value": 3
+      },
+      {
         "player": "Salomón Rondón",
         "abbr": "PAC",
         "value": 3
@@ -19,11 +24,6 @@
       {
         "player": "Eugenio Pizzuto",
         "abbr": "ATE",
-        "value": 2
-      },
-      {
-        "player": "Rafa Llorente",
-        "abbr": "SLP",
         "value": 2
       }
     ],
@@ -144,6 +144,11 @@
         "value": 5
       },
       {
+        "player": "Facundo Lencioni",
+        "abbr": "GEM",
+        "value": 5
+      },
+      {
         "player": "Julián Palacios",
         "abbr": "UNI",
         "value": 5
@@ -156,11 +161,6 @@
       {
         "player": "Matias Pellegrini",
         "abbr": "VEL",
-        "value": 4
-      },
-      {
-        "player": "Rafael Profini",
-        "abbr": "UNI",
         "value": 4
       }
     ],
@@ -337,6 +337,11 @@
         "value": 2
       },
       {
+        "player": "João Pedro",
+        "abbr": "CHE",
+        "value": 2
+      },
+      {
         "player": "Kai Havertz",
         "abbr": "ARS",
         "value": 1
@@ -349,11 +354,6 @@
       {
         "player": "Martin Ødegaard",
         "abbr": "ARS",
-        "value": 1
-      },
-      {
-        "player": "Semi Ajayi",
-        "abbr": "HUL",
         "value": 1
       }
     ],
@@ -426,6 +426,11 @@
         "value": 3
       },
       {
+        "player": "Jude Bellingham",
+        "abbr": "RMA",
+        "value": 2
+      },
+      {
         "player": "Álex Baena",
         "abbr": "ATM",
         "value": 2
@@ -434,11 +439,6 @@
         "player": "Raphinha",
         "abbr": "BCN",
         "value": 2
-      },
-      {
-        "player": "Alvaro Garcia",
-        "abbr": "RAY",
-        "value": 1
       }
     ],
     "asistencias": [
@@ -521,6 +521,11 @@
         "value": 2
       },
       {
+        "player": "Hakan Çalhanoğlu",
+        "abbr": "INM",
+        "value": 2
+      },
+      {
         "player": "Donyell Malen",
         "abbr": "ROM",
         "value": 2
@@ -533,11 +538,6 @@
       {
         "player": "Jurgen Ekkelenkamp",
         "abbr": "UDI",
-        "value": 1
-      },
-      {
-        "player": "Hakan Çalhanoğlu",
-        "abbr": "INM",
         "value": 1
       }
     ],
@@ -610,6 +610,11 @@
         "value": 2
       },
       {
+        "player": "Yuito Suzuki",
+        "abbr": "FRI",
+        "value": 2
+      },
+      {
         "player": "Dayot Upamecano",
         "abbr": "FCB",
         "value": 1
@@ -617,11 +622,6 @@
       {
         "player": "Michael Olise",
         "abbr": "FCB",
-        "value": 1
-      },
-      {
-        "player": "Sehrou Guirassy",
-        "abbr": "BVB",
         "value": 1
       }
     ],
