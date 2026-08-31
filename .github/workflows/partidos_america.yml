@@ -53,5 +53,19 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add datos/salida/cache_rondas_america.json datos/salida/cache_videos.json
           git diff --cached --quiet || git commit -m "Actualizar caché de jornadas y videos (América)"
-          git pull --rebase origin main
-          git push
+          # reintenta el pull+push varias veces: si el workflow de Europa
+          # (u otra corrida disparada a mano) empuja a "main" justo entre
+          # nuestro pull y nuestro push, el push se rechaza (non-fast-
+          # forward) — antes eso tumbaba el paso entero sin reintentar.
+          # Detectado el 2026-08-31: dos corridas seguidas fallaron aquí
+          # mismo mientras generar/FTP sí habían salido bien (el sitio
+          # nunca se vio afectado, solo se perdía el caché de esa corrida).
+          for intento in 1 2 3 4 5; do
+            git pull --rebase origin main
+            if git push; then
+              exit 0
+            fi
+            echo "push rechazado (intento $intento/5), reintentando..."
+            sleep $((RANDOM % 10 + 5))
+          done
+          echo "no se pudo subir el caché tras 5 intentos — no afecta el sitio (ya se subió por FTP arriba), solo se repiten algunas llamadas a la API la próxima corrida"

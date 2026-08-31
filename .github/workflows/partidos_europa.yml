@@ -51,5 +51,18 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add datos/salida/cache_rondas_europa.json
           git diff --cached --quiet || git commit -m "Actualizar caché de jornadas (Europa)"
-          git pull --rebase origin main
-          git push
+          # mismo fix que partidos_america.yml: reintenta el pull+push si
+          # el de América (u otra corrida disparada a mano) empujó a
+          # "main" justo entre nuestro pull y nuestro push (push
+          # rechazado por non-fast-forward) — antes tumbaba el paso
+          # entero sin reintentar, aunque generar/FTP ya hubieran salido
+          # bien arriba.
+          for intento in 1 2 3 4 5; do
+            git pull --rebase origin main
+            if git push; then
+              exit 0
+            fi
+            echo "push rechazado (intento $intento/5), reintentando..."
+            sleep $((RANDOM % 10 + 5))
+          done
+          echo "no se pudo subir el caché tras 5 intentos — no afecta el sitio (ya se subió por FTP arriba), solo se repiten algunas llamadas a la API la próxima corrida"
