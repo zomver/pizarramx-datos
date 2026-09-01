@@ -73,14 +73,31 @@ LIGAS = {
 MAX_JORNADAS = 40  # tope de seguridad; se detiene antes si una jornada viene vacía
 
 # Leagues Cup 2026: no es una liga normal (25 jornadas, tabla única) — es un
-# torneo aparte, formato suizo, solo 3 rondas, y Liga MX contra MLS siempre.
-# Por eso se maneja con sus propias funciones más abajo, no dentro de LIGAS.
+# torneo aparte, formato suizo, y Liga MX contra MLS siempre. Por eso se
+# maneja con sus propias funciones más abajo, no dentro de LIGAS.
+#
+# NO se baja por número de ronda (a diferencia de descargar_temporada) —
+# bug real descubierto el 2026-08-31: hasta ahora se pedía la fase de
+# grupos con eventsround.php?r=1,2,3 y la eliminatoria con r=125..130
+# (ese salto a 125 ya había sido un hallazgo del 2026-08-26). En algún
+# momento entre esa fecha y el 31 de agosto, TheSportsDB REORGANIZÓ la
+# numeración de este torneo: los 50 partidos completos (grupos +
+# eliminación) quedaron bajo una sola ronda intRound="0", así que las
+# rondas 1-3 y 125-130 empezaron a devolver 0 resultados SIEMPRE —
+# semifinal y final (ej. América vs Tijuana, 2 sep) dejaron de aparecer
+# en el sitio sin ningún error visible.
+#
+# Ni siquiera pedir la ronda "0" resuelve esto del todo: eventsround.php
+# con r=0 sí trae los 50 partidos de grupos, pero NO incluye los de
+# eliminación más recientes (comprobado a mano) — y eventsnextleague.php
+# /eventspastleague.php (pensados justo para esto) vienen limitados a 1
+# solo resultado con la llave gratuita "123". El único método que sí
+# encontró TODOS los partidos pendientes al probarlo a mano fue pedir
+# por FECHA con eventsday.php — por eso descargar_leagues_cup() baja
+# día por día la misma ventana que ya se usa para filtrar qué partidos
+# se muestran (DIAS_ANTES/DIAS_DESPUES), en vez de adivinar rondas.
 LEAGUES_CUP_ID = 5281
 LEAGUES_CUP_TEMPORADA = "2026"
-LEAGUES_CUP_RONDAS = 3  # fase de grupos
-# fase eliminatoria (cuartos, semis, final): ver descargar_leagues_cup()
-# para la explicación completa de por qué no es 4, 5, 6...
-LEAGUES_CUP_RONDAS_ELIMINACION = range(125, 131)
 
 LIGA_MX_ABBRS = {"AME", "ATE", "ATL", "SLP", "GDL", "CRZ", "JUA", "LEO", "MTY",
                   "TIJ", "NEC", "PAC", "PUE", "PUM", "QRO", "SAN", "TIG", "TOL"}
@@ -379,61 +396,50 @@ def calcular_standings(eventos, liga_clave=None):
 
 
 def descargar_leagues_cup(cache):
-    """Baja la fase de grupos (rondas 1-3, numeración normal) y la fase
-    eliminatoria de la Leagues Cup.
+    """Baja los partidos de la Leagues Cup día por día (eventsday.php),
+    dentro de la misma ventana que ya se usa para decidir qué partidos se
+    muestran (DIAS_ANTES/DIAS_DESPUES) — ver la nota junto a
+    LEAGUES_CUP_ID arriba para la explicación completa de por qué ya NO
+    se baja por número de ronda.
 
-    OJO (descubierto 2026-08-26, cuartos de final desaparecidos del
-    sitio): la fase eliminatoria NO sigue la numeración consecutiva de la
-    de grupos — TheSportsDB salta directo a la ronda 125 para cuartos de
-    final (comprobado a mano contra la API). No hay forma de saber de
-    antemano en qué ronda van a caer semifinal y final, así que se
-    revisa un rango fijo (125-130) completo en cada corrida en vez de
-    parar en la primera vacía como hace la fase de grupos — una ronda de
-    eliminación vacía HOY puede tener partidos mañana en cuanto se
-    definan los cruces, así que tampoco se cachea vacía."""
-    print(f"\n[Leagues Cup] descargando rondas...")
+    Cachea un día completo solo cuando TODOS sus partidos ya son "FT"
+    (jornada_terminada) — un día de hoy o futuro con partidos "NS" o en
+    vivo se vuelve a pedir en cada corrida, igual que antes hacía la fase
+    eliminatoria con su rango fijo de rondas."""
+    print(f"\n[Leagues Cup] descargando partidos por fecha...")
     cache_liga = cache.setdefault("leaguescup", {})
+
+    hoy = datetime.now(ZONA_MX).date()
+    desde = hoy - timedelta(days=DIAS_ANTES)
+    hasta = hoy + timedelta(days=DIAS_DESPUES)
+
     eventos = []
-    for ronda in range(1, LEAGUES_CUP_RONDAS + 1):
-        clave_ronda = str(ronda)
+    vistos = set()  # por idEvent, por si algún partido saliera en dos días a la vez
+    dia = desde
+    while dia <= hasta:
+        clave_dia = dia.isoformat()
 
-        if clave_ronda in cache_liga:
-            partidos_ronda = cache_liga[clave_ronda]
-            print(f"   ronda {ronda}: {len(partidos_ronda)} partidos (caché)")
-            eventos.extend(partidos_ronda)
-            continue
+        if clave_dia in cache_liga:
+            partidos_dia = cache_liga[clave_dia]
+            if partidos_dia:
+                print(f"   {clave_dia}: {len(partidos_dia)} partido(s) (caché)")
+        else:
+            data = pedir("eventsday.php", {"d": clave_dia, "l": LEAGUES_CUP_ID})
+            partidos_dia = data.get("events") or []
+            if partidos_dia:
+                print(f"   {clave_dia}: {len(partidos_dia)} partido(s)")
+            if jornada_terminada(partidos_dia):
+                cache_liga[clave_dia] = partidos_dia
 
-        data = pedir("eventsround.php", {
-            "id": LEAGUES_CUP_ID, "r": ronda, "s": LEAGUES_CUP_TEMPORADA,
-        })
-        partidos_ronda = data.get("events") or []
-        eventos.extend(partidos_ronda)
-        print(f"   ronda {ronda}: {len(partidos_ronda)} partidos")
+        for ev in partidos_dia:
+            id_ev = ev.get("idEvent")
+            if id_ev and id_ev in vistos:
+                continue
+            if id_ev:
+                vistos.add(id_ev)
+            eventos.append(ev)
 
-        if jornada_terminada(partidos_ronda):
-            cache_liga[clave_ronda] = partidos_ronda
-
-    for ronda in LEAGUES_CUP_RONDAS_ELIMINACION:
-        clave_ronda = str(ronda)
-
-        if clave_ronda in cache_liga:
-            partidos_ronda = cache_liga[clave_ronda]
-            if partidos_ronda:
-                print(f"   ronda {ronda} (eliminación): {len(partidos_ronda)} partidos (caché)")
-                eventos.extend(partidos_ronda)
-            continue
-
-        data = pedir("eventsround.php", {
-            "id": LEAGUES_CUP_ID, "r": ronda, "s": LEAGUES_CUP_TEMPORADA,
-        })
-        partidos_ronda = data.get("events") or []
-        if not partidos_ronda:
-            continue  # no se cachea: mañana puede que ya haya cruces
-        eventos.extend(partidos_ronda)
-        print(f"   ronda {ronda} (eliminación): {len(partidos_ronda)} partidos")
-
-        if jornada_terminada(partidos_ronda):
-            cache_liga[clave_ronda] = partidos_ronda
+        dia += timedelta(days=1)
 
     print(f"   total: {len(eventos)} partidos en Leagues Cup")
     return eventos
@@ -460,7 +466,16 @@ def calcular_standings_leagues_cup(eventos):
             return "mls"
         return None
 
-    rondas_de_grupo = {str(r) for r in range(1, LEAGUES_CUP_RONDAS + 1)}
+    # NOTA (2026-08-31): desde que descargar_leagues_cup() baja por fecha
+    # en vez de por ronda (ver la nota junto a LEAGUES_CUP_ID), "eventos"
+    # ya nunca va a traer partidos de la fase de grupos — fueron del 4 al
+    # 13 de agosto de 2026, y esa ventana quedó fuera de
+    # DIAS_ANTES/DIAS_DESPUES hace rato. Esta tabla se queda congelada tal
+    # como quedó la última vez que sí se pudo calcular: la fase de grupos
+    # ya terminó y ya definió quién avanzó a eliminación, así que no hace
+    # falta seguir recalculándola. Si algún día hiciera falta reconstruirla
+    # desde cero, hay que volver a pedir esos días a mano con eventsday.php.
+    rondas_de_grupo = {"1", "2", "3"}
 
     for ev in eventos:
         # la tabla es SOLO de la fase de grupos — los partidos de
