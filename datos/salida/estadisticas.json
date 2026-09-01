@@ -332,6 +332,11 @@
   "premier": {
     "goleadores": [
       {
+        "player": "Bukayo Saka",
+        "abbr": "ARS",
+        "value": 3
+      },
+      {
         "player": "Anthony Elanga",
         "abbr": "NEW",
         "value": 2
@@ -347,11 +352,6 @@
         "value": 1
       },
       {
-        "player": "Bukayo Saka",
-        "abbr": "ARS",
-        "value": 1
-      },
-      {
         "player": "Martin Ødegaard",
         "abbr": "ARS",
         "value": 1
@@ -359,14 +359,14 @@
     ],
     "asistencias": [
       {
-        "player": "Evanilson",
-        "abbr": "BOU",
+        "player": "Riccardo Calafiori",
+        "abbr": "ARS",
         "value": 2
       },
       {
-        "player": "Riccardo Calafiori",
-        "abbr": "ARS",
-        "value": 1
+        "player": "Evanilson",
+        "abbr": "BOU",
+        "value": 2
       },
       {
         "player": "Ben White",
@@ -421,23 +421,23 @@
         "value": 3
       },
       {
+        "player": "Raphinha",
+        "abbr": "BCN",
+        "value": 3
+      },
+      {
         "player": "Yassir Zabiri",
         "abbr": "RSA",
         "value": 3
       },
       {
+        "player": "Sergio Camello",
+        "abbr": "RAY",
+        "value": 2
+      },
+      {
         "player": "Jude Bellingham",
         "abbr": "RMA",
-        "value": 2
-      },
-      {
-        "player": "Álex Baena",
-        "abbr": "ATM",
-        "value": 2
-      },
-      {
-        "player": "Raphinha",
-        "abbr": "BCN",
         "value": 2
       }
     ],
@@ -446,6 +446,11 @@
         "player": "Javi Hernández",
         "abbr": "ESP",
         "value": 3
+      },
+      {
+        "player": "Alvaro Garcia",
+        "abbr": "RAY",
+        "value": 1
       },
       {
         "player": "Alberto Moleiro",
@@ -460,11 +465,6 @@
       {
         "player": "Jorge de Frutos",
         "abbr": "RAY",
-        "value": 1
-      },
-      {
-        "player": "Arda Güler",
-        "abbr": "RMA",
         "value": 1
       }
     ],
@@ -516,6 +516,11 @@
   "seriea": {
     "goleadores": [
       {
+        "player": "Donyell Malen",
+        "abbr": "ROM",
+        "value": 4
+      },
+      {
         "player": "Hassane Kamara",
         "abbr": "UDI",
         "value": 2
@@ -523,11 +528,6 @@
       {
         "player": "Hakan Çalhanoğlu",
         "abbr": "INM",
-        "value": 2
-      },
-      {
-        "player": "Donyell Malen",
-        "abbr": "ROM",
         "value": 2
       },
       {
