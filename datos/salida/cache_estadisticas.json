@@ -670,6 +670,39 @@
     "2487503",
     "2487504",
     "2487505",
+    "2491731",
+    "2491732",
+    "2491733",
+    "2491734",
+    "2491735",
+    "2491736",
+    "2491737",
+    "2491738",
+    "2491739",
+    "2491740",
+    "2491741",
+    "2491742",
+    "2491743",
+    "2491744",
+    "2491745",
+    "2491746",
+    "2491747",
+    "2491748",
+    "2491749",
+    "2491751",
+    "2491752",
+    "2491753",
+    "2491754",
+    "2491755",
+    "2491756",
+    "2491757",
+    "2491758",
+    "2492395",
+    "2492396",
+    "2492397",
+    "2492398",
+    "2492399",
+    "2492400",
     "2494000",
     "2494001",
     "2494002",
@@ -727,7 +760,43 @@
     "2508338",
     "2508339",
     "2508340",
-    "2508341"
+    "2508341",
+    "2532699",
+    "2532700",
+    "2532701",
+    "2532702",
+    "2532703",
+    "2532704",
+    "2532705",
+    "2532706",
+    "2532707",
+    "2532708",
+    "2532709",
+    "2532710",
+    "2536531",
+    "2536532",
+    "2536533",
+    "2536534",
+    "2536535",
+    "2536537",
+    "2544171",
+    "2544172",
+    "2544173",
+    "2544174",
+    "2551402",
+    "2551403",
+    "2552931",
+    "2552932",
+    "2552933",
+    "2552934",
+    "2552935",
+    "2552936",
+    "2552937",
+    "2552938",
+    "2552939",
+    "2552940",
+    "2552941",
+    "2552942"
   ],
   "jugadores": {
     "bbva": {
@@ -11026,6 +11095,1648 @@
       "34177837": {
         "player": "Fabian Rieder",
         "abbr": "AUG",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      }
+    },
+    "champions": {
+      "34290060": {
+        "player": "Oliver Ekroth",
+        "abbr": "VIK",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34241033": {
+        "player": "Mislav Matić",
+        "abbr": "VAR",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34436666": {
+        "player": "Brahima Magassa",
+        "abbr": "KUP",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34286639": {
+        "player": "Clinton Antwi",
+        "abbr": "KUP",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34420147": {
+        "player": "Bob Armah",
+        "abbr": "KUP",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34223722": {
+        "player": "Lee Casciaro",
+        "abbr": "LIN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34156227": {
+        "player": "Nano",
+        "abbr": "LIN",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34436624": {
+        "player": "Manu Toledano",
+        "abbr": "LIN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34276132": {
+        "player": "Christian Rutjens",
+        "abbr": "INT",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34436668": {
+        "player": "Oussama Ali",
+        "abbr": "KI ",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34225616": {
+        "player": "Páll Klettskarð",
+        "abbr": "KI ",
+        "goles": 2,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34225612": {
+        "player": "Árni Frederiksberg",
+        "abbr": "KI ",
+        "goles": 1,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34436669": {
+        "player": "Tiago Rodrigues da Costa",
+        "abbr": "ATE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34248311": {
+        "player": "Sean Graham",
+        "abbr": "LAR",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34218360": {
+        "player": "Sam McClelland",
+        "abbr": "LAR",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34248323": {
+        "player": "Matthew Lusty",
+        "abbr": "LAR",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34232123": {
+        "player": "Nikola Serafimov",
+        "abbr": "LEV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34233754": {
+        "player": "Luka Juričić",
+        "abbr": "BOR",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34276798": {
+        "player": "Armstrong Oko-Flex",
+        "abbr": "LEV",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34258845": {
+        "player": "Sérgio Lobo Araújo",
+        "abbr": "LEV",
+        "goles": 0,
+        "asistencias": 3,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34241642": {
+        "player": "Muhammed Cray Badamosi",
+        "abbr": "RIG",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34278650": {
+        "player": "Hugo Oliveira",
+        "abbr": "ARA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34233065": {
+        "player": "Karen Muradyan",
+        "abbr": "ARA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34277101": {
+        "player": "Salah Oulad",
+        "abbr": "RIG",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34232864": {
+        "player": "Frenks Orols",
+        "abbr": "RIG",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34175001": {
+        "player": "Joris Moutachy",
+        "abbr": "KAU",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34175779": {
+        "player": "Amine Benchaib",
+        "abbr": "KAU",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34249653": {
+        "player": "Rokas Lekiatas",
+        "abbr": "KAU",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34291135": {
+        "player": "Blerton Sheji",
+        "abbr": "DRI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34221468": {
+        "player": "Robert Murić",
+        "abbr": "FLO",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34347117": {
+        "player": "Matthew Healy",
+        "abbr": "SHA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 1
+      },
+      "34228875": {
+        "player": "Joy-Lance Mickels",
+        "abbr": "SAB",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34174873": {
+        "player": "Akim Zedadka",
+        "abbr": "SAB",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34246767": {
+        "player": "Jordan Williams",
+        "abbr": "THE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34284516": {
+        "player": "Steve Solvet",
+        "abbr": "SAB",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34246748": {
+        "player": "Jovan Čađenović",
+        "abbr": "SUT",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34420991": {
+        "player": "Aleksa Golubović",
+        "abbr": "SUT",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34222974": {
+        "player": "Damir Kasabulat",
+        "abbr": "KAI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34240134": {
+        "player": "Mihhail Kolobov",
+        "abbr": "FLO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34240307": {
+        "player": "Jemali-Giorgi Jinjolava",
+        "abbr": "IBE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34223965": {
+        "player": "Vladislav Kreida",
+        "abbr": "FLO",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34347384": {
+        "player": "Vakho Bedoshvili",
+        "abbr": "IBE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34346481": {
+        "player": "Sander Tovstik",
+        "abbr": "FLO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34436670": {
+        "player": "Petru Popescu",
+        "abbr": "PET",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34228566": {
+        "player": "Altin Kryeziu",
+        "abbr": "EGN",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34195970": {
+        "player": "Guillem Jaime",
+        "abbr": "EGN",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34228644": {
+        "player": "Albano Aleksi",
+        "abbr": "EGN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34287886": {
+        "player": "Ștefan Baiaram",
+        "abbr": "UNI",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34193696": {
+        "player": "Oleksandr Romanchuk",
+        "abbr": "UNI",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34178269": {
+        "player": "Valeriy Gromyko",
+        "abbr": "MAX",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34234273": {
+        "player": "Valeri Bocherov",
+        "abbr": "MAX",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34226851": {
+        "player": "Assad Al-Hamlawi",
+        "abbr": "UNI",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34217019": {
+        "player": "Ivan Lepinjica",
+        "abbr": "SAB",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34221721": {
+        "player": "Aaron Malouda",
+        "abbr": "SAB",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34245930": {
+        "player": "Rəhman Daşdəmirov",
+        "abbr": "SAB",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34180777": {
+        "player": "Tymoteusz Puchacz",
+        "abbr": "SAB",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34217680": {
+        "player": "Rhys Hughes",
+        "abbr": "THE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172226": {
+        "player": "Siniša Saničanin",
+        "abbr": "BOR",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34183351": {
+        "player": "Sebastián Herrera",
+        "abbr": "BOR",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34233307": {
+        "player": "Reinaldo",
+        "abbr": "LEV",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34230894": {
+        "player": "Francisco Mota de Castro",
+        "abbr": "LEV",
+        "goles": 1,
+        "asistencias": 3,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34245043": {
+        "player": "Lee Grace",
+        "abbr": "SHA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34248233": {
+        "player": "Jack Byrne",
+        "abbr": "SHA",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34250938": {
+        "player": "Tomislav Gudelj",
+        "abbr": "FLO",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34436667": {
+        "player": "Mustapha Jah",
+        "abbr": "FLO",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34244980": {
+        "player": "Dylan Watts",
+        "abbr": "SHA",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34420161": {
+        "player": "John McGovern",
+        "abbr": "SHA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34235495": {
+        "player": "Tarik Ibrahimagic",
+        "abbr": "VIK",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34181165": {
+        "player": "Szabolcs Schön",
+        "abbr": "GYO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34303348": {
+        "player": "Rajmund Tóth",
+        "abbr": "GYO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34433900": {
+        "player": "Ștefan Vlădoiu",
+        "abbr": "GYO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34231075": {
+        "player": "Daníel Hafsteinsson",
+        "abbr": "VIK",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34145768": {
+        "player": "Gylfi Sigurðsson",
+        "abbr": "VIK",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34223092": {
+        "player": "Álex Sánchez",
+        "abbr": "INT",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34175175": {
+        "player": "Álex Mula",
+        "abbr": "LIN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34436823": {
+        "player": "Yussef Flalhi Idrissi",
+        "abbr": "LIN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34299530": {
+        "player": "Nika Sikharulashvili",
+        "abbr": "IBE",
+        "goles": 3,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34336679": {
+        "player": "Giorgi Kutsia",
+        "abbr": "IBE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34239263": {
+        "player": "Zviad Natchkebia",
+        "abbr": "IBE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34436903": {
+        "player": "Pietro Mengucci",
+        "abbr": "TRE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34348416": {
+        "player": "Matteo Prandelli",
+        "abbr": "TRE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34436882": {
+        "player": "Matt Ridley",
+        "abbr": "LAR",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34178498": {
+        "player": "Alessandro D'Addario",
+        "abbr": "TRE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34248319": {
+        "player": "Conor McKendry",
+        "abbr": "LAR",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34348409": {
+        "player": "Simone Rea",
+        "abbr": "TRE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34336710": {
+        "player": "Iago Siqueira",
+        "abbr": "RIG",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34345511": {
+        "player": "Ahmed Ankrah",
+        "abbr": "RIG",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34233056": {
+        "player": "Edgar Grigoryan",
+        "abbr": "ARA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34239899": {
+        "player": "Orlando Galo",
+        "abbr": "RIG",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34165379": {
+        "player": "Vykintas Slivka",
+        "abbr": "KAU",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34419533": {
+        "player": "Igball Jashari",
+        "abbr": "DRI",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34348371": {
+        "player": "Liridon Balaj",
+        "abbr": "DRI",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34241028": {
+        "player": "Jorgo Pëllumbi",
+        "abbr": "DRI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34223747": {
+        "player": "Arb Manaj",
+        "abbr": "DRI",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34223272": {
+        "player": "Andrija Ražnatović",
+        "abbr": "SUT",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34421398": {
+        "player": "Ismail Bekbolat",
+        "abbr": "KAI",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34234195": {
+        "player": "Eneo Bitri",
+        "abbr": "EGN",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34244469": {
+        "player": "Soumaila Bakayoko",
+        "abbr": "EGN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34175660": {
+        "player": "Alessandro Albanese",
+        "abbr": "EGN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34246778": {
+        "player": "Mihail Plătică",
+        "abbr": "EGN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34436904": {
+        "player": "Roman Ferber",
+        "abbr": "ATE",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34173724": {
+        "player": "Hallur Hansson",
+        "abbr": "KI ",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34192508": {
+        "player": "Mikael Ishak",
+        "abbr": "LEC",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34191648": {
+        "player": "Joel Pereira",
+        "abbr": "LEC",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34152633": {
+        "player": "Jesper Hansen",
+        "abbr": "AGF",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34198687": {
+        "player": "Patrik Wålemark",
+        "abbr": "LEC",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34229332": {
+        "player": "Antoni Kozubal",
+        "abbr": "LEC",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34146533": {
+        "player": "Talisca",
+        "abbr": "FEN",
+        "goles": 3,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34175493": {
+        "player": "Jon Gorenc Stankovic",
+        "abbr": "STU",
+        "goles": 2,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34240015": {
+        "player": "Jeyland Mitchell",
+        "abbr": "STU",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34217667": {
+        "player": "Oisin McEntee",
+        "abbr": "HEA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34164572": {
+        "player": "Miha Zajc",
+        "abbr": "DIN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34224694": {
+        "player": "Brighton Labeau",
+        "abbr": "THU",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34435495": {
+        "player": "Fabio Fehr",
+        "abbr": "THU",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34236450": {
+        "player": "Mateo Lisica",
+        "abbr": "DIN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34178413": {
+        "player": "Kings Kangwa",
+        "abbr": "HAP",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34231056": {
+        "player": "Nikolaj Hansen",
+        "abbr": "VIK",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34175284": {
+        "player": "Igor Zlatanović",
+        "abbr": "HAP",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34156120": {
+        "player": "Miguel Vitor",
+        "abbr": "HAP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34224038": {
+        "player": "Áki Debes Samuelsen",
+        "abbr": "MJA",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34176197": {
+        "player": "Jesper Gustavsson",
+        "abbr": "MJA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34176200": {
+        "player": "Jacob Bergström",
+        "abbr": "MJA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34237437": {
+        "player": "Villiam Granath",
+        "abbr": "MJA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34223723": {
+        "player": "Mandi",
+        "abbr": "LIN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34220867": {
+        "player": "Alen Mustafić",
+        "abbr": "SLB",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34175264": {
+        "player": "Giorgi Makaridze",
+        "abbr": "IBE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34169634": {
+        "player": "Andraž Šporar",
+        "abbr": "SLB",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34222467": {
+        "player": "Sandro Cruz",
+        "abbr": "SLB",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34238477": {
+        "player": "Alasana Yirajang",
+        "abbr": "SLB",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34348531": {
+        "player": "Aleksandre Amisulashvili",
+        "abbr": "IBE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34420042": {
+        "player": "Sandro Lima",
+        "abbr": "ARA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34230394": {
+        "player": "Young-woo Seol",
+        "abbr": "CRV",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34191737": {
+        "player": "Bruno Duarte",
+        "abbr": "CRV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34239163": {
+        "player": "Veljko Simić",
+        "abbr": "SAB",
+        "goles": 3,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34287883": {
+        "player": "Tommi Jyry",
+        "abbr": "KUP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34200768": {
+        "player": "Kaheem Parris",
+        "abbr": "SAB",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34230890": {
+        "player": "Kristian Traychev Dimitrov",
+        "abbr": "LEV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34245681": {
+        "player": "Aldair Neves Paulo Faustino",
+        "abbr": "LEV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34246737": {
+        "player": "Mario Kvesić",
+        "abbr": "CEL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34234922": {
+        "player": "Svit Sešlar",
+        "abbr": "CEL",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34173264": {
+        "player": "Eljon Sota",
+        "abbr": "EGN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34191591": {
+        "player": "Fernando Silva",
+        "abbr": "EGN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34296434": {
+        "player": "Panagiotis Andreou",
+        "abbr": "OMO",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34181154": {
+        "player": "Loïc Négo",
+        "abbr": "OMO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34171976": {
+        "player": "Albert Vallci",
+        "abbr": "STU",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34225338": {
+        "player": "Simon Seidl",
+        "abbr": "STU",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34244939": {
+        "player": "Aaron Greene",
+        "abbr": "SHA",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34233058": {
+        "player": "Junior Julio",
+        "abbr": "ARA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34228062": {
+        "player": "Pico",
+        "abbr": "SHA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34180903": {
+        "player": "Tom Pettersson",
+        "abbr": "MJA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34246786": {
+        "player": "Toni García",
+        "abbr": "LIN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34219944": {
+        "player": "Umarali Rahmonaliyev",
+        "abbr": "SAB",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34221260": {
+        "player": "Lukáš Sadílek",
+        "abbr": "GOR",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34195474": {
+        "player": "Erik Janža",
+        "abbr": "GOR",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34174177": {
+        "player": "Jayden Oosterwolde",
+        "abbr": "FEN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34223658": {
+        "player": "Gunnar Vatnhamar",
+        "abbr": "VIK",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34234389": {
+        "player": "Lucas de Souza Ventura",
+        "abbr": "HAP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34161332": {
+        "player": "Aleksandar Katai",
+        "abbr": "CRV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34146199": {
+        "player": "Milos Veljkovic",
+        "abbr": "CRV",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34145959": {
+        "player": "Marko Arnautović",
+        "abbr": "CRV",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34199065": {
+        "player": "Loizos Loizou",
+        "abbr": "CRV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34219502": {
+        "player": "César Blackman",
+        "abbr": "SLB",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34179219": {
+        "player": "Mykola Kukharevych",
+        "abbr": "SLB",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34348587": {
+        "player": "Gastón Tellechea",
+        "abbr": "KI ",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34222839": {
+        "player": "Anton Tolordava",
+        "abbr": "KAU",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 2,
+        "rojas": 0
+      },
+      "34196517": {
+        "player": "David Carmo",
+        "abbr": "OLY",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34196354": {
+        "player": "Martin Suchomel",
+        "abbr": "LYO",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34221235": {
+        "player": "Matěj Ryneš",
+        "abbr": "SPA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34216038": {
+        "player": "Andy Irving",
+        "abbr": "SPA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34196353": {
+        "player": "Adam Karabec",
+        "abbr": "SPA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34149045": {
+        "player": "Corentin Tolisso",
+        "abbr": "LYO",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34301729": {
+        "player": "Massiré Sylla",
+        "abbr": "UNI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172285": {
+        "player": "Patrick Berg",
+        "abbr": "BOD",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34345718": {
+        "player": "Raul Florucz",
+        "abbr": "UNI",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34218755": {
+        "player": "Kevin Mac Allister",
+        "abbr": "UNI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34218148": {
+        "player": "Ole Didrik Blomberg",
+        "abbr": "BOD",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34199453": {
+        "player": "Artur Serobyan",
+        "abbr": "ARA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34196946": {
+        "player": "Mohammad Abu Fani",
+        "abbr": "CRV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34236051": {
+        "player": "Zahi Ahmed",
+        "abbr": "HAP",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34197256": {
+        "player": "Strahinja Eraković",
+        "abbr": "CRV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34221317": {
+        "player": "Luka Stojković",
+        "abbr": "DIN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34156666": {
+        "player": "Scott McKenna",
+        "abbr": "DIN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34247988": {
+        "player": "Olof Perez Vinlöf",
+        "abbr": "DIN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34177834": {
+        "player": "Josip Mišić",
+        "abbr": "DIN",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34237410": {
+        "player": "Elliot Stroud",
+        "abbr": "MJA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34192854": {
+        "player": "Kerem Aktürkoğlu",
+        "abbr": "FEN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34170017": {
+        "player": "Mason Greenwood",
+        "abbr": "FEN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34160649": {
+        "player": "Marco Asensio",
+        "abbr": "FEN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34202601": {
+        "player": "Ernest Nuamah",
+        "abbr": "LYO",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34229820": {
+        "player": "Adam Ševínský",
+        "abbr": "SPA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34145444": {
+        "player": "Ainsley Maitland-Niles",
+        "abbr": "LYO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34233067": {
+        "player": "Alwyn Tera",
+        "abbr": "ARA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34170272": {
+        "player": "Leonardo Koutris",
+        "abbr": "CEL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34436160": {
+        "player": "Itay Rotman",
+        "abbr": "HAP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34161861": {
+        "player": "Dejan Stanković",
+        "abbr": "CRV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34237517": {
+        "player": "Javon East",
+        "abbr": "HAP",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34161355": {
+        "player": "Nélson Semedo",
+        "abbr": "FEN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34220651": {
+        "player": "Archie Brown",
+        "abbr": "FEN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34216871": {
+        "player": "Suleiman Camara",
+        "abbr": "SLB",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34421400": {
+        "player": "Olzhas Baybek",
+        "abbr": "KAI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34221314": {
+        "player": "Lukas Kačavenda",
+        "abbr": "DIN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34203396": {
+        "player": "Dion Beljo",
+        "abbr": "DIN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34195245": {
+        "player": "Ivan Filipović",
+        "abbr": "DIN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34220117": {
+        "player": "Rasmus Carstensen",
+        "abbr": "AGF",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34225897": {
+        "player": "Jacob Andersen",
+        "abbr": "AGF",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,

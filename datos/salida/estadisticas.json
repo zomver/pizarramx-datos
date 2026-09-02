@@ -680,5 +680,115 @@
       }
     ],
     "rojas": []
+  },
+  "champions": {
+    "goleadores": [
+      {
+        "player": "Nika Sikharulashvili",
+        "abbr": "IBE",
+        "value": 3
+      },
+      {
+        "player": "Talisca",
+        "abbr": "FEN",
+        "value": 3
+      },
+      {
+        "player": "Veljko Simić",
+        "abbr": "SAB",
+        "value": 3
+      },
+      {
+        "player": "Páll Klettskarð",
+        "abbr": "KI ",
+        "value": 2
+      },
+      {
+        "player": "Armstrong Oko-Flex",
+        "abbr": "LEV",
+        "value": 2
+      }
+    ],
+    "asistencias": [
+      {
+        "player": "Sérgio Lobo Araújo",
+        "abbr": "LEV",
+        "value": 3
+      },
+      {
+        "player": "Francisco Mota de Castro",
+        "abbr": "LEV",
+        "value": 3
+      },
+      {
+        "player": "Árni Frederiksberg",
+        "abbr": "KI ",
+        "value": 2
+      },
+      {
+        "player": "Guillem Jaime",
+        "abbr": "EGN",
+        "value": 2
+      },
+      {
+        "player": "Tymoteusz Puchacz",
+        "abbr": "SAB",
+        "value": 2
+      }
+    ],
+    "amarillas": [
+      {
+        "player": "Sean Graham",
+        "abbr": "LAR",
+        "value": 2
+      },
+      {
+        "player": "Nikola Serafimov",
+        "abbr": "LEV",
+        "value": 2
+      },
+      {
+        "player": "Salah Oulad",
+        "abbr": "RIG",
+        "value": 2
+      },
+      {
+        "player": "Joris Moutachy",
+        "abbr": "KAU",
+        "value": 2
+      },
+      {
+        "player": "Joy-Lance Mickels",
+        "abbr": "SAB",
+        "value": 2
+      }
+    ],
+    "rojas": [
+      {
+        "player": "Frenks Orols",
+        "abbr": "RIG",
+        "value": 1
+      },
+      {
+        "player": "Matthew Healy",
+        "abbr": "SHA",
+        "value": 1
+      },
+      {
+        "player": "Albano Aleksi",
+        "abbr": "EGN",
+        "value": 1
+      },
+      {
+        "player": "Jesper Hansen",
+        "abbr": "AGF",
+        "value": 1
+      },
+      {
+        "player": "Loïc Négo",
+        "abbr": "OMO",
+        "value": 1
+      }
+    ]
   }
 }
