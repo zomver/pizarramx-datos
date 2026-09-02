@@ -249,6 +249,31 @@ NAME_MAP = {
     'union berlin': 'UNB',
     'stuttgart': 'VFB', 'vfb stuttgart': 'VFB',
     'werder bremen': 'WER', 'bremen': 'WER',
+
+    # --- Champions League (equipos que no están en ninguna de las ligas
+    # de arriba — los que sí, como Real Madrid o Bayern Múnich, ya
+    # funcionan con sus abreviaciones normales) ---
+    'aek athens': 'AEK',
+    # normalizar() NO convierte "ø" a "o" (no es un acento combinable,
+    # normalize() con NFKD no lo descompone) — hay que dejar el string
+    # exacto tal como lo manda la API, comprobado a mano el 2026-09-01
+    'bodø/glimt': 'BOD', 'bodoglimt': 'BOD', 'bodo glimt': 'BOD', 'bodo/glimt': 'BOD',
+    'club brugge': 'BRU', 'brugge': 'BRU',
+    'fenerbahce': 'FEN', 'fenerbahce sk': 'FEN',
+    'feyenoord': 'FEY',
+    'galatasaray': 'GAL',
+    'lask': 'LAS', 'lask linz': 'LAS',
+    'lens': 'LNS', 'rc lens': 'LNS',
+    'lille': 'LIL', 'losc lille': 'LIL',
+    'psv eindhoven': 'PSV', 'psv': 'PSV',
+    'paris saint-germain': 'PSG', 'paris saint germain': 'PSG', 'psg': 'PSG',
+    'porto': 'FCP', 'fc porto': 'FCP',
+    'sabah baku': 'SAB',
+    'shakhtar donetsk': 'SHK', 'shakhtar': 'SHK',
+    'slavia prague': 'SLA', 'slavia praha': 'SLA',
+    'slovan bratislava': 'SLB',
+    'sporting cp': 'SCP', 'sporting lisbon': 'SCP', 'sporting lisboa': 'SCP',
+    'viking': 'VIK', 'viking fk': 'VIK',
 }
 
 # "Santos" solo (sin "FC" ni "Laguna") es ambiguo entre Santos Laguna
@@ -337,4 +362,12 @@ DISPLAY_NAMES = {
     'PAD': 'SC Paderborn 07', 'SCH': 'Schalke 04', 'ELV': 'SV Elversberg',
     'TSG': 'TSG Hoffenheim', 'UNB': 'Union Berlin', 'VFB': 'VfB Stuttgart',
     'WER': 'Werder Bremen',
+
+    # --- Champions League (equipos fuera de las ligas de arriba) ---
+    'AEK': 'AEK Athens', 'BOD': 'Bodø/Glimt', 'BRU': 'Club Brugge',
+    'FEN': 'Fenerbahçe', 'FEY': 'Feyenoord', 'GAL': 'Galatasaray',
+    'LAS': 'LASK', 'LNS': 'Lens', 'LIL': 'Lille', 'PSV': 'PSV Eindhoven',
+    'PSG': 'Paris Saint-Germain', 'FCP': 'Porto', 'SAB': 'Sabah Baku',
+    'SHK': 'Shakhtar Donetsk', 'SLA': 'Slavia Praga', 'SLB': 'Slovan Bratislava',
+    'SCP': 'Sporting CP', 'VIK': 'Viking',
 }
