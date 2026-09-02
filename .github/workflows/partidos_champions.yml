@@ -1,0 +1,63 @@
+name: Actualizar partidos y posiciones — Champions League
+
+# A propósito SIN "schedule" — a diferencia de América y Europa, este
+# workflow NO corre solo cada 10 min. Se dispara a mano desde la pestaña
+# Actions de GitHub ("Run workflow"), cuando el usuario quiera.
+#
+# Mismo motivo de fondo que la separación América/Europa (ver
+# partidos_america.yml): no compartir corrida con las otras ligas, y
+# aquí además evitar gastar cuota de la API/minutos de Actions en una
+# competencia que solo tiene partidos entre semana un puñado de días al
+# mes, a diferencia de las ligas domésticas que juegan todo el año.
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: actualizar-datos-champions
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: pip install -r datos/requirements.txt
+
+      - name: Generar datos de Champions League (posiciones, partidos, datos.js)
+        run: python datos/generar_champions.py
+
+      - name: Subir datos/salida a Hostinger por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./datos/salida/
+          server-dir: ./datos/salida/
+          timeout: 60000
+
+      - name: Guardar caché de jornadas terminadas en el repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add datos/salida/cache_rondas_champions.json
+          git diff --cached --quiet || git commit -m "Actualizar caché de jornadas (Champions League)"
+          # mismo fix que partidos_america.yml/partidos_europa.yml:
+          # reintenta el pull+push si América o Europa empujaron a "main"
+          # justo entre nuestro pull y nuestro push.
+          for intento in 1 2 3 4 5; do
+            git pull --rebase origin main
+            if git push; then
+              exit 0
+            fi
+            echo "push rechazado (intento $intento/5), reintentando..."
+            sleep $((RANDOM % 10 + 5))
+          done
+          echo "no se pudo subir el caché tras 5 intentos — no afecta el sitio (ya se subió por FTP arriba), solo se repiten algunas llamadas a la API la próxima corrida"

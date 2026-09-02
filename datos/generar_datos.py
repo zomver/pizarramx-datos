@@ -63,6 +63,14 @@ LIGAS = {
     "laliga": {"id": 4335, "nombre": "LaLiga", "temporada": "2026-2027", "continente": "europa"},
     "seriea": {"id": 4332, "nombre": "Serie A", "temporada": "2026-2027", "continente": "europa"},
     "bundesliga": {"id": 4331, "nombre": "Bundesliga", "temporada": "2026-2027", "continente": "europa"},
+    # Champions League: cron aparte (partidos_champions.yml, SOLO
+    # workflow_dispatch, sin schedule — a diferencia de las demás,
+    # esta la corre el usuario a mano cuando quiere, no cada 10 min).
+    # Formato liga única de 36 equipos desde 2024-25 (ya no son grupos),
+    # así que entra igual que cualquier otra liga normal por
+    # descargar_temporada() — sin necesitar trato especial como
+    # Leagues Cup.
+    "champions": {"id": 4480, "nombre": "Champions League", "temporada": "2026-2027", "continente": "champions"},
 }
 
 # 25 alcanzaba de sobra para Liga BBVA MX (17 jornadas), pero el
@@ -739,23 +747,29 @@ def main(claves_ligas=None, sufijo="", con_leagues_cup=True, con_extras=True):
         with open(ruta_detalles, "w", encoding="utf-8") as f:
             json.dump(detalles, f, ensure_ascii=False, indent=2)
 
-    # si esta corrida es de un solo continente, hay que traer la mitad
-    # que le toca al OTRO antes de armar el datos.js combinado (ver
-    # sincronizar_otro_continente arriba)
-    if sufijo == "_america":
-        sincronizar_otro_continente("posiciones_europa.json")
-        sincronizar_otro_continente("partidos_europa.json")
-    elif sufijo == "_europa":
-        sincronizar_otro_continente("posiciones_america.json")
-        sincronizar_otro_continente("partidos_america.json")
+    # si esta corrida es de un solo continente, hay que traer las OTRAS
+    # antes de armar el datos.js combinado (ver sincronizar_otro_continente
+    # arriba) — desde que Champions se sumó (2026-08-31) ya son 3 corridas
+    # independientes en vez de 2, así que cada una trae a las otras DOS.
+    OTRAS_CORRIDAS = {
+        "_america": ["europa", "champions"],
+        "_europa": ["america", "champions"],
+        "_champions": ["america", "europa"],
+    }
+    if sufijo in OTRAS_CORRIDAS:
+        for otra in OTRAS_CORRIDAS[sufijo]:
+            sincronizar_otro_continente(f"posiciones_{otra}.json")
+            sincronizar_otro_continente(f"partidos_{otra}.json")
+
+    if sufijo in ("_europa", "_champions"):
         # detalles.json (videos/directo) solo lo genera la corrida de
-        # América (con_extras=False acá) — si Europa no lo trae también,
-        # su checkout de git (siempre nuevo) nunca lo tiene localmente, y
-        # FTP-Deploy-Action, al subir a la MISMA carpeta datos/salida/
-        # que usa América, lo borra del servidor creyendo que ya no
-        # debería existir (sync tipo espejo contra su propio estado).
-        # Bug real detectado el 2026-08-27: detalles.json daba 404 en
-        # vivo aunque América lo generaba bien.
+        # América (con_extras=False en las demás) — si esta corrida no lo
+        # trae también, su checkout de git (siempre nuevo) nunca lo tiene
+        # localmente, y FTP-Deploy-Action, al subir a la MISMA carpeta
+        # datos/salida/ que usa América, lo borra del servidor creyendo
+        # que ya no debería existir (sync tipo espejo contra su propio
+        # estado). Bug real detectado el 2026-08-27 con la corrida de
+        # Europa; Champions corre manual pero tiene el mismo riesgo.
         sincronizar_otro_continente("detalles.json")
 
     # datos.js junta todos los .json de salida/ (incluido el de la OTRA

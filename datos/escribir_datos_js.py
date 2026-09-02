@@ -21,29 +21,33 @@ def _leer(nombre):
 
 
 def _combinar_standings():
-    """posiciones_america.json + posiciones_europa.json (cron por
-    continente, ver generar_america.py/generar_europa.py) si existen;
-    si no, cae a posiciones.json de siempre (corrida manual de
-    generar_datos.py sin split, como se usó antes del 2026-08-26)."""
+    """posiciones_america.json + posiciones_europa.json + posiciones_champions.json
+    (crons independientes por continente/torneo, ver generar_america.py/
+    generar_europa.py/generar_champions.py) si existen; si no, cae a
+    posiciones.json de siempre (corrida manual de generar_datos.py sin
+    split, como se usó antes del 2026-08-26)."""
     america = _leer("posiciones_america.json")
     europa = _leer("posiciones_europa.json")
-    if america is None and europa is None:
+    champions = _leer("posiciones_champions.json")
+    if america is None and europa is None and champions is None:
         return _leer("posiciones.json")
     combinado = {}
     combinado.update(america or {})
     combinado.update(europa or {})
+    combinado.update(champions or {})
     return combinado
 
 
 def _combinar_partidos():
-    """Mismo criterio que _combinar_standings pero concatenando las dos
-    listas (y reordenando por fecha, ya que vienen de dos corridas
+    """Mismo criterio que _combinar_standings pero concatenando las
+    listas (y reordenando por fecha, ya que vienen de corridas
     independientes que no se vieron entre sí)."""
     america = _leer("partidos_america.json")
     europa = _leer("partidos_europa.json")
-    if america is None and europa is None:
+    champions = _leer("partidos_champions.json")
+    if america is None and europa is None and champions is None:
         return _leer("partidos.json")
-    combinados = (america or []) + (europa or [])
+    combinados = (america or []) + (europa or []) + (champions or [])
     combinados.sort(key=lambda p: p.get("fechaISO") or "")
     return combinados
 
