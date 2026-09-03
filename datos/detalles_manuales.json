@@ -122,6 +122,15 @@
       "videoId": "DSF3JvvxfWA",
       "fuente": "Layvtime"
     }
+  },
+  {
+    "home": "RSO",
+    "away": "CEL",
+    "date": "2026-09-03",
+    "directo": {
+      "embed": "<iframe src=\"https://epiembeds.online/embed/beinsports1-my\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allow=\"autoplay; encrypted-media; picture-in-picture; fullscreen\" allowfullscreen></iframe>",
+      "fuente": "bEIN SPORTS 1"
+    }
   }
    
 ]
