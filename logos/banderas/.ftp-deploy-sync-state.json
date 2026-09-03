@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1788439506256,
+    "generatedTime": 1788462838837,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "2cb2c429aec497b99be286d8e00fedd382efbfa842a2e46559e6a565cc8cc5c0"
+            "hash": "a7c80a6a27af15f46b02f6aee19b038b47d4810eafad67f07e62b6fce3a11f65"
         },
         {
             "type": "file",
@@ -131,15 +131,15 @@
         },
         {
             "type": "file",
-            "name": "IVB.png",
-            "size": 3607,
-            "hash": "c1dada0eacab6791a7745927558cd2ab5d60b1049a124f84258d6bc1c2b941f9"
-        },
-        {
-            "type": "file",
             "name": "JAM.png",
             "size": 613,
             "hash": "aec3ea15b488521541b57248360f402dc94b8d7eeabbc1fc91f6bb0f686a0279"
+        },
+        {
+            "type": "file",
+            "name": "IVB.png",
+            "size": 3607,
+            "hash": "c1dada0eacab6791a7745927558cd2ab5d60b1049a124f84258d6bc1c2b941f9"
         },
         {
             "type": "file",
