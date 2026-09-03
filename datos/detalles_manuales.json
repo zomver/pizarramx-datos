@@ -123,22 +123,5 @@
       "fuente": "Layvtime"
     }
   },
-   {
-  "home": "AME",
-  "away": "MTY",
-  "date": "2026-09-02",
-  "directo": {
-    "embed": "<iframe src=\"https://epiembeds.online/embed/tudn-usa\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allow=\"autoplay; encrypted-media; picture-in-picture; fullscreen\" allowfullscreen></iframe>",
-      "fuente": "tudn-usa"
-    }
-  },
-    {
-  "home": "TOL",
-  "away": "LEO",
-  "date": "2026-09-02",
-  "directo": {
-    "embed": "<blockquote class=\"twitter-tweet\" data-media-max-width=\"560\"><p lang=\"zxx\" dir=\"ltr\"><a href=\"https://t.co/cQrhGwZw5E\">https://t.co/cQrhGwZw5E</a></p>&mdash; JEFRY.SPORTS OFICIAL (@JefrySports) <a href=\"https://x.com/JefrySports/status/2095186362496414155?ref_src=twsrc%5Etfw\">September 2, 2026</a></blockquote> <script async src=\"https://platform.x.com/widgets.js\" charset=\"utf-8\"></script>",
-    "fuente": "X"
-    }
-  }
+   
 ]
