@@ -122,5 +122,23 @@
       "videoId": "DSF3JvvxfWA",
       "fuente": "Layvtime"
     }
+  },
+  {
+    "home": "IPS",
+    "away": "LIV",
+    "date": "2026-09-04",
+    "directo": {
+      "embed": "<iframe src=\"https://epiembeds.online/embed/astropremierleague-my\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allow=\"autoplay; encrypted-media; picture-in-picture; fullscreen\" allowfullscreen></iframe>",
+      "fuente": "Astro"
+    }
+  },
+  {
+    "home": "BET",
+    "away": "RMA",
+    "date": "2026-09-04",
+    "directo": {
+      "embed": "<iframe src=\"https://epiembeds.online/embed/espndeportes-usa\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allow=\"autoplay; encrypted-media; picture-in-picture; fullscreen\" allowfullscreen></iframe>",
+      "fuente": "ESPN Deportes"
+    }
   }
 ]
