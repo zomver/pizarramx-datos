@@ -753,6 +753,7 @@
     "2506196",
     "2506197",
     "2506198",
+    "2506226",
     "2508333",
     "2508334",
     "2508335",
@@ -9974,7 +9975,7 @@
         "abbr": "CEL",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 1
       },
       "34348910": {
@@ -10263,6 +10264,22 @@
         "goles": 1,
         "asistencias": 0,
         "amarillas": 0,
+        "rojas": 0
+      },
+      "34170240": {
+        "player": "Yangel Herrera",
+        "abbr": "RSO",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34240684": {
+        "player": "Yoel Lago",
+        "abbr": "CEL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
         "rojas": 0
       }
     },
