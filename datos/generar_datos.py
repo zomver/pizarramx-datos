@@ -729,11 +729,6 @@ def main(claves_ligas=None, sufijo="", con_leagues_cup=True, con_extras=True):
     partidos.sort(key=lambda tupla: (tupla[0], tupla[1]))
     partidos = [partido for _, _, partido in partidos]
 
-    detalles = None
-    if con_extras:
-        detalles = actualizar_videos(partidos)
-        detalles = detalles_manuales.aplicar(partidos, detalles)
-
     ruta_pos = os.path.join(CARPETA_SALIDA, f"posiciones{sufijo}.json")
     ruta_partidos = os.path.join(CARPETA_SALIDA, f"partidos{sufijo}.json")
 
@@ -742,14 +737,17 @@ def main(claves_ligas=None, sufijo="", con_leagues_cup=True, con_extras=True):
     with open(ruta_partidos, "w", encoding="utf-8") as f:
         json.dump(partidos, f, ensure_ascii=False, indent=2)
 
-    if detalles is not None:
-        ruta_detalles = os.path.join(CARPETA_SALIDA, "detalles.json")
-        with open(ruta_detalles, "w", encoding="utf-8") as f:
-            json.dump(detalles, f, ensure_ascii=False, indent=2)
-
     # si esta corrida es de un solo continente, hay que traer las OTRAS
-    # antes de armar el datos.js combinado (ver sincronizar_otro_continente
-    # arriba) — desde que Champions se sumó (2026-08-31) ya son 3 corridas
+    # ANTES de aplicar detalles_manuales.json más abajo — si no, un
+    # override para un equipo de otro continente (ej. Real Madrid,
+    # Premier League) nunca encuentra su partido y se salta en silencio,
+    # aunque el JSON esté perfecto. Bug real detectado el 2026-09-04: dos
+    # entradas para Ipswich-Liverpool y Betis-Real Madrid (equipos de
+    # Europa) nunca se aplicaron porque la corrida de América —la única
+    # con con_extras=True— solo veía sus propios partidos (BBVA/
+    # Argentina/Brasil/Leagues Cup) en el momento de cruzar
+    # detalles_manuales, antes de que este bloque trajera a Europa.
+    # Desde que Champions se sumó (2026-08-31) ya son 3 corridas
     # independientes en vez de 2, así que cada una trae a las otras DOS.
     OTRAS_CORRIDAS = {
         "_america": ["europa", "champions"],
@@ -771,6 +769,26 @@ def main(claves_ligas=None, sufijo="", con_leagues_cup=True, con_extras=True):
         # estado). Bug real detectado el 2026-08-27 con la corrida de
         # Europa; Champions corre manual pero tiene el mismo riesgo.
         sincronizar_otro_continente("detalles.json")
+
+    detalles = None
+    if con_extras:
+        # con visibilidad de TODOS los partidos (los propios + los de las
+        # otras corridas, recién sincronizados arriba) — así un override
+        # de detalles_manuales.json para un equipo de Europa/Champions
+        # también encuentra su partido, no solo los de América.
+        todos_los_partidos = list(partidos)
+        for otra in OTRAS_CORRIDAS.get(sufijo, []):
+            ruta_otra = os.path.join(CARPETA_SALIDA, f"partidos_{otra}.json")
+            if os.path.exists(ruta_otra):
+                with open(ruta_otra, encoding="utf-8") as f:
+                    todos_los_partidos += json.load(f)
+
+        detalles = actualizar_videos(todos_los_partidos)
+        detalles = detalles_manuales.aplicar(todos_los_partidos, detalles)
+
+        ruta_detalles = os.path.join(CARPETA_SALIDA, "detalles.json")
+        with open(ruta_detalles, "w", encoding="utf-8") as f:
+            json.dump(detalles, f, ensure_ascii=False, indent=2)
 
     # datos.js junta todos los .json de salida/ (incluido el de la OTRA
     # mitad del continente, recién sincronizada arriba) en un solo
