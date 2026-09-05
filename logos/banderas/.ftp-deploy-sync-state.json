@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1788608793840,
+    "generatedTime": 1788631476249,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "993b297c4227d5f6a04719f7a3b46ea9386e96e32eb7a88b8d154874aaa24c8b"
+            "hash": "202b728af5b672a6b6d7724199d482eb0c3a3fe52337e7f25cc6c81c42da686b"
         },
         {
             "type": "file",
@@ -53,12 +53,6 @@
         },
         {
             "type": "file",
-            "name": "COL.png",
-            "size": 308,
-            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
-        },
-        {
-            "type": "file",
             "name": "CRC.png",
             "size": 307,
             "hash": "620a16271240f5a4e1b3c81b537bd5599cd8b5abc337b54b87dd6dddddc7fde7"
@@ -71,15 +65,21 @@
         },
         {
             "type": "file",
+            "name": "CUW.png",
+            "size": 735,
+            "hash": "511aa796595dde9025524257b16b4f10d878929787e740aa59b3fce9b293f26b"
+        },
+        {
+            "type": "file",
             "name": "DOM.png",
             "size": 1319,
             "hash": "227bc4571977799af788b16edfd6e6beabdd10c695f7acda3260f6f9b6ff8d59"
         },
         {
             "type": "file",
-            "name": "CUW.png",
-            "size": 735,
-            "hash": "511aa796595dde9025524257b16b4f10d878929787e740aa59b3fce9b293f26b"
+            "name": "COL.png",
+            "size": 308,
+            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
         },
         {
             "type": "file",
