@@ -345,6 +345,9 @@
     "2398053",
     "2398054",
     "2398055",
+    "2398058",
+    "2398060",
+    "2398064",
     "2398191",
     "2398192",
     "2398193",
@@ -617,6 +620,7 @@
     "2482155",
     "2482156",
     "2482157",
+    "2482160",
     "2487452",
     "2487453",
     "2487454",
@@ -671,6 +675,7 @@
     "2487503",
     "2487504",
     "2487505",
+    "2487507",
     "2491731",
     "2491732",
     "2491733",
@@ -724,6 +729,7 @@
     "2494017",
     "2494018",
     "2494019",
+    "2494027",
     "2506169",
     "2506170",
     "2506171",
@@ -753,6 +759,7 @@
     "2506196",
     "2506197",
     "2506198",
+    "2506205",
     "2506226",
     "2508333",
     "2508334",
@@ -763,6 +770,7 @@
     "2508339",
     "2508340",
     "2508341",
+    "2508347",
     "2532699",
     "2532700",
     "2532701",
@@ -9037,7 +9045,7 @@
         "abbr": "IPS",
         "goles": 0,
         "asistencias": 1,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34178275": {
@@ -9543,6 +9551,38 @@
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
+      },
+      "34163447": {
+        "player": "Alexander Isak",
+        "abbr": "LIV",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34164182": {
+        "player": "Cody Gakpo",
+        "abbr": "LIV",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34170133": {
+        "player": "Alexis Mac Allister",
+        "abbr": "LIV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34231160": {
+        "player": "Jérémy Jacquet",
+        "abbr": "LIV",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
       }
     },
     "laliga": {
@@ -9807,7 +9847,7 @@
         "abbr": "RMA",
         "goles": 0,
         "asistencias": 1,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34258170": {
@@ -10277,6 +10317,22 @@
       "34240684": {
         "player": "Yoel Lago",
         "abbr": "CEL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34164103": {
+        "player": "Ibrahima Konaté",
+        "abbr": "RMA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172275": {
+        "player": "Eduardo Camavinga",
+        "abbr": "RMA",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
@@ -10775,7 +10831,7 @@
       "34200040": {
         "player": "Martin Baturina",
         "abbr": "COM",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
@@ -10783,7 +10839,7 @@
       "34221683": {
         "player": "Assane Diao",
         "abbr": "COM",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
@@ -10843,6 +10899,54 @@
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
+      },
+      "34192754": {
+        "player": "Milutin Osmajić",
+        "abbr": "GEN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34172626": {
+        "player": "Lorenzo Colombo",
+        "abbr": "GEN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34219810": {
+        "player": "Álex Valle",
+        "abbr": "COM",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34169134": {
+        "player": "Djibril Sow",
+        "abbr": "GEN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34222648": {
+        "player": "Nico Paz",
+        "abbr": "COM",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34194712": {
+        "player": "Yan Couto",
+        "abbr": "COM",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
       }
     },
     "bundesliga": {
@@ -10864,9 +10968,9 @@
       },
       "34169106": {
         "player": "Josha Vagnoman",
-        "abbr": "FCB",
+        "abbr": "VFB",
         "goles": 2,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
       },
@@ -11113,6 +11217,30 @@
       "34177837": {
         "player": "Fabian Rieder",
         "abbr": "AUG",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34202611": {
+        "player": "Bilal El Khannouss",
+        "abbr": "VFB",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34244584": {
+        "player": "Jahmai Simpson-Pusey",
+        "abbr": "KOL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34169201": {
+        "player": "Maximilian Mittelstädt",
+        "abbr": "VFB",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,

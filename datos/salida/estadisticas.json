@@ -347,12 +347,12 @@
         "value": 2
       },
       {
-        "player": "Kai Havertz",
-        "abbr": "ARS",
-        "value": 1
+        "player": "Alexander Isak",
+        "abbr": "LIV",
+        "value": 2
       },
       {
-        "player": "Martin Ødegaard",
+        "player": "Kai Havertz",
         "abbr": "ARS",
         "value": 1
       }
@@ -369,6 +369,11 @@
         "value": 2
       },
       {
+        "player": "Cody Gakpo",
+        "abbr": "LIV",
+        "value": 2
+      },
+      {
         "player": "Ben White",
         "abbr": "ARS",
         "value": 1
@@ -376,11 +381,6 @@
       {
         "player": "Regan Slater",
         "abbr": "HUL",
-        "value": 1
-      },
-      {
-        "player": "Harrison Armstrong",
-        "abbr": "EVE",
         "value": 1
       }
     ],
@@ -531,12 +531,12 @@
         "value": 2
       },
       {
-        "player": "Jakub Piotrowski",
-        "abbr": "UDI",
-        "value": 1
+        "player": "Martin Baturina",
+        "abbr": "COM",
+        "value": 2
       },
       {
-        "player": "Jurgen Ekkelenkamp",
+        "player": "Jakub Piotrowski",
         "abbr": "UDI",
         "value": 1
       }
@@ -601,7 +601,7 @@
     "goleadores": [
       {
         "player": "Josha Vagnoman",
-        "abbr": "FCB",
+        "abbr": "VFB",
         "value": 2
       },
       {
@@ -637,6 +637,11 @@
         "value": 2
       },
       {
+        "player": "Josha Vagnoman",
+        "abbr": "VFB",
+        "value": 1
+      },
+      {
         "player": "Konstantinos Karetsas",
         "abbr": "BVB",
         "value": 1
@@ -644,11 +649,6 @@
       {
         "player": "Josip Juranović",
         "abbr": "UNB",
-        "value": 1
-      },
-      {
-        "player": "Bambasé Conté",
-        "abbr": "TSG",
         "value": 1
       }
     ],
