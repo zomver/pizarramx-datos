@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1788667915387,
+    "generatedTime": 1788696285038,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "5da012905241c59fcbbebbdafb26ab99c4ee4f514f731cf32f0232fd5fa4321a"
+            "hash": "01d6961bd8e69524e1e0d435d9e85013d1ef0c2503295e86fd72daa9f128bad7"
         },
         {
             "type": "file",
@@ -107,15 +107,15 @@
         },
         {
             "type": "file",
-            "name": "HAI.png",
-            "size": 3112,
-            "hash": "baa12378f6311d7fad2fd1740523bbbb3ae145b18e0835a92c90336b61a51bd1"
-        },
-        {
-            "type": "file",
             "name": "GUY.png",
             "size": 871,
             "hash": "7284426b278c6950e247267ed540ff4b82f637c3e43cba26c69bd4a085622896"
+        },
+        {
+            "type": "file",
+            "name": "HAI.png",
+            "size": 3112,
+            "hash": "baa12378f6311d7fad2fd1740523bbbb3ae145b18e0835a92c90336b61a51bd1"
         },
         {
             "type": "file",
@@ -155,15 +155,15 @@
         },
         {
             "type": "file",
-            "name": "PAN.png",
-            "size": 1014,
-            "hash": "046313bbb2ce08b9dbd67a8e2749818c411bc44c7a288d7a6c54fba397a16891"
-        },
-        {
-            "type": "file",
             "name": "NCA.png",
             "size": 1248,
             "hash": "91d4aee6d811647bde3ec563f67ca02014af2979aea0625664d228e192d19a44"
+        },
+        {
+            "type": "file",
+            "name": "PAN.png",
+            "size": 1014,
+            "hash": "046313bbb2ce08b9dbd67a8e2749818c411bc44c7a288d7a6c54fba397a16891"
         },
         {
             "type": "file",
