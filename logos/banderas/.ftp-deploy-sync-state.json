@@ -1,13 +1,13 @@
 {
     "description": "DO NOT DELETE THIS FILE. This file is used to keep track of which files have been synced in the most recent deployment. If you delete this file a resync will need to be done (which can take a while) - read more: https://github.com/SamKirkland/FTP-Deploy-Action",
     "version": "1.0.0",
-    "generatedTime": 1788631476249,
+    "generatedTime": 1788667915387,
     "data": [
         {
             "type": "file",
             "name": ".ftp-deploy-sync-state.json",
             "size": 6552,
-            "hash": "202b728af5b672a6b6d7724199d482eb0c3a3fe52337e7f25cc6c81c42da686b"
+            "hash": "5da012905241c59fcbbebbdafb26ab99c4ee4f514f731cf32f0232fd5fa4321a"
         },
         {
             "type": "file",
@@ -53,6 +53,12 @@
         },
         {
             "type": "file",
+            "name": "COL.png",
+            "size": 308,
+            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
+        },
+        {
+            "type": "file",
             "name": "CRC.png",
             "size": 307,
             "hash": "620a16271240f5a4e1b3c81b537bd5599cd8b5abc337b54b87dd6dddddc7fde7"
@@ -74,12 +80,6 @@
             "name": "DOM.png",
             "size": 1319,
             "hash": "227bc4571977799af788b16edfd6e6beabdd10c695f7acda3260f6f9b6ff8d59"
-        },
-        {
-            "type": "file",
-            "name": "COL.png",
-            "size": 308,
-            "hash": "ce7dcc8b651ac65495155287b4a2446f3e2ad89873c71d202c1009b814f0826e"
         },
         {
             "type": "file",
@@ -107,15 +107,15 @@
         },
         {
             "type": "file",
-            "name": "GUY.png",
-            "size": 871,
-            "hash": "7284426b278c6950e247267ed540ff4b82f637c3e43cba26c69bd4a085622896"
-        },
-        {
-            "type": "file",
             "name": "HAI.png",
             "size": 3112,
             "hash": "baa12378f6311d7fad2fd1740523bbbb3ae145b18e0835a92c90336b61a51bd1"
+        },
+        {
+            "type": "file",
+            "name": "GUY.png",
+            "size": 871,
+            "hash": "7284426b278c6950e247267ed540ff4b82f637c3e43cba26c69bd4a085622896"
         },
         {
             "type": "file",
@@ -155,15 +155,15 @@
         },
         {
             "type": "file",
-            "name": "NCA.png",
-            "size": 1248,
-            "hash": "91d4aee6d811647bde3ec563f67ca02014af2979aea0625664d228e192d19a44"
-        },
-        {
-            "type": "file",
             "name": "PAN.png",
             "size": 1014,
             "hash": "046313bbb2ce08b9dbd67a8e2749818c411bc44c7a288d7a6c54fba397a16891"
+        },
+        {
+            "type": "file",
+            "name": "NCA.png",
+            "size": 1248,
+            "hash": "91d4aee6d811647bde3ec563f67ca02014af2979aea0625664d228e192d19a44"
         },
         {
             "type": "file",
