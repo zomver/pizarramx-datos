@@ -337,6 +337,11 @@
         "value": 3
       },
       {
+        "player": "Marcus Tavernier",
+        "abbr": "BOU",
+        "value": 2
+      },
+      {
         "player": "Anthony Elanga",
         "abbr": "NEW",
         "value": 2
@@ -347,14 +352,9 @@
         "value": 2
       },
       {
-        "player": "Alexander Isak",
-        "abbr": "LIV",
+        "player": "Josh King",
+        "abbr": "FUL",
         "value": 2
-      },
-      {
-        "player": "Kai Havertz",
-        "abbr": "ARS",
-        "value": 1
       }
     ],
     "asistencias": [
@@ -369,6 +369,11 @@
         "value": 2
       },
       {
+        "player": "Antoine Semenyo",
+        "abbr": "MCI",
+        "value": 2
+      },
+      {
         "player": "Cody Gakpo",
         "abbr": "LIV",
         "value": 2
@@ -376,11 +381,6 @@
       {
         "player": "Ben White",
         "abbr": "ARS",
-        "value": 1
-      },
-      {
-        "player": "Regan Slater",
-        "abbr": "HUL",
         "value": 1
       }
     ],
@@ -391,6 +391,16 @@
         "value": 2
       },
       {
+        "player": "Pascal Groß",
+        "abbr": "BHA",
+        "value": 2
+      },
+      {
+        "player": "Yoane Wissa",
+        "abbr": "NEW",
+        "value": 2
+      },
+      {
         "player": "Caleb Yirenkyi",
         "abbr": "COV",
         "value": 1
@@ -398,16 +408,6 @@
       {
         "player": "Gabriel",
         "abbr": "ARS",
-        "value": 1
-      },
-      {
-        "player": "Patrick Dorgu",
-        "abbr": "MUN",
-        "value": 1
-      },
-      {
-        "player": "Regan Slater",
-        "abbr": "HUL",
         "value": 1
       }
     ],
@@ -431,13 +431,13 @@
         "value": 3
       },
       {
-        "player": "Sergio Camello",
-        "abbr": "RAY",
+        "player": "Nicolas Pépé",
+        "abbr": "VIL",
         "value": 2
       },
       {
-        "player": "Jude Bellingham",
-        "abbr": "RMA",
+        "player": "Sergio Camello",
+        "abbr": "RAY",
         "value": 2
       }
     ],
@@ -446,6 +446,11 @@
         "player": "Javi Hernández",
         "abbr": "ESP",
         "value": 3
+      },
+      {
+        "player": "Iñaki Williams",
+        "abbr": "ATH",
+        "value": 2
       },
       {
         "player": "Alvaro Garcia",
@@ -460,11 +465,6 @@
       {
         "player": "Georges Mikautadze",
         "abbr": "VIL",
-        "value": 1
-      },
-      {
-        "player": "Jorge de Frutos",
-        "abbr": "RAY",
         "value": 1
       }
     ],
@@ -536,9 +536,9 @@
         "value": 2
       },
       {
-        "player": "Jakub Piotrowski",
-        "abbr": "UDI",
-        "value": 1
+        "player": "Rasmus Højlund",
+        "abbr": "NAP",
+        "value": 2
       }
     ],
     "asistencias": [
@@ -610,19 +610,19 @@
         "value": 2
       },
       {
+        "player": "David Ngabi Mokwa Ntusu",
+        "abbr": "ELV",
+        "value": 2
+      },
+      {
         "player": "Yuito Suzuki",
         "abbr": "FRI",
         "value": 2
       },
       {
-        "player": "Dayot Upamecano",
-        "abbr": "FCB",
-        "value": 1
-      },
-      {
-        "player": "Michael Olise",
-        "abbr": "FCB",
-        "value": 1
+        "player": "Hugo Bolin",
+        "abbr": "ELV",
+        "value": 2
       }
     ],
     "asistencias": [
@@ -637,18 +637,18 @@
         "value": 2
       },
       {
+        "player": "Franck Honorat",
+        "abbr": "BMG",
+        "value": 2
+      },
+      {
+        "player": "Miguel Gutiérrez",
+        "abbr": "B04",
+        "value": 2
+      },
+      {
         "player": "Josha Vagnoman",
         "abbr": "VFB",
-        "value": 1
-      },
-      {
-        "player": "Konstantinos Karetsas",
-        "abbr": "BVB",
-        "value": 1
-      },
-      {
-        "player": "Josip Juranović",
-        "abbr": "UNB",
         "value": 1
       }
     ],
