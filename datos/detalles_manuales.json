@@ -176,7 +176,24 @@
     "embed": "<iframe width=\"100%\" height=\"100%\"src=\"https://la18hd.su/vivo/canales.php?stream=tudn_mx\"title=\"TUDN\"frameborder=0\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
     "fuente": "TUDN"
     }
+  },
+  {
+  "home": "BOT",
+  "away": "PAL",
+  "date": "2026-09-06",
+  "directo": {
+    "embed": "<iframe width=\"100%\" height=\"100%\"src=\"https://la18hd.su/vivo/canales.php?stream=premiere1\"title=\"PREMIERE\"frameborder=0\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "PREMIERE"
+    }
+  },
+  {
+  "home": "RIV",
+  "away": "IRV",
+  "date": "2026-09-06",
+  "directo": {
+    "embed": "<iframe width=\"100%\" height=\"100%\"src=\"https://la18hd.su/vivo/canales.php?stream=tntsports\"title=\"PREMIERE\"frameborder=0\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "TNT SPORTS AR"
+    }
   }
-
   
 ]
