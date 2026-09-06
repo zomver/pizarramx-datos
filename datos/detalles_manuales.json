@@ -140,6 +140,43 @@
     "embed": "<iframe width=\"100%\" height=\"100%\"src=\"https://la18hd.su/vivo/canales.php?stream=espn\"title=\"ESPN\"frameborder=0\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
     "fuente": "ESPN"
     }
+  },
+  {
+  "home": "LEO",
+  "away": "AME",
+  "date": "2026-09-06",
+  "directo": {
+    "embed": "<iframe width=\"100%\" height=\"100%\"src=\"https://la18hd.su/vivo/canales.php?stream=mls1en\"title=\"MLS 1\"frameborder=0\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "MLS 1"
+    }
+  },
+  {
+  "home": "TOL",
+  "away": "MTY",
+  "date": "2026-09-06",
+  "directo": {
+    "embed": "<iframe width=\"100%\" height=\"100%\"src=\"https://la18hd.su/vivo/canales.php?stream=tudn\"title=\"TUDN\"frameborder=0\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "TUDN"
+    }
+  },
+  {
+  "home": "LAN",
+  "away": "DEJ",
+  "date": "2026-09-05",
+  "directo": {
+    "embed": "<iframe width=\"100%\" height=\"100%\"src=\"https://la18hd.su/vivo/canales.php?stream=espnpremium\"title=\"TUDN\"frameborder=0\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "ESPN Premium"
+    }
+  },
+  {
+  "home": "CRZ",
+  "away": "SAN",
+  "date": "2026-09-06",
+  "directo": {
+    "embed": "<iframe width=\"100%\" height=\"100%\"src=\"https://la18hd.su/vivo/canales.php?stream=tudn_mx\"title=\"TUDN\"frameborder=0\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "TUDN"
+    }
   }
+
   
 ]
