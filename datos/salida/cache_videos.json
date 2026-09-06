@@ -855,13 +855,13 @@
     "video": null
   },
   "bel-hur-2398058": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-05T13:33:46.480603",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-06T02:18:34.110982",
     "video": null
   },
   "pla-rie-2398064": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-05T13:33:46.480603",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-06T02:18:34.110982",
     "video": null
   },
   "jua-pac-2487507": {
@@ -992,6 +992,21 @@
   "slo-tal-2398068": {
     "intentos": 1,
     "ultimo_intento": "2026-09-06T00:04:48.412781",
+    "video": null
+  },
+  "slp-gdl-2487509": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-06T02:18:34.110982",
+    "video": null
+  },
+  "flu-vas-2398446": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-06T02:18:34.110982",
+    "video": null
+  },
+  "vel-elp-2398070": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-06T02:18:34.110982",
     "video": null
   }
 }
