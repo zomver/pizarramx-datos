@@ -122,6 +122,11 @@
         "value": 8
       },
       {
+        "player": "Leandro Díaz",
+        "abbr": "ATU",
+        "value": 6
+      },
+      {
         "player": "Junior Marabel",
         "abbr": "SAR",
         "value": 6
@@ -130,11 +135,6 @@
         "player": "David Romero",
         "abbr": "TIA",
         "value": 6
-      },
-      {
-        "player": "Gabriel Ávalos",
-        "abbr": "IND",
-        "value": 5
       }
     ],
     "asistencias": [
@@ -337,6 +337,11 @@
         "value": 3
       },
       {
+        "player": "Kai Havertz",
+        "abbr": "ARS",
+        "value": 2
+      },
+      {
         "player": "Marcus Tavernier",
         "abbr": "BOU",
         "value": 2
@@ -349,11 +354,6 @@
       {
         "player": "João Pedro",
         "abbr": "CHE",
-        "value": 2
-      },
-      {
-        "player": "Josh King",
-        "abbr": "FUL",
         "value": 2
       }
     ],
@@ -374,14 +374,14 @@
         "value": 2
       },
       {
-        "player": "Cody Gakpo",
-        "abbr": "LIV",
+        "player": "Jorrel Hato",
+        "abbr": "CHE",
         "value": 2
       },
       {
-        "player": "Ben White",
-        "abbr": "ARS",
-        "value": 1
+        "player": "Cody Gakpo",
+        "abbr": "LIV",
+        "value": 2
       }
     ],
     "amarillas": [
@@ -431,13 +431,13 @@
         "value": 3
       },
       {
-        "player": "Nicolas Pépé",
-        "abbr": "VIL",
-        "value": 2
+        "player": "Lucas Boyé",
+        "abbr": "ALA",
+        "value": 3
       },
       {
-        "player": "Sergio Camello",
-        "abbr": "RAY",
+        "player": "Nicolas Pépé",
+        "abbr": "VIL",
         "value": 2
       }
     ],
@@ -480,17 +480,17 @@
         "value": 2
       },
       {
+        "player": "Álex Calatrava",
+        "abbr": "ESP",
+        "value": 2
+      },
+      {
         "player": "Álvaro Mantilla",
         "abbr": "RSA",
         "value": 2
       },
       {
         "player": "Isaac Romero",
-        "abbr": "SEV",
-        "value": 1
-      },
-      {
-        "player": "Jon Guridi",
         "abbr": "SEV",
         "value": 1
       }
@@ -531,13 +531,13 @@
         "value": 2
       },
       {
-        "player": "Martin Baturina",
-        "abbr": "COM",
+        "player": "Antonio Raimondo",
+        "abbr": "FRO",
         "value": 2
       },
       {
-        "player": "Rasmus Højlund",
-        "abbr": "NAP",
+        "player": "Martin Baturina",
+        "abbr": "COM",
         "value": 2
       }
     ],
@@ -545,6 +545,11 @@
       {
         "player": "Paulo Dybala",
         "abbr": "ROM",
+        "value": 2
+      },
+      {
+        "player": "Ricardo Mangas",
+        "abbr": "MON",
         "value": 2
       },
       {
@@ -561,14 +566,14 @@
         "player": "Andy Diouf",
         "abbr": "INM",
         "value": 1
-      },
-      {
-        "player": "Gianluca Gaetano",
-        "abbr": "ATA",
-        "value": 1
       }
     ],
     "amarillas": [
+      {
+        "player": "Romano Schmid",
+        "abbr": "VNZ",
+        "value": 3
+      },
       {
         "player": "Jakub Piotrowski",
         "abbr": "UDI",
@@ -586,11 +591,6 @@
       },
       {
         "player": "Hakan Çalhanoğlu",
-        "abbr": "INM",
-        "value": 1
-      },
-      {
-        "player": "Lautaro Martínez",
         "abbr": "INM",
         "value": 1
       }
