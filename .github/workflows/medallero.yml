@@ -1,8 +1,11 @@
 name: Actualizar medallero
 
 on:
-  schedule:
-    - cron: '0 */8 * * *'
+  # los JCC Santo Domingo 2026 terminaron el 8 de agosto — el medallero ya
+  # no cambia, así que se apagó el "schedule" (corría cada 8h sin necesidad,
+  # cada corrida raspa Wikipedia por nada). Se deja workflow_dispatch para
+  # poder correrlo a mano si hiciera falta una corrección, o para la
+  # siguiente edición de los juegos.
   workflow_dispatch:
 
 jobs:
