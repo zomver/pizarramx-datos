@@ -140,5 +140,41 @@
       "videoId": "Rzq1rUGQ56s",
       "fuente": "Layvtime"
     }
+  },
+  {
+  "home": "RMA",
+  "away": "INM",
+  "date": "2026-09-08",
+  "directo": {
+    "embed": "<iframe src=\"https://streamxhd.click/channel/?id=espn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "ESPN"
+    }
+  },
+  {
+  "home": "LIL",
+  "away": "BET",
+  "date": "2026-09-08",
+  "directo": {
+    "embed": "<iframe src=\"https://streamxhd.com/live1.php?stream=vix3\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "VIX"
+    }
+  },
+  {
+  "home": "FCP",
+  "away": "MCI",
+  "date": "2026-09-08",
+  "directo": {
+    "embed": "<iframe src=\"https://streamxhd.click/channel/?id=espn5\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "ESPN"
+    }
+  },
+  {
+  "home": "BVB",
+  "away": "VIL",
+  "date": "2026-09-08",
+  "directo": {
+    "embed": "<iframe src=\"https://streamxhd.com/live1.php?stream=max3\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "TNT SPORTS"
+    }
   }
 ]
