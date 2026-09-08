@@ -346,6 +346,7 @@
     "2398054",
     "2398055",
     "2398056",
+    "2398057",
     "2398058",
     "2398059",
     "2398060",
@@ -357,6 +358,7 @@
     "2398066",
     "2398067",
     "2398068",
+    "2398069",
     "2398070",
     "2398191",
     "2398192",
@@ -613,6 +615,7 @@
     "2398447",
     "2398448",
     "2398449",
+    "2398450",
     "2470108",
     "2470110",
     "2470111",
@@ -639,6 +642,8 @@
     "2482155",
     "2482156",
     "2482157",
+    "2482158",
+    "2482159",
     "2482160",
     "2482161",
     "2482162",
@@ -805,7 +810,9 @@
     "2506203",
     "2506204",
     "2506205",
+    "2506206",
     "2506207",
+    "2506208",
     "2506226",
     "2508333",
     "2508334",
@@ -2335,7 +2342,7 @@
         "abbr": "ARG",
         "goles": 3,
         "asistencias": 0,
-        "amarillas": 5,
+        "amarillas": 6,
         "rojas": 0
       },
       "34420082": {
@@ -3103,7 +3110,7 @@
         "abbr": "BAR",
         "goles": 1,
         "asistencias": 2,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34172476": {
@@ -4455,7 +4462,7 @@
         "abbr": "ARG",
         "goles": 0,
         "asistencias": 2,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34197736": {
@@ -5623,7 +5630,7 @@
         "abbr": "BAR",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34225278": {
@@ -5631,7 +5638,7 @@
         "abbr": "BAR",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 3,
+        "amarillas": 4,
         "rojas": 0
       },
       "34234768": {
@@ -7017,7 +7024,7 @@
         "abbr": "GRE",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 5,
+        "amarillas": 6,
         "rojas": 0
       },
       "34180519": {
@@ -8185,7 +8192,7 @@
         "abbr": "VIT",
         "goles": 0,
         "asistencias": 2,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34219173": {
@@ -8999,6 +9006,22 @@
       "34230179": {
         "player": "Antonio Galeano",
         "abbr": "REM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34436199": {
+        "player": "Pedro Gabriel",
+        "abbr": "GRE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34200169": {
+        "player": "Caio Paulista",
+        "abbr": "GRE",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
@@ -10029,7 +10052,7 @@
         "abbr": "RSO",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34149699": {
@@ -10563,7 +10586,7 @@
       "34170240": {
         "player": "Yangel Herrera",
         "abbr": "RSO",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -10767,6 +10790,70 @@
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
+      },
+      "34196434": {
+        "player": "Martín Satriano",
+        "abbr": "GET",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34146436": {
+        "player": "Johan Mojica",
+        "abbr": "GET",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34218691": {
+        "player": "Zaid Romero",
+        "abbr": "GET",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34178200": {
+        "player": "Carl Starfelt",
+        "abbr": "CEL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34194128": {
+        "player": "Hugo González",
+        "abbr": "CEL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34420763": {
+        "player": " Job Ochieng",
+        "abbr": "RSO",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34163475": {
+        "player": "Carlos Soler",
+        "abbr": "RSO",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34172841": {
+        "player": "Tete Morente",
+        "abbr": "ELC",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
       }
     },
     "seriea": {
@@ -10775,7 +10862,7 @@
         "abbr": "UDI",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34166121": {
@@ -10951,7 +11038,7 @@
         "abbr": "LEC",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34349060": {
@@ -11453,6 +11540,38 @@
       "34174557": {
         "player": "Michael Folorunsho",
         "abbr": "MON",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172672": {
+        "player": "Daniel Maldini",
+        "abbr": "CAG",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34200635": {
+        "player": "Jacopo Fazzini",
+        "abbr": "CAG",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34225950": {
+        "player": "Lennon Miller",
+        "abbr": "UDI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34173767": {
+        "player": "Gustav Isaksen",
+        "abbr": "LAZ",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,

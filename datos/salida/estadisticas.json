@@ -166,6 +166,11 @@
     ],
     "amarillas": [
       {
+        "player": "Francisco Álvarez",
+        "abbr": "ARG",
+        "value": 6
+      },
+      {
         "player": "Federico Fattori",
         "abbr": "ARG",
         "value": 6
@@ -178,11 +183,6 @@
       {
         "player": "Eric Meza",
         "abbr": "ELP",
-        "value": 5
-      },
-      {
-        "player": "Francisco Álvarez",
-        "abbr": "ARG",
         "value": 5
       },
       {
@@ -281,6 +281,11 @@
         "value": 6
       },
       {
+        "player": "Cristian Pavón",
+        "abbr": "GRE",
+        "value": 6
+      },
+      {
         "player": "Gabriel",
         "abbr": "BRA",
         "value": 5
@@ -293,11 +298,6 @@
       {
         "player": "Lucas Barbosa",
         "abbr": "BRA",
-        "value": 5
-      },
-      {
-        "player": "Cristian Pavón",
-        "abbr": "GRE",
         "value": 5
       }
     ],
@@ -475,6 +475,11 @@
         "value": 2
       },
       {
+        "player": "Jon Aramburu",
+        "abbr": "RSO",
+        "value": 2
+      },
+      {
         "player": "Gorka Guruzeta",
         "abbr": "ATH",
         "value": 2
@@ -488,11 +493,6 @@
         "player": "Álvaro Mantilla",
         "abbr": "RSA",
         "value": 2
-      },
-      {
-        "player": "Isaac Romero",
-        "abbr": "SEV",
-        "value": 1
       }
     ],
     "rojas": [
@@ -577,7 +577,12 @@
       {
         "player": "Jakub Piotrowski",
         "abbr": "UDI",
-        "value": 1
+        "value": 2
+      },
+      {
+        "player": "Kialonda Gaspar",
+        "abbr": "LEC",
+        "value": 2
       },
       {
         "player": "James Adusei Abankwah",
@@ -587,11 +592,6 @@
       {
         "player": "Matteo Politano",
         "abbr": "NAP",
-        "value": 1
-      },
-      {
-        "player": "Hakan Çalhanoğlu",
-        "abbr": "INM",
         "value": 1
       }
     ],
