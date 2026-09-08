@@ -1160,13 +1160,13 @@
     "video": null
   },
   "udi-laz-2482159": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-07T21:28:21.420358",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-08T19:23:29.846371",
     "video": null
   },
   "elc-rso-2506208": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-07T23:04:27.951578",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-08T19:23:29.846371",
     "video": null
   },
   "bar-arg-2398057": {
@@ -1182,6 +1182,16 @@
   "uni-ins-2398069": {
     "intentos": 2,
     "ultimo_intento": "2026-09-08T18:52:53.128891",
+    "video": null
+  },
+  "bru-avl-2594644": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-08T19:23:29.846371",
+    "video": null
+  },
+  "aek-las-2594650": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-08T19:23:29.846371",
     "video": null
   }
 }
