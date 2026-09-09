@@ -68,9 +68,30 @@ LIGAS = {
     # esta la corre el usuario a mano cuando quiere, no cada 10 min).
     # Formato liga única de 36 equipos desde 2024-25 (ya no son grupos),
     # así que entra igual que cualquier otra liga normal por
-    # descargar_temporada() — sin necesitar trato especial como
-    # Leagues Cup.
-    "champions": {"id": 4480, "nombre": "Champions League", "temporada": "2026-2027", "continente": "champions"},
+    # descargar_temporada() — CASI: sí necesita un trato especial, ver
+    # "fase_liga_desde" abajo.
+    #
+    # BUG real encontrado el 2026-09-11: TheSportsDB numera intRound
+    # empezando en 1 tanto para la ronda 1 de CLASIFICACIÓN (equipos
+    # como Kairat Almaty, Ararat-Armenia, KÍ Klaksvík, jugada en julio)
+    # como para la Jornada 1 de la FASE DE LIGA (los 36 equipos de
+    # verdad, jugada en septiembre) — mismo intRound, mismo "s" de
+    # temporada, sin ningún otro campo que los distinga. calcular_standings()
+    # no filtra por fecha (a propósito, para que las ligas normales
+    # acumulen la temporada completa), así que sin este corte la tabla
+    # de Champions salía mezclada con equipos de clasificación que ni
+    # siquiera llegaron a la fase de liga. construir_partidos() no se
+    # veía afectado de pura casualidad: su propia ventana de fecha
+    # (DIAS_ANTES/DIAS_DESPUES) ya dejaba fuera los partidos de julio.
+    # "fase_liga_desde": la fecha real en que arrancó la fase de liga esa
+    # temporada — descargar_temporada() descarta cualquier evento anterior
+    # a esa fecha antes de que llegue a calcular_standings() ni a nada
+    # más. Hay que actualizar esta fecha a mano cada temporada (agosto/
+    # septiembre del año siguiente).
+    "champions": {
+        "id": 4480, "nombre": "Champions League", "temporada": "2026-2027",
+        "continente": "champions", "fase_liga_desde": "2026-09-01",
+    },
 }
 
 # 25 alcanzaba de sobra para Liga BBVA MX (17 jornadas), pero el
@@ -331,6 +352,23 @@ def descargar_temporada(clave_liga, info_liga, cache):
 
         if jornada_terminada(partidos_jornada):
             cache_liga[clave_jornada] = partidos_jornada
+
+    # ver el comentario junto a "fase_liga_desde" en LIGAS (arriba): en
+    # Champions, TheSportsDB repite el mismo intRound para la ronda de
+    # clasificación Y para la jornada real de la fase de liga, así que un
+    # corte de fecha es la única forma confiable de dejar fuera los
+    # partidos de clasificación (julio) sin tocar nada de las demás ligas,
+    # que no traen este campo y siguen acumulando la temporada completa
+    # como siempre. Se filtra AQUÍ (sobre el total ya junto, no jornada
+    # por jornada) para no complicar el caché/el corte del bucle de
+    # arriba con esto.
+    fase_liga_desde = info_liga.get("fase_liga_desde")
+    if fase_liga_desde:
+        antes = len(eventos)
+        eventos = [ev for ev in eventos if (ev.get("dateEvent") or "9999") >= fase_liga_desde]
+        if len(eventos) != antes:
+            print(f"   (se descartaron {antes - len(eventos)} partido(s) de antes de "
+                  f"{fase_liga_desde} — clasificación, no la fase de liga)")
 
     print(f"   total: {len(eventos)} partidos en {info_liga['nombre']}")
     return eventos
