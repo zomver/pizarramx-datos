@@ -867,7 +867,13 @@
     "2552939",
     "2552940",
     "2552941",
-    "2552942"
+    "2552942",
+    "2594556",
+    "2594572",
+    "2594591",
+    "2594629",
+    "2594644",
+    "2594650"
   ],
   "jugadores": {
     "bbva": {
@@ -13744,6 +13750,238 @@
       "34225897": {
         "player": "Jacob Andersen",
         "abbr": "AGF",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34180376": {
+        "player": "Ayase Ueda",
+        "abbr": "LIL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34229444": {
+        "player": "Ethan Mbappé",
+        "abbr": "LIL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34146357": {
+        "player": "Marc Bartra",
+        "abbr": "BET",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34164519": {
+        "player": "Pablo Fornals",
+        "abbr": "BET",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34200125": {
+        "player": "Alexsandro",
+        "abbr": "LIL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34200206": {
+        "player": "Gaetan Perrin",
+        "abbr": "LIL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34146307": {
+        "player": "Isco",
+        "abbr": "BET",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34173097": {
+        "player": "Waldemar Anton",
+        "abbr": "BVB",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34253788": {
+        "player": "Pau Navarro",
+        "abbr": "VIL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34216896": {
+        "player": "Sergi Cardona",
+        "abbr": "VIL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172387": {
+        "player": "Joško Gvardiol",
+        "abbr": "MCI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34169116": {
+        "player": "Erling Haaland",
+        "abbr": "MCI",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34198448": {
+        "player": "Enzo Fernández",
+        "abbr": "MCI",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34162303": {
+        "player": "Gianluigi Donnarumma",
+        "abbr": "MCI",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34162098": {
+        "player": "Kylian Mbappé",
+        "abbr": "RMA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34161602": {
+        "player": "Brahim Díaz",
+        "abbr": "RMA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34164200": {
+        "player": "Federico Valverde",
+        "abbr": "RMA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34155404": {
+        "player": "Hakan Çalhanoğlu",
+        "abbr": "INM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34177858": {
+        "player": "Ian Maatsen",
+        "abbr": "AVL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34158197": {
+        "player": "John McGinn",
+        "abbr": "AVL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34170332": {
+        "player": "Pau Torres",
+        "abbr": "AVL",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34194260": {
+        "player": "Hugo Vetlesen",
+        "abbr": "BRU",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34420058": {
+        "player": "Jan Virgili",
+        "abbr": "BRU",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34149475": {
+        "player": "Emi Buendía",
+        "abbr": "AVL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34215764": {
+        "player": "João Gomes",
+        "abbr": "AVL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34200182": {
+        "player": "Nicolas Jackson",
+        "abbr": "AVL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34169008": {
+        "player": "Răzvan Marin",
+        "abbr": "AEK",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34162491": {
+        "player": "Luka Jovic",
+        "abbr": "AEK",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34174150": {
+        "player": "Melayro Bogarde",
+        "abbr": "LAS",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
