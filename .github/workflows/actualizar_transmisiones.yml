@@ -1,0 +1,44 @@
+name: Actualizar transmisiones
+
+# Aplica detalles_manuales.json y republica datos.js cada 5 min — aparte
+# de los crons de América/Europa/Champions (cada 10 min) para que una
+# transmisión cargada a mano se vea rápido sin esperar el cron completo
+# de ese continente. No le pide nada a TheSportsDB (0 llamadas a esa
+# API): solo baja lo que los otros 3 crons ya subieron al sitio en vivo,
+# le mezcla encima detalles_manuales.json, y vuelve a subir datos.js.
+# Por eso no hay paso de "guardar caché" — no hay nada que cachear.
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: actualizar-transmisiones
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias
+        run: pip install -r datos/requirements.txt
+
+      - name: Aplicar detalles_manuales.json y regenerar datos.js
+        run: python datos/actualizar_transmisiones.py
+
+      - name: Subir datos/salida a Hostinger por FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./datos/salida/
+          server-dir: ./datos/salida/
+          timeout: 60000
