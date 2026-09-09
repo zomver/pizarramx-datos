@@ -1160,13 +1160,13 @@
     "video": null
   },
   "udi-laz-2482159": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-08T19:23:29.846371",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
     "video": null
   },
   "elc-rso-2506208": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-08T19:23:29.846371",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
     "video": null
   },
   "bar-arg-2398057": {
@@ -1185,33 +1185,43 @@
     "video": null
   },
   "bru-avl-2594644": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-08T19:23:29.846371",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
     "video": null
   },
   "aek-las-2594650": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-08T19:23:29.846371",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
     "video": null
   },
   "lil-bet-2594556": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-08T21:33:07.106761",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
     "video": null
   },
   "bvb-vil-2594572": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-08T21:33:07.106761",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
     "video": null
   },
   "fcp-mci-2594591": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-08T21:33:07.106761",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
     "video": null
   },
   "rma-inm-2594629": {
+    "intentos": 2,
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
+    "video": null
+  },
+  "vfb-vik-2594578": {
     "intentos": 1,
-    "ultimo_intento": "2026-09-08T21:33:07.106761",
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
+    "video": null
+  },
+  "bcn-fey-2594617": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-09T19:39:44.797876",
     "video": null
   }
 }
