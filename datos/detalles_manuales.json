@@ -142,39 +142,21 @@
     }
   },
   {
-  "home": "RMA",
-  "away": "INM",
-  "date": "2026-09-08",
+  "home": "LIV",
+  "away": "ATM",
+  "date": "2026-09-09",
   "directo": {
-    "embed": "<iframe src=\"https://www.tarjetarojita.xyz/sw3.html?get=https://www.tarjetarojita.xyz/repro/espn1tv.html\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
     "fuente": "ESPN"
     }
   },
   {
-  "home": "LIL",
-  "away": "BET",
-  "date": "2026-09-08",
+  "home": "NAP",
+  "away": "ARS",
+  "date": "2026-09-09",
   "directo": {
-    "embed": "<iframe src=\"https://streamxhd.com/live1.php?stream=vix3\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-    "fuente": "VIX"
-    }
-  },
-  {
-  "home": "FCP",
-  "away": "MCI",
-  "date": "2026-09-08",
-  "directo": {
-    "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tudn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-    "fuente": "TUDN"
-    }
-  },
-  {
-  "home": "BVB",
-  "away": "VIL",
-  "date": "2026-09-08",
-  "directo": {
-    "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=disney10\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-    "fuente": "ESPN 6"
+    "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn5\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+    "fuente": "ESPN"
     }
   }
 ]
