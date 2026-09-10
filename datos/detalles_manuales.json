@@ -170,6 +170,10 @@
         "fuente": "TUDN"
         },
         {
+      "embed": "<iframe src=\"https://epiembeds.online/embed/tudn-usa\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allow=\"autoplay; encrypted-media; picture-in-picture; fullscreen\" allowfullscreen></iframe>",
+      "fuente": "TUDN HD"
+        },
+        {
         "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=foxone2\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
         "fuente": "FOX ONE 2"
         }
@@ -194,10 +198,16 @@
     "home": "PUM",
     "away": "LEO",
     "date": "2026-09-10",
-    "directo": {
+    "directo": [
+      {
       "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tudn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
       "fuente": "TUDN"
+    },
+     {
+      "embed": "<iframe src=\"https://epiembeds.online/embed/tudn-usa\" width=\"100%\" height=\"100%\" frameborder=\"0\" scrolling=\"no\" allow=\"autoplay; encrypted-media; picture-in-picture; fullscreen\" allowfullscreen></iframe>",
+      "fuente": "TUDN HD"
     }
+   ]
   }
 
 ]
