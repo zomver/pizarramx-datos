@@ -868,9 +868,15 @@
     "2552940",
     "2552941",
     "2552942",
+    "2594541",
     "2594556",
+    "2594562",
     "2594572",
+    "2594578",
     "2594591",
+    "2594597",
+    "2594603",
+    "2594617",
     "2594629",
     "2594644",
     "2594650"
@@ -13982,6 +13988,230 @@
       "34174150": {
         "player": "Melayro Bogarde",
         "abbr": "LAS",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34146345": {
+        "player": "Marcos Llorente",
+        "abbr": "ATM",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34174250": {
+        "player": "Julián Álvarez",
+        "abbr": "ATM",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34170133": {
+        "player": "Alexis Mac Allister",
+        "abbr": "LIV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34171965": {
+        "player": "Dominik Szoboszlai",
+        "abbr": "LIV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34172750": {
+        "player": "Ronald Araújo",
+        "abbr": "LIV",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34163447": {
+        "player": "Alexander Isak",
+        "abbr": "LIV",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34195287": {
+        "player": "Marc Pubill",
+        "abbr": "ATM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34161375": {
+        "player": "Ousmane Dembélé",
+        "abbr": "PSG",
+        "goles": 2,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34163478": {
+        "player": "Ferran Torres",
+        "abbr": "PSG",
+        "goles": 2,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34196431": {
+        "player": "Maghnes Akliouche",
+        "abbr": "PSG",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34167607": {
+        "player": "Ermedin Demirović",
+        "abbr": "VFB",
+        "goles": 3,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34178798": {
+        "player": "Angelo Stiller",
+        "abbr": "VFB",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34217456": {
+        "player": "Zlatko Tripić",
+        "abbr": "VIK",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34217468": {
+        "player": "Henrik Bjørdal",
+        "abbr": "VIK",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34200113": {
+        "player": "Deniz Undav",
+        "abbr": "VFB",
+        "goles": 0,
+        "asistencias": 2,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34172274": {
+        "player": "Kristoffer Askildsen",
+        "abbr": "VIK",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34191408": {
+        "player": "Gonçalo Inácio",
+        "abbr": "GAL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34220547": {
+        "player": "Sergi Altimira",
+        "abbr": "SCP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34222506": {
+        "player": "Geny Catamo",
+        "abbr": "SCP",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34172603": {
+        "player": "Luis Suárez",
+        "abbr": "SCP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34200573": {
+        "player": "Eren Elmalı",
+        "abbr": "GAL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34169971": {
+        "player": "Billy Gilmour",
+        "abbr": "NAP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34163304": {
+        "player": "Raphinha",
+        "abbr": "BCN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34219490": {
+        "player": "Lamine Yamal",
+        "abbr": "BCN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34171982": {
+        "player": "Karim Adeyemi",
+        "abbr": "BCN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34149735": {
+        "player": "João Cancelo",
+        "abbr": "BCN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34175574": {
+        "player": "Charles Vanhoutte",
+        "abbr": "FEY",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34168363": {
+        "player": "Dani Olmo",
+        "abbr": "BCN",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
