@@ -140,5 +140,64 @@
       "videoId": "Rzq1rUGQ56s",
       "fuente": "Layvtime"
     }
+  },
+  {
+    "home": "MUN",
+    "away": "SAB",
+    "date": "2026-09-10",
+        "directo":  [
+      {
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=disney4\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN 4"
+        },
+        {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn2\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN 2"
+        },
+        {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn3\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN 3"
+      }
+      ]
+    },
+  {
+    "home": "FCB",
+    "away": "BOD",
+    "date": "2026-09-10",
+        "directo":  [
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tudn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "TUDN"
+        },
+        {
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=foxone2\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "FOX ONE 2"
+        }
+      ]
+    },
+    {
+    "home": "COM",
+    "away": "RBL",
+    "date": "2026-09-10",
+        "directo":  [
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn5\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN 5"
+        },
+        {
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=max3\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "HBO MAX 3"
+        }
+      ]
+    },
+    {
+    "home": "PUM",
+    "away": "LEO",
+    "date": "2026-09-13",
+    "directo": {
+      "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tudn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+      "fuente": "TUDN"
+    }
   }
+
 ]
