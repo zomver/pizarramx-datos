@@ -710,6 +710,7 @@
     "2487509",
     "2487510",
     "2487512",
+    "2487513",
     "2487514",
     "2491731",
     "2491732",
@@ -868,18 +869,24 @@
     "2552940",
     "2552941",
     "2552942",
+    "2594538",
     "2594541",
     "2594556",
     "2594562",
+    "2594568",
     "2594572",
     "2594578",
+    "2594585",
     "2594591",
     "2594597",
     "2594603",
     "2594617",
     "2594629",
+    "2594641",
     "2594644",
-    "2594650"
+    "2594650",
+    "2594652",
+    "2594669"
   ],
   "jugadores": {
     "bbva": {
@@ -1231,7 +1238,7 @@
         "player": "Rodrigo López Quiñónes",
         "abbr": "PUM",
         "goles": 0,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 0,
         "rojas": 0
       },
@@ -1422,7 +1429,7 @@
       "34217392": {
         "player": "Juninho",
         "abbr": "PUM",
-        "goles": 2,
+        "goles": 3,
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
@@ -1958,6 +1965,22 @@
       "34433218": {
         "player": "Eduardo Águila Castro",
         "abbr": "SLP",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34435578": {
+        "player": "Ángel Azuaje García",
+        "abbr": "PUM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34220777": {
+        "player": "Juan Domínguez Chonteco",
+        "abbr": "LEO",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
@@ -13613,7 +13636,7 @@
         "player": "Mason Greenwood",
         "abbr": "FEN",
         "goles": 1,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
       },
@@ -13700,9 +13723,9 @@
       "34220651": {
         "player": "Archie Brown",
         "abbr": "FEN",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34216871": {
@@ -14212,6 +14235,214 @@
       "34168363": {
         "player": "Dani Olmo",
         "abbr": "BCN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34169290": {
+        "player": "Matheus Cunha",
+        "abbr": "MUN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34220127": {
+        "player": "Patrick Dorgu",
+        "abbr": "MUN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34163007": {
+        "player": "Bruno Fernandes",
+        "abbr": "MUN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34153488": {
+        "player": "Youri Tielemans",
+        "abbr": "MUN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34192206": {
+        "player": "Benjamin Šeško",
+        "abbr": "MUN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34173594": {
+        "player": "Bryan Mbeumo",
+        "abbr": "MUN",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34173035": {
+        "player": "Jamal Musiala",
+        "abbr": "FCB",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34146220": {
+        "player": "Harry Kane",
+        "abbr": "FCB",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34156768": {
+        "player": "Sondre Brunstad Fet",
+        "abbr": "BOD",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172857": {
+        "player": "Michael Olise",
+        "abbr": "FCB",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34203293": {
+        "player": "Vinicius Tobias",
+        "abbr": "SHK",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34234798": {
+        "player": "Gleiker Mendoza",
+        "abbr": "SHK",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34170357": {
+        "player": "Sergiño Dest",
+        "abbr": "PSV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34180022": {
+        "player": "Armando Obispo",
+        "abbr": "PSV",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34219662": {
+        "player": "Pedrinho",
+        "abbr": "SHK",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34223319": {
+        "player": "Mikuláš Konečný",
+        "abbr": "SLA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 1
+      },
+      "34345533": {
+        "player": "Danijel Šturm",
+        "abbr": "SLA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34432517": {
+        "player": "Samuel Isife",
+        "abbr": "SLA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34146499": {
+        "player": "Bryan Cristante",
+        "abbr": "ROM",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34164178": {
+        "player": "Donyell Malen",
+        "abbr": "ROM",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34175798": {
+        "player": "Devyne Rensch",
+        "abbr": "ROM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34164077": {
+        "player": "Willi Orban",
+        "abbr": "RBL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34200040": {
+        "player": "Martin Baturina",
+        "abbr": "COM",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34162097": {
+        "player": "Christopher Nkunku",
+        "abbr": "RBL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34194992": {
+        "player": "Tasos Douvikas",
+        "abbr": "COM",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34222648": {
+        "player": "Nico Paz",
+        "abbr": "COM",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
