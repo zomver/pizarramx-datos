@@ -1275,13 +1275,13 @@
     "video": null
   },
   "unb-sch-2508357": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-11T21:14:19.698300",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-12T16:35:55.484221",
     "video": null
   },
   "vnz-fio-2482175": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-11T21:14:19.698300",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-12T16:35:55.484221",
     "video": null
   },
   "nob-vel-2398082": {
@@ -1290,8 +1290,8 @@
     "video": null
   },
   "sev-val-2506211": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-11T23:19:06.343856",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-12T16:35:55.484221",
     "video": null
   },
   "dej-gem-2398075": {
@@ -1300,18 +1300,18 @@
     "video": null
   },
   "cot-atp-2398455": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-12T03:45:26.042260",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-12T16:35:55.484221",
     "video": null
   },
   "boc-cco-2398074": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-12T03:45:26.042260",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-12T16:35:55.484221",
     "video": null
   },
   "nec-pue-2487515": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-12T03:45:26.042260",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-12T16:35:55.484221",
     "video": null
   },
   "ate-pac-2487517": {
@@ -1322,6 +1322,16 @@
   "tij-qro-2487516": {
     "intentos": 1,
     "ultimo_intento": "2026-09-12T05:57:55.747875",
+    "video": null
+  },
+  "rsa-ala-2506218": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T16:35:55.484221",
+    "video": null
+  },
+  "gen-fro-2482171": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T16:35:55.484221",
     "video": null
   }
 }
