@@ -2,13 +2,13 @@
   "bbva": {
     "goleadores": [
       {
-        "player": "Rafa Llorente",
-        "abbr": "SLP",
-        "value": 3
-      },
-      {
         "player": "Salomón Rondón",
         "abbr": "PAC",
+        "value": 4
+      },
+      {
+        "player": "Rafa Llorente",
+        "abbr": "SLP",
         "value": 3
       },
       {
@@ -49,15 +49,25 @@
         "value": 2
       },
       {
-        "player": "Robert Morales Benítez",
-        "abbr": "PUM",
+        "player": "Santiago Homenchenko",
+        "abbr": "QRO",
         "value": 2
       }
     ],
     "amarillas": [
       {
+        "player": "Raúl Martínez",
+        "abbr": "NEC",
+        "value": 3
+      },
+      {
         "player": "Robson Bambu",
         "abbr": "SLP",
+        "value": 3
+      },
+      {
+        "player": "Kenedy",
+        "abbr": "PAC",
         "value": 3
       },
       {
@@ -66,18 +76,8 @@
         "value": 3
       },
       {
-        "player": "Raúl Martínez",
-        "abbr": "NEC",
-        "value": 2
-      },
-      {
         "player": "Oussama Idrissi",
         "abbr": "PAC",
-        "value": 2
-      },
-      {
-        "player": "Pedro Vite",
-        "abbr": "PUM",
         "value": 2
       }
     ],
@@ -159,8 +159,8 @@
         "value": 4
       },
       {
-        "player": "Matias Pellegrini",
-        "abbr": "VEL",
+        "player": "Juan Manuel Gutiérrez",
+        "abbr": "DEJ",
         "value": 4
       }
     ],
@@ -585,13 +585,13 @@
         "value": 2
       },
       {
-        "player": "James Adusei Abankwah",
-        "abbr": "UDI",
-        "value": 1
+        "player": "Joël Schingtienne",
+        "abbr": "VNZ",
+        "value": 2
       },
       {
-        "player": "Matteo Politano",
-        "abbr": "NAP",
+        "player": "James Adusei Abankwah",
+        "abbr": "UDI",
         "value": 1
       }
     ],
