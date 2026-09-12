@@ -179,7 +179,16 @@
       {
         "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=sky_sports_laliga\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
         "fuente": "SKY SPORTS LALIGA"
+        },
+        {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN"
+        },
+        {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espndeportes\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN DEPORTES"
         }
+
       ]
     },
     {
