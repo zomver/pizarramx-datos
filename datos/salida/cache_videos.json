@@ -1215,8 +1215,8 @@
     "video": null
   },
   "vfb-vik-2594578": {
-    "intentos": 5,
-    "ultimo_intento": "2026-09-12T06:38:35.703415",
+    "intentos": 6,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
     "video": null
   },
   "bcn-fey-2594617": {
@@ -1315,13 +1315,13 @@
     "video": null
   },
   "ate-pac-2487517": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-12T05:57:55.747875",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
     "video": null
   },
   "tij-qro-2487516": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-12T05:57:55.747875",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
     "video": null
   },
   "rsa-ala-2506218": {
@@ -1332,6 +1332,66 @@
   "gen-fro-2482171": {
     "intentos": 1,
     "ultimo_intento": "2026-09-12T16:35:55.484221",
+    "video": null
+  },
+  "fri-bmg-2508351": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "mai-sge-2508352": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "bvb-pad-2508353": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "tsg-vfb-2508354": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "aug-b04-2508355": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "bou-bre-2494031": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "liv-ful-2494032": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "che-hul-2494034": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "cry-ips-2494035": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "avl-nfo-2494037": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "osa-esp-2506217": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
+    "video": null
+  },
+  "laz-mil-2482168": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-12T18:43:02.743601",
     "video": null
   }
 }
