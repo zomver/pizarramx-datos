@@ -1493,5 +1493,45 @@
     "intentos": 1,
     "ultimo_intento": "2026-09-13T17:44:28.219463",
     "video": null
+  },
+  "sar-bel-2398083": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T19:53:20.071261",
+    "video": null
+  },
+  "tia-ros-2398085": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T19:53:20.071261",
+    "video": null
+  },
+  "cov-bha-2494039": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T19:53:20.071261",
+    "video": null
+  },
+  "lec-mon-2482176": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T19:53:20.071261",
+    "video": null
+  },
+  "rbl-hsv-2508356": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T19:53:20.071261",
+    "video": null
+  },
+  "lev-bcn-2506213": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T19:53:20.071261",
+    "video": null
+  },
+  "mun-mci-2494030": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T19:53:20.071261",
+    "video": null
+  },
+  "elv-fcb-2508359": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T19:53:20.071261",
+    "video": null
   }
 }
