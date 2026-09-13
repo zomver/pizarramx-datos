@@ -1285,8 +1285,8 @@
     "video": null
   },
   "nob-vel-2398082": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-12T13:46:04.745060",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-13T02:02:11.696855",
     "video": null
   },
   "sev-val-2506211": {
@@ -1295,8 +1295,8 @@
     "video": null
   },
   "dej-gem-2398075": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-12T13:46:04.745060",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-13T02:02:11.696855",
     "video": null
   },
   "cot-atp-2398455": {
@@ -1462,6 +1462,16 @@
   "tal-uni-2398084": {
     "intentos": 1,
     "ultimo_intento": "2026-09-13T01:04:49.740514",
+    "video": null
+  },
+  "tol-atl-2487519": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T02:02:11.696855",
+    "video": null
+  },
+  "bot-bra-2398453": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-13T02:02:11.696855",
     "video": null
   }
 }
