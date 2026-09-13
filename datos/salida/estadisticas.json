@@ -34,6 +34,11 @@
         "value": 2
       },
       {
+        "player": "Carlos Rodríguez",
+        "abbr": "CRZ",
+        "value": 2
+      },
+      {
         "player": "Alberto Herrera Rodríguez López",
         "abbr": "PUE",
         "value": 2
@@ -46,11 +51,6 @@
       {
         "player": "Diego Rossi",
         "abbr": "MTY",
-        "value": 2
-      },
-      {
-        "player": "Santiago Homenchenko",
-        "abbr": "QRO",
         "value": 2
       }
     ],
@@ -172,7 +172,7 @@
       },
       {
         "player": "Federico Fattori",
-        "abbr": "ARG",
+        "abbr": "TAL",
         "value": 6
       },
       {
@@ -186,8 +186,8 @@
         "value": 5
       },
       {
-        "player": "César Ibáñez",
-        "abbr": "HUR",
+        "player": "Román Riquelme",
+        "abbr": "TAL",
         "value": 5
       }
     ],
@@ -337,35 +337,35 @@
         "value": 3
       },
       {
+        "player": "Marcus Tavernier",
+        "abbr": "BOU",
+        "value": 3
+      },
+      {
+        "player": "Morgan Rogers",
+        "abbr": "CHE",
+        "value": 3
+      },
+      {
         "player": "Kai Havertz",
         "abbr": "ARS",
         "value": 2
       },
       {
-        "player": "Marcus Tavernier",
-        "abbr": "BOU",
-        "value": 2
-      },
-      {
-        "player": "Anthony Elanga",
-        "abbr": "NEW",
-        "value": 2
-      },
-      {
-        "player": "João Pedro",
-        "abbr": "CHE",
+        "player": "Emersonn",
+        "abbr": "IPS",
         "value": 2
       }
     ],
     "asistencias": [
       {
-        "player": "Riccardo Calafiori",
-        "abbr": "ARS",
-        "value": 2
-      },
-      {
         "player": "Evanilson",
         "abbr": "BOU",
+        "value": 3
+      },
+      {
+        "player": "Riccardo Calafiori",
+        "abbr": "ARS",
         "value": 2
       },
       {
@@ -391,6 +391,11 @@
         "value": 2
       },
       {
+        "player": "Marcus Tavernier",
+        "abbr": "BOU",
+        "value": 2
+      },
+      {
         "player": "Pascal Groß",
         "abbr": "BHA",
         "value": 2
@@ -401,44 +406,45 @@
         "value": 2
       },
       {
-        "player": "Caleb Yirenkyi",
-        "abbr": "COV",
-        "value": 1
-      },
-      {
-        "player": "Gabriel",
+        "player": "Reinildo Mandava",
         "abbr": "ARS",
-        "value": 1
+        "value": 2
       }
     ],
-    "rojas": []
+    "rojas": [
+      {
+        "player": "Axel Disasi",
+        "abbr": "CRY",
+        "value": 1
+      }
+    ]
   },
   "laliga": {
     "goleadores": [
       {
         "player": "Roberto Fernández",
         "abbr": "ESP",
+        "value": 5
+      },
+      {
+        "player": "Yassir Zabiri",
+        "abbr": "RSA",
+        "value": 4
+      },
+      {
+        "player": "Sergio Camello",
+        "abbr": "RAY",
+        "value": 3
+      },
+      {
+        "player": "Jude Bellingham",
+        "abbr": "RMA",
         "value": 3
       },
       {
         "player": "Raphinha",
         "abbr": "BCN",
         "value": 3
-      },
-      {
-        "player": "Yassir Zabiri",
-        "abbr": "RSA",
-        "value": 3
-      },
-      {
-        "player": "Lucas Boyé",
-        "abbr": "ALA",
-        "value": 3
-      },
-      {
-        "player": "Nicolas Pépé",
-        "abbr": "VIL",
-        "value": 2
       }
     ],
     "asistencias": [
@@ -446,6 +452,11 @@
         "player": "Javi Hernández",
         "abbr": "ESP",
         "value": 3
+      },
+      {
+        "player": "Iñigo Vicente",
+        "abbr": "RSA",
+        "value": 2
       },
       {
         "player": "Iñaki Williams",
@@ -461,17 +472,17 @@
         "player": "Alberto Moleiro",
         "abbr": "VIL",
         "value": 1
-      },
-      {
-        "player": "Georges Mikautadze",
-        "abbr": "VIL",
-        "value": 1
       }
     ],
     "amarillas": [
       {
         "player": "Urko González de Zárate",
         "abbr": "ESP",
+        "value": 2
+      },
+      {
+        "player": "Nahuel Tenaglia",
+        "abbr": "ALA",
         "value": 2
       },
       {
@@ -487,11 +498,6 @@
       {
         "player": "Álex Calatrava",
         "abbr": "ESP",
-        "value": 2
-      },
-      {
-        "player": "Álvaro Mantilla",
-        "abbr": "RSA",
         "value": 2
       }
     ],
@@ -553,6 +559,11 @@
         "value": 2
       },
       {
+        "player": "Lorenzo Colombo",
+        "abbr": "GEN",
+        "value": 2
+      },
+      {
         "player": "Hassane Kamara",
         "abbr": "UDI",
         "value": 1
@@ -561,17 +572,12 @@
         "player": "Jurgen Ekkelenkamp",
         "abbr": "UDI",
         "value": 1
-      },
-      {
-        "player": "Andy Diouf",
-        "abbr": "INM",
-        "value": 1
       }
     ],
     "amarillas": [
       {
         "player": "Romano Schmid",
-        "abbr": "VNZ",
+        "abbr": "FRO",
         "value": 3
       },
       {
@@ -600,6 +606,11 @@
   "bundesliga": {
     "goleadores": [
       {
+        "player": "Michael Gregoritsch",
+        "abbr": "AUG",
+        "value": 3
+      },
+      {
         "player": "Josha Vagnoman",
         "abbr": "VFB",
         "value": 2
@@ -618,11 +629,6 @@
         "player": "Yuito Suzuki",
         "abbr": "FRI",
         "value": 2
-      },
-      {
-        "player": "Hugo Bolin",
-        "abbr": "ELV",
-        "value": 2
       }
     ],
     "asistencias": [
@@ -637,22 +643,27 @@
         "value": 2
       },
       {
+        "player": "Bambasé Conté",
+        "abbr": "TSG",
+        "value": 2
+      },
+      {
+        "player": "Matthias Ginter",
+        "abbr": "FRI",
+        "value": 2
+      },
+      {
         "player": "Franck Honorat",
         "abbr": "BMG",
         "value": 2
-      },
-      {
-        "player": "Miguel Gutiérrez",
-        "abbr": "B04",
-        "value": 2
-      },
-      {
-        "player": "Josha Vagnoman",
-        "abbr": "VFB",
-        "value": 1
       }
     ],
     "amarillas": [
+      {
+        "player": "Noahkai Banks",
+        "abbr": "AUG",
+        "value": 2
+      },
       {
         "player": "Santiago Castañeda",
         "abbr": "PAD",
@@ -671,11 +682,6 @@
       {
         "player": "Julian Ryerson",
         "abbr": "BVB",
-        "value": 1
-      },
-      {
-        "player": "Younes Ebnoutalib",
-        "abbr": "SGE",
         "value": 1
       }
     ],
