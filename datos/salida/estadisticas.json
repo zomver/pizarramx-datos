@@ -61,6 +61,11 @@
         "value": 3
       },
       {
+        "player": "Pedro Vite",
+        "abbr": "PUM",
+        "value": 3
+      },
+      {
         "player": "Robson Bambu",
         "abbr": "SLP",
         "value": 3
@@ -74,11 +79,6 @@
         "player": "Víctor Hugo Ríos de Alba",
         "abbr": "TIG",
         "value": 3
-      },
-      {
-        "player": "Oussama Idrissi",
-        "abbr": "PAC",
-        "value": 2
       }
     ],
     "rojas": [
@@ -117,6 +117,11 @@
         "value": 9
       },
       {
+        "player": "Junior Marabel",
+        "abbr": "SAR",
+        "value": 8
+      },
+      {
         "player": "Marcelo Torres",
         "abbr": "GLP",
         "value": 8
@@ -124,11 +129,6 @@
       {
         "player": "Leandro Díaz",
         "abbr": "ATU",
-        "value": 6
-      },
-      {
-        "player": "Junior Marabel",
-        "abbr": "SAR",
         "value": 6
       },
       {
@@ -347,13 +347,13 @@
         "value": 3
       },
       {
-        "player": "Kai Havertz",
-        "abbr": "ARS",
-        "value": 2
+        "player": "Erling Haaland",
+        "abbr": "MCI",
+        "value": 3
       },
       {
-        "player": "Emersonn",
-        "abbr": "IPS",
+        "player": "Kai Havertz",
+        "abbr": "ARS",
         "value": 2
       }
     ],
@@ -413,8 +413,18 @@
     ],
     "rojas": [
       {
+        "player": "Phil Foden",
+        "abbr": "MCI",
+        "value": 1
+      },
+      {
         "player": "Axel Disasi",
         "abbr": "CRY",
+        "value": 1
+      },
+      {
+        "player": "Taiwo Awoniyi",
+        "abbr": "COV",
         "value": 1
       }
     ]
@@ -454,6 +464,11 @@
         "value": 3
       },
       {
+        "player": "Raphinha",
+        "abbr": "BCN",
+        "value": 3
+      },
+      {
         "player": "Iñigo Vicente",
         "abbr": "RSA",
         "value": 2
@@ -464,14 +479,9 @@
         "value": 2
       },
       {
-        "player": "Alvaro Garcia",
-        "abbr": "RAY",
-        "value": 1
-      },
-      {
-        "player": "Alberto Moleiro",
-        "abbr": "VIL",
-        "value": 1
+        "player": "Hugo González",
+        "abbr": "CEL",
+        "value": 2
       }
     ],
     "amarillas": [
@@ -537,13 +547,13 @@
         "value": 2
       },
       {
-        "player": "Antonio Raimondo",
-        "abbr": "FRO",
+        "player": "Lassana Coulibaly",
+        "abbr": "LEC",
         "value": 2
       },
       {
-        "player": "Martin Baturina",
-        "abbr": "COM",
+        "player": "Antonio Raimondo",
+        "abbr": "FRO",
         "value": 2
       }
     ],
@@ -564,12 +574,12 @@
         "value": 2
       },
       {
-        "player": "Hassane Kamara",
-        "abbr": "UDI",
-        "value": 1
+        "player": "Ivan Ilic",
+        "abbr": "LEC",
+        "value": 2
       },
       {
-        "player": "Jurgen Ekkelenkamp",
+        "player": "Hassane Kamara",
         "abbr": "UDI",
         "value": 1
       }
@@ -596,9 +606,9 @@
         "value": 2
       },
       {
-        "player": "James Adusei Abankwah",
-        "abbr": "UDI",
-        "value": 1
+        "player": "Jhon Lucumí",
+        "abbr": "JUV",
+        "value": 2
       }
     ],
     "rojas": []
@@ -616,6 +626,11 @@
         "value": 2
       },
       {
+        "player": "Antonio Nusa",
+        "abbr": "RBL",
+        "value": 2
+      },
+      {
         "player": "Younes Ebnoutalib",
         "abbr": "SGE",
         "value": 2
@@ -623,11 +638,6 @@
       {
         "player": "David Ngabi Mokwa Ntusu",
         "abbr": "ELV",
-        "value": 2
-      },
-      {
-        "player": "Yuito Suzuki",
-        "abbr": "FRI",
         "value": 2
       }
     ],
