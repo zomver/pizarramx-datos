@@ -113,32 +113,5 @@
       "statusUrl": "https://x.com/Jefriau6rv/status/2093537775270113783",
       "fecha": "August 29, 2026"
     }
-  },
-  {
-    "home": "AME",
-    "away": "TIJ",
-    "date": "2026-09-05",
-    "directo": {
-      "videoId": "DSF3JvvxfWA",
-      "fuente": "Layvtime"
-    }
-  },
-  {
-    "home": "MTY",
-    "away": "TIG",
-    "date": "2026-09-12",
-    "directo": {
-      "videoId": "HFyvwrTyQgw",
-      "fuente": "Layvtime"
-    }
-  },
-  {
-    "home": "SAN",
-    "away": "JUA",
-    "date": "2026-09-13",
-    "directo": {
-      "videoId": "Rzq1rUGQ56s",
-      "fuente": "Layvtime"
-    }
   }
 ]
