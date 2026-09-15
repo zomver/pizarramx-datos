@@ -1600,18 +1600,18 @@
     "video": null
   },
   "inm-udi-2482174": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-14T23:48:57.996470",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-15T20:16:49.499972",
     "video": null
   },
   "lee-new-2494036": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-14T23:48:57.996470",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-15T20:16:49.499972",
     "video": null
   },
   "vil-bet-2506210": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-14T23:48:57.996470",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-15T20:16:49.499972",
     "video": null
   },
   "ban-bar-2398073": {
@@ -1637,6 +1637,16 @@
   "leo-slp-2487518": {
     "intentos": 2,
     "ultimo_intento": "2026-09-15T19:39:58.919513",
+    "video": null
+  },
+  "ray-esp-2506227": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-15T20:16:49.499972",
+    "video": null
+  },
+  "ala-val-2506223": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-15T20:16:49.499972",
     "video": null
   }
 }
