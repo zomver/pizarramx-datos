@@ -391,6 +391,11 @@
         "value": 2
       },
       {
+        "player": "Dominic Calvert-Lewin",
+        "abbr": "LEE",
+        "value": 2
+      },
+      {
         "player": "Marcus Tavernier",
         "abbr": "BOU",
         "value": 2
@@ -403,11 +408,6 @@
       {
         "player": "Yoane Wissa",
         "abbr": "NEW",
-        "value": 2
-      },
-      {
-        "player": "Reinildo Mandava",
-        "abbr": "ARS",
         "value": 2
       }
     ],
@@ -534,10 +534,15 @@
       {
         "player": "Donyell Malen",
         "abbr": "ROM",
-        "value": 4
+        "value": 5
       },
       {
         "player": "Hassane Kamara",
+        "abbr": "UDI",
+        "value": 2
+      },
+      {
+        "player": "Jurgen Ekkelenkamp",
         "abbr": "UDI",
         "value": 2
       },
@@ -549,11 +554,6 @@
       {
         "player": "Lassana Coulibaly",
         "abbr": "LEC",
-        "value": 2
-      },
-      {
-        "player": "Antonio Raimondo",
-        "abbr": "FRO",
         "value": 2
       }
     ],

@@ -362,12 +362,15 @@
     "2398070",
     "2398071",
     "2398072",
+    "2398073",
     "2398074",
     "2398075",
+    "2398076",
     "2398077",
     "2398078",
     "2398079",
     "2398080",
+    "2398081",
     "2398082",
     "2398083",
     "2398084",
@@ -629,6 +632,7 @@
     "2398449",
     "2398450",
     "2398451",
+    "2398452",
     "2398453",
     "2398454",
     "2398455",
@@ -678,8 +682,11 @@
     "2482170",
     "2482171",
     "2482172",
+    "2482173",
+    "2482174",
     "2482175",
     "2482176",
+    "2482177",
     "2487452",
     "2487453",
     "2487454",
@@ -743,6 +750,7 @@
     "2487515",
     "2487516",
     "2487517",
+    "2487518",
     "2487519",
     "2487520",
     "2487521",
@@ -817,6 +825,7 @@
     "2494033",
     "2494034",
     "2494035",
+    "2494036",
     "2494037",
     "2494038",
     "2494039",
@@ -860,6 +869,7 @@
     "2506207",
     "2506208",
     "2506209",
+    "2506210",
     "2506211",
     "2506212",
     "2506213",
@@ -3247,7 +3257,7 @@
         "player": "Eduardo Salvio",
         "abbr": "LAN",
         "goles": 0,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 1,
         "rojas": 0
       },
@@ -3334,7 +3344,7 @@
       "34218635": {
         "player": "Iván Tapia",
         "abbr": "BAR",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 2,
         "amarillas": 1,
         "rojas": 0
@@ -3670,7 +3680,7 @@
       "34299840": {
         "player": "Lautaro Gómez",
         "abbr": "BAN",
-        "goles": 2,
+        "goles": 3,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -5223,7 +5233,7 @@
         "player": "Santiago López García",
         "abbr": "BAN",
         "goles": 0,
-        "asistencias": 2,
+        "asistencias": 3,
         "amarillas": 2,
         "rojas": 0
       },
@@ -6370,6 +6380,22 @@
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
+      },
+      "34438510": {
+        "player": "Allan Steven Wlk Duré",
+        "abbr": "LAN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34218735": {
+        "player": "Felipe Peña Biafore",
+        "abbr": "LAN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
       }
     },
     "brasil": {
@@ -6480,7 +6506,7 @@
       "34176218": {
         "player": "Jean Lucas",
         "abbr": "BAH",
-        "goles": 2,
+        "goles": 3,
         "asistencias": 2,
         "amarillas": 1,
         "rojas": 0
@@ -7225,7 +7251,7 @@
         "player": "Cristian Olivera",
         "abbr": "BAH",
         "goles": 0,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 2,
         "rojas": 0
       },
@@ -7234,7 +7260,7 @@
         "abbr": "BAH",
         "goles": 0,
         "asistencias": 1,
-        "amarillas": 3,
+        "amarillas": 4,
         "rojas": 0
       },
       "34219537": {
@@ -9578,9 +9604,9 @@
       "34159023": {
         "player": "Dominic Calvert-Lewin",
         "abbr": "LEE",
-        "goles": 0,
-        "asistencias": 0,
-        "amarillas": 1,
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34346281": {
@@ -9729,8 +9755,8 @@
       },
       "34219275": {
         "player": "Lewis Miley",
-        "abbr": "NEW",
-        "goles": 0,
+        "abbr": "LEE",
+        "goles": 1,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -10138,7 +10164,7 @@
       "34173933": {
         "player": "Jayden Bogle",
         "abbr": "LEE",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -10350,6 +10376,14 @@
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 1
+      },
+      "34242621": {
+        "player": "Tarik Muharemović",
+        "abbr": "LEE",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
       }
     },
     "laliga": {
@@ -11480,6 +11514,38 @@
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
+      },
+      "34149766": {
+        "player": "Gerard Moreno",
+        "abbr": "VIL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34215766": {
+        "player": "Renato Veiga",
+        "abbr": "VIL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34170279": {
+        "player": "Cucho Hernández",
+        "abbr": "BET",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34202462": {
+        "player": "Natan",
+        "abbr": "BET",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
       }
     },
     "seriea": {
@@ -11502,7 +11568,7 @@
       "34170356": {
         "player": "Jurgen Ekkelenkamp",
         "abbr": "UDI",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
@@ -11510,7 +11576,7 @@
       "34219352": {
         "player": "James Adusei Abankwah",
         "abbr": "UDI",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -11694,7 +11760,7 @@
       "34164178": {
         "player": "Donyell Malen",
         "abbr": "ROM",
-        "goles": 4,
+        "goles": 5,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -11950,7 +12016,7 @@
       "34148307": {
         "player": "Nicolo Barella",
         "abbr": "INM",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
@@ -12079,7 +12145,7 @@
         "player": "Nico Paz",
         "abbr": "COM",
         "goles": 1,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
       },
@@ -12337,6 +12403,46 @@
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
+        "rojas": 0
+      },
+      "34226401": {
+        "player": "Unai Gómez",
+        "abbr": "UDI",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34170127": {
+        "player": "Keinan Davis",
+        "abbr": "UDI",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34174575": {
+        "player": "Carlos Neves",
+        "abbr": "INM",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34169231": {
+        "player": "Marcus Thuram",
+        "abbr": "INM",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34259849": {
+        "player": "Jacobo Ramón",
+        "abbr": "COM",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
         "rojas": 0
       }
     },
