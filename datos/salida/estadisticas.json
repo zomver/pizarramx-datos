@@ -469,6 +469,11 @@
         "value": 3
       },
       {
+        "player": "Alvaro Garcia",
+        "abbr": "RAY",
+        "value": 2
+      },
+      {
         "player": "Iñigo Vicente",
         "abbr": "RSA",
         "value": 2
@@ -476,11 +481,6 @@
       {
         "player": "Iñaki Williams",
         "abbr": "ATH",
-        "value": 2
-      },
-      {
-        "player": "Hugo González",
-        "abbr": "CEL",
         "value": 2
       }
     ],

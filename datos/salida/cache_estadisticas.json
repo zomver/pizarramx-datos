@@ -741,6 +741,7 @@
     "2487503",
     "2487504",
     "2487505",
+    "2487506",
     "2487507",
     "2487509",
     "2487510",
@@ -878,7 +879,10 @@
     "2506216",
     "2506217",
     "2506218",
+    "2506223",
     "2506226",
+    "2506227",
+    "2506228",
     "2508333",
     "2508334",
     "2508335",
@@ -1104,7 +1108,7 @@
         "abbr": "PUE",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34221174": {
@@ -2185,6 +2189,14 @@
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
+        "rojas": 0
+      },
+      "34347228": {
+        "player": "José Pachuca",
+        "abbr": "TOL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
         "rojas": 0
       }
     },
@@ -10390,8 +10402,8 @@
       "34149499": {
         "player": "Alvaro Garcia",
         "abbr": "RAY",
-        "goles": 1,
-        "asistencias": 1,
+        "goles": 2,
+        "asistencias": 2,
         "amarillas": 0,
         "rojas": 0
       },
@@ -11014,7 +11026,7 @@
       "34162098": {
         "player": "Kylian Mbappé",
         "abbr": "RMA",
-        "goles": 2,
+        "goles": 3,
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
@@ -11545,6 +11557,78 @@
         "goles": 1,
         "asistencias": 0,
         "amarillas": 0,
+        "rojas": 0
+      },
+      "34217535": {
+        "player": "Javi Guerra",
+        "abbr": "VAL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34179449": {
+        "player": "Antonio Blanco",
+        "abbr": "ALA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34191721": {
+        "player": "Pepelu",
+        "abbr": "VAL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34172534": {
+        "player": "Guido Rodríguez",
+        "abbr": "VAL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34170209": {
+        "player": "Adrià Pedrosa",
+        "abbr": "RAY",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34149325": {
+        "player": "Unai Lopez",
+        "abbr": "RAY",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34336277": {
+        "player": "Yan Diomande",
+        "abbr": "RMA",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34192621": {
+        "player": "Matías Dituro",
+        "abbr": "RMA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34195201": {
+        "player": "Marc Aguado",
+        "abbr": "ELC",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
         "rojas": 0
       }
     },
