@@ -1,62 +1,5 @@
 [
   {
-    "home": "MTY",
-    "away": "JUA",
-    "date": "2026-08-15",
-    "directo": {
-      "videoId": "hikMDFdbab0",
-      "fuente": "Layvtime"
-    }
-  },
-  {
-    "home": "ATL",
-    "away": "TIG",
-    "date": "2026-08-15",
-    "directo": {
-      "videoId": "V4IOB9n7-Fc",
-      "fuente": "Layvtime"
-    }
-  },
-  {
-    "home": "AME",
-    "away": "AUS",
-    "date": "2026-08-14",
-    "reddit": {
-      "url": "https://www.reddit.com/r/MLS/comments/1vnrlru/match_thread_am%c3%a9rica_vs_austin_fc_leagues_cup_aug/",
-      "title": "Match Thread: América vs Austin FC | Leagues Cup | Aug 14, 2026",
-      "author": "globalscoreboard",
-      "subreddit": "MLS"
-    }
-  },
-  {
-    "home": "AME",
-    "away": "SLP",
-    "date": "2026-08-16",
-    "directo": {
-      "videoId": "XGjntV76RAw",
-      "fuente": "Layvtime"
-    }
-  },
-  {
-    "home": "SAN",
-    "away": "GDL",
-    "date": "2026-08-16",
-    "directo": {
-      "videoId": "Ti1vVXW-G_E",
-      "fuente": "Layvtime"
-    }
-  },
-  {
-    "home": "TOL",
-    "away": "AUS",
-    "date": "2026-08-26",
-    "directo": {
-      "videoId": "xav5isq",
-      "fuente": "Imagen Deportes",
-      "proveedor": "dailymotion"
-    }
-  },
-  {
     "home": "AME",
     "away": "CLB",
     "date": "2026-08-26",
@@ -103,18 +46,6 @@
     }
   },
   {
-    "home": "TIJ",
-    "away": "PUM",
-    "date": "2026-08-28",
-    "narracion": {
-      "texto": "",
-      "link": "https://t.co/Gf9ODuGDJ7",
-      "autor": "JEFRY.SPORTS OFICIAL (@Jefriau6rv)",
-      "statusUrl": "https://x.com/Jefriau6rv/status/2093537775270113783",
-      "fecha": "August 29, 2026"
-    }
-  },
-  {
     "home": "BAH",
     "away": "REM",
     "date": "2026-09-14",
@@ -137,14 +68,14 @@
     "away": "RMA",
     "date": "2026-09-15",
     "directo": [
-  {
-    "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=sky_sports_laliga\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-    "fuente": "SKY SPORTS LALIGA"
-    },
-    {
-    "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=dsports\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-    "fuente": "DS SPORTS"
-    }
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=sky_sports_laliga\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "SKY SPORTS LALIGA"
+      },
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=dsports\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "DS SPORTS"
+      }
     ]
   },
   {
@@ -152,16 +83,18 @@
     "away": "TOL",
     "date": "2026-09-15",
     "directo": [
-  {
-    "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espnmx\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-    "fuente": "ESPN"
-    },
-    {
-    "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tudn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-    "fuente": "TUDN"
-    }
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espnmx\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN"
+      },
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tudn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "TUDN"
+      },
+      {
+        "embed": "<iframe src=\"https://www.tarjetarojita.xyz/sw3.html?get=https://www.tarjetarojita.xyz/repro/espnmx.1.html\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN opcion 2"
+      }
     ]
   }
-  
-
 ]
