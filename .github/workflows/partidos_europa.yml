@@ -5,14 +5,17 @@ name: Actualizar partidos y posiciones — Europa
 # Sin Leagues Cup ni videos/detalles_manuales — esas dos cosas son todas
 # de Liga MX, las sigue manejando el cron de América.
 
+# El horario real lo maneja cron-job.org desde el 2026-09-15: cada 10
+# minutos, en los minutos :05, :15, :25... — desfasado 5 min del de
+# América para no pegarle a la misma llave gratuita de TheSportsDB al
+# mismo tiempo. La explicación completa de por qué ya no lo maneja el
+# "schedule" de GitHub está en partidos_america.yml.
+#
+# Lo de aquí abajo es solo la RED DE SEGURIDAD cada 6 horas, por si
+# cron-job.org se cae o el token expira.
 on:
   schedule:
-    # offset de 3 min contra el de América (:6,16,26... en vez de
-    # :3,13,23...) — puro cuidado extra para que las dos corridas no
-    # arranquen en el mismo segundo exacto y se peleen por el mismo
-    # runner de GitHub; ya no comparten ningún archivo, así que ni
-    # siquiera hace falta, pero no cuesta nada.
-    - cron: '6,16,26,36,46,56 * * * *'
+    - cron: '22 */6 * * *'
   workflow_dispatch:
 
 concurrency:

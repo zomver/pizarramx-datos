@@ -8,9 +8,17 @@ name: Actualizar transmisiones
 # le mezcla encima detalles_manuales.json, y vuelve a subir datos.js.
 # Por eso no hay paso de "guardar caché" — no hay nada que cachear.
 
+# El horario real lo maneja cron-job.org desde el 2026-09-15: cada 5
+# minutos. Puede ir tan seguido sin ningún riesgo porque este workflow
+# NO le hace ni una llamada a TheSportsDB (ver el párrafo de arriba). La
+# explicación de por qué ya no lo maneja el "schedule" de GitHub está en
+# partidos_america.yml.
+#
+# Lo de aquí abajo es solo la RED DE SEGURIDAD cada 6 horas, por si
+# cron-job.org se cae o el token expira.
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '37 */6 * * *'
   workflow_dispatch:
 
 concurrency:

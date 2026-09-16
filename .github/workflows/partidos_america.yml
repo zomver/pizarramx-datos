@@ -8,11 +8,33 @@ name: Actualizar partidos y posiciones — América
 # le pise al otro el archivo — ver sincronizar_otro_continente() en
 # generar_datos.py para cómo se vuelven a juntar en un solo datos.js.
 
+# QUIÉN DISPARA ESTE WORKFLOW (cambió el 2026-09-15)
+#
+# El horario real lo maneja cron-job.org, que llama a la API de
+# workflow_dispatch de GitHub cada 10 minutos (minutos :00, :10, :20...).
+#
+# Por qué ya no lo maneja el "schedule" de aquí abajo: GitHub documenta
+# que los workflows programados corren "en base al mejor esfuerzo", y en
+# repos públicos del plan gratuito con crons frecuentes eso significa que
+# descarta la enorme mayoría. Medido sobre el historial real de este mismo
+# repo: este workflow, programado cada 10 min (144 corridas al día),
+# disparaba unas 6 veces al día, con huecos de hasta 5 horas. El de
+# transmisiones (*/5, 288 al día) también ~6. En cambio estadisticas.yml,
+# programado 1 vez al día, disparó 12 de 12 días — llegando tarde, pero
+# nunca lo descartó. O sea: GitHub castiga la frecuencia, no la
+# programación en sí.
+#
+# El "schedule" se deja, pero espaciado a cada 6 horas, como RED DE
+# SEGURIDAD: si cron-job.org se cae, o el token de GitHub expira, o
+# alguien borra el cronjob por error, el sitio sigue actualizándose 4
+# veces al día en vez de quedarse congelado para siempre. A esa
+# frecuencia GitHub sí lo respeta (ver el dato de estadisticas.yml
+# arriba). El minuto :07 es distinto al de Europa (:22) y transmisiones
+# (:37) para que los tres respaldos no caigan juntos sobre la misma
+# llave gratuita de TheSportsDB.
 on:
   schedule:
-    # mismos minutos "raros" que ya usaba el cron único (ver el porqué
-    # en la versión vieja de este archivo / partidos_europa.yml)
-    - cron: '3,13,23,33,43,53 * * * *'
+    - cron: '7 */6 * * *'
   workflow_dispatch:
 
 concurrency:

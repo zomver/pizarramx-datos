@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<title>Editor de detalles_manuales.json — PIZARRA MX</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #12151c;
+    color: #e8ebf0;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 24px 80px;
+  }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  p.sub { color: #9099a8; margin-top: 0; margin-bottom: 28px; font-size: 14px; }
+  section {
+    background: #1a1e28;
+    border: 1px solid #2a2f3d;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+  }
+  h2 { font-size: 16px; margin-top: 0; margin-bottom: 16px; color: #cfd4de; }
+  label { display: block; font-size: 13px; color: #9099a8; margin-bottom: 4px; margin-top: 14px; }
+  input[type=text], input[type=date], input[type=url] {
+    width: 100%;
+    background: #0f1218;
+    border: 1px solid #333a4a;
+    color: #e8ebf0;
+    padding: 9px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  input[type=text]:focus, input[type=date]:focus, input[type=url]:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  .fila-equipos { display: flex; gap: 16px; }
+  .fila-equipos > div { flex: 1; }
+  .opcion {
+    border: 1px dashed #333a4a;
+    border-radius: 8px;
+    padding: 12px 14px 14px;
+    margin-top: 12px;
+    position: relative;
+  }
+  .opcion .quitar {
+    position: absolute;
+    top: 8px; right: 10px;
+    background: none; border: none;
+    color: #e05555; cursor: pointer;
+    font-size: 12px;
+  }
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .btn-secundario {
+    background: #2a2f3d;
+    color: #cfd4de;
+    margin-top: 12px;
+  }
+  .btn-primario {
+    background: #4a90e2;
+    color: #fff;
+    margin-top: 20px;
+  }
+  .btn-descargar {
+    background: #3ecf8e;
+    color: #06231a;
+    font-size: 15px;
+    padding: 12px 22px;
+  }
+  .btn-peligro { background: #e05555; color: #fff; }
+  .acciones-top { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  table { width: 100%; border-collapse: collapse; margin-top: 14px; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #2a2f3d; }
+  th { color: #9099a8; font-weight: 600; }
+  td.acciones { text-align: right; white-space: nowrap; }
+  td.acciones button { padding: 4px 10px; font-size: 12px; margin-left: 6px; }
+  .tag {
+    display: inline-block;
+    background: #2a2f3d;
+    color: #9099a8;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 999px;
+  }
+  .vacio { color: #6b7280; font-size: 13px; padding: 12px 0; }
+  .estado {
+    font-size: 13px;
+    color: #9099a8;
+    margin-top: 10px;
+  }
+  .estado.ok { color: #3ecf8e; }
+</style>
+</head>
+<body>
+
+<h1>Editor de detalles_manuales.json</h1>
+<p class="sub">Herramienta local — todo pasa en tu navegador, nada se sube a internet. Carga el archivo, agrega/edita partidos, descarga el resultado y reemplázalo en <code>repoGit/datos/detalles_manuales.json</code> antes de hacer commit + push.</p>
+
+<section>
+  <h2>1. Cargar archivo actual</h2>
+  <input type="file" id="inputArchivo" accept=".json" />
+  <div class="estado" id="estadoCarga">Ningún archivo cargado — puedes empezar desde cero si quieres.</div>
+</section>
+
+<section>
+  <h2>2. Partidos cargados (<span id="conteo">0</span>)</h2>
+  <div id="tablaWrap"><div class="vacio">Sin entradas todavía.</div></div>
+</section>
+
+<section>
+  <h2 id="tituloForm">3. Agregar partido</h2>
+  <div class="fila-equipos">
+    <div>
+      <label>Local (abreviación, ej. AME)</label>
+      <input type="text" id="fHome" maxlength="6" style="text-transform:uppercase" />
+    </div>
+    <div>
+      <label>Visitante (abreviación, ej. TIJ)</label>
+      <input type="text" id="fAway" maxlength="6" style="text-transform:uppercase" />
+    </div>
+    <div>
+      <label>Fecha</label>
+      <input type="date" id="fFecha" />
+    </div>
+  </div>
+
+  <label style="margin-top:20px;">Transmisión(es)</label>
+  <div id="opcionesWrap"></div>
+  <button type="button" class="btn-secundario" id="btnAgregarOpcion">+ Agregar otra opción de transmisión</button>
+
+  <br/>
+  <button type="button" class="btn-primario" id="btnGuardarPartido">Agregar / guardar partido</button>
+  <button type="button" class="btn-secundario" id="btnCancelarEdicion" style="display:none;">Cancelar edición</button>
+</section>
+
+<section>
+  <h2>4. Descargar resultado</h2>
+  <div class="acciones-top">
+    <button type="button" class="btn-descargar" id="btnDescargar">Descargar detalles_manuales.json</button>
+    <button type="button" class="btn-secundario" id="btnCopiar">Copiar JSON al portapapeles</button>
+  </div>
+  <div class="estado" id="estadoDescarga"></div>
+</section>
+
+<script>
+  // ---------- estado ----------
+  let entradas = [];      // arreglo completo, tal cual va al archivo
+  let editandoIndex = null; // índice de la entrada que se está editando, o null
+
+  const $ = (id) => document.getElementById(id);
+
+  // ---------- plantilla del iframe ----------
+  // el link que escribas va SOLO dentro del src="..."; todo lo demás del
+  // iframe queda fijo, tal como ya se usa en las entradas existentes.
+  function construirEmbed(link) {
+    const limpio = String(link).trim().replace(/"/g, '&quot;');
+    return `<iframe src="${limpio}" title="MLS 1"style="width:100%; height:100%; border:none; display:block;"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"allowfullscreen></iframe>`;
+  }
+
+  // extrae el link de un embed ya armado (para poder editarlo después)
+  function extraerLink(embedHtml) {
+    const m = /src="([^"]*)"/.exec(embedHtml || '');
+    return m ? m[1] : '';
+  }
+
+  // ---------- opciones de transmisión (filas dinámicas del form) ----------
+  function agregarFilaOpcion(fuente = '', link = '') {
+    const div = document.createElement('div');
+    div.className = 'opcion';
+    div.innerHTML = `
+      <button type="button" class="quitar">Quitar</button>
+      <label>Fuente (ej. TUDN, ESPN 2 MX)</label>
+      <input type="text" class="op-fuente" value="${escHtml(fuente)}" />
+      <label>Link (va dentro del src del iframe)</label>
+      <input type="url" class="op-link" placeholder="https://..." value="${escHtml(link)}" />
+    `;
+    div.querySelector('.quitar').addEventListener('click', () => {
+      // siempre dejar al menos una fila
+      if ($('opcionesWrap').children.length > 1) div.remove();
+    });
+    $('opcionesWrap').appendChild(div);
+  }
+
+  function escHtml(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  }
+
+  $('btnAgregarOpcion').addEventListener('click', () => agregarFilaOpcion());
+
+  // ---------- carga de archivo ----------
+  $('inputArchivo').addEventListener('change', (e) => {
+    const archivo = e.target.files[0];
+    if (!archivo) return;
+    const lector = new FileReader();
+    lector.onload = () => {
+      try {
+        const datos = JSON.parse(lector.result);
+        if (!Array.isArray(datos)) throw new Error('El archivo no es un arreglo JSON.');
+        entradas = datos;
+        $('estadoCarga').textContent = `Cargado: ${archivo.name} (${entradas.length} entrada(s)).`;
+        $('estadoCarga').className = 'estado ok';
+        renderTabla();
+      } catch (err) {
+        $('estadoCarga').textContent = 'Error leyendo el archivo: ' + err.message;
+        $('estadoCarga').className = 'estado';
+      }
+    };
+    lector.readAsText(archivo, 'utf-8');
+  });
+
+  // ---------- tabla de entradas ----------
+  function tipoEntrada(entrada) {
+    if (Array.isArray(entrada.directo)) return `directo (${entrada.directo.length} embed)`;
+    if (entrada.directo) return 'directo (videoId)';
+    if (entrada.reddit) return 'reddit';
+    if (entrada.narracion) return 'narración';
+    return 'otro';
+  }
+
+  function esEditable(entrada) {
+    // solo las entradas "directo": [ {embed, fuente}, ... ] se editan con
+    // este formulario — las demás (videoId, reddit, narración) se muestran
+    // pero se dejan intactas, para no perder datos de otros formatos.
+    return Array.isArray(entrada.directo) && entrada.directo.every(o => 'embed' in o);
+  }
+
+  function renderTabla() {
+    $('conteo').textContent = entradas.length;
+    if (!entradas.length) {
+      $('tablaWrap').innerHTML = '<div class="vacio">Sin entradas todavía.</div>';
+      return;
+    }
+    const filas = entradas.map((en, i) => `
+      <tr>
+        <td>${escHtml(en.home || '')} vs ${escHtml(en.away || '')}</td>
+        <td>${escHtml(en.date || '')}</td>
+        <td><span class="tag">${tipoEntrada(en)}</span></td>
+        <td class="acciones">
+          ${esEditable(en) ? `<button type="button" class="btn-secundario" data-editar="${i}">Editar</button>` : ''}
+          <button type="button" class="btn-peligro" data-borrar="${i}">Borrar</button>
+        </td>
+      </tr>
+    `).join('');
+    $('tablaWrap').innerHTML = `
+      <table>
+        <thead><tr><th>Partido</th><th>Fecha</th><th>Tipo</th><th></th></tr></thead>
+        <tbody>${filas}</tbody>
+      </table>
+    `;
+    $('tablaWrap').querySelectorAll('[data-editar]').forEach(btn => {
+      btn.addEventListener('click', () => cargarParaEditar(Number(btn.dataset.editar)));
+    });
+    $('tablaWrap').querySelectorAll('[data-borrar]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const i = Number(btn.dataset.borrar);
+        if (confirm(`¿Borrar ${entradas[i].home} vs ${entradas[i].away} (${entradas[i].date})?`)) {
+          entradas.splice(i, 1);
+          renderTabla();
+        }
+      });
+    });
+  }
+
+  function cargarParaEditar(i) {
+    const en = entradas[i];
+    editandoIndex = i;
+    $('fHome').value = en.home || '';
+    $('fAway').value = en.away || '';
+    $('fFecha').value = en.date || '';
+    $('opcionesWrap').innerHTML = '';
+    en.directo.forEach(o => agregarFilaOpcion(o.fuente || '', extraerLink(o.embed)));
+    $('tituloForm').textContent = `3. Editando: ${en.home} vs ${en.away} (${en.date})`;
+    $('btnCancelarEdicion').style.display = 'inline-block';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  $('btnCancelarEdicion').addEventListener('click', () => {
+    editandoIndex = null;
+    limpiarForm();
+  });
+
+  function limpiarForm() {
+    $('fHome').value = '';
+    $('fAway').value = '';
+    $('fFecha').value = '';
+    $('opcionesWrap').innerHTML = '';
+    agregarFilaOpcion();
+    $('tituloForm').textContent = '3. Agregar partido';
+    $('btnCancelarEdicion').style.display = 'none';
+  }
+
+  // ---------- guardar partido (nuevo o editado) ----------
+  $('btnGuardarPartido').addEventListener('click', () => {
+    const home = $('fHome').value.trim().toUpperCase();
+    const away = $('fAway').value.trim().toUpperCase();
+    const fecha = $('fFecha').value;
+
+    if (!home || !away || !fecha) {
+      alert('Falta local, visitante o fecha.');
+      return;
+    }
+
+    const filasOpcion = [...$('opcionesWrap').querySelectorAll('.opcion')];
+    const directo = filasOpcion.map(fila => ({
+      link: fila.querySelector('.op-link').value.trim(),
+      fuente: fila.querySelector('.op-fuente').value.trim(),
+    })).filter(o => o.link);
+
+    if (!directo.length) {
+      alert('Agrega al menos un link de transmisión.');
+      return;
+    }
+
+    const nuevaEntrada = {
+      home, away, date: fecha,
+      directo: directo.map(o => ({ embed: construirEmbed(o.link), fuente: o.fuente || 'Transmisión' })),
+    };
+
+    // si estamos editando una entrada existente, se reemplaza directo por índice
+    if (editandoIndex !== null) {
+      entradas[editandoIndex] = nuevaEntrada;
+      editandoIndex = null;
+    } else {
+      // si no, buscar duplicado por home+away+date
+      const iDup = entradas.findIndex(en => en.home === home && en.away === away && en.date === fecha);
+      if (iDup !== -1) {
+        if (confirm(`Ya existe una entrada para ${home} vs ${away} (${fecha}). ¿Reemplazarla?`)) {
+          entradas[iDup] = nuevaEntrada;
+        } else {
+          return;
+        }
+      } else {
+        entradas.push(nuevaEntrada);
+      }
+    }
+
+    renderTabla();
+    limpiarForm();
+  });
+
+  // ---------- descargar / copiar ----------
+  function generarJSON() {
+    return JSON.stringify(entradas, null, 2);
+  }
+
+  $('btnDescargar').addEventListener('click', () => {
+    const blob = new Blob([generarJSON()], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'detalles_manuales.json';
+    a.click();
+    URL.revokeObjectURL(url);
+    $('estadoDescarga').textContent = 'Descargado. Reemplaza el archivo en repoGit/datos/ y haz commit + push.';
+    $('estadoDescarga').className = 'estado ok';
+  });
+
+  $('btnCopiar').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(generarJSON());
+      $('estadoDescarga').textContent = 'JSON copiado al portapapeles.';
+      $('estadoDescarga').className = 'estado ok';
+    } catch (err) {
+      $('estadoDescarga').textContent = 'No se pudo copiar automático — selecciona y copia el texto manualmente.';
+      $('estadoDescarga').className = 'estado';
+    }
+  });
+
+  // arrancar con una fila de opción vacía lista
+  agregarFilaOpcion();
+</script>
+
+</body>
+</html>
