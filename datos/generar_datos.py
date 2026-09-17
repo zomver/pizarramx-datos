@@ -155,6 +155,12 @@ ARGENTINA_ZONA_B = {"RIV", "RAC", "HUR", "BAR", "BEL", "ERC", "ARG", "TIA",
 DIAS_ANTES = 3
 DIAS_DESPUES = 8
 
+# tope de seguridad para partidos "en vivo" — ver el comentario junto a su
+# uso en construir_partidos(). Un partido de futbol real (con alargue y
+# penales incluidos) no pasa de ~2h30; 3 horas ya es margen de sobra sin
+# arriesgar cortar un partido que de verdad sigue en curso.
+MAX_HORAS_PARTIDO_EN_VIVO = 3
+
 CARPETA_SALIDA = os.path.join(os.path.dirname(__file__), "salida")
 os.makedirs(CARPETA_SALIDA, exist_ok=True)
 
@@ -676,6 +682,26 @@ def construir_partidos(eventos, info_liga, vivos_por_id=None, vivos_por_equipos=
             estado_vivo, tiempo_vivo = mapear_estado_en_vivo(en_vivo.get("strStatus"), en_vivo.get("strProgress"))
             if estado_vivo:
                 estado, tiempo = estado_vivo, tiempo_vivo
+
+        # Red de seguridad: TheSportsDB a veces se queda "atorado" y nunca
+        # marca un partido como FT, tanto en eventsround.php como en
+        # livescore.php (bug real detectado el 2026-09-16: Barcelona 4-2
+        # Racing de Santander se quedó en "2H, minuto 65'" durante más de
+        # 8 horas después de su hora de inicio — las dos fuentes de la API
+        # coincidían en decir "sigue en vivo", así que no hay forma de
+        # detectarlo comparando una fuente contra la otra). Ningún partido
+        # de futbol real dura tanto, así que si "en vivo" lleva más de
+        # MAX_HORAS_PARTIDO_EN_VIVO desde el saque inicial, se da por
+        # terminado a la fuerza — mejor mostrar "FINALIZADO" con el último
+        # marcador conocido que dejar el sitio congelado en un minuto que
+        # ya no es real.
+        if estado == "live":
+            try:
+                kickoff_utc = datetime.strptime(f"{fecha_str} {hora}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+                if datetime.now(timezone.utc) - kickoff_utc > timedelta(hours=MAX_HORAS_PARTIDO_EN_VIVO):
+                    estado, tiempo = "ft", "FINALIZADO"
+            except (ValueError, TypeError):
+                pass
 
         if fecha_mx == hoy:
             dia = "hoy"
