@@ -575,6 +575,7 @@
     "2398388",
     "2398389",
     "2398390",
+    "2398392",
     "2398394",
     "2398395",
     "2398396",
@@ -879,7 +880,10 @@
     "2506216",
     "2506217",
     "2506218",
+    "2506219",
+    "2506220",
     "2506223",
+    "2506225",
     "2506226",
     "2506227",
     "2506228",
@@ -10738,7 +10742,7 @@
       "34163304": {
         "player": "Raphinha",
         "abbr": "BCN",
-        "goles": 3,
+        "goles": 4,
         "asistencias": 3,
         "amarillas": 0,
         "rojas": 0
@@ -10881,8 +10885,8 @@
       },
       "34170313": {
         "player": "Kang-in Lee",
-        "abbr": "RSO",
-        "goles": 0,
+        "abbr": "ATM",
+        "goles": 1,
         "asistencias": 1,
         "amarillas": 2,
         "rojas": 0
@@ -10892,7 +10896,7 @@
         "abbr": "ATM",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34202036": {
@@ -11083,7 +11087,7 @@
         "player": "Lamine Yamal",
         "abbr": "BCN",
         "goles": 3,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
       },
@@ -11629,6 +11633,54 @@
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
+        "rojas": 0
+      },
+      "34149735": {
+        "player": "João Cancelo",
+        "abbr": "BCN",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34434369": {
+        "player": "Pedro Felipe",
+        "abbr": "RSA",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34228611": {
+        "player": "Maguette Gueye",
+        "abbr": "RSA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34169620": {
+        "player": "Asier Villalibre",
+        "abbr": "BCN",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34172150": {
+        "player": "Jonathan David",
+        "abbr": "ATM",
+        "goles": 1,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34438259": {
+        "player": "Miguel Sierra",
+        "abbr": "SEV",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
         "rojas": 0
       }
     },
