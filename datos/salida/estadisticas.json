@@ -29,6 +29,11 @@
     ],
     "asistencias": [
       {
+        "player": "Jhojan Julio",
+        "abbr": "ATE",
+        "value": 3
+      },
+      {
         "player": "Joaquim Pereira Silva",
         "abbr": "TIG",
         "value": 2
@@ -46,11 +51,6 @@
       {
         "player": "Oussama Idrissi",
         "abbr": "PAC",
-        "value": 2
-      },
-      {
-        "player": "Diego Rossi",
-        "abbr": "MTY",
         "value": 2
       }
     ],
@@ -112,14 +112,14 @@
   "argentina": {
     "goleadores": [
       {
-        "player": "Agustín Módica",
-        "abbr": "GEM",
+        "player": "Junior Marabel",
+        "abbr": "SAR",
         "value": 9
       },
       {
-        "player": "Junior Marabel",
-        "abbr": "SAR",
-        "value": 8
+        "player": "Agustín Módica",
+        "abbr": "GEM",
+        "value": 9
       },
       {
         "player": "Marcelo Torres",
@@ -186,8 +186,8 @@
         "value": 5
       },
       {
-        "player": "Román Riquelme",
-        "abbr": "TAL",
+        "player": "Juan Insaurralde",
+        "abbr": "SAR",
         "value": 5
       }
     ],
@@ -486,6 +486,11 @@
     ],
     "amarillas": [
       {
+        "player": "Davinchi",
+        "abbr": "GET",
+        "value": 2
+      },
+      {
         "player": "Urko González de Zárate",
         "abbr": "ESP",
         "value": 2
@@ -504,11 +509,6 @@
         "player": "Gorka Guruzeta",
         "abbr": "ATH",
         "value": 2
-      },
-      {
-        "player": "Álex Calatrava",
-        "abbr": "ESP",
-        "value": 2
       }
     ],
     "rojas": [
@@ -525,6 +525,11 @@
       {
         "player": "Marcos Alonso",
         "abbr": "CEL",
+        "value": 1
+      },
+      {
+        "player": "Federico Redondo",
+        "abbr": "ELC",
         "value": 1
       }
     ]
@@ -552,8 +557,8 @@
         "value": 2
       },
       {
-        "player": "Lassana Coulibaly",
-        "abbr": "LEC",
+        "player": "Gustavo Varela",
+        "abbr": "MON",
         "value": 2
       }
     ],
@@ -579,9 +584,9 @@
         "value": 2
       },
       {
-        "player": "Hassane Kamara",
-        "abbr": "UDI",
-        "value": 1
+        "player": "Samuele Birindelli",
+        "abbr": "MON",
+        "value": 2
       }
     ],
     "amarillas": [
@@ -626,6 +631,11 @@
         "value": 2
       },
       {
+        "player": "Michael Olise",
+        "abbr": "FCB",
+        "value": 2
+      },
+      {
         "player": "Antonio Nusa",
         "abbr": "RBL",
         "value": 2
@@ -633,11 +643,6 @@
       {
         "player": "Younes Ebnoutalib",
         "abbr": "SGE",
-        "value": 2
-      },
-      {
-        "player": "David Ngabi Mokwa Ntusu",
-        "abbr": "ELV",
         "value": 2
       }
     ],
@@ -670,6 +675,11 @@
     ],
     "amarillas": [
       {
+        "player": "Felix Uduokhai",
+        "abbr": "UNB",
+        "value": 2
+      },
+      {
         "player": "Noahkai Banks",
         "abbr": "AUG",
         "value": 2
@@ -687,11 +697,6 @@
       {
         "player": "Albert Sambi Lokonga",
         "abbr": "HSV",
-        "value": 1
-      },
-      {
-        "player": "Julian Ryerson",
-        "abbr": "BVB",
         "value": 1
       }
     ],
