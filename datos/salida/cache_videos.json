@@ -1720,8 +1720,8 @@
     "video": null
   },
   "pue-ate-2487524": {
-    "intentos": 1,
-    "ultimo_intento": "2026-09-19T03:11:54.203519",
+    "intentos": 2,
+    "ultimo_intento": "2026-09-19T15:11:55.319968",
     "video": null
   },
   "jua-tig-2487525": {
@@ -1737,6 +1737,16 @@
   "osa-ray-2506238": {
     "intentos": 1,
     "ultimo_intento": "2026-09-19T14:11:52.468269",
+    "video": null
+  },
+  "udi-cag-2482179": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-19T15:11:55.319968",
+    "video": null
+  },
+  "bol-tor-2482182": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-19T15:11:55.319968",
     "video": null
   }
 }
