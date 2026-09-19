@@ -1655,13 +1655,13 @@
     "video": null
   },
   "atm-osa-2506220": {
-    "intentos": 5,
-    "ultimo_intento": "2026-09-18T19:31:57.794419",
+    "intentos": 6,
+    "ultimo_intento": "2026-09-19T07:42:04.671463",
     "video": null
   },
   "dep-sev-2506225": {
-    "intentos": 5,
-    "ultimo_intento": "2026-09-18T19:31:57.794419",
+    "intentos": 6,
+    "ultimo_intento": "2026-09-19T07:42:04.671463",
     "video": null
   },
   "bcn-rsa-2506219": {
@@ -1680,8 +1680,8 @@
     "video": null
   },
   "bet-get-2506224": {
-    "intentos": 3,
-    "ultimo_intento": "2026-09-18T19:31:57.794419",
+    "intentos": 4,
+    "ultimo_intento": "2026-09-19T07:42:04.671463",
     "video": null
   },
   "mal-vil-2506221": {
