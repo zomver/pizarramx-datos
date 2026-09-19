@@ -1685,8 +1685,8 @@
     "video": null
   },
   "mal-vil-2506221": {
-    "intentos": 4,
-    "ultimo_intento": "2026-09-19T10:02:00.341888",
+    "intentos": 5,
+    "ultimo_intento": "2026-09-19T22:02:05.225893",
     "video": null
   },
   "fcb-unb-2508360": {
@@ -1832,6 +1832,16 @@
   "sev-bcn-2506233": {
     "intentos": 1,
     "ultimo_intento": "2026-09-19T21:11:53.178428",
+    "video": null
+  },
+  "uni-ind-2398099": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-19T22:02:05.225893",
+    "video": null
+  },
+  "mir-bot-2398466": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-19T22:02:05.225893",
     "video": null
   }
 }
