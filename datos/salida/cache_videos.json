@@ -1695,8 +1695,8 @@
     "video": null
   },
   "mon-sas-2482187": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-19T09:11:50.550768",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-19T21:11:53.178428",
     "video": null
   },
   "bre-che-2494047": {
@@ -1827,6 +1827,11 @@
   "cam-cha-2398462": {
     "intentos": 1,
     "ultimo_intento": "2026-09-19T21:02:00.757913",
+    "video": null
+  },
+  "sev-bcn-2506233": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-19T21:11:53.178428",
     "video": null
   }
 }
