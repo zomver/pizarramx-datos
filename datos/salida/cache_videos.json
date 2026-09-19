@@ -1675,8 +1675,8 @@
     "video": null
   },
   "bot-gre-2398392": {
-    "intentos": 3,
-    "ultimo_intento": "2026-09-18T11:52:26.449240",
+    "intentos": 4,
+    "ultimo_intento": "2026-09-19T00:02:19.244678",
     "video": null
   },
   "bet-get-2506224": {
@@ -1707,6 +1707,11 @@
   "esp-elc-2506235": {
     "intentos": 1,
     "ultimo_intento": "2026-09-18T21:21:56.060444",
+    "video": null
+  },
+  "cco-dej-2398089": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-19T00:02:19.244678",
     "video": null
   }
 }
