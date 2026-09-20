@@ -1810,13 +1810,13 @@
     "video": null
   },
   "glp-ban-2398090": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-20T07:41:53.778763",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-20T19:51:58.374086",
     "video": null
   },
   "gem-rie-2398091": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-20T07:41:53.778763",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-20T19:51:58.374086",
     "video": null
   },
   "vnz-laz-2482185": {
@@ -1967,6 +1967,11 @@
   "pad-tsg-2508368": {
     "intentos": 1,
     "ultimo_intento": "2026-09-20T19:41:48.206137",
+    "video": null
+  },
+  "slo-boc-2398098": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-20T19:51:58.374086",
     "video": null
   }
 }
