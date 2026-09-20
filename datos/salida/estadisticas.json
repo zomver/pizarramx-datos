@@ -369,6 +369,11 @@
         "value": 2
       },
       {
+        "player": "Pascal Groß",
+        "abbr": "BHA",
+        "value": 2
+      },
+      {
         "player": "Antoine Semenyo",
         "abbr": "MCI",
         "value": 2
@@ -377,14 +382,14 @@
         "player": "Jorrel Hato",
         "abbr": "CHE",
         "value": 2
-      },
-      {
-        "player": "Cody Gakpo",
-        "abbr": "LIV",
-        "value": 2
       }
     ],
     "amarillas": [
+      {
+        "player": "Matt Crooks",
+        "abbr": "HUL",
+        "value": 2
+      },
       {
         "player": "Ola Aina",
         "abbr": "NFO",
@@ -403,11 +408,6 @@
       {
         "player": "Pascal Groß",
         "abbr": "BHA",
-        "value": 2
-      },
-      {
-        "player": "Yoane Wissa",
-        "abbr": "NEW",
         "value": 2
       }
     ],
@@ -432,24 +432,24 @@
   "laliga": {
     "goleadores": [
       {
+        "player": "Raphinha",
+        "abbr": "BCN",
+        "value": 6
+      },
+      {
         "player": "Roberto Fernández",
         "abbr": "ESP",
         "value": 5
       },
       {
-        "player": "Raphinha",
-        "abbr": "BCN",
+        "player": "Sergio Camello",
+        "abbr": "RAY",
         "value": 4
       },
       {
         "player": "Yassir Zabiri",
         "abbr": "RSA",
         "value": 4
-      },
-      {
-        "player": "Sergio Camello",
-        "abbr": "RAY",
-        "value": 3
       },
       {
         "player": "Jude Bellingham",
@@ -474,13 +474,13 @@
         "value": 2
       },
       {
-        "player": "Iñigo Vicente",
-        "abbr": "RSA",
+        "player": "Miguel Román",
+        "abbr": "CEL",
         "value": 2
       },
       {
-        "player": "Iñaki Williams",
-        "abbr": "ATH",
+        "player": "Iñigo Vicente",
+        "abbr": "RSA",
         "value": 2
       }
     ],
@@ -542,6 +542,11 @@
         "value": 5
       },
       {
+        "player": "Daniel Maldini",
+        "abbr": "CAG",
+        "value": 3
+      },
+      {
         "player": "Hassane Kamara",
         "abbr": "UDI",
         "value": 2
@@ -554,11 +559,6 @@
       {
         "player": "Hakan Çalhanoğlu",
         "abbr": "INM",
-        "value": 2
-      },
-      {
-        "player": "Gustavo Varela",
-        "abbr": "MON",
         "value": 2
       }
     ],
@@ -574,6 +574,11 @@
         "value": 2
       },
       {
+        "player": "Nuno Tavares",
+        "abbr": "LAZ",
+        "value": 2
+      },
+      {
         "player": "Lorenzo Colombo",
         "abbr": "GEN",
         "value": 2
@@ -581,11 +586,6 @@
       {
         "player": "Ivan Ilic",
         "abbr": "LEC",
-        "value": 2
-      },
-      {
-        "player": "Samuele Birindelli",
-        "abbr": "MON",
         "value": 2
       }
     ],
@@ -611,8 +611,8 @@
         "value": 2
       },
       {
-        "player": "Jhon Lucumí",
-        "abbr": "JUV",
+        "player": "Kike Pérez",
+        "abbr": "VNZ",
         "value": 2
       }
     ],
@@ -621,8 +621,18 @@
   "bundesliga": {
     "goleadores": [
       {
+        "player": "Younes Ebnoutalib",
+        "abbr": "SGE",
+        "value": 3
+      },
+      {
         "player": "Michael Gregoritsch",
         "abbr": "AUG",
+        "value": 3
+      },
+      {
+        "player": "Jonathan Burkardt",
+        "abbr": "SGE",
         "value": 3
       },
       {
@@ -633,16 +643,6 @@
       {
         "player": "Michael Olise",
         "abbr": "FCB",
-        "value": 2
-      },
-      {
-        "player": "Antonio Nusa",
-        "abbr": "RBL",
-        "value": 2
-      },
-      {
-        "player": "Younes Ebnoutalib",
-        "abbr": "SGE",
         "value": 2
       }
     ],
@@ -668,8 +668,8 @@
         "value": 2
       },
       {
-        "player": "Franck Honorat",
-        "abbr": "BMG",
+        "player": "Fabian Rieder",
+        "abbr": "AUG",
         "value": 2
       }
     ],
@@ -685,6 +685,11 @@
         "value": 2
       },
       {
+        "player": "Raphael Onyedika",
+        "abbr": "SGE",
+        "value": 2
+      },
+      {
         "player": "Santiago Castañeda",
         "abbr": "PAD",
         "value": 1
@@ -692,11 +697,6 @@
       {
         "player": "Mattes Hansen",
         "abbr": "PAD",
-        "value": 1
-      },
-      {
-        "player": "Albert Sambi Lokonga",
-        "abbr": "HSV",
         "value": 1
       }
     ],
