@@ -1690,8 +1690,8 @@
     "video": null
   },
   "fcb-unb-2508360": {
-    "intentos": 4,
-    "ultimo_intento": "2026-09-20T08:51:52.639384",
+    "intentos": 5,
+    "ultimo_intento": "2026-09-20T20:51:55.868000",
     "video": null
   },
   "mon-sas-2482187": {
@@ -1820,8 +1820,8 @@
     "video": null
   },
   "vnz-laz-2482185": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-20T08:51:52.639384",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-20T20:51:55.868000",
     "video": null
   },
   "cam-cha-2398462": {
@@ -1972,6 +1972,11 @@
   "slo-boc-2398098": {
     "intentos": 1,
     "ultimo_intento": "2026-09-20T19:51:58.374086",
+    "video": null
+  },
+  "mil-lec-2482178": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-20T20:51:55.868000",
     "video": null
   }
 }
