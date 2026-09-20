@@ -1750,18 +1750,18 @@
     "video": null
   },
   "wer-aug-2508361": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-20T03:51:54.932112",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-20T15:51:55.034711",
     "video": null
   },
   "sge-fri-2508364": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-20T03:51:54.932112",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-20T15:51:55.034711",
     "video": null
   },
   "hsv-kol-2508367": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-20T03:51:54.932112",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-20T15:51:55.034711",
     "video": null
   },
   "bmg-mai-2508362": {
@@ -1922,6 +1922,11 @@
   "fro-com-2482184": {
     "intentos": 1,
     "ultimo_intento": "2026-09-20T15:21:58.663242",
+    "video": null
+  },
+  "b04-rbl-2508363": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-20T15:51:55.034711",
     "video": null
   }
 }
