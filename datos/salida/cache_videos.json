@@ -1765,8 +1765,8 @@
     "video": null
   },
   "bmg-mai-2508362": {
-    "intentos": 2,
-    "ultimo_intento": "2026-09-20T04:02:15.041953",
+    "intentos": 3,
+    "ultimo_intento": "2026-09-20T16:11:51.657475",
     "video": null
   },
   "new-hul-2494040": {
@@ -1927,6 +1927,11 @@
   "b04-rbl-2508363": {
     "intentos": 1,
     "ultimo_intento": "2026-09-20T15:51:55.034711",
+    "video": null
+  },
+  "gre-pal-2398465": {
+    "intentos": 1,
+    "ultimo_intento": "2026-09-20T16:11:51.657475",
     "video": null
   }
 }
