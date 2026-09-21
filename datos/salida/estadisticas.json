@@ -12,6 +12,11 @@
         "value": 3
       },
       {
+        "player": "Daniel Arcila Rojas",
+        "abbr": "LEO",
+        "value": 3
+      },
+      {
         "player": "Alí Ávila",
         "abbr": "QRO",
         "value": 3
@@ -19,11 +24,6 @@
       {
         "player": "Eduardo Mustre Torres",
         "abbr": "PUE",
-        "value": 3
-      },
-      {
-        "player": "Juninho",
-        "abbr": "PUM",
         "value": 3
       }
     ],
@@ -61,23 +61,23 @@
         "value": 3
       },
       {
+        "player": "Oussama Idrissi",
+        "abbr": "PAC",
+        "value": 3
+      },
+      {
         "player": "Pedro Vite",
         "abbr": "PUM",
         "value": 3
       },
       {
+        "player": "Bayron Duarte Duarte",
+        "abbr": "QRO",
+        "value": 3
+      },
+      {
         "player": "Robson Bambu",
         "abbr": "SLP",
-        "value": 3
-      },
-      {
-        "player": "Kenedy",
-        "abbr": "PAC",
-        "value": 3
-      },
-      {
-        "player": "Víctor Hugo Ríos de Alba",
-        "abbr": "TIG",
         "value": 3
       }
     ],
@@ -132,8 +132,8 @@
         "value": 6
       },
       {
-        "player": "David Romero",
-        "abbr": "TIA",
+        "player": "Ronaldo Martínez",
+        "abbr": "VEL",
         "value": 6
       }
     ],
@@ -141,6 +141,11 @@
       {
         "player": "Gabriel Ávalos",
         "abbr": "IND",
+        "value": 5
+      },
+      {
+        "player": "Matias Pellegrini",
+        "abbr": "VEL",
         "value": 5
       },
       {
@@ -156,11 +161,6 @@
       {
         "player": "Matías Fernández",
         "abbr": "IRV",
-        "value": 4
-      },
-      {
-        "player": "Juan Manuel Gutiérrez",
-        "abbr": "DEJ",
         "value": 4
       }
     ],
@@ -352,15 +352,20 @@
         "value": 3
       },
       {
-        "player": "Kai Havertz",
-        "abbr": "ARS",
-        "value": 2
+        "player": "Alexander Isak",
+        "abbr": "LIV",
+        "value": 3
       }
     ],
     "asistencias": [
       {
         "player": "Evanilson",
         "abbr": "BOU",
+        "value": 3
+      },
+      {
+        "player": "Antoine Semenyo",
+        "abbr": "MCI",
         "value": 3
       },
       {
@@ -371,11 +376,6 @@
       {
         "player": "Pascal Groß",
         "abbr": "BHA",
-        "value": 2
-      },
-      {
-        "player": "Antoine Semenyo",
-        "abbr": "MCI",
         "value": 2
       },
       {
@@ -474,13 +474,13 @@
         "value": 2
       },
       {
-        "player": "Miguel Román",
-        "abbr": "CEL",
+        "player": "Alberto Moleiro",
+        "abbr": "VIL",
         "value": 2
       },
       {
-        "player": "Iñigo Vicente",
-        "abbr": "RSA",
+        "player": "Miguel Román",
+        "abbr": "CEL",
         "value": 2
       }
     ],
@@ -564,6 +564,11 @@
     ],
     "asistencias": [
       {
+        "player": "Romano Schmid",
+        "abbr": "FRO",
+        "value": 3
+      },
+      {
         "player": "Paulo Dybala",
         "abbr": "ROM",
         "value": 2
@@ -581,11 +586,6 @@
       {
         "player": "Lorenzo Colombo",
         "abbr": "GEN",
-        "value": 2
-      },
-      {
-        "player": "Ivan Ilic",
-        "abbr": "LEC",
         "value": 2
       }
     ],
@@ -648,6 +648,11 @@
     ],
     "asistencias": [
       {
+        "player": "Miguel Gutiérrez",
+        "abbr": "B04",
+        "value": 3
+      },
+      {
         "player": "Joshua Kimmich",
         "abbr": "FCB",
         "value": 2
@@ -665,11 +670,6 @@
       {
         "player": "Matthias Ginter",
         "abbr": "FRI",
-        "value": 2
-      },
-      {
-        "player": "Fabian Rieder",
-        "abbr": "AUG",
         "value": 2
       }
     ],
