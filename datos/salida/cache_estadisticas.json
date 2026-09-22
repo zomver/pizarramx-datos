@@ -375,11 +375,14 @@
     "2398083",
     "2398084",
     "2398085",
+    "2398086",
+    "2398087",
     "2398088",
     "2398089",
     "2398090",
     "2398091",
     "2398092",
+    "2398093",
     "2398094",
     "2398095",
     "2398096",
@@ -2824,7 +2827,7 @@
       "34434301": {
         "player": "Aldo Fernández",
         "abbr": "ALD",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 1,
         "amarillas": 1,
         "rojas": 0
@@ -3354,7 +3357,7 @@
         "abbr": "ELP",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 5,
+        "amarillas": 6,
         "rojas": 0
       },
       "34251775": {
@@ -3384,7 +3387,7 @@
       "34146520": {
         "player": "Eduardo Salvio",
         "abbr": "LAN",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 2,
         "amarillas": 1,
         "rojas": 0
@@ -3528,7 +3531,7 @@
       "34202764": {
         "player": "José Florentín",
         "abbr": "IRV",
-        "goles": 3,
+        "goles": 4,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -5082,7 +5085,7 @@
         "abbr": "BAR",
         "goles": 1,
         "asistencias": 1,
-        "amarillas": 4,
+        "amarillas": 5,
         "rojas": 0
       },
       "34218793": {
@@ -5489,7 +5492,7 @@
         "player": "Santiago Moya",
         "abbr": "ALD",
         "goles": 1,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 2,
         "rojas": 0
       },
@@ -5631,10 +5634,10 @@
       },
       "34245033": {
         "player": "Elías Pereyra",
-        "abbr": "DEJ",
+        "abbr": "BAR",
         "goles": 2,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34218720": {
@@ -5849,7 +5852,7 @@
         "player": "Luciano Gómez",
         "abbr": "IRV",
         "goles": 1,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
       },

@@ -171,6 +171,11 @@
         "value": 6
       },
       {
+        "player": "Leandro Gonzalez Pirez",
+        "abbr": "ELP",
+        "value": 6
+      },
+      {
         "player": "Federico Fattori",
         "abbr": "TAL",
         "value": 6
@@ -183,11 +188,6 @@
       {
         "player": "Eric Meza",
         "abbr": "ELP",
-        "value": 5
-      },
-      {
-        "player": "Juan Insaurralde",
-        "abbr": "SAR",
         "value": 5
       }
     ],
