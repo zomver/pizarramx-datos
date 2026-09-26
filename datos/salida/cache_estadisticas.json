@@ -802,6 +802,8 @@
     "2487530",
     "2487531",
     "2487532",
+    "2487533",
+    "2487534",
     "2491731",
     "2491732",
     "2491733",
@@ -1065,7 +1067,7 @@
       "34288120": {
         "player": "Luis Calzadilla",
         "abbr": "ATE",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 1,
         "amarillas": 1,
         "rojas": 0
@@ -1266,7 +1268,7 @@
         "player": "Óliver Torres",
         "abbr": "MTY",
         "goles": 0,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 0,
         "rojas": 0
       },
@@ -1275,7 +1277,7 @@
         "abbr": "MTY",
         "goles": 1,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34221160": {
@@ -1417,7 +1419,7 @@
       "34258256": {
         "player": "Mourad El Ghezouani",
         "abbr": "TIJ",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
@@ -1697,7 +1699,7 @@
       "34245683": {
         "player": "Luis Puente",
         "abbr": "ATE",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
@@ -1706,7 +1708,7 @@
         "player": "Walter Portales",
         "abbr": "ATE",
         "goles": 1,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 0,
         "rojas": 0
       },
@@ -1793,7 +1795,7 @@
       "34216704": {
         "player": "Hugo Cuypers",
         "abbr": "MTY",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
@@ -1857,7 +1859,7 @@
       "34221047": {
         "player": "Ignacio Rivero",
         "abbr": "TIJ",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
@@ -2316,6 +2318,38 @@
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
+        "rojas": 0
+      },
+      "34436890": {
+        "player": "Nico Carrera",
+        "abbr": "ATE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34193839": {
+        "player": "Ryan Mmaee",
+        "abbr": "ATL",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34218561": {
+        "player": "Kevin Zenón",
+        "abbr": "ATL",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34238541": {
+        "player": "Adonis Preciado Quintero",
+        "abbr": "TIJ",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
         "rojas": 0
       }
     },
