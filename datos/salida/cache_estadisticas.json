@@ -804,6 +804,10 @@
     "2487532",
     "2487533",
     "2487534",
+    "2487535",
+    "2487536",
+    "2487537",
+    "2487538",
     "2491731",
     "2491732",
     "2491733",
@@ -1317,7 +1321,7 @@
         "abbr": "QRO",
         "goles": 0,
         "asistencias": 1,
-        "amarillas": 3,
+        "amarillas": 4,
         "rojas": 0
       },
       "34258025": {
@@ -1347,8 +1351,8 @@
       "34221178": {
         "player": "Nicolás Ibáñez",
         "abbr": "CRZ",
-        "goles": 2,
-        "asistencias": 0,
+        "goles": 3,
+        "asistencias": 1,
         "amarillas": 1,
         "rojas": 0
       },
@@ -1491,7 +1495,7 @@
       "34174004": {
         "player": "Juan Brunetta",
         "abbr": "TIG",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 2,
         "amarillas": 0,
         "rojas": 0
@@ -1555,7 +1559,7 @@
       "34221231": {
         "player": "Alí Ávila",
         "abbr": "QRO",
-        "goles": 3,
+        "goles": 4,
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
@@ -1949,7 +1953,7 @@
         "abbr": "TOL",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 1
       },
       "34221067": {
@@ -1987,7 +1991,7 @@
       "34246405": {
         "player": "Fran Villalba",
         "abbr": "SAN",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
@@ -2052,7 +2056,7 @@
         "player": "Enzo Giménez",
         "abbr": "QRO",
         "goles": 0,
-        "asistencias": 0,
+        "asistencias": 1,
         "amarillas": 1,
         "rojas": 0
       },
@@ -2069,7 +2073,7 @@
         "abbr": "PAC",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34236966": {
@@ -2212,7 +2216,7 @@
         "player": "José Paradela",
         "abbr": "CRZ",
         "goles": 1,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 0,
         "rojas": 0
       },
@@ -2350,6 +2354,30 @@
         "goles": 0,
         "asistencias": 1,
         "amarillas": 0,
+        "rojas": 0
+      },
+      "34175224": {
+        "player": "Gabriel Leites",
+        "abbr": "CRZ",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34198447": {
+        "player": "Agustín Palavecino",
+        "abbr": "CRZ",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34421141": {
+        "player": "Alejandro Organista Orozco",
+        "abbr": "PUE",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
         "rojas": 0
       }
     },

@@ -7,23 +7,23 @@
         "value": 4
       },
       {
+        "player": "Alí Ávila",
+        "abbr": "QRO",
+        "value": 4
+      },
+      {
         "player": "Rafa Llorente",
         "abbr": "SLP",
         "value": 3
       },
       {
+        "player": "Nicolás Ibáñez",
+        "abbr": "CRZ",
+        "value": 3
+      },
+      {
         "player": "Daniel Arcila Rojas",
         "abbr": "LEO",
-        "value": 3
-      },
-      {
-        "player": "Alí Ávila",
-        "abbr": "QRO",
-        "value": 3
-      },
-      {
-        "player": "Eduardo Mustre Torres",
-        "abbr": "PUE",
         "value": 3
       }
     ],
@@ -56,6 +56,11 @@
     ],
     "amarillas": [
       {
+        "player": "Bayron Duarte Duarte",
+        "abbr": "QRO",
+        "value": 4
+      },
+      {
         "player": "Raúl Martínez",
         "abbr": "NEC",
         "value": 3
@@ -68,11 +73,6 @@
       {
         "player": "Pedro Vite",
         "abbr": "PUM",
-        "value": 3
-      },
-      {
-        "player": "Bayron Duarte Duarte",
-        "abbr": "QRO",
         "value": 3
       },
       {
