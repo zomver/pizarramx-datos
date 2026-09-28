@@ -808,6 +808,9 @@
     "2487536",
     "2487537",
     "2487538",
+    "2487539",
+    "2487540",
+    "2487541",
     "2491731",
     "2491732",
     "2491733",
@@ -1167,7 +1170,7 @@
       "34233906": {
         "player": "Sébastien Salles-Lamonge",
         "abbr": "SLP",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
@@ -1399,7 +1402,7 @@
       "34221105": {
         "player": "Rodrigo López Quiñónes",
         "abbr": "PUM",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 2,
         "amarillas": 0,
         "rojas": 0
@@ -1689,7 +1692,7 @@
         "abbr": "LEO",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34221065": {
@@ -1697,7 +1700,7 @@
         "abbr": "LEO",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34245683": {
@@ -1719,7 +1722,7 @@
       "34192996": {
         "player": "Henry Martín",
         "abbr": "AME",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -1759,8 +1762,8 @@
       "34180158": {
         "player": "Julián Carranza",
         "abbr": "NEC",
-        "goles": 1,
-        "asistencias": 0,
+        "goles": 2,
+        "asistencias": 1,
         "amarillas": 0,
         "rojas": 0
       },
@@ -2121,7 +2124,7 @@
         "abbr": "SLP",
         "goles": 0,
         "asistencias": 1,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34433218": {
@@ -2378,6 +2381,30 @@
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
+        "rojas": 0
+      },
+      "34221107": {
+        "player": "César Huerta",
+        "abbr": "PUM",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34192077": {
+        "player": "Érick Sánchez",
+        "abbr": "AME",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34245685": {
+        "player": "Owen de Jesús González Ojeda",
+        "abbr": "NEC",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
         "rojas": 0
       }
     },
