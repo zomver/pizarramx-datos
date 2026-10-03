@@ -390,6 +390,9 @@
     "2398098",
     "2398099",
     "2398100",
+    "2398104",
+    "2398110",
+    "2398111",
     "2398191",
     "2398192",
     "2398193",
@@ -596,6 +599,7 @@
     "2398396",
     "2398397",
     "2398398",
+    "2398399",
     "2398400",
     "2398401",
     "2398402",
@@ -2478,7 +2482,7 @@
         "abbr": "UNI",
         "goles": 4,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34237878": {
@@ -2678,7 +2682,7 @@
         "abbr": "IRV",
         "goles": 3,
         "asistencias": 4,
-        "amarillas": 3,
+        "amarillas": 4,
         "rojas": 0
       },
       "34218602": {
@@ -3461,8 +3465,8 @@
         "player": "Leandro Paredes",
         "abbr": "BOC",
         "goles": 0,
-        "asistencias": 0,
-        "amarillas": 3,
+        "asistencias": 1,
+        "amarillas": 4,
         "rojas": 0
       },
       "34238093": {
@@ -4363,10 +4367,10 @@
       },
       "34218585": {
         "player": "Víctor Malcorra",
-        "abbr": "IND",
+        "abbr": "UNI",
         "goles": 1,
         "asistencias": 1,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34237985": {
@@ -4550,7 +4554,7 @@
         "abbr": "GLP",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 3,
+        "amarillas": 4,
         "rojas": 0
       },
       "34247640": {
@@ -4724,7 +4728,7 @@
       "34237874": {
         "player": "Lautaro Di Lollo",
         "abbr": "BOC",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 0,
         "amarillas": 3,
         "rojas": 0
@@ -5596,7 +5600,7 @@
       "34237579": {
         "player": "Juan Manuel Elordi",
         "abbr": "IRV",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 1,
         "amarillas": 1,
         "rojas": 0
@@ -5627,10 +5631,10 @@
       },
       "34238089": {
         "player": "Joaquín Mosqueira",
-        "abbr": "TIA",
+        "abbr": "UNI",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34218702": {
@@ -6647,6 +6651,14 @@
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
+        "rojas": 0
+      },
+      "34217833": {
+        "player": "Maximiliano Salas",
+        "abbr": "IRV",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
         "rojas": 0
       }
     },
