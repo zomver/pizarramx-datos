@@ -171,6 +171,11 @@
         "value": 6
       },
       {
+        "player": "Augusto Schott",
+        "abbr": "TAL",
+        "value": 6
+      },
+      {
         "player": "Leandro Gonzalez Pirez",
         "abbr": "ELP",
         "value": 6
@@ -184,11 +189,6 @@
         "player": "Lucas Robertone",
         "abbr": "VEL",
         "value": 6
-      },
-      {
-        "player": "Eric Meza",
-        "abbr": "ELP",
-        "value": 5
       }
     ],
     "rojas": [

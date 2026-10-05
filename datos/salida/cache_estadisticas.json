@@ -390,12 +390,16 @@
     "2398098",
     "2398099",
     "2398100",
+    "2398101",
     "2398102",
     "2398104",
     "2398105",
+    "2398108",
+    "2398109",
     "2398110",
     "2398111",
     "2398112",
+    "2398114",
     "2398191",
     "2398192",
     "2398193",
@@ -2934,7 +2938,7 @@
         "abbr": "ALD",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 2,
+        "amarillas": 3,
         "rojas": 0
       },
       "34218706": {
@@ -3286,7 +3290,7 @@
         "abbr": "TAL",
         "goles": 3,
         "asistencias": 0,
-        "amarillas": 5,
+        "amarillas": 6,
         "rojas": 0
       },
       "34346997": {
@@ -3380,7 +3384,7 @@
       "34218728": {
         "player": "Adrián Martínez",
         "abbr": "RAC",
-        "goles": 3,
+        "goles": 4,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 1
@@ -3556,7 +3560,7 @@
       "34218759": {
         "player": "Gastón Verón",
         "abbr": "ARG",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 0,
         "amarillas": 0,
         "rojas": 0
@@ -4206,7 +4210,7 @@
         "abbr": "TAL",
         "goles": 2,
         "asistencias": 0,
-        "amarillas": 3,
+        "amarillas": 4,
         "rojas": 0
       },
       "34235711": {
@@ -4284,7 +4288,7 @@
       "34218889": {
         "player": "Tomás Conechny",
         "abbr": "RAC",
-        "goles": 1,
+        "goles": 2,
         "asistencias": 1,
         "amarillas": 1,
         "rojas": 0
@@ -4454,7 +4458,7 @@
         "abbr": "ERC",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 3,
+        "amarillas": 4,
         "rojas": 0
       },
       "34217856": {
@@ -4766,7 +4770,7 @@
         "abbr": "BEL",
         "goles": 2,
         "asistencias": 1,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 1
       },
       "34202393": {
@@ -4845,7 +4849,7 @@
         "player": "Ulises Ortegoza",
         "abbr": "RAC",
         "goles": 1,
-        "asistencias": 3,
+        "asistencias": 4,
         "amarillas": 3,
         "rojas": 0
       },
@@ -4916,7 +4920,7 @@
       "34218703": {
         "player": "Kevin Gutiérrez",
         "abbr": "ARG",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -4925,7 +4929,7 @@
         "player": "Sebastián Prieto",
         "abbr": "ARG",
         "goles": 0,
-        "asistencias": 2,
+        "asistencias": 3,
         "amarillas": 3,
         "rojas": 1
       },
@@ -5172,8 +5176,8 @@
       "34237881": {
         "player": "Jabes Saralegui",
         "abbr": "TIA",
-        "goles": 0,
-        "asistencias": 2,
+        "goles": 1,
+        "asistencias": 3,
         "amarillas": 0,
         "rojas": 0
       },
@@ -5292,7 +5296,7 @@
       "34347280": {
         "player": "Leandro Lescano",
         "abbr": "HUR",
-        "goles": 0,
+        "goles": 1,
         "asistencias": 0,
         "amarillas": 3,
         "rojas": 0
@@ -6358,7 +6362,7 @@
         "abbr": "HUR",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34283023": {
@@ -6478,7 +6482,7 @@
         "abbr": "ALD",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34218637": {
@@ -6676,6 +6680,46 @@
       "34218624": {
         "player": "Lucas Besozzi",
         "abbr": "LAN",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34218788": {
+        "player": "Matías Giménez Rojas",
+        "abbr": "ARG",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34231583": {
+        "player": "Jerónimo Dómina",
+        "abbr": "TIA",
+        "goles": 1,
+        "asistencias": 0,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34290749": {
+        "player": "Federico Bisanz",
+        "abbr": "HUR",
+        "goles": 0,
+        "asistencias": 1,
+        "amarillas": 0,
+        "rojas": 0
+      },
+      "34432595": {
+        "player": "Alexis Maldonado",
+        "abbr": "BEL",
+        "goles": 0,
+        "asistencias": 0,
+        "amarillas": 1,
+        "rojas": 0
+      },
+      "34240829": {
+        "player": "Lautaro Díaz",
+        "abbr": "RAC",
         "goles": 0,
         "asistencias": 0,
         "amarillas": 1,
