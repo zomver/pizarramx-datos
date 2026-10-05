@@ -1,45 +1,34 @@
 [
   {
-    "home": "HUR",
-    "away": "ALD",
-    "date": "2026-10-04",
+    "home": "RIE",
+    "away": "CCO",
+    "date": "2026-10-05",
     "directo": [
       {
-        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=tntar\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "TNT SPORTS"
+        "embed": "<iframe src=\"https://grandemx.org/gq4ysifk-8530\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "TYC SPORTS INTERNACIONAL"
       }
     ]
   },
   {
-    "home": "TAL",
-    "away": "BEL",
-    "date": "2026-10-04",
+    "home": "VEL",
+    "away": "PLA",
+    "date": "2026-10-05",
     "directo": [
       {
-        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=espnpremium\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "ESPN PREMIUM"
+        "embed": "<iframe src=\"https://grandemx.org/gq4ysifk-8530\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "TYC SPORTS INTERNAcIONAL"
       }
     ]
   },
   {
-    "home": "ARG",
-    "away": "TIA",
-    "date": "2026-10-04",
+    "home": "BAN",
+    "away": "ROS",
+    "date": "2026-10-05",
     "directo": [
       {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espnpremium\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "ESPN PREMIUM"
-      }
-    ]
-  },
-  {
-    "home": "ERC",
-    "away": "RAC",
-    "date": "2026-10-04",
-    "directo": [
-      {
-        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=tntar\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "TNT SPORTS"
+        "embed": "<iframe src=\"https://grandemx.org/gq4ysifk-8530\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "TYC SPORTS INTERNACIONAL"
       }
     ]
   }
