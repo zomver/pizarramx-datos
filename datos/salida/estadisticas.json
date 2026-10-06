@@ -127,13 +127,13 @@
         "value": 8
       },
       {
-        "player": "Leandro Díaz",
-        "abbr": "ATU",
-        "value": 6
-      },
-      {
         "player": "Ronaldo Martínez",
         "abbr": "VEL",
+        "value": 7
+      },
+      {
+        "player": "Leandro Díaz",
+        "abbr": "ATU",
         "value": 6
       }
     ],
@@ -166,6 +166,11 @@
     ],
     "amarillas": [
       {
+        "player": "Leandro Gonzalez Pirez",
+        "abbr": "ELP",
+        "value": 7
+      },
+      {
         "player": "Francisco Álvarez",
         "abbr": "ARG",
         "value": 6
@@ -173,11 +178,6 @@
       {
         "player": "Augusto Schott",
         "abbr": "TAL",
-        "value": 6
-      },
-      {
-        "player": "Leandro Gonzalez Pirez",
-        "abbr": "ELP",
         "value": 6
       },
       {
