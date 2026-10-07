@@ -2155,8 +2155,8 @@
     "video": null
   },
   "erc-rac-2398108": {
-    "intentos": 4,
-    "ultimo_intento": "2026-10-06T14:31:50.656976",
+    "intentos": 5,
+    "ultimo_intento": "2026-10-07T02:32:19.390769",
     "video": null
   },
   "rie-cco-2398106": {
@@ -2175,8 +2175,8 @@
     "video": null
   },
   "ban-ros-2398103": {
-    "intentos": 2,
-    "ultimo_intento": "2026-10-06T14:21:46.056841",
+    "intentos": 3,
+    "ultimo_intento": "2026-10-07T02:32:19.390769",
     "video": null
   }
 }
