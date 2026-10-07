@@ -1,61 +1,71 @@
 [
   {
-    "home": "RIE",
-    "away": "CCO",
-    "date": "2026-10-05",
+    "home": "INT",
+    "away": "CRI",
+    "date": "2026-10-07",
     "directo": [
       {
-        "embed": "<iframe src=\"https://grandemx.org/gq4ysifk-8530\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "TYC SPORTS INTERNACIONAL"
-      },
-      {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tntsports\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "TNT SPORTS"
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=premiere2\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "PREMIERE 2"
       }
     ]
   },
   {
-    "home": "VEL",
-    "away": "PLA",
-    "date": "2026-10-05",
+    "home": "REM",
+    "away": "GRE",
+    "date": "2026-10-07",
     "directo": [
       {
-        "embed": "<iframe src=\"https://grandemx.org/gq4ysifk-8530\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "TYC SPORTS INTERNAcIONAL"
-      },
-      {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tntsports\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "TNT SPORTS"
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=premiere4\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "PREMIERE 4"
       }
     ]
   },
   {
-    "home": "BAN",
-    "away": "ROS",
-    "date": "2026-10-05",
+    "home": "BRA",
+    "away": "MIR",
+    "date": "2026-10-07",
     "directo": [
       {
-        "embed": "<iframe src=\"https://grandemx.org/gq4ysifk-8530\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "TYC SPORTS INTERNACIONAL"
-      },
-      {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espnpremium\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "ESPN PREMIUM"
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=premiere5\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "PREMIERE 5"
       }
     ]
   },
   {
-    "home": "ELP",
-    "away": "GEM",
-    "date": "2026-10-05",
+    "home": "VIT",
+    "away": "CHA",
+    "date": "2026-10-07",
     "directo": [
       {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "ESPN"
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=premiere3\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "PREMIERE 3"
+      }
+    ]
+  },
+  {
+    "home": "BOT",
+    "away": "VAS",
+    "date": "2026-10-07",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=amazon1\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "AMAZON"
+      }
+    ]
+  },
+  {
+    "home": "CRU",
+    "away": "SAO",
+    "date": "2026-10-07",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=premiere1\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "PREMIERE 1"
       },
       {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espnpremium\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "ESPN PREMIUM"
+        "embed": "<iframe src=\"https://streamx305.sbs/global1.php?channel=sportv1\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "SPORTV 1"
       }
     ]
   }
