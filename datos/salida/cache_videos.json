@@ -2178,5 +2178,20 @@
     "intentos": 4,
     "ultimo_intento": "2026-10-07T14:41:47.434509",
     "video": null
+  },
+  "bra-mir-2398473": {
+    "intentos": 1,
+    "ultimo_intento": "2026-10-08T00:41:44.232749",
+    "video": null
+  },
+  "int-cri-2398476": {
+    "intentos": 1,
+    "ultimo_intento": "2026-10-08T00:41:44.232749",
+    "video": null
+  },
+  "rem-gre-2398478": {
+    "intentos": 1,
+    "ultimo_intento": "2026-10-08T00:41:44.232749",
+    "video": null
   }
 }
