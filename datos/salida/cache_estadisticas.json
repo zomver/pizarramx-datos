@@ -683,6 +683,12 @@
     "2398468",
     "2398469",
     "2398470",
+    "2398472",
+    "2398473",
+    "2398474",
+    "2398476",
+    "2398478",
+    "2398480",
     "2470108",
     "2470110",
     "2470111",
@@ -7311,7 +7317,7 @@
         "player": "Matheus Pereira",
         "abbr": "CRU",
         "goles": 4,
-        "asistencias": 1,
+        "asistencias": 2,
         "amarillas": 6,
         "rojas": 0
       },
@@ -8430,7 +8436,7 @@
       "34175807": {
         "player": "Kaio Jorge",
         "abbr": "CRU",
-        "goles": 3,
+        "goles": 4,
         "asistencias": 0,
         "amarillas": 1,
         "rojas": 0
@@ -9000,7 +9006,7 @@
         "abbr": "SAO",
         "goles": 0,
         "asistencias": 1,
-        "amarillas": 0,
+        "amarillas": 1,
         "rojas": 0
       },
       "34155702": {
@@ -9696,7 +9702,7 @@
         "abbr": "CRU",
         "goles": 0,
         "asistencias": 0,
-        "amarillas": 1,
+        "amarillas": 2,
         "rojas": 0
       },
       "34230179": {
