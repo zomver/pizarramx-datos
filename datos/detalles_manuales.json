@@ -1,45 +1,109 @@
 [
   {
-    "home": "STS",
-    "away": "FLA",
-    "date": "2026-10-08",
+    "home": "ALD",
+    "away": "SAR",
+    "date": "2026-10-09",
     "directo": [
       {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=premiere1\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "PREMIERE 1"
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tntsports\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "TNT SPORTS"
       }
     ]
   },
   {
-    "home": "ATP",
-    "away": "CAM",
-    "date": "2026-10-08",
+    "home": "BVB",
+    "away": "WER",
+    "date": "2026-10-09",
     "directo": [
       {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=premiere3\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "PREMIERE 3"
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn5\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN 5"
+      },
+      {
+        "embed": "<iframe src=\"https://grandemx.org/ahl77cgo-5559\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "BEIN SPORTS 2 FRANCAIS"
+      },
+      {
+        "embed": "<iframe src=\"https://grandemx.org/3zhczzbl-9111\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "DAZN 1 PORTUGAL"
       }
     ]
   },
   {
-    "home": "FLU",
-    "away": "COT",
-    "date": "2026-10-08",
+    "home": "MAL",
+    "away": "ESP",
+    "date": "2026-10-09",
     "directo": [
       {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=premiere5\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "PREMIERE 5"
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn2\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN 2"
+      },
+      {
+        "embed": "<iframe src=\"https://grandemx.org/fw2jrum9-8243\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "DAZN LA LIGA"
+      },
+      {
+        "embed": "<iframe src=\"https://grandemx.org/6trsant7-4423\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN DEPORTES"
       }
     ]
   },
   {
-    "home": "PAL",
-    "away": "BAH",
-    "date": "2026-10-08",
+    "home": "GLP",
+    "away": "ATU",
+    "date": "2026-10-09",
     "directo": [
       {
-        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=premiere2\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
-        "fuente": "PREMIERE 2"
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espnpremium\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN PREMIUM"
+      }
+    ]
+  },
+  {
+    "home": "INS",
+    "away": "BOC",
+    "date": "2026-10-09",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espn\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN"
+      },
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=tntsports\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "TNT SPORTS"
+      }
+    ]
+  },
+  {
+    "home": "UNI",
+    "away": "DEJ",
+    "date": "2026-10-09",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espnpremium\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN PREMIUM"
+      }
+    ]
+  },
+  {
+    "home": "TIG",
+    "away": "TOL",
+    "date": "2026-10-09",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=azteca7\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "AZTECA 7"
+      }
+    ]
+  },
+  {
+    "home": "PUE",
+    "away": "LEO",
+    "date": "2026-10-09",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espnmx\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "ESPN MX"
       }
     ]
   }
