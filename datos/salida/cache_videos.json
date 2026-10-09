@@ -2205,8 +2205,8 @@
     "video": null
   },
   "cru-sao-2398474": {
-    "intentos": 2,
-    "ultimo_intento": "2026-10-08T14:31:48.940131",
+    "intentos": 3,
+    "ultimo_intento": "2026-10-09T02:31:54.012024",
     "video": null
   },
   "sts-fla-2398479": {
@@ -2217,6 +2217,11 @@
   "atp-cam-2398471": {
     "intentos": 1,
     "ultimo_intento": "2026-10-09T01:11:42.634190",
+    "video": null
+  },
+  "pal-bah-2398477": {
+    "intentos": 1,
+    "ultimo_intento": "2026-10-09T02:31:54.012024",
     "video": null
   }
 }
