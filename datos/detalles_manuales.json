@@ -114,5 +114,71 @@
         "fuente": "TUDN"
       }
     ]
+  },
+  {
+    "home": "ARS",
+    "away": "LEE",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2494052\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "CHE",
+    "away": "BOU",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2494053\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "IPS",
+    "away": "FUL",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2494055\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "AVL",
+    "away": "BRE",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2494057\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "SUN",
+    "away": "BHA",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2494058\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "MUN",
+    "away": "TOT",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2494050\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
   }
 ]
