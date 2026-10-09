@@ -93,6 +93,10 @@
       {
         "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=azteca7\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
         "fuente": "AZTECA 7"
+      },
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2487544\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "FOX SPORTS 2"
       }
     ]
   },
@@ -104,6 +108,10 @@
       {
         "embed": "<iframe src=\"https://la18hd.su/vivo/canales.php?stream=espnmx\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
         "fuente": "ESPN MX"
+      },
+      {
+        "embed": "<iframe src=\"https://damitv.st/embed/?id=liga-mx%2F2026-10-09%2Fpue-leo\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "TUDN"
       }
     ]
   }
