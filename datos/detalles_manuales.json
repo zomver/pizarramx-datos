@@ -180,5 +180,159 @@
         "fuente": "LIVE - OPTIONS IN CHANNELS"
       }
     ]
+  },
+  {
+    "home": "RAY",
+    "away": "ATH",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2506246\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "ALA",
+    "away": "ATM",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2506243\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "BCN",
+    "away": "GET",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2506239\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "CEL",
+    "away": "RSO",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2505802\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "RMA",
+    "away": "VIL",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2506242\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "GEN",
+    "away": "FIO",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2482192\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "INM",
+    "away": "PAR",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2482195\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "NAP",
+    "away": "FRO",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2482191\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "MAI",
+    "away": "B04",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2508370\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "TSG",
+    "away": "HSV",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2508372\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "AUG",
+    "away": "FCB",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2508373\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "UNB",
+    "away": "ELV",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2508375\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "PAD",
+    "away": "VFB",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2508376\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
+  },
+  {
+    "home": "RBL",
+    "away": "SGE",
+    "date": "2026-10-10",
+    "directo": [
+      {
+        "embed": "<iframe src=\"https://matchora.to/embed/match/2508374\" title=\"MLS 1\"style=\"width:100%; height:100%; border:none; display:block;\"allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"allowfullscreen></iframe>",
+        "fuente": "LIVE - OPTIONS IN CHANNELS"
+      }
+    ]
   }
 ]
