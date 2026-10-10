@@ -2225,8 +2225,8 @@
     "video": null
   },
   "flu-cot-2398475": {
-    "intentos": 2,
-    "ultimo_intento": "2026-10-09T14:51:37.691304",
+    "intentos": 3,
+    "ultimo_intento": "2026-10-10T02:51:39.793608",
     "video": null
   },
   "ald-sar-2398116": {
@@ -2252,6 +2252,11 @@
   "ins-boc-2398121": {
     "intentos": 1,
     "ultimo_intento": "2026-10-10T00:41:38.980262",
+    "video": null
+  },
+  "uni-dej-2398130": {
+    "intentos": 1,
+    "ultimo_intento": "2026-10-10T02:51:39.793608",
     "video": null
   }
 }
