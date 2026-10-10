@@ -39,6 +39,11 @@
         "value": 2
       },
       {
+        "player": "Diber Cambindo Abonia",
+        "abbr": "LEO",
+        "value": 2
+      },
+      {
         "player": "Carlos Rodríguez",
         "abbr": "CRZ",
         "value": 2
@@ -46,11 +51,6 @@
       {
         "player": "Alberto Herrera Rodríguez López",
         "abbr": "PUE",
-        "value": 2
-      },
-      {
-        "player": "Oussama Idrissi",
-        "abbr": "PAC",
         "value": 2
       }
     ],
@@ -114,7 +114,7 @@
       {
         "player": "Junior Marabel",
         "abbr": "SAR",
-        "value": 9
+        "value": 10
       },
       {
         "player": "Agustín Módica",
@@ -144,6 +144,11 @@
         "value": 5
       },
       {
+        "player": "Juan Manuel Gutiérrez",
+        "abbr": "DEJ",
+        "value": 5
+      },
+      {
         "player": "Matias Pellegrini",
         "abbr": "VEL",
         "value": 5
@@ -157,11 +162,6 @@
         "player": "Julián Palacios",
         "abbr": "UNI",
         "value": 5
-      },
-      {
-        "player": "Matías Fernández",
-        "abbr": "IRV",
-        "value": 4
       }
     ],
     "amarillas": [
@@ -461,7 +461,7 @@
       {
         "player": "Javi Hernández",
         "abbr": "ESP",
-        "value": 3
+        "value": 4
       },
       {
         "player": "Raphinha",
@@ -496,6 +496,11 @@
         "value": 2
       },
       {
+        "player": "Carlos Puga",
+        "abbr": "MAL",
+        "value": 2
+      },
+      {
         "player": "Nahuel Tenaglia",
         "abbr": "ALA",
         "value": 2
@@ -503,11 +508,6 @@
       {
         "player": "Jon Aramburu",
         "abbr": "RSO",
-        "value": 2
-      },
-      {
-        "player": "Gorka Guruzeta",
-        "abbr": "ATH",
         "value": 2
       }
     ],
